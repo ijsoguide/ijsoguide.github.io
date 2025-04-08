@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+  <title>Vectors</title>
+
+  <!-- MathJax for LaTeX rendering -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+  <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f8ff;
+        color: #333;
+        margin: 0;
+        padding: 2rem;
+      }
+  
+      .container {
+        max-width: 900px;
+        margin: auto;
+        background: white;
+        padding: 2rem;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+  
+      h1 {
+        text-align: center;
+        color: #223;
+      }
+  
+      h2 {
+        color: #2b4a8b;
+        margin-top: 2rem;
+        border-bottom: 2px solid #e0e6f6;
+        padding-bottom: 0.3rem;
+      }
+  
+      h3 {
+        color: #444;
+        margin-bottom: 0.5rem;
+      }
+  
+      p, ul, ol {
+        line-height: 1.7;
+      }
+  
+      ul li, ol li {
+        margin-bottom: 0.4rem;
+      }
+  
+      code {
+        background-color: #eef;
+        padding: 0.2rem 0.4rem;
+        border-radius: 4px;
+        font-family: Consolas, monospace;
+      }
+  
+      .collapsible {
+        background-color: #e3ecff;
+        color: #000;
+        cursor: pointer;
+        padding: 12px 16px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 6px;
+        margin-top: 1.5rem;
+      }
+  
+      .active, .collapsible:hover {
+        background-color: #d1dcff;
+      }
+  
+      .content {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        background-color: #f9fbff;
+        border-left: 4px solid #4a76d0;
+        border-radius: 0 0 6px 6px;
+      }
+  
+      .content ul {
+        margin: 1rem 0;
+      }
+      /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #777;
+  }
+  </style>
+  
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const coll = document.querySelectorAll('.collapsible');
+        coll.forEach(btn => {
+          btn.addEventListener('click', function () {
+            this.classList.toggle('active');
+            const content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + 'px';
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+<body>
+  <div class="container">
+    <h1>Vectors</h1>
+
+    <h2>What is a Vector?</h2>
+    <p>A <strong>vector</strong> is a quantity that has both magnitude and direction. Represented typically with an arrow: length shows magnitude and the arrowhead shows direction.</p>
+    <p>Examples of vectors: displacement, velocity, acceleration, force, momentum.</p>
+
+    <h2>What is a Scalar Quantity?</h2>
+    <p>A <strong>scalar</strong> quantity has only magnitude, no direction.</p>
+    <p>Examples: mass, time, temperature, speed.</p>
+
+    <h2>How to Represent a Vector</h2>
+    <p>Vectors can be represented:</p>
+    <ul>
+      <li>Graphically – using arrows</li>
+      <li>With notations – using components (2D for IJSO)</li>
+    </ul>
+
+    <h2>Components of a Vector</h2>
+    <p>If a vector has magnitude \(A\) and angle \(\theta\) from horizontal, then it's components are</p>
+    <ul>
+      <li>Horizontal component (x): \( A_x = A \cos(\theta) \)</li>
+      <li>Vertical component (y):\(A_y = A \sin(\theta) \)</code></li>
+    </ul>
+
+    <p>Expressed with unit vectors: \(A_x \hat{i} + A_y \hat{j}\)</p>
+
+    <h2>Addition of Vectors Using Components</h2>
+    <ul>
+      <li>\(R_x = A_x + B_x\)</li>
+      <li>\(R_y = A_y + B_y\)</li>
+      <li>\( R = \sqrt{R_x^2 + R_y^2} \)</li>
+      <li>\(θ = \tan^{-1}(\frac{R_y}{R_x})\)</li>
+    </ul>
+
+    <button class="collapsible">Example 1: Resultant of 2 vectors</button>
+<div class="content">
+  <p>A vector 𝐀 has a magnitude of 5 units and is directed along the positive x-axis. A vector 𝐁 has a magnitude of 12 units and is directed along the positive y-axis. Find the magnitude and direction of A + B
+  </p>
+  <ul>
+    <li>Vector A: 5 units along x-axis</li>
+    <li>Vector B: 12 units along y-axis</li>
+    <li><strong>Resultant:</strong> \(R = \sqrt{5^2 + 12^2}  = 13\)</li>
+    <li><strong>Angle:</strong> \(θ = \tan^{-1}(\frac{12}{5}) \approx 67.4^{\circ}\)</li>
+  </ul>
+</div>
+
+<button class="collapsible">Example 2: Finding the Components</button>
+<div class="content">
+  <p>Determine the x and y components of a displacement whose magnitude is 30.0 m at a 23° angle from the x-axis.</p>
+<ul>
+  <li><strong>x component: </strong>\(A_x = 30 \cos(23^{\circ}) \approx 27.62 N\)</li>
+  <li><strong>y component: </strong>\(A_y = 30 \sin(23^{\circ}) \approx 11.72 N\)</li>
+</ul>
+</div>
+
+<button class="collapsible">Example 3: Forces at angles</button>
+<div class="content">
+  <p>A force of 15 N acts in the direction 45° above the positive x-axis, and another force of 10 N acts 45° above the positive x-axis. Find the resultant force and direction.
+  </p>
+  <ul>
+    <li>First, we will write both vectors in terms of their x-axis and y-axis components.</li>
+    <li>\(A_x = 15 \cos(45^{\circ}) \approx 10.61 N\)</li>
+    <li>\(A_y = 15 \sin(45^{\circ}) \approx 10.61 N\)</li>
+    <li>\(B_x = 10 \cos(30^{\circ}) \approx 8.66 N\)</li>
+    <li>\(B_y = 10 \sin(30^{\circ}) = 5 N\)</li>
+    <li>Now we will add the components to find the components of the resultant vector</li>
+    <li>\(R_x = 10.61 + 8.66 = 19.27 N\)</li>
+    <li>\(R_y = 10.61 + 5 = 15.61 N\)</li>
+    <li>Now we will find the resultant vector and its magnitude</li>
+    <li><strong>Resultant: </strong>\(R = \sqrt{19.27^2 + 15.61^2} \approx 24.8 N\)</li>
+    <li><strong>Angle: </strong>\(\theta = \tan^{-1}(\frac{15.61}{19.27}) \approx 39.0^{\circ}\)</li>
+  </ul>
+</div>
+
+<button class="collapsible">Example 4: Unit Vector Addition</button>
+<div class="content">
+  <p>Vector D = 3i - 4j and vector: E = 4i - j. Find the magnitude of D + E and the magnitude of  D - E.</p>
+  <ul>
+    <li>We can add the add the two unit vectors</li>
+    <li>\((3 + 4)\hat{i} = 7\hat{i}\)</li>
+    <li>\((-4 + (-1))\hat{j} = -5\hat{j}\)</li>
+    <li>\(D + E = 7\hat{i} - 5\hat{j}\)</li>
+    <li>Now we can find the magnitude of this vector</li>
+    <li>\(|D + E| = \sqrt{7^2 + (-5)^2}\)</li>
+    <li><strong>Magnitude: </strong>\(|D + E| = 8.60 N\)</li>
+    <li>Now, we can subtract the vector E from vector D</li>
+    <li>\((3 - 4)\hat{i} = -1\hat{i}\)</li>
+    <li>\(((-4) - (-1))\hat{j} = -3\hat{j}\)</li>
+    <li>\(D - E = -1\hat{i} - 3\hat{j}\)</li>
+    <li>Now we can find the magnitude of this vector</li>
+    <li>\(|D - E| = \sqrt{(-1)^2 + (-3)^2}\)</li>
+    <li><strong>Magnitude: </strong>\(|D - E| = 3.16 N\)</li>
+  </ul>
+</div>
+<button class="collapsible">Example 5: Finding the displacement</button>
+<div class="content">
+  <p>A student carries a lump of clay from the first floor (ground level) door of a skyscraper (on Verstappen Street) to the elevator, 30 m away. She then takes the elevator to the 11th floor. Finally, she exits the elevator and carries the clay 15 m back toward Verstappen Street. Determine the total displacement for the clay if each floor is 4.5 m above the floor below.</p>
+  <ul>
+    <li>First, we will find the vertical displacement</li>
+    <li>\(A_x = 4.5 \times 10 = 45m\)</li>
+    <li>Now, we will find the horizontal displacement</li>
+    <li>\(A_y = 30 - 15 = 15m\)</li>
+    <li>Now, we will find the resultant displacement</li>
+    <li><strong>Resultant: </strong>\(R = \sqrt{45^2 + 15^2} \approx 47.43m\)</li></li>
+  </ul>
+  </div>
+    <h2>Practice Questions</h2>
+    <ol>
+      <li>Given \(a = (3, 4)\) and \(b = (1, -2)\), find \(a + b\) and \(a - b\).</li>
+      <li>If \(C = 3\hat{i} + 4\hat{j}\), find its magnitude and angle with the x-axis.</li>
+      <li>During the Vector Addition lab, Jicu and his girlfriend, Bianca start at the classroom door and walk 40.0 m north, 32.5 m east, 15.5 m south and 68.5 m west. Determine the magnitude of the resultant displacement of Jicu and Bianca.</li>
+      <li>Compute the vector’s magnitude: \(5\hat{i} - 4\hat{j}\) </li>
+    </ol>
+    <h2>Solutions</h2>
+    <ol>
+      <li>\((4,2)\), \((2,6)\)</li>
+      <li>Magnitude = 5 and angle \(\approx 53.1^{\circ} \) with the horizontal.</li>
+      <li>Magnitude \(\approx\) 43.55m</li>
+      <li>Magnitude \(\approx\) 6.40</li>
+      
+    </ol>
+  </div>
+  <div class="footer">
+    Created as a part of the "A Guide to the IJSO" project 🧪🚀
+    </div>
+</body>
+</html>
