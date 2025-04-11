@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Newton's Laws</title>
+
+  <!-- MathJax for LaTeX rendering -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f9;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #2979ff;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar-left a {
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .navbar-right a {
+      margin-left: 1.5rem;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .navbar-right a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header Section */
+    .header-section {
+      background-color: #e3f2fd;
+      padding: 3rem 1rem 2rem;
+      text-align: center;
+    }
+
+    .header-section h1 {
+      font-size: 2.5rem;
+      color: #0d47a1;
+    }
+
+    /* Top Bar */
+    .top-bar {
+      max-width: 900px;
+      margin: 1rem auto 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1rem;
+    }
+
+    .top-bar h2 {
+      font-size: 1.5rem;
+      color: #2979ff;
+    }
+
+    .back-btn {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #2979ff;
+      font-weight: 500;
+      transition: background-color 0.2s ease;
+    }
+
+    .back-btn:hover {
+      background-color: #e3f2fd;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 1rem auto 2rem;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      margin-top: 30px;
+      color: #333;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    summary {
+      font-weight: bold;
+      font-size: 1.1rem;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    details {
+      background: #e6f0ff;
+      padding: 15px;
+      margin-top: 15px;
+      border-radius: 6px;
+      border: 1px solid #cce0ff;
+    }
+
+    code {
+      background-color: #f0f0f0;
+      padding: 2px 5px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #2979ff;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="../../../../Landing Page.html">A Guide to the IJSO</a>
+    </div>
+    <div class="navbar-right">
+      <a href="../../../theory.html">Home</a>
+      <a href="../../physics.html">Physics</a>
+      <a href="../../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../../../Biology/Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <div class="header-section">
+    <h1>Newton's Laws</h1>
+  </div>
+
+  <!-- Page Title + Back -->
+  <div class="top-bar">
+    <h2>Newton's Laws</h2>
+    <a class="back-btn" href="../Mechanics.html">← Back to Mechanics</a>
+  </div>
+
+  <!-- Content -->
+  <div class="container">
+    <p>Newton’s laws define the basics of mechanics (specifically Newtonian mechanics). In the future, you’ll learn that there are other types too. But today, we’ll stick to the big 3: Newton's laws of motion.</p>
+
+    <details>
+      <summary>Newton’s 1st Law of Motion</summary>
+      <p>An object does not change its motion unless an external force is applied on it.</p>
+      <p>Remember when you were a kid and played with toy trucks? It didn’t move until you pushed it — Newton says this applies to everything, not just toys!</p>
+    </details>
+
+    <details>
+      <summary>Newton’s 2nd Law of Motion</summary>
+      <p>The acceleration of an object is directly proportional to the net force and inversely proportional to its mass.</p>
+      <p>Translation: the harder you push, the faster it moves — unless it’s super heavy.</p>
+      <p><strong>Formula:</strong> \(F = ma\)</p>
+      <p>Force equals mass times acceleration — this is the core of the second law.</p>
+    </details>
+
+    <details>
+      <summary>Newton’s 3rd Law of Motion</summary>
+      <p>For every action, there is an equal and opposite reaction.</p>
+      <p>If you push a wall with 100N of force, the wall pushes back with 100N. Ever shoved a sibling and got shoved back? That’s this law in action — physics style.</p>
+    </details>
+
+    <h2>Conclusion</h2>
+    <p>Newton’s laws are everywhere — from rolling balls to rockets launching. Mastering them is step one in your physics journey!</p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+
+</body>
+</html>

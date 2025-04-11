@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Forms of Energy</title>
+
+  <!-- MathJax for LaTeX rendering -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f8ff;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #2979ff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+    }
+
+    .navbar-left a {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .navbar-right a {
+      margin-left: 1.5rem;
+    }
+
+    /* Header */
+    .header {
+      background-color: #e3f2fd;
+      padding: 2.5rem 1rem 1.5rem;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 2.4rem;
+      color: #0d47a1;
+    }
+
+    /* Top Bar */
+    .top-bar {
+      max-width: 900px;
+      margin: 1rem auto 0;
+      padding: 0 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .top-bar h2 {
+      font-size: 1.5rem;
+      color: #2979ff;
+    }
+
+    .back-btn {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #2979ff;
+      font-weight: 500;
+      transition: background-color 0.2s ease;
+    }
+
+    .back-btn:hover {
+      background-color: #e3f2fd;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 1rem auto 2rem;
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #2b4a8b;
+      margin-top: 2rem;
+      border-bottom: 2px solid #e0e6f6;
+      padding-bottom: 0.3rem;
+    }
+
+    p, ul, ol {
+      line-height: 1.7;
+    }
+
+    ul li, ol li {
+      margin-bottom: 0.5rem;
+    }
+
+    code {
+      background-color: #eef;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      font-family: Consolas, monospace;
+    }
+
+    .collapsible {
+      background-color: #e3ecff;
+      color: #000;
+      cursor: pointer;
+      padding: 12px 16px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
+      margin-top: 1.5rem;
+    }
+
+    .active, .collapsible:hover {
+      background-color: #d1dcff;
+    }
+
+    .content {
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      background-color: #f9fbff;
+      border-left: 4px solid #4a76d0;
+      border-radius: 0 0 6px 6px;
+    }
+
+    .content ul {
+      margin: 1rem 0;
+    }
+
+    .content img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin: 15px 0;
+    }
+
+    .footer {
+      background-color: #2979ff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: white;
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const coll = document.querySelectorAll('.collapsible');
+      coll.forEach(btn => {
+        btn.addEventListener('click', function () {
+          this.classList.toggle('active');
+          const content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + 'px';
+          }
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="../../../../Landing Page.html">A Guide to the IJSO</a>
+    </div>
+    <div class="navbar-right">
+      <a href="../../../theory.html">Home</a>
+      <a href="../../physics.html">Physics</a>
+      <a href="../../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../../../Biology/Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Forms of Energy</h1>
+  </div>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <h2>Forms of Energy</h2>
+    <a class="back-btn" href="../Mechanics.html">← Back to Mechanics</a>
+  </div>
+
+  <!-- Original Content Container -->
+  <div class="container">
+    <h1>Forms of Energy</h1>
+
+    <p>You’re reading this on a device that most likely runs on electrical energy—unless you’re a time traveler from 2100 using alien power tech. 😄 Let's explore what forms of energy exist today!</p>
+
+    <h2>Kinetic Energy</h2>
+    <p>Kinetic energy is the energy of an object due to its motion.</p>
+    <p>Formula: \( E_k = \frac{1}{2}mv^2 \)</p>
+    <p>Note: Kinetic energy is always positive since velocity is squared.</p>
+
+    <h2>Potential Energy</h2>
+    <p>Potential energy is stored energy due to an object's position in a force field (like gravity or elasticity).</p>
+    <p>Examples: Gravitational PE, Elastic PE</p>
+
+    <h2>Mechanical Energy</h2>
+    <p>Mechanical energy is the total of kinetic and potential energies:  
+      \( E_m = E_k + E_p \)</p>
+
+    <h2>Thermal Energy</h2>
+    <p>Thermal energy is heat energy—often due to particle motion and collisions in matter.</p>
+
+    <h2>Nuclear Energy</h2>
+    <p>Nuclear energy is stored in the nuclei of atoms. It’s released during fusion and fission reactions.  
+    Fun fact: it’s the energy released in atomic bombs.</p>
+
+    <h2>Chemical Energy</h2>
+    <p>This is the energy stored in the bonds between atoms and molecules—released during chemical reactions.</p>
+
+    <h2>Electromagnetic Energy</h2>
+    <p>Energy carried by electromagnetic waves such as light, UV, infrared, and X-rays.</p>
+
+    <h2>Sonic Energy</h2>
+    <p>Sonic energy is stored in sound waves. It depends on wave properties like amplitude and frequency.</p>
+
+    <button class="collapsible">Reminder: Relative Nature of Potential Energy</button>
+    <div class="content">
+      <ul>
+        <li>Potential energy is usually defined relative to a reference point (e.g., the ground).</li>
+        <li>A ball 1 m above the Earth has gravitational PE relative to the ground.</li>
+        <li>Always pay attention to what point the PE is measured from!</li>
+      </ul>
+    </div>
+
+    <h2>Final Thought</h2>
+    <p>Most objects store multiple forms of energy at the same time. Understanding them helps us understand how the universe functions, from bouncing balls to nuclear stars.</p>
+
+  </div>
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+</body>
+</html>

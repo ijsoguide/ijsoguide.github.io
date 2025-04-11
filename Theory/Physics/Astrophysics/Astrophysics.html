@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Astrophysics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9fbff;
+      color: #1a1a1a;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .navbar-left a {
+      font-weight: bold;
+      color: #2979ff;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+
+    .navbar-right a {
+      margin-left: 1.5rem;
+      color: #333;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .navbar-right a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header Section */
+    header {
+      background-color: #2979ff;
+      padding: 3rem 1rem 2rem;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+      color: #e6e6e6;
+    }
+
+    /* Page Header */
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .page-header h2 {
+      font-size: 1.8rem;
+    }
+
+    .back-btn {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      color: #333;
+      transition: background-color 0.2s;
+    }
+
+    .back-btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    /* Cards */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    .card {
+      background-color: #f9fbff;
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      padding: 1.2rem 1.5rem;
+      cursor: pointer;
+      transition: box-shadow 0.2s;
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      font-size: 1.05rem;
+    }
+
+    .card-content {
+      display: none;
+      margin-top: 0.8rem;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    .card-content p {
+      margin-bottom: 1rem;
+      color: #555;
+    }
+
+    .learn-btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: #2979ff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: background-color 0.2s;
+    }
+
+    .learn-btn:hover {
+      background-color: #004ecb;
+    }
+
+    .arrow {
+      font-size: 1.2rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-5px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Practice Section */
+    .practice-section {
+      text-align: center;
+      margin: 3rem auto;
+      padding: 2rem;
+      max-width: 800px;
+      background-color: #f2f6ff;
+      border-radius: 10px;
+      border: 1px solid #2979ff;
+    }
+
+    .practice-section-icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .practice-section h4 {
+      color: #2979ff;
+      font-size: 1.4rem;
+    }
+
+    .practice-section p {
+      color: #444;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .practice-section a {
+      display: inline-block;
+      background-color: #2979ff;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .practice-section a:hover {
+      background-color: #0d47a1;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #2979ff;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="../../../Landing Page.html">A Guide to the IJSO</a>
+    </div>
+    <div class="navbar-right">
+      <a href="../../theory.html">Home</a>
+      <a href="../physics.html">Physics</a>
+      <a href="../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../../Biology/Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Astrophysics</h1>
+    <p>Explore stars, galaxies, and cosmology. Learn about celestial bodies, their motions, and the fundamental laws that govern the universe on the largest scales.</p>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>Astrophysics</h2>
+    <a class="back-btn" href="../physics.html">← Back to Physics</a>
+  </div>
+
+  <!-- Cards -->
+  <div class="container">
+
+    <!-- Structure of the Universe -->
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Structure of the Universe <span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Explore the overall structure of the universe, including galaxies, galaxy clusters, and the large-scale structure.</p>        </p>
+        <a class="learn-btn" href="Structure of the Universe/Structure of the Universe.html">Learn about Structure of the Universe →</a>
+      </div>
+    </div>
+
+    <!-- Solar System -->
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Solar System <span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Learn about our solar system, including the sun, planets, moons, asteroids, and comets.</p>
+        <a class="learn-btn" href="Solar System/Solar System.html">Learn about the Solar System →</a>
+      </div>
+    </div>
+
+    <!-- Celestial Mechanics -->
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Celestial Mechanics <span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Study the motion of celestial bodies under the influence of gravity.</p>
+        <a class="learn-btn" href="Celestial Mechanics/Celestial Mechanics.html">Learn about Celestial Mechanics →</a>
+      </div>
+    </div>
+
+    <!-- Practice Section (NOT collapsible) -->
+    <div class="practice-section">
+      <div class="practice-section-icon">📘</div>
+      <div class="practice-section-content">
+        <h4>Ready to practice astrophysics?</h4>
+        <p>Apply your knowledge with our collection of IJSO-style astrophysics problems.</p>
+        <a href="#">View Astrophysics Practice Problems</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 A Guide to the IJSO. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleCard(card) {
+      const content = card.querySelector('.card-content');
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach(c => {
+        if (c !== card) c.querySelector('.card-content').style.display = 'none';
+      });
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>

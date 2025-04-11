@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vectors</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- MathJax for LaTeX rendering -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f8ff;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #2979ff;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar-left a {
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .navbar-right a {
+      margin-left: 1.5rem;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .navbar-right a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header */
+    .header-section {
+      background-color: #e3f2fd;
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+    }
+
+    .header-section h1 {
+      font-size: 2.5rem;
+      color: #0d47a1;
+    }
+
+    /* Top Bar */
+    .top-bar {
+      max-width: 900px;
+      margin: 1rem auto 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1rem;
+    }
+
+    .top-bar h2 {
+      font-size: 1.5rem;
+      color: #2979ff;
+    }
+
+    .back-btn {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #2979ff;
+      font-weight: 500;
+      transition: background-color 0.2s ease;
+    }
+
+    .back-btn:hover {
+      background-color: #e3f2fd;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 1rem auto 2rem;
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #2b4a8b;
+      margin-top: 2rem;
+      border-bottom: 2px solid #e0e6f6;
+      padding-bottom: 0.3rem;
+    }
+
+    h3 {
+      color: #444;
+      margin-bottom: 0.5rem;
+    }
+
+    p, ul, ol {
+      line-height: 1.7;
+    }
+
+    ul li, ol li {
+      margin-bottom: 0.4rem;
+    }
+
+    code {
+      background-color: #eef;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      font-family: Consolas, monospace;
+    }
+
+    .collapsible {
+      background-color: #e3ecff;
+      color: #000;
+      cursor: pointer;
+      padding: 12px 16px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
+      margin-top: 1.5rem;
+    }
+
+    .active, .collapsible:hover {
+      background-color: #d1dcff;
+    }
+
+    .content {
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      background-color: #f9fbff;
+      border-left: 4px solid #4a76d0;
+      border-radius: 0 0 6px 6px;
+    }
+
+    .content ul {
+      margin: 1rem 0;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #2979ff;
+      text-align: center;
+      padding: 1.2rem;
+      font-size: 0.9em;
+      color: white;
+      margin-top: 2rem;
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const coll = document.querySelectorAll('.collapsible');
+      coll.forEach(btn => {
+        btn.addEventListener('click', function () {
+          this.classList.toggle('active');
+          const content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + 'px';
+          }
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="../../../../Landing Page.html">A Guide to the IJSO</a>
+    </div>
+    <div class="navbar-right">
+      <a href="../../../theory.html">Home</a>
+      <a href="../../physics.html">Physics</a>
+      <a href="../../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../../../Biology/Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <div class="header-section">
+    <h1>Vectors</h1>
+  </div>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <h2>Vectors</h2>
+    <a class="back-btn" href="../Mechanics.html">← Back to Mechanics</a>
+  </div>
+
+  <!-- Original Content -->
+  <div class="container">
+    <h2>What is a Vector?</h2>
+    <p>A <strong>vector</strong> is a quantity that has both magnitude and direction. Represented typically with an arrow: length shows magnitude and the arrowhead shows direction.</p>
+    <p>Examples of vectors: displacement, velocity, acceleration, force, momentum.</p>
+
+    <h2>What is a Scalar Quantity?</h2>
+    <p>A <strong>scalar</strong> quantity has only magnitude, no direction.</p>
+    <p>Examples: mass, time, temperature, speed.</p>
+
+    <h2>How to Represent a Vector</h2>
+    <p>Vectors can be represented:</p>
+    <ul>
+      <li>Graphically – using arrows</li>
+      <li>With notations – using components (2D for IJSO)</li>
+    </ul>
+
+    <h2>Components of a Vector</h2>
+    <p>If a vector has magnitude \(A\) and angle \(\theta\) from horizontal, then it's components are</p>
+    <ul>
+      <li>Horizontal component (x): \( A_x = A \cos(\theta) \)</li>
+      <li>Vertical component (y):\(A_y = A \sin(\theta) \)</li>
+    </ul>
+
+    <p>Expressed with unit vectors: \(A_x \hat{i} + A_y \hat{j}\)</p>
+
+    <h2>Addition of Vectors Using Components</h2>
+    <ul>
+      <li>\(R_x = A_x + B_x\)</li>
+      <li>\(R_y = A_y + B_y\)</li>
+      <li>\( R = \sqrt{R_x^2 + R_y^2} \)</li>
+      <li>\(θ = \tan^{-1}(\frac{R_y}{R_x})\)</li>
+    </ul>
+
+    <button class="collapsible">Example 1: Resultant of 2 vectors</button>
+    <div class="content">
+      <p>A vector 𝐀 has a magnitude of 5 units and is directed along the positive x-axis. A vector 𝐁 has a magnitude of 12 units and is directed along the positive y-axis. Find the magnitude and direction of A + B</p>
+      <ul>
+        <li>Vector A: 5 units along x-axis</li>
+        <li>Vector B: 12 units along y-axis</li>
+        <li><strong>Resultant:</strong> \(R = \sqrt{5^2 + 12^2}  = 13\)</li>
+        <li><strong>Angle:</strong> \(θ = \tan^{-1}(\frac{12}{5}) \approx 67.4^{\circ}\)</li>
+      </ul>
+    </div>
+
+    <button class="collapsible">Example 2: Finding the Components</button>
+    <div class="content">
+      <p>Determine the x and y components of a displacement whose magnitude is 30.0 m at a 23° angle from the x-axis.</p>
+      <ul>
+        <li><strong>x component: </strong>\(A_x = 30 \cos(23^{\circ}) \approx 27.62 N\)</li>
+        <li><strong>y component: </strong>\(A_y = 30 \sin(23^{\circ}) \approx 11.72 N\)</li>
+      </ul>
+    </div>
+
+    <button class="collapsible">Example 3: Forces at angles</button>
+    <div class="content">
+      <p>A force of 15 N acts in the direction 45° above the positive x-axis, and another force of 10 N acts 45° above the positive x-axis. Find the resultant force and direction.</p>
+      <ul>
+        <li>\(A_x = 15 \cos(45^{\circ}) \approx 10.61 N\)</li>
+        <li>\(A_y = 15 \sin(45^{\circ}) \approx 10.61 N\)</li>
+        <li>\(B_x = 10 \cos(30^{\circ}) \approx 8.66 N\)</li>
+        <li>\(B_y = 10 \sin(30^{\circ}) = 5 N\)</li>
+        <li>\(R_x = 10.61 + 8.66 = 19.27 N\)</li>
+        <li>\(R_y = 10.61 + 5 = 15.61 N\)</li>
+        <li>\(R = \sqrt{19.27^2 + 15.61^2} \approx 24.8 N\)</li>
+        <li>\(\theta = \tan^{-1}(\frac{15.61}{19.27}) \approx 39.0^{\circ}\)</li>
+      </ul>
+    </div>
+
+    <button class="collapsible">Example 4: Unit Vector Addition</button>
+    <div class="content">
+      <p>Vector D = 3i - 4j and vector: E = 4i - j. Find the magnitude of D + E and the magnitude of  D - E.</p>
+      <ul>
+        <li>\(D + E = 7\hat{i} - 5\hat{j} \rightarrow |D + E| = 8.60 N\)</li>
+        <li>\(D - E = -1\hat{i} - 3\hat{j} \rightarrow |D - E| = 3.16 N\)</li>
+      </ul>
+    </div>
+
+    <button class="collapsible">Example 5: Finding the displacement</button>
+    <div class="content">
+      <p>A student carries a lump of clay from the first floor (ground level) door of a skyscraper (on Verstappen Street) to the elevator, 30 m away. She then takes the elevator to the 11th floor. Finally, she exits the elevator and carries the clay 15 m back toward Verstappen Street...</p>
+      <ul>
+        <li>\(A_x = 4.5 \times 10 = 45m\)</li>
+        <li>\(A_y = 30 - 15 = 15m\)</li>
+        <li>\(R = \sqrt{45^2 + 15^2} \approx 47.43m\)</li>
+      </ul>
+    </div>
+
+    <h2>Practice Questions</h2>
+    <ol>
+      <li>Given \(a = (3, 4)\) and \(b = (1, -2)\), find \(a + b\) and \(a - b\).</li>
+      <li>If \(C = 3\hat{i} + 4\hat{j}\), find its magnitude and angle with the x-axis.</li>
+      <li>During the Vector Addition lab, Jicu and his girlfriend, Bianca walk 40m north, 32.5m east, 15.5m south and 68.5m west. Find the resultant displacement.</li>
+      <li>Compute the vector’s magnitude: \(5\hat{i} - 4\hat{j}\)</li>
+    </ol>
+
+    <h2>Solutions</h2>
+    <ol>
+      <li>\((4,2)\), \((2,6)\)</li>
+      <li>Magnitude = 5 and angle \(\approx 53.1^{\circ} \)</li>
+      <li>Magnitude \(\approx\) 43.55m</li>
+      <li>Magnitude \(\approx\) 6.40</li>
+    </ol>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+
+</body>
+</html>

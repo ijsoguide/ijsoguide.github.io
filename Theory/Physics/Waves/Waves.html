@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Waves</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9fbff;
+      color: #1a1a1a;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .navbar-left a {
+      font-weight: bold;
+      color: #2979ff;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+
+    .navbar-right a {
+      margin-left: 1.5rem;
+      color: #333;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .navbar-right a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header Section */
+    header {
+      background-color: #2979ff;
+      padding: 3rem 1rem 2rem;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+      color: #e6e6e6;
+    }
+
+    /* Page Header */
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .page-header h2 {
+      font-size: 1.8rem;
+    }
+
+    .back-btn {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      color: #333;
+      transition: background-color 0.2s;
+    }
+
+    .back-btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    /* Cards */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    .card {
+      background-color: #f9fbff;
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      padding: 1.2rem 1.5rem;
+      cursor: pointer;
+      transition: box-shadow 0.2s;
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      font-size: 1.05rem;
+    }
+
+    .card-content {
+      display: none;
+      margin-top: 0.8rem;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    .card-content p {
+      margin-bottom: 1rem;
+      color: #555;
+    }
+
+    .learn-btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: #2979ff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: background-color 0.2s;
+    }
+
+    .learn-btn:hover {
+      background-color: #004ecb;
+    }
+
+    .arrow {
+      font-size: 1.2rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-5px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Practice Section */
+    .practice-section {
+      text-align: center;
+      margin: 3rem auto;
+      padding: 2rem;
+      max-width: 800px;
+      background-color: #f2f6ff;
+      border-radius: 10px;
+      border: 1px solid #2979ff;
+    }
+
+    .practice-section-icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .practice-section h4 {
+      color: #2979ff;
+      font-size: 1.4rem;
+    }
+
+    .practice-section p {
+      color: #444;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .practice-section a {
+      display: inline-block;
+      background-color: #2979ff;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .practice-section a:hover {
+      background-color: #0d47a1;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #2979ff;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="../../../Landing Page.html">A Guide to the IJSO</a>
+    </div>
+    <div class="navbar-right">
+      <a href="../../theory.html">Home</a>
+      <a href="../physics.html">Physics</a>
+      <a href="../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../../Biology/Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Waves</h1>
+    <p>Explore wave phenomena including wave properties, interference, reflection, refraction, resonance, and sound. Master the mathematics and physics principles behind wave behavior in various physical systems.</p>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>Waves</h2>
+    <a class="back-btn" href="../physics.html">← Back to Physics</a>
+  </div>
+
+  <!-- Cards -->
+  <div class="container">
+
+    <!-- Wave Properties -->
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Wave Properties<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Study the fundamental properties of waves including amplitude, frequency, wavelength, and period.</p>
+        <br>
+        <a class="learn-btn" href="">Learn about Wave Properties →</a>
+      </div>
+    </div>
+
+       <!-- Transversal and Longitudinal Waves -->
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+            Transversal and Longitudinal Waves<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Explore different types of wave propagation and their characteristics in various mediums.</p>
+          <br>
+          <a class="learn-btn" href="">Learn about Transversal and Longitudinal Waves →</a>
+        </div>
+      </div>
+
+      <!-- Superposition of Waves -->
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+            Superposition of Waves<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Study how multiple waves interact and combine to form complex wave patterns.</p>
+          <br>
+          <a class="learn-btn" href="">Learn about Superposition of Waves →</a>
+        </div>
+      </div>
+
+      <!-- Interference of Waves -->
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+            Interference of Waves<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Understand constructive and destructive interference patterns created when waves overlap.</p>
+          <br>
+          <a class="learn-btn" href="">Learn about Interference of Waves →</a>
+        </div>
+      </div>
+
+      <!-- Reflection and Transmission -->
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+            Reflection and Transmission<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Examine how waves behave when they encounter boundaries between different media.</p>
+          <br>
+          <a class="learn-btn" href="">Learn about Reflection and Transmission →</a>
+        </div>
+      </div>
+
+      <!-- Refraction -->
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+            Refraction<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Study how waves change direction when they pass from one medium to another.</p>
+          <br>
+          <a class="learn-btn" href="">Learn about Refraction →</a>
+        </div>
+      </div>
+
+      <!-- Standing Waves -->
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+            Standing Waves<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Explore the formation of stationary wave patterns in constrained systems.</p>
+          <br>
+          <a class="learn-btn" href="">Learn about Standing Waves →</a>
+        </div>
+      </div>
+
+      <!-- Resonance -->
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+            Resonance<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Understand how systems respond to external forces at their natural frequencies.</p>
+          <br>
+          <a class="learn-btn" href="">Learn about Resonance →</a>
+        </div>
+      </div>
+
+      <!-- Sound Waves and Speed of Sound -->
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+            Sound Waves and Speed of Sound<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Study the properties of sound waves and factors affecting the speed of sound in different media.</p>
+          <br>
+          <a class="learn-btn" href="">Learn about Sound Waves and Speed of Sound →</a>
+        </div>
+      </div>
+
+      <!-- Doppler Effect -->
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+            Doppler Effect<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Examine the change in frequency of waves observed when the source and observer are in relative motion.</p>
+          <br>
+          <a class="learn-btn" href="">Learn about Doppler Effect →</a>
+        </div>
+      </div>
+
+      <!-- Beats and Harmonics -->
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+            Beats and Harmonics<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Understand interference patterns, beat frequency, and the formation of harmonic sequences.</p>
+          <br>
+          <a class="learn-btn" href="">Learn about Beats and Harmonics →</a>
+        </div>
+      </div>
+
+      <!-- Intensity & Loudness -->
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+            Intensity & Loudness<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Study the energy carried by waves and how it relates to perceived loudness in sound.</p>
+          <br>
+          <a class="learn-btn" href="">Learn about Intensity & Loudness →</a>
+        </div>
+      </div>
+
+      <!-- Wave Equation -->
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+            Wave Equation<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Explore the mathematical description of wave propagation and its applications.</p>
+          <br>
+          <a class="learn-btn" href="">Learn about Wave Equation →</a>
+        </div>
+      </div>
+
+    <!-- Practice Section (NOT collapsible) -->
+    <div class="practice-section">
+      <div class="practice-section-icon">📘</div>
+      <div class="practice-section-content">
+        <h4>Ready to practice waves?</h4>
+        <p>Apply your knowledge with our collection of IJSO-style waves problems.</p>
+        <a href="#">View Waves Practice Problems</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 A Guide to the IJSO. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleCard(card) {
+      const content = card.querySelector('.card-content');
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach(c => {
+        if (c !== card) c.querySelector('.card-content').style.display = 'none';
+      });
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>

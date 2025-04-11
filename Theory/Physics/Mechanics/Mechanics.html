@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mechanics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9fbff;
+      color: #1a1a1a;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .navbar-left a {
+      font-weight: bold;
+      color: #2979ff;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+
+    .navbar-right a {
+      margin-left: 1.5rem;
+      color: #333;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .navbar-right a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header Section */
+    header {
+      background-color: #2979ff;
+      padding: 3rem 1rem 2rem;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+      color: #e6e6e6;
+    }
+
+    /* Page Header */
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .page-header h2 {
+      font-size: 1.8rem;
+    }
+
+    .back-btn {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      color: #333;
+      transition: background-color 0.2s;
+    }
+
+    .back-btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    /* Cards */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    .card {
+      background-color: #f9fbff;
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      padding: 1.2rem 1.5rem;
+      cursor: pointer;
+      transition: box-shadow 0.2s;
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      font-size: 1.05rem;
+    }
+
+    .card-content {
+      display: none;
+      margin-top: 0.8rem;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    .card-content p {
+      margin-bottom: 1rem;
+      color: #555;
+    }
+
+    .learn-btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: #2979ff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: background-color 0.2s;
+    }
+
+    .learn-btn:hover {
+      background-color: #004ecb;
+    }
+
+    .arrow {
+      font-size: 1.2rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-5px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Practice Section */
+    .practice-section {
+      text-align: center;
+      margin: 3rem auto;
+      padding: 2rem;
+      max-width: 800px;
+      background-color: #f2f6ff;
+      border-radius: 10px;
+      border: 1px solid #2979ff;
+    }
+
+    .practice-section-icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .practice-section h4 {
+      color: #2979ff;
+      font-size: 1.4rem;
+    }
+
+    .practice-section p {
+      color: #444;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .practice-section a {
+      display: inline-block;
+      background-color: #2979ff;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .practice-section a:hover {
+      background-color: #0d47a1;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #2979ff;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="../../../Landing Page.html">A Guide to the IJSO</a>
+    </div>
+    <div class="navbar-right">
+      <a href="../../theory.html">Home</a>
+      <a href="../physics.html">Physics</a>
+      <a href="../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../../Biology/Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Mechanics</h1>
+    <p>Explore the fundamental principles of classical mechanics, including Newton's laws, forces, energy, momentum, fluid mechanics, and harmonic motion. Build a solid foundation for solving physics problems.</p>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>Mechanics</h2>
+    <a class="back-btn" href="../physics.html">← Back to Physics</a>
+  </div>
+
+  <!-- Cards -->
+  <div class="container">
+
+    <!-- Vectors -->
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+         Vectors<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Learn about vector quantities, vector addition, components, and operations in physical systems.</p>
+        <br>
+        <a class="learn-btn" href="Vectors/Vectors.html">Learn about Vectors →</a>
+      </div>
+    </div>
+
+    <!-- Newton's Laws -->
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+           Newton's Laws<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Explore the three fundamental laws that describe the relationship between motion and forces acting on a body.</p>
+          <br>
+          <a class="learn-btn" href="Newton's Laws/Newton's Laws.html">Learn about Newton's Laws →</a>
+        </div>
+      </div>
+
+      <!-- Forces and Friction -->
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+           Forces and Friction<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Study different types of forces and the role of friction in mechanical systems.</p>
+          <br>
+          <a class="learn-btn" href="Forces and Friction/Forces and Friction.html">Learn about Forces and Friction →</a>
+        </div>
+      </div>
+
+      <!-- Torque & Equilibrium -->
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+           Torque & Equilibrium<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Understand rotational force and conditions for static and dynamic equilibrium.</p>
+          <br>
+          <a class="learn-btn" href="">Learn about Torque & Equilibrium →</a>
+        </div>
+      </div>
+
+      <!-- Center of Mass -->
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+           Center of Mass<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Learn how to determine the center of mass for different objects and systems.</p>
+          <br>
+          <a class="learn-btn" href="">Learn about Center of Mass →</a>
+        </div>
+      </div>
+
+      <!-- Kinematic Formulas -->
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+           Kinematic Formulas<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Master the equations describing the motion of objects without considering the causes of motion.</p>
+          <br>
+          <a class="learn-btn" href="">Learn about Kinematic Formulas →</a>
+        </div>
+      </div>
+
+      <!-- Nature of Energy & Energy Conservation -->
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+           Nature of Energy & Energy Conservation<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Explore the fundamental concept of energy and the principle of energy conservation.</p>
+          <br>
+          <a class="learn-btn" href="Nature of Energy and Energy Conservation/Nature of Energy and Energy Conservation.html">Learn about Nature of Energy & Energy Conservation →</a>
+        </div>
+      </div>
+
+      <!-- Forms of Energy -->
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+           Forms of Energy<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Study different forms of energy including potential, kinetic, thermal, and others.</p>
+          <br>
+          <a class="learn-btn" href="Forms of Energy/Forms of Energy.html">Learn about Forms of Energy →</a>
+        </div>
+      </div>
+
+      <!-- Sources of Energy -->
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+           Sources of Energy<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Learn about various energy sources and their applications in physical systems.</p>
+          <br>
+          <a class="learn-btn" href="Sources of Energy/Sources of Energy.html">Learn about Sources of Energy →</a>
+        </div>
+      </div>
+
+      <!-- Mechanical Energy & Work -->
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+           Mechanical Energy & Work<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Understand the relationship between work, energy, and the conservation of mechanical energy.</p>
+          <br>
+          <a class="learn-btn" href="">Learn about Mechanical Energy & Work →</a>
+        </div>
+      </div>
+
+      <!-- Power & Efficiency -->
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+           Power & Efficiency<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Study the rate at which work is done and the concept of efficiency in energy conversion.</p>
+          <br>
+          <a class="learn-btn" href="">Learn about Power & Efficiency →</a>
+        </div>
+      </div>
+
+      <!-- Momentum & Conservation of Momentum -->
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+           Momentum & Conservation of Momentum<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Understand linear momentum and how it is conserved in isolated systems.</p>
+          <br>
+          <a class="learn-btn" href="Momentum and Conservation of Momentum/Momentum.html">Learn about Momentum & Conservation of Momentum →</a>
+        </div>
+      </div>
+
+      <!-- Elastic & Inelastic Collisions -->
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+           Elastic & Inelastic Collisions<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Explore different types of collisions and their relationship to energy and momentum conservation.</p>
+          <br>
+          <a class="learn-btn" href="Elastic & Inelastic Collisions/Elastic & Inelastic Collisions.html">Learn about Elastic & Inelastic Collisions →</a>
+        </div>
+      </div>
+
+      <!-- Centripetal Force -->
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+           Centripetal Force<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Study the force that makes an object follow a curved path around a central point.</p>
+          <br>
+          <a class="learn-btn" href="">Learn about Centripetal Force →</a>
+        </div>
+      </div>
+
+      <!-- Circular Kinematics -->
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+           Circular Kinematics<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Master the concepts of angular velocity, acceleration, and related variables in circular motion.</p>
+          <br>
+          <a class="learn-btn" href="">Learn about Circular Kinematics →</a>
+        </div>
+      </div>
+
+       <!-- Pressure & Pascal's Law -->
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+           Pressure & Pascal's Law<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Understand fluid pressure and Pascal's principle for pressure transmission in fluids.</p>
+          <br>
+          <a class="learn-btn" href="Pressure and Pascal's Law/Pressure.html">Learn about Pressure & Pascal's Law →</a>
+        </div>
+      </div>
+
+      <!-- Buoyancy & Archimedes' Principle -->
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+           Buoyance & Archimedes' Principle<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Study the upward force exerted by fluids on immersed objects and Archimedes' principle.</p>
+          <br>
+          <a class="learn-btn" href="Buoyancy & Arhcimedes' Principle/Buoyancy.html">Learn about Buoyancy & Archimedes' Principle →</a>
+        </div>
+      </div>
+
+       <!-- Bernoulli's Principle -->
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+            Bernoulli's Principle<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Explore the relationship between fluid pressure, velocity, and height in flowing fluids.</p>
+          <br>
+          <a class="learn-btn" href="">Learn about Bernoulli's Principle →</a>
+        </div>
+      </div>
+
+      <!-- Hooke's Law and Elastic Motion -->
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+            Hooke's Law and Elastic Motion<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Study the fundamental relationship between force, displacement, and the spring constant in elastic systems.</p>
+          <br>
+          <a class="learn-btn" href="">Learn about Hooke's Law and Elastic Motion →</a>
+        </div>
+      </div>
+
+       <!-- Harmonic Motion & Angular Frequency -->
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+            Harmonic Motion & Angular Frequency<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Understand simple harmonic motion, angular frequency, period, and amplitude in oscillating systems.</p>
+          <br>
+          <a class="learn-btn" href="">Learn about Harmonic Motion & Angular Frequency →</a>
+        </div>
+      </div>
+
+    <!-- Practice Section (NOT collapsible) -->
+    <div class="practice-section">
+      <div class="practice-section-icon">📘</div>
+      <div class="practice-section-content">
+        <h4>Ready to practice mechanics?</h4>
+        <p>Apply your knowledge with our collection of IJSO-style mechanics problems.</p>
+        <a href="#">View Mechanics Practice Problems</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 A Guide to the IJSO. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleCard(card) {
+      const content = card.querySelector('.card-content');
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach(c => {
+        if (c !== card) c.querySelector('.card-content').style.display = 'none';
+      });
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pressure and Pascal's Law</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- MathJax for LaTeX -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async 
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f8ff;
+      color: #333;
+      margin: 0;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #2979ff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    .navbar .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: white;
+    }
+
+    .navbar .nav-links a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .navbar .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Page header row */
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 900px;
+      margin: 2rem auto 1rem;
+      padding: 0 2rem;
+    }
+
+    .page-header h2 {
+      font-size: 1.8rem;
+      color: #2979ff;
+    }
+
+    .back-btn {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      color: #333;
+      transition: background-color 0.2s;
+    }
+
+    .back-btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    /* Main content */
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #223;
+    }
+
+    h2 {
+      color: #2b4a8b;
+      margin-top: 2rem;
+      border-bottom: 2px solid #e0e6f6;
+      padding-bottom: 0.3rem;
+    }
+
+    p, ul, ol {
+      line-height: 1.7;
+    }
+
+    ul li, ol li {
+      margin-bottom: 0.5rem;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin: 15px 0;
+    }
+
+    .footer {
+      background-color: #2979ff;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="../../../../Landing Page.html" class="logo">A Guide to the IJSO</a>
+    <div class="nav-links">
+      <a href="../../../theory.html">Home</a>
+      <a href="../../physics.html">Physics</a>
+      <a href="../../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../../../Biology/Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Pressure and Pascal's Law</h2>
+    <a href="../Mechanics.html" class="back-btn">← Back to Mechanics</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>Pressure and Pascal's Law</h1>
+
+    <h2>What is Pressure?</h2>
+    <p>Pressure is the force acting per unit area on a surface.</p>
+    <p>\[
+    P = \frac{F}{A}
+    \]</p>
+    <p>Where \( P \) is pressure, \( F \) is force, and \( A \) is area. Pressure is measured in pascals (Pa). \( 1 \, \text{Pa} = 1 \, \text{N/m}^2 \)</p>
+
+    <h2>Pressure in a Liquid Column</h2>
+    <p>In a fluid, pressure increases with depth. The pressure at depth \( h \) is given by:</p>
+    <p>\[
+    P = h\rho g
+    \]</p>
+    <p>Where \( h \) is the depth, \( \rho \) is the fluid density, and \( g \) is the acceleration due to gravity.</p>
+
+    <h2>Pascal’s Law</h2>
+    <p>Pascal’s law states that a change in pressure applied to an enclosed fluid is transmitted undiminished to all parts of the fluid and to the walls of its container.</p>
+
+    <!-- Replace this image src with your own local image later -->
+    <img src="image1.webp" alt="Pascal's Law Diagram">
+    <!-- ^^^ Your image file goes here -->
+
+    <p>This principle is the basis for hydraulic systems, which use an incompressible fluid to transmit force.</p>
+
+    <h2>Hydraulic Systems</h2>
+    <p>If a small force is applied to a small piston, it can be used to create a larger force on a larger piston.</p>
+    <p>\[
+    \frac{F_1}{A_1} = \frac{F_2}{A_2}
+    \]</p>
+    <p>Where \( F_1 \) and \( A_1 \) are the force and area on the small piston, and \( F_2 \), \( A_2 \) on the larger piston.</p>
+<br>
+<p>In the system of communicating vessels, surface level of still liquid is the same in all vessels.</p>
+    <!-- Replace this image src with your own local image later -->
+    <img src="image2.webp" alt="Hydraulic System Diagram">
+    <!-- ^^^ Your second image file goes here -->
+
+    <h2>Practice Problems</h2>
+    <ol>
+      <li>A force of 200 N is applied to a surface of area 0.5 m². Find the pressure.</li>
+      <li>Calculate the pressure at a depth of 10 m in water. (Use \( \rho = 1000 \, \text{kg/m}^3 \), \( g = 9.8 \, \text{m/s}^2 \))</li>
+      <li>In a hydraulic lift, the area of the small piston is 0.01 m² and that of the large piston is 0.5 m². If a force of 100 N is applied to the small piston, find the force exerted by the large piston.</li>
+    </ol>
+
+    <h2>Solutions</h2>
+    <ol>
+      <li>\( P = \frac{200}{0.5} = 400 \, \text{Pa} \)</li>
+      <li>\( P = 10 \cdot 1000 \cdot 9.8 = 98000 \, \text{Pa} \)</li>
+      <li>\( \frac{100}{0.01} = \frac{F}{0.5} \Rightarrow F = 5000 \, \text{N} \)</li>
+    </ol>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </footer>
+
+</body>
+</html>

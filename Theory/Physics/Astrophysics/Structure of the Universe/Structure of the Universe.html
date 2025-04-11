@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Structure of the Universe: Galaxies, Stars, and Planets</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f8ff;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #2979ff;
+      padding: 1rem 2rem;
+      color: white;
+    }
+
+    .navbar-left a {
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .navbar-right a {
+      margin-left: 1.5rem;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .navbar-right a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header Section */
+    .header-section {
+      background-color: #e3f2fd;
+      padding: 3rem 1rem 2rem;
+      text-align: center;
+    }
+
+    .header-section h1 {
+      font-size: 2.5rem;
+      color: #0d47a1;
+      margin-bottom: 1rem;
+    }
+
+    .header-section p {
+      font-size: 1rem;
+      color: #444;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* Top Bar Under Header */
+    .top-bar {
+      max-width: 900px;
+      margin: 1rem auto 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1rem;
+    }
+
+    .top-bar h2 {
+      color: #2979ff;
+      font-size: 1.5rem;
+    }
+
+    .back-btn {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #2979ff;
+      font-weight: 500;
+      transition: background-color 0.2s ease;
+    }
+
+    .back-btn:hover {
+      background-color: #e3f2fd;
+    }
+
+    /* Content Container */
+    .container {
+      max-width: 900px;
+      margin: 1rem auto 2rem;
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #2b4a8b;
+      margin-top: 2rem;
+      border-bottom: 2px solid #e0e6f6;
+      padding-bottom: 0.3rem;
+    }
+
+    h3 {
+      margin-top: 1.5rem;
+      color: #3c4f8b;
+    }
+
+    p, ul, ol {
+      line-height: 1.7;
+    }
+
+    ul li, ol li {
+      margin-bottom: 0.5rem;
+    }
+
+    .collapsible {
+      background-color: #e3ecff;
+      color: #000;
+      cursor: pointer;
+      padding: 12px 16px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
+      margin-top: 1.5rem;
+    }
+
+    .active, .collapsible:hover {
+      background-color: #d1dcff;
+    }
+
+    .content {
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      background-color: #f9fbff;
+      border-left: 4px solid #4a76d0;
+      border-radius: 0 0 6px 6px;
+    }
+
+    .content p {
+      margin: 10px 0;
+    }
+
+    figure {
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    figure img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    figcaption {
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #2979ff;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const coll = document.querySelectorAll('.collapsible');
+      coll.forEach(btn => {
+        btn.addEventListener('click', function () {
+          this.classList.toggle('active');
+          const content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + 'px';
+          }
+        });
+      });
+    });
+  </script>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="../../../../Landing Page.html">A Guide to the IJSO</a>
+    </div>
+    <div class="navbar-right">
+      <a href="../../../theory.html">Home</a>
+      <a href="../../physics.html">Physics</a>
+      <a href="../../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../../../Biology/Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <div class="header-section">
+    <h1>Structure of the Universe</h1>
+    <p>This page explores the large-scale structure of the universe, including galaxies, stars, and planetary systems.</p>
+  </div>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <h2>Structure of the Universe</h2>
+    <a class="back-btn" href="../Astrophysics.html">← Back to Astrophysics</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+
+    <h2>Galaxies</h2>
+    <p>Galaxies are enormous systems of stars, planets, gas, dust, and dark matter, held together by gravity. The universe contains billions of galaxies, each with millions to trillions of stars.</p>
+    <p>Space between galaxies is not empty - it is filled with intergalactic matter which has very low density.</p>
+
+    <button class="collapsible">Spiral Galaxies</button>
+    <div class="content">
+      <p>Spiral galaxies (such as the Milky Way) are the brightest, composed of white and blue stars. They look like rotating flat disks, with so-called “arms” - gas, dust and young stars in the form of a line curved around the centre. Spiral galaxies evolve into ellipticals as they get older.</p>
+      <figure>
+        <img src="image1.webp" alt="Spiral Galaxy">
+        <figcaption>Spiral Galaxy (source: NASA)</figcaption>
+      </figure>
+    </div>
+
+    <button class="collapsible">Elliptical Galaxies</button>
+    <div class="content">
+      <p>Elliptical galaxies range from spherical to elongated shapes. They are composed mostly of older stars and contain very little gas and dust, leading to little new star formation.</p>
+      <figure>
+        <img src="image2.webp" alt="Elliptical Galaxy">
+        <figcaption>Elliptical Galaxy (source: NASA)</figcaption>
+      </figure>
+    </div>
+
+    <button class="collapsible">Irregular Galaxies</button>
+    <div class="content">
+      <p>Irregular galaxies lack a defined shape. They often appear chaotic and are rich in gas and dust, with active star formation.</p>
+      <figure>
+        <img src="image3.jpeg" alt="Irregular Galaxy">
+        <figcaption>Irregular Galaxy (source: NASA)</figcaption>
+      </figure>
+    </div>
+
+    <h2>Stars</h2>
+    <p>Stars are spherical objects made out of matter in plasma state (gases heated to high enough temperatures that electrons are separated from the atoms, creating the mixture of ions and electrons - ionized gas). They shine because of thermonuclear fusion of hydrogen into helium in their core, which releases energy in the form of light.</p>
+    <p>Their life begins with the gravitational collapse of clouds of interstellar matter called nebulas, and ends with another gravitational collapse which happens when there is no more fuel left for thermonuclear reactions and creates a black hole.</p>
+    <p>Stars are classified by temperature and luminosity, which leads to the Hertzsprung-Russell diagram or H-R diagram.</p>
+    <figure>
+      <img src="image4.webp" alt="Hertzsprung-Russell Diagram">
+      <figcaption>Hertzsprung-Russell diagram</figcaption>
+    </figure>
+    <p>Most stars lie on the main sequence from bottom-right (cool and dim) to top-left (hot and bright). This is the stable phase where stars spend most of their lives. Giants and supergiants appear above the main sequence, while dwarfs are found below it.</p>
+
+    <h2>Planetary Systems</h2>
+    <p>A planetary system includes a star and all celestial bodies orbiting it. Our Solar System is a well-known example.</p>
+
+    <h2>Dwarf Planets</h2>
+    <p>Dwarf planets revolve around stars but haven’t cleared their orbits of other bodies, unlike true planets.</p>
+
+    <h2>Natural Satellites</h2>
+    <p>These are bodies (like moons) that orbit a planet within the same planetary system.</p>
+
+    <h2>Small Solar System Bodies</h2>
+    <p>These are objects that are not planets, dwarf planets, or natural satellites. They include comets and asteroids.</p>
+
+    <h3>Comets</h3>
+    <p>Comets are icy objects with a solid nucleus of rock, dust, and frozen gases. When near a star, they form glowing tails.</p>
+
+    <h3>Asteroids</h3>
+    <p>Asteroids are rocky bodies ranging in size. Their composition can be carbonaceous, silicate, or metallic.</p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Our Team | A Guide to the IJSO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f8ff;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #2979ff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      flex-wrap: wrap;
+    }
+
+    .navbar .logo {
+      color: white;
+      text-decoration: none;
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 180px;
+      top: 100%;
+      left: 0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      border-radius: 6px;
+    }
+
+    .dropdown-content a {
+      color: #2979ff;
+      padding: 10px 15px;
+      display: block;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f0f0f0;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    h2.section-title {
+      text-align: center;
+      color: #2979ff;
+      margin: 2rem 0 1rem;
+      font-size: 2rem;
+    }
+
+    .team-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0 2rem 2rem;
+    }
+
+    .member-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 250px;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .member-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .member-card h3 {
+      margin: 0.8rem 0 0.4rem;
+      color: #2b4a8b;
+    }
+
+    .view-all-btn {
+      display: inline-block;
+      margin: 2rem auto 4rem;
+      padding: 0.6rem 1.2rem;
+      font-size: 1rem;
+      color: #2979ff;
+      background: none;
+      border: 2px solid #2979ff;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.2s, color 0.2s;
+    }
+
+    .view-all-btn:hover {
+      background-color: #2979ff10;
+    }
+
+    .view-btn-container {
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      background-color: #2979ff;
+      color: white;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="../Landing Page.html" class="logo">A Guide to the IJSO</a>
+    <div class="nav-links">
+      <a href="../Landing Page.html">Home</a>
+      <a href="../Landing Page.html#about">About Us</a>
+      <a href="../Our Team/Team.html">Our Team</a>
+      <div class="dropdown">
+        <a href="">National Junior Science Olympiads ▾</a>
+        <div class="dropdown-content">
+          <a href="#">Home</a>
+          <a href="#">Australia</a>
+          <a href="#">Brazil</a>
+          <a href="#">Costa Rica</a>
+          <a href="#">Cyprus</a>
+          <a href="#">Estonia</a>
+          <a href="#">Germany</a>
+          <a href="#">Hong Kong</a>
+          <a href="#">India</a>
+          <a href="#">Lithuania</a>
+          <a href="#">Romania</a>
+          <a href="#">Serbia</a>
+          <a href="#">Sri Lanka</a>
+        </div>
+      </div>
+      <a href="../Theory/theory.html">Theory</a>
+      <a href="../Landing Page.html#contact">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- Leader Section -->
+  <h2 class="section-title">Leader</h2>
+  <div class="team-grid">
+    <div class="member-card">
+      <img src="leader.jpg" alt="Leader Photo">
+      <h3>Thenura Dilruk</h3>
+    </div>
+  </div>
+
+  <!-- Section Leaders -->
+  <h2 class="section-title">Section Leaders</h2>
+  <div class="team-grid">
+    <div class="member-card">
+      <img src="member3.jpg" alt="Member Photo">
+      <h3>Thenura Dilruk</h3>
+      <p>Leader - Physics</p>
+    </div>
+    <div class="member-card">
+      <img src="member1.jpg" alt="Member Photo">
+      <h3>Alex Jicu</h3>
+      <p>Joint Leader - Chemistry</p>
+    </div>
+    <div class="member-card">
+      <img src="member2.jpg" alt="Member Photo">
+      <h3>Cabir Abassov</h3>
+      <p>Joint Leader - Chemistry</p>
+    </div>
+    <div class="member-card">
+      <img src="member4.jpg" alt="Member Photo">
+      <h3>Ecaterina Zastanvetchi</h3>
+      <p>Leader - Biology</p>
+    </div>
+    <div class="member-card">
+      <img src="member5.jpg" alt="Member Photo">
+      <h3>Pavle Ignjatovic</h3>
+      <p>Website Head</p>
+    </div>
+    <div class="member-card">
+      <img src="member6.jpg" alt="Member Photo">
+      <h3>Filip Kilibarda</h3>
+      <p>Podcast Coordinator, Lead Writer</p>
+    </div>
+    <div class="member-card">
+      <img src="member7.jpg" alt="Member Photo">
+      <h3>Ayesha [Last Name]</h3>
+      <p>Lead Writer</p>
+    </div>
+    <div class="member-card">
+      <img src="member8.jpg" alt="Member Photo">
+      <h3>Lida [Last Name]</h3>
+      <p>Lead Writer</p>
+    </div>
+  </div>
+
+  <!-- Physics Team -->
+  <h2 class="section-title">Physics Team</h2>
+  <div class="team-grid">
+    <div class="member-card">
+      <img src="physics-leader.jpg" alt="Physics Leader">
+      <h3>Thenura Dilruk</h3>
+    </div>
+  </div>
+  <div class="team-grid">
+    <div class="member-card">
+      <img src="physics1.jpg" alt="Physics Member">
+      <h3>Alex Jicu</h3>
+    </div>
+    <div class="member-card">
+        <img src="physics1.jpg" alt="Physics Member">
+        <h3>Pavle Ignjatovic</h3>
+      </div>
+      <div class="member-card">
+        <img src="physics1.jpg" alt="Physics Member">
+        <h3>Filip Kilibarda</h3>
+      </div>
+      <div class="member-card">
+        <img src="physics1.jpg" alt="Physics Member">
+        <h3>Rares Muntean</h3>
+      </div>
+      <div class="member-card">
+        <img src="physics1.jpg" alt="Physics Member">
+        <h3>Rares Mihai</h3>
+      </div>
+      <div class="member-card">
+        <img src="physics1.jpg" alt="Physics Member">
+        <h3>Tereza [Last Name]</h3>
+      </div>
+      <div class="member-card">
+        <img src="physics1.jpg" alt="Physics Member">
+        <h3>Doyoon Kim</h3>
+      </div>
+      <div class="member-card">
+        <img src="physics1.jpg" alt="Physics Member">
+        <h3>Mateo Sancho</h3>
+      </div>
+      <div class="member-card">
+        <img src="physics1.jpg" alt="Physics Member">
+        <h3>Nemanja Maslak</h3>
+      </div>
+      <div class="member-card">
+        <img src="physics1.jpg" alt="Physics Member">
+        <h3>Petros [Last Name]</h3>
+      </div>
+      <div class="member-card">
+        <img src="physics1.jpg" alt="Physics Member">
+        <h3>Andrej Tasikj</h3>
+      </div>
+  </div>
+
+  <!-- Chemistry Team -->
+  <h2 class="section-title">Chemistry Team</h2>
+  <div class="team-grid">
+    <div class="member-card">
+      <img src="chem-leader1.jpg" alt="Chem Leader 1">
+      <h3>Alex Jicu</h3>
+    </div>
+    <div class="member-card">
+      <img src="chem-leader2.jpg" alt="Chem Leader 2">
+      <h3>Cabir Abassov</h3>
+    </div>
+  </div>
+  <div class="team-grid">
+    <div class="member-card">
+      <img src="chem1.jpg" alt="Chemistry Member">
+      <h3>Thenura Dilruk</h3>
+    </div>
+    <div class="member-card">
+        <img src="chem1.jpg" alt="Chemistry Member">
+        <h3>Filip Kilibards</h3>
+    </div>
+      <div class="member-card">
+        <img src="chem1.jpg" alt="Chemistry Member">
+        <h3>Filios Memstoudis</h3>
+      </div>
+      <div class="member-card">
+        <img src="chem1.jpg" alt="Chemistry Member">
+        <h3>Maria Mihai</h3>
+      </div>
+      <div class="member-card">
+        <img src="chem1.jpg" alt="Chemistry Member">
+        <h3>Maharat [Last Name]</h3>
+      </div>
+
+    
+  </div>
+
+  <!-- Biology Team -->
+  <h2 class="section-title">Biology Team</h2>
+  <div class="team-grid">
+    <div class="member-card">
+      <img src="bio-leader.jpg" alt="Bio Leader">
+      <h3>Ecaterina Zastanvetchi</h3>
+    </div>
+</div>
+  <div class="team-grid">
+    <div class="member-card">
+        <img src="bio1.jpg" alt="Biology Member">
+        <h3>Filip Kilibarda</h3>
+      </div>
+    <div class="member-card">
+      <img src="bio1.jpg" alt="Biology Member">
+      <h3>Josephine [Last Name]</h3>
+    </div>
+    <div class="member-card">
+        <img src="bio1.jpg" alt="Biology Member">
+        <h3>Tamara [Last Name]</h3>
+      </div>
+    <div class="member-card">
+        <img src="bio1.jpg" alt="Biology Member">
+        <h3>Chrysty [Last Name]</h3>
+    </div>
+    <div class="member-card">
+      <img src="bio1.jpg" alt="Biology Member">
+      <h3>Aisha [Last Name]</h3>
+  </div>
+    <div class="member-card">
+        <img src="bio1.jpg" alt="Biology Member">
+        <h3>Maria Mihai</h3>
+      </div>
+      <div class="member-card">
+        <img src="bio1.jpg" alt="Biology Member">
+        <h3>Butu "Jujen" Alexia</h3>
+      </div>
+      <div class="member-card">
+        <img src="bio1.jpg" alt="Biology Member">
+        <h3>Kasiban Parthipan</h3>
+      </div>
+      <div class="member-card">
+        <img src="bio1.jpg" alt="Biology Member">
+        <h3>Marie [Last Name]</h3>
+      </div>
+  </div>
+
+  <!-- Web Team -->
+  <h2 class="section-title">Website Team</h2>
+  <div class="team-grid">
+    <div class="member-card">
+      <img src="bio-leader.jpg" alt="Web Leader">
+      <h3>Pavle Ignjatovic</h3>
+    </div>
+  </div>
+  <div class="team-grid">
+    <div class="member-card">
+      <img src="bio1.jpg" alt="Web Member">
+      <h3>Thenura Dilruk</h3>
+    </div>
+    <div class="member-card">
+        <img src="bio1.jpg" alt="Web Member">
+        <h3>Filip Kilibarda</h3>
+      </div>
+    <div class="member-card">
+        <img src="bio1.jpg" alt="Web Member">
+        <h3>Cabir Abassov</h3>
+    </div>
+    <div class="member-card">
+        <img src="bio1.jpg" alt="Web Member">
+        <h3>'Dibu Dude'</h3>
+      </div>
+  </div>
+
+  <!-- View All Members Button -->
+  <div class="view-btn-container">
+    <a href="Archives.html" class="view-all-btn">Member Archives</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </footer>
+
+</body>
+</html>

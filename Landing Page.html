@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>IJSO Guide</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0a192f;
+      color: #fff;
+    }
+
+    /* Navbar */
+    nav {
+      background-color: #112240;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #64ffda;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #64ffda;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #112240;
+      min-width: 200px;
+      z-index: 1;
+      top: 100%;
+      left: 0;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 0.5rem 1rem;
+      color: #fff;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    .hero-box {
+      background-color: #112240;
+      padding: 3rem;
+      max-width: 600px;
+      margin: 3rem auto;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    .hero-box h1 {
+      margin-top: 0;
+      color: #64ffda;
+    }
+
+    .hero-box a {
+      display: inline-block;
+      margin: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #64ffda;
+      color: #0a192f;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero-box a:hover {
+      background-color: #52d3c6;
+    }
+
+    section {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      border-left: 5px solid #64ffda;
+      padding-left: 10px;
+      margin-bottom: 2rem;
+    }
+
+    .about-description {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .about-boxes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .about-box {
+      background-color: #112240;
+      padding: 1.5rem;
+      border-radius: 10px;
+      border: 1px solid #233554;
+      text-align: center;
+    }
+
+    .about-box h3 {
+      color: #64ffda;
+      margin-top: 0;
+    }
+
+    .about-box p {
+      font-size: 0.95rem;
+      margin: 0.5rem 0 0;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .feature-box {
+      background-color: #112240;
+      padding: 1.5rem;
+      border-radius: 10px;
+      border: 1px solid #233554;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .feature-box:hover {
+      background-color: #1b2d4a;
+    }
+
+    .feature-box h3 {
+      color: #64ffda;
+    }
+
+    .success-stories {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    .success-stories img {
+      width: 280px;
+      height: auto;
+      border-radius: 12px;
+      border: 2px solid #233554;
+      transition: transform 0.3s;
+    }
+
+    .success-stories img:hover {
+      transform: scale(1.05);
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      margin: auto;
+      gap: 1rem;
+    }
+
+    .contact input, .contact textarea {
+      padding: 0.8rem;
+      border-radius: 6px;
+      border: none;
+      font-size: 1rem;
+    }
+
+    .contact button {
+      background-color: #64ffda;
+      color: #0a192f;
+      padding: 0.8rem;
+      border: none;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #112240;
+      border-top: 2px solid #233554;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">A Guide to the IJSO</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="Our Team/Team.html"> Our Team</a></li>
+      <li class="dropdown">
+        <a href="#">National Junior Science Olympiads</a>
+        <div class="dropdown-content">
+          <a href="#">Home</a>
+          <a href="#">Australia</a>
+          <a href="#">Brazil</a>
+          <a href="#">Costa Rica</a>
+          <a href="#">Cyprus</a>
+          <a href="#">Estonia </a>
+          <a href="#">Germany </a>
+          <a href="#">Hong Kong </a>
+          <a href="#">India </a>
+          <a href="#">Lithuania </a>
+          <a href="#">Romania </a>
+          <a href="#">Serbia </a>
+          <a href="#">Sri Lanka </a>
+        </div>
+      </li>
+      <li><a href="Theory/theory.html">Theory</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero-box">
+    <h1>Your Ultimate Guide</h1>
+    <h1>to IJSO Preparation</h1>
+    <p>Comprehensive resources, past papers, solutions, and interactive quizzes – all in one place!</p>
+    <a href="Theory/theory.html">Start Learning</a>
+    <a href="Register/register.html">Join the Community</a>
+  </div>
+
+  <section id="about">
+    <h2>About the IJSO Guide</h2>
+    <p class="about-description">
+      Created by former IJSO medalists and science educators, this guide aims to provide accessible, high-quality resources for students preparing for the International Junior Science Olympiad. Our mission is to level the playing field and help students worldwide excel in science competitions.
+    </p>
+    <div class="about-boxes">
+      <div class="about-box">
+        <h3>Free & Open to All</h3>
+        <p>All resources are freely available to students worldwide, regardless of background.</p>
+      </div>
+      <div class="about-box">
+        <h3>Covers All Syllabus Topics</h3>
+        <p>Comprehensive coverage of physics, chemistry, and biology topics in the IJSO syllabus.</p>
+      </div>
+      <div class="about-box">
+        <h3>Past Papers and Solutions</h3>
+        <p>Access to previous years' national junior science olympiad papers with detailed, step-by-step solutions and explanations.</p>
+        </div>
+      <div class="about-box">
+        <h3>Mock Tests & Quizzes</h3>
+        <p>Interactive practice tests and quizzes to test knowledge and track progress.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <h2>Features</h2>
+    <div class="features">
+      <div class="feature-box" onclick="window.location.href='mock-tests.html'">
+        <h3>Mock Tests & Quizzes</h3>
+        <p>Practice with full-length, realistic mock exams with answers.</p>
+      </div>
+      <div class="feature-box" onclick="window.location.href='gay.html'">
+        <h3>National Junior Science Olympiad Papers</h3>
+        <p>Massive collection of national junior science olympiad papers of diffrent countriess.</p>
+      </div>
+      <div class="feature-box" onclick="window.location.href='common-mistakes.html'">
+        <h3>Common Mistakes & Tips</h3>
+        <p>Avoid frequent pitfalls and exam traps with this helpful guide.</p>
+      </div>
+      <div class="feature-box" onclick="window.location.href='study-materials.html'">
+        <h3>Study Materials</h3>
+        <p>Top books, notes, and links for mastering all IJSO topics.</p>
+      </div>
+      <div class="feature-box" onclick="window.location.href='mindset.html'">
+        <h3>Mindset & Motivation</h3>
+        <p>Learn from gold medalists how to think, work, and win.</p>
+      </div>
+      <div class="feature-box" onclick="window.location.href='lab-guide.html'">
+        <h3>Lab Apparatus Guide</h3>
+        <p>Understand and recognize all key experimental tools in physics, chem, and bio.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="success">
+    <h2>Success Stories</h2>
+    <div class="success-stories">
+      <img src="09EFA5C1-6098-4371-9402-DF98CF48F4DB.png" alt="Success Story 1">
+      <img src="A7045F35-0B8D-48CD-86B9-3FB7E19C3A38.png" alt="Success Story 2">
+      <img src="E05F1F60-8752-438D-A7EF-61132A1A4F22.png" alt="Success Story 3">
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>You could fill out this form or you could email us at ijsoguide@gmail.com</p>
+    <form action="mailto:ijsoguide@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="Name" placeholder="Your Name" required>
+      <input type="email" name="Email" placeholder="Your Email" required>
+      <textarea name="Message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 A Guide to the IJSO. All rights reserved.</p>
+    <p> Built by IJSO participants for future champions. 🌍</p>
+  </footer>
+
+</body>
+</html>

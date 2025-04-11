@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar System</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f8ff;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #2979ff;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar-left a {
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .navbar-right a {
+      margin-left: 1.5rem;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .navbar-right a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header */
+    .header-section {
+      background-color: #e3f2fd;
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+    }
+
+    .header-section h1 {
+      font-size: 2.5rem;
+      color: #0d47a1;
+      margin-bottom: 0.5rem;
+    }
+
+    .top-bar {
+      max-width: 900px;
+      margin: 1rem auto 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1rem;
+    }
+
+    .top-bar h2 {
+      font-size: 1.5rem;
+      color: #2979ff;
+    }
+
+    .back-btn {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #2979ff;
+      font-weight: 500;
+      transition: background-color 0.2s ease;
+    }
+
+    .back-btn:hover {
+      background-color: #e3f2fd;
+    }
+
+    /* Main Container */
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: 1rem auto 2rem;
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: #2b4a8b;
+      margin-top: 2rem;
+      border-bottom: 2px solid #e0e6f6;
+      padding-bottom: 0.3rem;
+    }
+
+    p, ul {
+      line-height: 1.7;
+      margin: 1rem 0;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .collapsible {
+      background-color: #e3ecff;
+      color: #000;
+      cursor: pointer;
+      padding: 12px 16px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 1.05rem;
+      font-weight: bold;
+      border-radius: 6px;
+      margin-top: 1.2rem;
+    }
+
+    .active, .collapsible:hover {
+      background-color: #d1dcff;
+    }
+
+    .content {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      background-color: #f9fbff;
+      border-left: 4px solid #4a76d0;
+      border-radius: 0 0 6px 6px;
+      margin-bottom: 1rem;
+    }
+
+    .content p {
+      margin: 10px 0;
+    }
+
+    figure {
+      margin: 1rem 0;
+      text-align: center;
+    }
+
+    figure img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    figcaption {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #2979ff;
+      color: white;
+      text-align: center;
+      padding: 1.2rem;
+      font-size: 0.9rem;
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const coll = document.querySelectorAll('.collapsible');
+      coll.forEach(btn => {
+        btn.addEventListener('click', function () {
+          this.classList.toggle('active');
+          const content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="../../../../Landing Page.html">A Guide to the IJSO</a>
+    </div>
+    <div class="navbar-right">
+      <a href="../../../theory.html">Home</a>
+      <a href="../../physics.html">Physics</a>
+      <a href="../../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../../../Biology/Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <div class="header-section">
+    <h1>Solar System</h1>
+  </div>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <h2>Solar System</h2>
+    <a class="back-btn" href="../Astrophysics.html">← Back to Astrophysics</a>
+  </div>
+
+  <!-- Content -->
+  <div class="container">
+
+    <p>Our planetary system is the Solar System. It contains one star (Sun), eight planets (Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune), five dwarf planets (Ceres, Pluto, Haumea, Makemake, Eris), and thousands of asteroids.</p>
+
+    <figure>
+      <img src="image1.webp" alt="Solar System">
+      <figcaption>Solar System</figcaption>
+    </figure>
+
+    <h2>Formation</h2>
+    <p>Solar System was formed around 4.5 billion years ago, after a collapse of a cloud of interstellar dust and gas which formed a solar nebula...</p>
+
+    <h2>Structure</h2>
+    <p>In the centre of the Solar System lays the Sun, its only star and reason for all objects being gravitationally pulled together...</p>
+
+    <h2>Sun</h2>
+    <p>The Sun is the main source of energy in the Solar System and emits light in all parts of the spectrum...</p>
+
+    <h2>Terrestrial Planets</h2>
+    <p>Terrestrial planets (Mercury, Venus, Earth, and Mars) are rocky planets close to the Sun...</p>
+    <ul>
+      <li><strong>Mercury:</strong> Smallest planet, no atmosphere or satellites.</li>
+      <li><strong>Venus:</strong> Hottest due to greenhouse effect, no moons.</li>
+      <li><strong>Mars:</strong> Red planet, possibly had water, 2 moons.</li>
+    </ul>
+
+    <h2>Earth</h2>
+    <p>Third planet from the Sun, supports life, 70% water surface...</p>
+    <p><strong>Moon:</strong> Earth's only natural satellite, no atmosphere or water.</p>
+
+    <h2>Jovian Planets</h2>
+    <p>Gaseous giants with no solid surface. Includes Jupiter, Saturn, Uranus, and Neptune.</p>
+    <ul>
+      <li><strong>Jupiter:</strong> Largest planet, strong magnetic field, 13 moons.</li>
+      <li><strong>Saturn:</strong> Famous for rings, low temperature, frozen gases.</li>
+      <li><strong>Uranus & Neptune:</strong> Furthest, low radiation, fast rotation.</li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </footer>
+
+</body>
+</html>

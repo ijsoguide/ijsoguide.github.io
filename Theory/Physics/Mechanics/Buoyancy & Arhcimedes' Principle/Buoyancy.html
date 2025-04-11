@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Buoyancy and Archimedes's Principle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- MathJax for LaTeX rendering -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async 
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f8ff;
+      color: #333;
+      margin: 0;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #2979ff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    .navbar .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: white;
+    }
+
+    .navbar .nav-links a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .navbar .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Page header row */
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 900px;
+      margin: 2rem auto 1rem;
+      padding: 0 2rem;
+    }
+
+    .page-header h2 {
+      font-size: 1.8rem;
+      color: #2979ff;
+    }
+
+    .back-btn {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      color: #333;
+      transition: background-color 0.2s;
+    }
+
+    .back-btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    /* Main container */
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #223;
+    }
+
+    h2 {
+      color: #2b4a8b;
+      margin-top: 2rem;
+      border-bottom: 2px solid #e0e6f6;
+      padding-bottom: 0.3rem;
+    }
+
+    h3 {
+      color: #2b4a8b;
+      margin-top: 1.5rem;
+    }
+
+    p, ul, ol {
+      line-height: 1.7;
+    }
+
+    ul li, ol li {
+      margin-bottom: 0.5rem;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin: 15px 0;
+    }
+
+    .footer {
+      background-color: #2979ff;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="../../../../Landing Page.html" class="logo">A Guide to the IJSO</a>
+    <div class="nav-links">
+      <a href="../../../theory.html">Home</a>
+      <a href="../../physics.html">Physics</a>
+      <a href="../../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../../../Biology/Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Page header row -->
+  <div class="page-header">
+    <h2>Buoyancy and Archimedes's Principle</h2>
+    <a href="../Mechanics.html" class="back-btn">← Back to Mechanics</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>Buoyancy and Archimedes's Principle</h1>
+
+    <h2>What is Buoyancy?</h2>
+    <p>When an object is placed in a fluid, it experiences an upward force exerted by the fluid called the buoyant force. This is due to the difference in pressure between the top and bottom surfaces of the object.</p>
+
+    <p>If the buoyant force is greater than the object's weight, it will float. If it is less, the object will sink. If the two forces are equal, the object remains suspended in the fluid.</p>
+
+    <h2>Archimedes’s Principle</h2>
+    <p>Archimedes’s principle states:</p>
+    <p><strong>The buoyant force acting on a body submerged in a fluid is equal to the weight of the fluid displaced by the body.</strong></p>
+
+    <p>\[
+    F_b = \rho \cdot V \cdot g
+    \]</p>
+
+    <p>Where:</p>
+    <ul>
+      <li>\( F_b \) is the buoyant force</li>
+      <li>\( \rho \) is the density of the fluid</li>
+      <li>\( V \) is the volume of the fluid displaced</li>
+      <li>\( g \) is the acceleration due to gravity</li>
+    </ul>
+
+
+    <h2>Apparent Weight</h2>
+    <p>Apparent weight is the weight of an object when it is submerged in a fluid. It is less than its actual weight because of the upward buoyant force acting on it.</p>
+    <p>\[
+    \text{Apparent weight} = \text{Actual weight} - \text{Buoyant force}
+    \]</p>
+
+    <h2>Applications of Archimedes’s Principle</h2>
+    <ul>
+      <li>Design of ships and submarines</li>
+      <li>Hydrometers (used to measure fluid density)</li>
+      <li>Measuring the volume and density of irregular objects</li>
+    </ul>
+
+    <h2>Practice Questions</h2>
+    <ol>
+      <li>A block of wood with volume \(0.02\, m^3\) is floating in water. What is the buoyant force acting on it?</li>
+      <li>A stone weighs 50 N in air and 30 N when submerged in water. What is the buoyant force?</li>
+      <li>A metal cube of volume \(0.005\, m^3\) is fully submerged in oil of density \(800\, kg/m^3\). Find the buoyant force. (Take \(g = 9.8\, m/s^2\))</li>
+    </ol>
+
+    <h2>Solutions</h2>
+    <ol>
+      <li>\(F_b = 1000 \cdot 0.02 \cdot 9.8 = 196\, N\)</li>
+      <li>Buoyant Force = 50 N - 30 N = 20 N</li>
+      <li>\(F_b = 800 \cdot 0.005 \cdot 9.8 = 39.2\, N\)</li>
+    </ol>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </footer>
+
+</body>
+</html>

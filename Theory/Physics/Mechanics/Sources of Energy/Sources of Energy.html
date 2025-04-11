@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sources of Energy</title>
+
+  <!-- MathJax for LaTeX rendering -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f8ff;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #2979ff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+    }
+
+    .navbar-left a {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .navbar-right a {
+      margin-left: 1.5rem;
+    }
+
+    /* Header */
+    .header {
+      background-color: #e3f2fd;
+      padding: 2.5rem 1rem 1.5rem;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 2.4rem;
+      color: #0d47a1;
+    }
+
+    /* Top Bar */
+    .top-bar {
+      max-width: 900px;
+      margin: 1rem auto 0;
+      padding: 0 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .top-bar h2 {
+      font-size: 1.5rem;
+      color: #2979ff;
+    }
+
+    .back-btn {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #2979ff;
+      font-weight: 500;
+      transition: background-color 0.2s ease;
+    }
+
+    .back-btn:hover {
+      background-color: #e3f2fd;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 1rem auto 2rem;
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #2b4a8b;
+      margin-top: 2rem;
+      border-bottom: 2px solid #e0e6f6;
+      padding-bottom: 0.3rem;
+    }
+
+    p, ul, ol {
+      line-height: 1.7;
+    }
+
+    ul li, ol li {
+      margin-bottom: 0.5rem;
+    }
+
+    code {
+      background-color: #eef;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      font-family: Consolas, monospace;
+    }
+
+    .collapsible {
+      background-color: #e3ecff;
+      color: #000;
+      cursor: pointer;
+      padding: 12px 16px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
+      margin-top: 1.5rem;
+    }
+
+    .active, .collapsible:hover {
+      background-color: #d1dcff;
+    }
+
+    .content {
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      background-color: #f9fbff;
+      border-left: 4px solid #4a76d0;
+      border-radius: 0 0 6px 6px;
+    }
+
+    .content ul {
+      margin: 1rem 0;
+    }
+
+    .content img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin: 15px 0;
+    }
+
+    .footer {
+      background-color: #2979ff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: white;
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const coll = document.querySelectorAll('.collapsible');
+      coll.forEach(btn => {
+        btn.addEventListener('click', function () {
+          this.classList.toggle('active');
+          const content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + 'px';
+          }
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="../../../../Landing Page.html">A Guide to the IJSO</a>
+    </div>
+    <div class="navbar-right">
+      <a href="../../../theory.html">Home</a>
+      <a href="../../physics.html">Physics</a>
+      <a href="../../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../../../Biology/Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Sources of Energy</h1>
+  </div>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <h2>Sources of Energy</h2>
+    <a class="back-btn" href="../Mechanics.html">← Back to Mechanics</a>
+  </div>
+
+  <!-- Original Content Container -->
+  <div class="container">
+    <h1>Sources of Energy</h1>
+
+    <p>Energy sources are materials or processes from which energy can be obtained for use in various applications, such as electricity generation, transportation, and industrial activities.</p>
+
+    <h2>Types of Energy Sources</h2>
+    <p>Energy sources can be categorized into two:</p>
+    <ul>
+      <li><strong>Renewable Sources</strong></li>
+      <li><strong>Non-Renewable Sources</strong></li>
+    </ul>
+
+    <h2>Renewable Energy Sources</h2>
+    <ul>
+      <li><strong>Solar Energy</strong> – Converts sunlight into electricity using solar panels  
+        <ul>
+          <li>✅ Pros: Clean, abundant, and low maintenance</li>
+          <li>❌ Cons: Weather-dependent, expensive initial setup</li>
+        </ul>
+      </li>
+<br>
+      <li><strong>Wind Energy</strong> – Uses turbines to convert wind into electricity  
+        <ul>
+          <li>✅ Pros: Renewable, no emissions</li>
+          <li>❌ Cons: Needs large land areas, noise pollution, wind dependency</li>
+        </ul>
+      </li>
+<br>
+      <li><strong>Hydropower</strong> – Uses flowing/falling water via dams or tides  
+        <ul>
+          <li>✅ Pros: Reliable, efficient, no fuel costs</li>
+          <li>❌ Cons: Ecosystem disruption, large infrastructure needed</li>
+        </ul>
+      </li>
+<br>
+      <li><strong>Geothermal Energy</strong> – Uses Earth's internal heat  
+        <ul>
+          <li>✅ Pros: Constant source, low emissions</li>
+          <li>❌ Cons: Location limited, costly drilling</li>
+        </ul>
+      </li>
+<br>
+      <li><strong>Biomass Energy</strong> – From organic materials (wood, crop waste, manure)  
+        <ul>
+          <li>✅ Pros: Reduces waste, renewable</li>
+          <li>❌ Cons: Deforestation, burning emissions</li>
+        </ul>
+      </li>
+    </ul>
+<br>
+    <h2>Non-Renewable Energy Sources</h2>
+    <ul>
+      <li><strong>Fossil Fuels</strong> – From decomposed plants/animals over millions of years  
+        <ul>
+          <li>✅ Pros: High energy output, widely available</li>
+          <li>❌ Cons: Pollution, global warming, finite supply</li>
+        </ul>
+      </li>
+<br>
+      <li><strong>Nuclear Energy</strong> – From nuclear fission (e.g., uranium-235)  
+        <ul>
+          <li>✅ Pros: High efficiency, low carbon emissions</li>
+          <li>❌ Cons: Radiation risk, nuclear waste disposal</li>
+        </ul>
+      </li>
+    </ul>
+<br>
+    <button class="collapsible">Reminder: Sustainability and the Future</button>
+    <div class="content">
+      <ul>
+        <li>Scientists are researching new sustainable energy solutions like fusion power and hydrogen fuel cells.</li>
+        <li>The world is shifting toward renewables to reduce emissions and combat climate change.</li>
+        <li>Improving energy efficiency is key to a sustainable future 🌱</li>
+      </ul>
+    </div>
+    
+  </div>
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+</body>
+</html>
