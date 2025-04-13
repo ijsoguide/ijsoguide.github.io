@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mechanical Energy and Work</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- MathJax for LaTeX -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f8ff;
+      color: #333;
+      margin: 0;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #2979ff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      flex-wrap: wrap;
+    }
+
+    .navbar .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: white;
+    }
+
+    .nav-links a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Page header row */
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 900px;
+      margin: 2rem auto 1rem;
+      padding: 0 2rem;
+    }
+
+    .page-header h2 {
+      font-size: 1.8rem;
+      color: #2979ff;
+    }
+
+    .back-btn {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      color: #333;
+      transition: background-color 0.2s;
+    }
+
+    .back-btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #223;
+    }
+
+    h2 {
+      color: #2b4a8b;
+      margin-top: 2rem;
+      border-bottom: 2px solid #e0e6f6;
+      padding-bottom: 0.3rem;
+    }
+
+    p, ul, ol {
+      line-height: 1.7;
+    }
+
+    .collapsible {
+      background-color: #e3ecff;
+      color: #000;
+      cursor: pointer;
+      padding: 12px 16px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
+      margin-top: 1.5rem;
+    }
+
+    .active, .collapsible:hover {
+      background-color: #d1dcff;
+    }
+
+    .content {
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      background-color: #f9fbff;
+      border-left: 4px solid #4a76d0;
+      border-radius: 0 0 6px 6px;
+    }
+
+    .content p, .content ul {
+      margin: 1rem 0;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: white;
+      background-color: #2979ff;
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const coll = document.querySelectorAll('.collapsible');
+      coll.forEach(btn => {
+        btn.addEventListener('click', function () {
+          this.classList.toggle('active');
+          const content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + 'px';
+          }
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="../../../../index.html" class="logo">A Guide to the IJSO</a>
+    <div class="nav-links">
+      <a href="../../../theory.html">Home</a>
+      <a href="../../physics.html">Physics</a>
+      <a href="../../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../../../Biology/Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Mechanical Energy and Work</h2>
+    <a href="../Mechanics.html" class="back-btn">← Back to Mechanics</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h2>Introduction to Work and Energy</h2>
+    <p>In physics, work is done when a force is applied to an object, and the object moves in the direction of the force. Mathematically, it is given by:</p>
+    <p>\( W = Fd \cos \theta \)</p>
+    <p>Where \( W \) = Work, \( F \) = Force, \( d \) = displacement of the object, \( \theta \) = angle between the force and displacement</p>
+
+    <h2>Key Conditions for Work to Be Done</h2>
+    <ol>
+      <li>A force must be applied.</li>
+      <li>The object must move.</li>
+      <li>The force must have a component along the direction of motion (if \( \theta = 90^\circ \), no work is done).</li>
+    </ol>
+
+    <h2>Types of Work</h2>
+    <ul>
+      <li><strong>Positive Work (W > 0):</strong> When the force and displacement are in the same direction (e.g., lifting an object).</li>
+      <li><strong>Negative Work (W < 0):</strong> When the force opposes the displacement (e.g., friction slowing down an object).</li>
+      <li><strong>Zero Work (W = 0):</strong> When there is no movement or force is perpendicular to displacement.</li>
+    </ul>
+
+    <p>Energy is the ability to do work. It is a fundamental quantity in physics that can exist in various forms and can be transferred or transformed but not created or destroyed (according to the law of conservation of energy).</p>
+    <p>You are already familiar with Energy, Conservation of Energy, Forms of Energy and Sources of Energy from the previous chapters.</p>
+
+    <h2>Types of Mechanical Energy</h2>
+    <ul>
+      <li><strong>Kinetic Energy (KE):</strong> \( KE = \frac{1}{2}mv^2 \)</li>
+      <li><strong>Potential Energy (PE):</strong>
+        <ul>
+          <li>Gravitational PE: \( PE = mgh \)</li>
+          <li>Elastic PE: \( PE = \frac{1}{2}kx^2 \)</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Relationship Between Work Done and Energy</h2>
+    <p>The relationship between them is described by the work-energy theorem, which states:</p>
+    <p>\( \text{Work done on an object} = \text{Change in its energy} \)</p>
+    <p>\( W = \Delta E \)</p>
+
+    <button class="collapsible">Example 1</button>
+    <div class="content">
+      <p>A person pushes a 10 kg box with a force of 20 N over a distance of 5 m on a frictionless surface. How much work is done by the person?</p>
+      <p>\( W = Fd \cos \theta = 20 \times 5 \times \cos 0 = 100 \, \text{J} \)</p>
+    </div>
+
+    <button class="collapsible">Example 2</button>
+    <div class="content">
+      <p>A ball of mass 2 kg is thrown vertically upward with an initial velocity of 15 m/s. How high will it rise before stopping?</p>
+      <p>Using conservation of energy:</p>
+      <p>\( KE_i = GPE_f \)</p>
+      <p>\( \frac{1}{2}mv^2 = mgh \Rightarrow \frac{1}{2}(2)(15^2) = 2 \cdot 9.8 \cdot h \)</p>
+      <p>\( h = 11.48 \, \text{m} \)</p>
+    </div>
+
+    <button class="collapsible">Example 3</button>
+    <div class="content">
+      <p>A 50 kg cyclist is moving at 10 m/s. If the cyclist stops by applying brakes that exert a constant friction force of 200 N, what is the stopping distance?</p>
+      <p>\( \Delta KE = \text{Work Done} = Fd \Rightarrow \frac{1}{2}mv^2 = Fd \)</p>
+      <p>\( \frac{1}{2} \cdot 50 \cdot 10^2 = 200d \Rightarrow d = 12.5 \, \text{m} \)</p>
+    </div>
+
+    <button class="collapsible">Example 4</button>
+    <div class="content">
+      <p>A pendulum is released from rest at a height of 2 m. What will be its speed at the lowest point?</p>
+      <p>\( GPE = KE \Rightarrow mgh = \frac{1}{2}mv^2 \Rightarrow v = \sqrt{2gh} = \sqrt{2 \cdot 9.8 \cdot 2} = 6.26 \, \text{m/s} \)</p>
+    </div>
+
+    <h2>Practice Questions</h2>
+    <ol>
+      <li>A car of mass 1200 kg is moving with a velocity of 20 m/s. Calculate its kinetic energy.</li>
+      <li>A projectile of mass 500 g is fired at 500 m/s at an angle. Calculate its total mechanical energy at the highest point.</li>
+      <li>A block of mass 4 kg slides down a frictionless incline from a height of 3 m. Find its velocity at the bottom of the incline.</li>
+      <li>A 5 kg rock falls from a height of 10 m. Calculate its speed just before it hits the ground.</li>
+    </ol>
+
+    <h2>Answers</h2>
+    <ol>
+      <li>240,000 J</li>
+      <li>62,500 J</li>
+      <li>7.67 m/s</li>
+      <li>14 m/s</li>
+    </ol>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+</body>
+</html>
