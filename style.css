@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   background-color: #0a192f;
-  color: #fff;
+  color: #f0e9d6;
 }
 
 html {
@@ -17,51 +17,70 @@ nav {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  position: relative;
 }
 
-nav a {
+nav a{
   text-decoration: none;
 }
 
 nav .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #64ffda;
+  color: #ff9933;
+  z-index: 1001;
 }
 
+/* Hamburger styling */
 .nav-toggle {
   display: none;
   flex-direction: column;
   cursor: pointer;
+  z-index: 1001;
 }
 
 .nav-toggle span {
   height: 3px;
   width: 25px;
-  background: #64ffda;
+  background: #ff9933;
   margin: 4px 0;
   transition: 0.4s;
+  border-radius: 2px;
 }
 
-nav ul {
+/* Animate hamburger into X */
+#nav-toggle:checked + .nav-toggle span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 10px);
+}
+#nav-toggle:checked + .nav-toggle span:nth-child(2) {
+  opacity: 0;
+}
+#nav-toggle:checked + .nav-toggle span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -9px);
+}
+
+/* Menu styles */
+ul.menu {
   list-style: none;
   display: flex;
   gap: 1.5rem;
   margin: 0;
   padding: 0;
+  transition: all 0.3s ease;
 }
 
-nav ul li {
+ul.menu li {
   position: relative;
 }
 
-nav ul li a {
+ul.menu li a {
   color: #fff;
   transition: color 0.3s;
+  text-decoration: none;
 }
 
-nav ul li a:hover {
-  color: #64ffda;
+ul.menu li a:hover {
+  color: #ff9933;
 }
 
 .dropdown-content {
@@ -69,9 +88,9 @@ nav ul li a:hover {
   position: absolute;
   background-color: #112240;
   min-width: 200px;
-  z-index: 1;
   top: 100%;
   left: 0;
+  z-index: 999;
 }
 
 .dropdown-content a {
@@ -83,27 +102,43 @@ nav ul li a:hover {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
-
+#nav-toggle:checked ~ ul.menu {
+  backdrop-filter: blur(1000px);
+}
 @media (max-width: 768px) {
   .nav-toggle {
     display: flex;
   }
 
-  nav ul {
-    width: 100%;
+  ul.menu {
     flex-direction: column;
-    display: none;
+    background-color: #112240;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    padding: 0.5rem;
+    margin: 0;
+    transition: right 0.3s ease-in-out, opacity 0.3s ease;
+    opacity: 0;
+    z-index: 1000;
   }
 
-  nav ul.show {
-    display: flex;
+  
+  #nav-toggle:checked ~ ul.menu {
+    right: 0; 
+    opacity: 1;
+  }
+
+  ul.menu li {
+    padding: 1rem 0;
+    border-bottom: 1px solid #444;
   }
 
   .dropdown-content {
     position: static;
     background: none;
-    box-shadow: none;
   }
 
   .dropdown:hover .dropdown-content {
@@ -113,12 +148,7 @@ nav ul li a:hover {
   .dropdown-content a {
     padding-left: 2rem;
   }
-
-  nav ul li {
-    width: 100%;
-  }
 }
-
 header {
   text-align: center;
   padding: 3rem 1rem;
@@ -136,14 +166,14 @@ header {
 
 .hero-box h1 {
   margin-top: 0;
-  color: #64ffda;
+  color: #ff9933;
 }
 
 .hero-box a {
   display: inline-block;
   margin: 1rem;
   padding: 0.75rem 1.5rem;
-  background-color: #64ffda;
+  background-color: #ff9933;
   color: #0a192f;
   border-radius: 6px;
   text-decoration: none;
@@ -151,7 +181,7 @@ header {
 }
 
 .hero-box a:hover {
-  background-color: #52d3c6;
+  background-color: #fbb46d;
 }
 
 section {
@@ -162,7 +192,7 @@ section {
 
 h2 {
   font-size: 2rem;
-  border-left: 5px solid #64ffda;
+  border-left: 5px solid #ff9933;
   padding-left: 10px;
   margin-bottom: 2rem;
 }
@@ -191,7 +221,7 @@ h2 {
 }
 
 .about-box h3 {
-  color: #64ffda;
+  color: #ff9933;
   margin-top: 0;
 }
 
@@ -215,7 +245,7 @@ h2 {
 }
 
 .feature-box h3 {
-  color: #64ffda;
+  color: #ff9933;
 }
 
 .success-stories {
@@ -243,6 +273,7 @@ h2 {
   max-width: 500px;
   margin: auto;
   gap: 1rem;
+
 }
 
 .contact input,
@@ -250,11 +281,13 @@ h2 {
   padding: 0.8rem;
   border-radius: 6px;
   border: none;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  background-color: #ff9933;
+  color: #0a192f
 }
 
 .contact button {
-  background-color: #64ffda;
+  background-color: #ff9933;
   color: #0a192f;
   padding: 0.8rem;
   border: none;
