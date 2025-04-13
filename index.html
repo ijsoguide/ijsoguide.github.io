@@ -4,38 +4,46 @@
   <meta charset="UTF-8" />
   <title>IJSO Guide</title>
   <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
   <nav>
-    <a href="./index.html"><div class="logo">A Guide to the IJSO</div></a>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="Our Team/Team.html"> Our Team</a></li>
-      <li class="dropdown">
-        <a href="#">National Junior Science Olympiads</a>
-        <div class="dropdown-content">
-          <a href="#">Home</a>
-          <a href="#">Australia</a>
-          <a href="#">Brazil</a>
-          <a href="#">Costa Rica</a>
-          <a href="#">Cyprus</a>
-          <a href="#">Estonia </a>
-          <a href="#">Germany </a>
-          <a href="#">Hong Kong </a>
-          <a href="#">India </a>
-          <a href="#">Lithuania </a>
-          <a href="#">Romania </a>
-          <a href="#">Serbia </a>
-          <a href="#">Sri Lanka </a>
-        </div>
-      </li>
-      <li><a href="Theory/theory.html">Theory</a></li>
-      <li><a href="">Podcasts</a></li>
-      <li><a href="#contact">Contact Us</a></li>
-    </ul>
-  </nav>
+  <a href="./index.html"><div class="logo">A Guide to the IJSO</div></a>
+
+  <div class="nav-toggle" onclick="document.querySelector('nav ul').classList.toggle('show')">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="Our Team/Team.html">Our Team</a></li>
+    <li class="dropdown">
+      <a href="#">National Junior Science Olympiads</a>
+      <div class="dropdown-content">
+        <a href="#">Home</a>
+        <a href="#">Australia</a>
+        <a href="#">Brazil</a>
+        <a href="#">Costa Rica</a>
+        <a href="#">Cyprus</a>
+        <a href="#">Estonia</a>
+        <a href="#">Germany</a>
+        <a href="#">Hong Kong</a>
+        <a href="#">India</a>
+        <a href="#">Lithuania</a>
+        <a href="#">Romania</a>
+        <a href="#">Serbia</a>
+        <a href="#">Sri Lanka</a>
+      </div>
+    </li>
+    <li><a href="Theory/theory.html">Theory</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+  </ul>
+</nav>
+
 
   <div class="hero-box">
     <h1>Your Ultimate Guide</h1>
@@ -62,7 +70,7 @@
       <div class="about-box">
         <h3>Past Papers and Solutions</h3>
         <p>Access to previous years' national junior science olympiad papers with detailed, step-by-step solutions and explanations.</p>
-        </div>
+      </div>
       <div class="about-box">
         <h3>Mock Tests & Quizzes</h3>
         <p>Interactive practice tests and quizzes to test knowledge and track progress.</p>
@@ -122,8 +130,15 @@
 
   <footer>
     <p>&copy; 2025 A Guide to the IJSO. All rights reserved.</p>
-    <p> Built by IJSO participants for future champions. 🌍</p>
+    <p>Built by IJSO participants for future champions. 🌍</p>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector("nav ul");
+      menu.classList.toggle("show");
+    }
+  </script>
 
 </body>
 </html>
