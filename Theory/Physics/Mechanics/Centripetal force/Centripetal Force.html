@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Centripetal Force</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- MathJax for LaTeX -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f8ff;
+      margin: 0;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #2979ff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      flex-wrap: wrap;
+    }
+
+    .navbar .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: white;
+    }
+
+    .nav-links a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 900px;
+      margin: 2rem auto 1rem;
+      padding: 0 2rem;
+    }
+
+    .page-header h2 {
+      font-size: 1.8rem;
+      color: #2979ff;
+    }
+
+    .back-btn {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      color: #333;
+      transition: background-color 0.2s;
+    }
+
+    .back-btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #223;
+    }
+
+    h2 {
+      color: #2b4a8b;
+      margin-top: 2rem;
+      border-bottom: 2px solid #e0e6f6;
+      padding-bottom: 0.3rem;
+    }
+
+    p, ul, ol {
+      line-height: 1.7;
+    }
+
+    ul li, ol li {
+      margin-bottom: 0.5rem;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin: 1rem 0;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: white;
+      background-color: #2979ff;
+    }
+
+    .note {
+      background: #e3ecff;
+      padding: 10px 15px;
+      border-left: 4px solid #4a76d0;
+      border-radius: 6px;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="../../../../index.html" class="logo">A Guide to the IJSO</a>
+    <div class="nav-links">
+      <a href="../../../theory.html">Home</a>
+      <a href="../../physics.html">Physics</a>
+      <a href="../../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../../../Biology/Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Header with title + back to mechanics -->
+  <div class="page-header">
+    <h2>Centripetal Force</h2>
+    <a href="../Mechanics.html" class="back-btn">← Back to Mechanics</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+
+    <p>Centripetal force is a fundamental concept in physics that explains why objects move in circular 
+    paths. It is the force acting on a body moving in a circular path, directed towards the center 
+    around which the object moves. This inward force ensures that the object remains on its curved 
+    trajectory rather than continuing in a straight line.</p>
+
+    <h2>Formula</h2>
+    <p>As with any other force, the centripetal force follows Newton’s Second Law:</p>
+    <p>\[ F_C = m \cdot a_c \]</p>
+
+    <ul>
+      <li>\( F_C \): centripetal force</li>
+      <li>\( m \): mass of the object</li>
+      <li>\( a_c \): centripetal acceleration of the object</li>
+    </ul>
+
+    <p>Centripetal acceleration is defined by the following formula:</p>
+    <p>\[ a_c = \frac{v^2}{R} = \omega^2 \cdot R \]</p>
+
+    <ul>
+      <li>\( v \): velocity of the object<sup>1</sup></li>
+      <li>\( R \): radius of the circular path</li>
+      <li>\( \omega \): angular velocity of the object</li>
+    </ul>
+    <img src="image1.png" alt="Image 1"/>
+
+    <p><sup>1</sup>Usually the tangential velocity of the object, except in some problems that involve rolling with sliding.</p>
+
+    <h2>Examples of Centripetal Force</h2>
+    <ul>
+      <li>The tension in the rope on a tetherball serves as the centripetal force keeping the ball 
+      in circular motion around the pole.</li>
+      <img src="image2.png" alt="Image 2"/>
+
+      <li>Friction between both wheels and the floor provides the necessary centripetal force for 
+      a biker to turn in circles.</li>
+    <img src="image3.png" alt="Image 3"/>   
+
+      <li>The gravitational pull of Earth on the Moon acts as the centripetal force maintaining the 
+      Moon's orbit around Earth.</li>
+    </ul>
+
+    <div class="note">
+      Note: For further understanding of the topic, check out the next topic "Circular Kinematics.”
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+
+</body>
+</html>

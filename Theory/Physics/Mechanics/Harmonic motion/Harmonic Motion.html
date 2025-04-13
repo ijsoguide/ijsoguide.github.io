@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Harmonic Motion and Angular Frequency</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async 
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f4f8ff;
+      color: #333;
+    }
+
+    .navbar {
+      background-color: #2979ff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      flex-wrap: wrap;
+    }
+
+    .navbar .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: white;
+    }
+
+    .nav-links a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 900px;
+      margin: 2rem auto 1rem;
+      padding: 0 2rem;
+    }
+
+    .header-row h2 {
+      font-size: 1.8rem;
+      color: #2979ff;
+    }
+
+    .back-btn {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .back-btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #2b4a8b;
+      margin-top: 2rem;
+      border-bottom: 2px solid #e0e6f6;
+      padding-bottom: 0.3rem;
+    }
+
+    p, ul, ol {
+      line-height: 1.7;
+    }
+
+    ul li, ol li {
+      margin-bottom: 0.5rem;
+    }
+
+    .collapsible {
+      background-color: #e3ecff;
+      color: #000;
+      cursor: pointer;
+      padding: 12px 16px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
+      margin-top: 1.5rem;
+    }
+
+    .active, .collapsible:hover {
+      background-color: #d1dcff;
+    }
+
+    .content {
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      background-color: #f9fbff;
+      border-left: 4px solid #4a76d0;
+      border-radius: 0 0 6px 6px;
+    }
+
+    .content p, .content ul {
+      margin: 1rem 0;
+    }
+
+    img {
+      max-width: 100%;
+      margin: 10px 0;
+      border-radius: 8px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: white;
+      background-color: #2979ff;
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const coll = document.querySelectorAll('.collapsible');
+      coll.forEach(btn => {
+        btn.addEventListener('click', function () {
+          this.classList.toggle('active');
+          const content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + 'px';
+          }
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="../Landing Page.html" class="logo">A Guide to the IJSO</a>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Physics</a>
+      <a href="#">Chemistry</a>
+      <a href="#">Biology</a>
+    </div>
+  </nav>
+
+  <div class="header-row">
+    <h2>Harmonic Motion and Angular Frequency</h2>
+    <a href="../Mechanics.html" class="back-btn">← Back to Mechanics</a>
+  </div>
+
+  <div class="container">
+    <h2>What is Simple Harmonic Motion (SHM)?</h2>
+    <p>Simple Harmonic Motion is a type of oscillatory motion where the restoring force is directly proportional to displacement and always acts towards the equilibrium position.</p>
+    <p>In other words, if you pull a spring or a pendulum from its resting point, it’ll try to return — and if there’s no energy loss, it’ll keep going back and forth!</p>
+    <p>\( F = -kx \)</p>
+    <p>\( a = -\frac{k}{m}x = \omega^2 x \)</p>
+
+    <ul>
+      <li>x = displacement</li>
+      <li>\( \omega \) = angular frequency</li>
+      <li>k = spring constant</li>
+      <li>m = mass of the object</li>
+    </ul>
+
+    <h2>Angular Frequency (\( \omega \))</h2>
+    <p>Angular frequency tells us how fast the object is oscillating in terms of angle per second.</p>
+    <p>\( \omega = 2\pi f = \sqrt{\frac{k}{m}} \)</p>
+    <ul>
+      <li>f = frequency (in Hz)</li>
+      <li>\( \omega \) = angular frequency (in rad/s)</li>
+    </ul>
+
+    <p>This is used in formulas like:</p>
+    <p>\( x(t) = A \cos(\omega t + \phi) \)</p>
+    <p>\( v(t) = -A\omega \sin(\omega t + \phi) \)</p>
+    <p>\( a(t) = -A\omega^2 \cos(\omega t + \phi) \)</p>
+
+    <h2>Important Terms</h2>
+    <ul>
+      <li>Amplitude, A – Maximum displacement from the equilibrium</li>
+      <li>Period,  \( T = \frac{2\pi}{\omega} \)</li>
+      <li>Frequency, \( f = \frac{1}{T} \)</li>
+      <li>Angular frequency, \( \omega = 2\pi f \)</li>
+    </ul>
+    <img src="image1.png" alt="Image1"/>
+
+    <h2>Examples of SHM</h2>
+    <ul>
+      <li>A mass on a spring</li>
+      <li>A pendulum (small angles only!)</li>
+      <li>An oscillating tuning fork</li>
+      <li>A floating object in water (vertical SHM)</li>
+    </ul>
+    <img src="image2.png" alt="Image2"/>
+
+    <h2>Energy</h2>
+    <p>Energy of a simple harmonic motion can be written as</p>
+    <p>\( E = \frac{1}{2}kx^2 \)</p>
+    <p>Learn how to use energy:</p>
+    <p>\( E = \frac{1}{2}kA^2 = \frac{1}{2}kx^2 + \frac{1}{2}mv^2 \)</p>
+
+    <p>• Be comfortable switching between force, energy, and acceleration forms.</p>
+    <p>• Understand when SHM doesn’t apply (e.g. damping, large angles in pendulums).</p>
+
+    <button class="collapsible">Example 1</button>
+    <div class="content">
+      <p><strong>Image Placeholder Here</strong></p>
+      <p>Given: m = 0.5 kg, k = 200 N/m, A = 4 cm</p>
+      <p>(a) \( \omega = \sqrt{\frac{k}{m}} = \sqrt{\frac{200}{0.5}} = 20 \text{ rad/s} \)</p>
+      <p>f = \( \frac{\omega}{2\pi} = \frac{20}{2\pi} = 3.18 \text{ Hz} \), T = \( \frac{1}{3.18} = 0.314 \text{ s} \)</p>
+      <p>(b) \( v = \sqrt{\frac{kA^2}{m}} = \sqrt{\frac{200 \cdot 0.04^2}{0.5}} = 0.253 \, \text{ms}^{-1} \)</p>
+    </div>
+
+    <button class="collapsible">Example 2</button>
+    <div class="content">
+      <p>Equation: \( x(t) = 0.1 \cos(5t) \)</p>
+      <p>(a) A = 0.1 m, \( \omega = 5 \text{ rad/s} \)</p>
+      <p>(b) \( v = A\omega = 0.1 \cdot 5 = 0.5 \text{ m/s} \), \( a = A\omega^2 = 0.1 \cdot 25 = 2.5 \text{ m/s}^2 \)</p>
+      <p>(c) \( T = \frac{2\pi}{\omega} = \frac{2\pi}{5} = 1.26 \text{ s} \)</p>
+    </div>
+
+    <button class="collapsible">Example 3</button>
+    <div class="content">
+      <p><strong>Image Placeholder Here</strong></p>
+      <p>Effective spring constant: \( k_{\text{eff}} = 2k \)</p>
+      <p>Angular frequency: \( \omega = \sqrt{\frac{2k}{m}} \)</p>
+    </div>
+
+    <h2>SHM in a Simple Pendulum</h2>
+    <p>Restoring force: \( F = -mg\sin(\theta) \)</p>
+    <p>Small angle approximation: \( \sin\theta \approx \theta \), so \( F \approx -mg\frac{x}{L} \)</p>
+    <p>Therefore, SHM applies.</p>
+
+    <ul>
+      <li>\( T = 2\pi\sqrt{\frac{L}{g}} \)</li>
+      <li>\( f = \frac{1}{T} = \frac{1}{2\pi} \sqrt{\frac{g}{L}} \)</li>
+      <li>\( \omega = \sqrt{\frac{g}{L}} \)</li>
+    </ul>
+
+    <h2>When SHM Doesn’t Work</h2>
+    <ul>
+      <li>Large angles: \( \sin\theta \neq \theta \)</li>
+      <li>Friction or damping</li>
+      <li>Complex motion (e.g. double pendulums)</li>
+    </ul>
+
+    <button class="collapsible">Example 4</button>
+    <div class="content">
+      <p>\( L = \left(\frac{T}{2\pi}\right)^2 g = \left(\frac{2}{2\pi}\right)^2 \cdot 9.8 = 0.993 \, \text{m} \)</p>
+    </div>
+
+    <button class="collapsible">Example 5</button>
+    <div class="content">
+      <p>If L increases by 44%, T increases by 20%</p>
+    </div>
+
+    <h2>Practice Questions</h2>
+    <ol>
+      <li>A simple pendulum of length 1 meter is oscillating with a small amplitude.
+        <ul>
+          <li>(a) What is its period?</li>
+          <li>(b) How does the period change if taken to the Moon (gravity = 1/6 Earth)?</li>
+        </ul>
+      </li>
+      <li>Which of the following must be true in SHM? (Select all that apply)</li>
+      <li>A 0.2 kg mass is oscillating with A = 0.05 m and k = 80 N/m.
+        <ul>
+          <li>(a) Total mechanical energy?</li>
+          <li>(b) Speed at x = 0.03 m?</li>
+        </ul>
+      </li>
+    </ol>
+
+    <h2>Solutions</h2>
+    <ol>
+      <li>2.00s, 4.92s (multiplied by \(\sqrt6\))</li>
+      <li>B, C</li>
+      <li>(a) 0.1 J, (b) 0.8 ms\(^{-1}\)</li>
+    </ol>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+
+</body>
+</html>
