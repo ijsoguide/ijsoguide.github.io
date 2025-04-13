@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hooke's Law and Elastic Motion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- MathJax -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async 
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f4f8ff;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #2979ff;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      flex-wrap: wrap;
+    }
+
+    .navbar .logo {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+    }
+
+    .nav-links a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header */
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 900px;
+      margin: 2rem auto 1rem;
+      padding: 0 2rem;
+    }
+
+    .page-header h2 {
+      font-size: 1.8rem;
+      color: #2979ff;
+    }
+
+    .back-btn {
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      color: #333;
+      transition: background-color 0.2s;
+    }
+
+    .back-btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    /* Container */
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    h2 {
+      color: #2b4a8b;
+      margin-top: 2rem;
+      border-bottom: 2px solid #e0e6f6;
+      padding-bottom: 0.3rem;
+    }
+
+    p, ul, ol {
+      line-height: 1.7;
+    }
+
+    ul li, ol li {
+      margin-bottom: 0.5rem;
+    }
+
+    .collapsible {
+      background-color: #e3ecff;
+      color: #000;
+      cursor: pointer;
+      padding: 12px 16px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
+      margin-top: 1.5rem;
+    }
+
+    .active, .collapsible:hover {
+      background-color: #d1dcff;
+    }
+
+    .content {
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      background-color: #f9fbff;
+      border-left: 4px solid #4a76d0;
+      border-radius: 0 0 6px 6px;
+    }
+
+    .content p, .content ul {
+      margin: 1rem 0;
+    }
+
+    img {
+      max-width: 100%;
+      margin: 10px 0;
+      border-radius: 8px;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: white;
+      background-color: #2979ff;
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const buttons = document.querySelectorAll('.collapsible');
+      buttons.forEach(button => {
+        button.addEventListener('click', function () {
+          this.classList.toggle('active');
+          const content = this.nextElementSibling;
+          content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + "px";
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="../Landing Page.html" class="logo">A Guide to the IJSO</a>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Physics</a>
+      <a href="#">Chemistry</a>
+      <a href="#">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Hooke's Law and Elastic Motion</h2>
+    <a href="../Mechanics.html" class="back-btn">← Back to Mechanics</a>
+  </div>
+
+  <!-- Main content -->
+  <div class="container">
+
+    <h2>Hooke’s law</h2>
+    <p>Hooke’s Law states that the force exerted by a spring is directly proportional to its extension or compression, as long as the deformation is within the elastic limit.</p>
+    <p>Mathematically, it is denoted as:</p>
+    <p>\[ F = -kx \]</p>
+    <ul>
+      <li>\( F \): Restoring force (N)</li>
+      <li>\( k \): Spring constant (N/m)</li>
+      <li>\( x \): Displacement from the equilibrium position (m)</li>
+      <li>The negative sign indicates that the force opposes the displacement.</li>
+    </ul>
+
+    <h2>Elastic and Plastic Deformation</h2>
+    <ul>
+      <li>Elastic deformation: The object returns to its original shape after the force is removed (follows Hooke’s Law).</li>
+      <li>Plastic deformation: The object does not return to its original shape after deformation (exceeds elastic limit).</li>
+    </ul>
+    <img src="image1.png" alt="Image1"/>
+
+    <h2>Energy in a Stretched Spring</h2>
+    <p>The work done to stretch or compress a spring is stored as elastic potential energy:</p>
+    <p>\[ U = \frac{1}{2}kx^2 \]</p>
+    <p>Where \( U \) is the elastic potential energy (J).</p>
+    <p><strong>Key Insight:</strong> The energy stored in the spring depends on \( x^2 \), meaning a small increase in \( x \) results in a larger energy increase.</p>
+
+    <h2>Applications of Hooke’s Law</h2>
+    <ul>
+      <li>Spring Scales (Weighing machines)</li>
+      <li>Shock Absorbers in cars (control motion)</li>
+      <li>Bungee Jumping (Elastic motion)</li>
+      <li>Atomic Vibrations (Atoms in a molecule vibrate like tiny springs)</li>
+    </ul>
+
+    <button class="collapsible">Example 1</button>
+    <div class="content">
+      <p>A spring with a constant of 50 N/m is stretched by 0.2 m. Find the restoring force exerted by the spring.</p>
+      <p>\[ F = kx = 50 \, \text{N/m} \times 0.2 \, \text{m} = 10 \, \text{N} \]</p>
+    </div>
+
+    <button class="collapsible">Example 2</button>
+    <div class="content">
+      <p>A force of 15 N stretches a spring by 0.3 m. Determine the spring constant.</p>
+      <p>\[ F = kx \Rightarrow k = \frac{F}{x} = \frac{15}{0.3} = 50 \, \text{N/m} \]</p>
+    </div>
+
+    <button class="collapsible">Example 3</button>
+    <div class="content">
+      <p>A block of 5 kg is dropped onto a vertical spring with a stiffness of 200 N/m. If the block compresses the spring by 10 cm, determine the velocity of the block just before impact.</p>
+      <p>According to Energy conservation:</p>
+      <p>\[ \frac{1}{2}kx^2 = \frac{1}{2}mv^2 \Rightarrow v = \sqrt{\frac{kx^2}{m}} = \sqrt{\frac{200 \cdot 0.1^2}{5}} = 0.632 \, \text{m/s} \]</p>
+    </div>
+
+    <h2> Did you know?</h2>
+    <p> When two identical springs (each of spring constant \( k \)) are connected in:</p>
+    <ul>
+      <li><strong>(a) Series:</strong> Their effective spring constant, \( \frac{1}{k_{\text{eff}}} = \frac{1}{k} + \frac{1}{k} = \frac{2}{k} \Rightarrow k_{\text{eff}} = \frac{k}{2} \)</li>
+      <li><strong>(b) Parallel:</strong> Their effective spring constant, \( k_{\text{eff}} = k + k = 2k \)</li>
+    </ul>
+
+    <h2>Practice Questions</h2>
+    <ol>
+      <li>A spring is compressed by 5 cm and stores 0.25 J of elastic potential energy. Determine the spring constant.</li>
+      <li>A 10 N force is applied to a spring, stretching it by 0.25 m. What is the elastic potential energy stored in the spring?</li>
+      <li>A 2 kg mass hangs from a vertical spring with a spring constant of 80 N/m. Find the equilibrium extension of the spring due to the mass.</li>
+    </ol>
+
+    <h2>Solutions</h2>
+    <ol>
+      <li>\( 200 \, \text{N/m} \)</li>
+      <li>\( 1.25 \, \text{J} \)</li>
+      <li>\( 0.245 \, \text{m} \)</li>
+    </ol>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+
+</body>
+</html>
