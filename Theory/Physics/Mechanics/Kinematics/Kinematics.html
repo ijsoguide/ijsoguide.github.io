@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kinematic Formulas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- MathJax for LaTeX -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f8ff;
+      color: #333;
+      margin: 0;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #2979ff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      flex-wrap: wrap;
+    }
+
+    .navbar .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: white;
+    }
+
+    .nav-links a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Page header row */
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 900px;
+      margin: 2rem auto 1rem;
+      padding: 0 2rem;
+    }
+
+    .page-header h2 {
+      font-size: 1.8rem;
+      color: #2979ff;
+    }
+
+    .back-btn {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      color: #333;
+      transition: background-color 0.2s;
+    }
+
+    .back-btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #223;
+    }
+
+    h2 {
+      color: #2b4a8b;
+      margin-top: 2rem;
+      border-bottom: 2px solid #e0e6f6;
+      padding-bottom: 0.3rem;
+    }
+
+    p, ul, ol {
+      line-height: 1.7;
+    }
+
+    .collapsible {
+      background-color: #e3ecff;
+      color: #000;
+      cursor: pointer;
+      padding: 12px 16px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
+      margin-top: 1.5rem;
+    }
+
+    .active, .collapsible:hover {
+      background-color: #d1dcff;
+    }
+
+    .content {
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      background-color: #f9fbff;
+      border-left: 4px solid #4a76d0;
+      border-radius: 0 0 6px 6px;
+    }
+
+    .content p {
+      margin: 1rem 0;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: white;
+      background-color: #2979ff;
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const coll = document.querySelectorAll('.collapsible');
+      coll.forEach(btn => {
+        btn.addEventListener('click', function () {
+          this.classList.toggle('active');
+          const content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + 'px';
+          }
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="../../../../Landing Page.html" class="logo">A Guide to the IJSO</a>
+    <div class="nav-links">
+      <a href="../../../theory.html">Home</a>
+      <a href="../../physics.html">Physics</a>
+      <a href="../../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../../../Biology/Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Kinematic Formulas</h2>
+    <a href="../Mechanics.html" class="back-btn">← Back to Mechanics</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>Kinematic Formulas</h1>
+
+    <p>Kinematics is the branch of physics that describes the motion of objects without considering the forces that cause the motion. It focuses on displacement, velocity, acceleration, and time in one, two, or three dimensions. For the IJSO, we only consider one or two dimensional kinematics.</p>
+
+    <p>There are 4 equations in kinematics:</p>
+    <ul>
+      <li>\( v = u + at \)</li>
+      <li>\( s = ut + \frac{1}{2}at^2 \)</li>
+      <li>\( v^2 = u^2 + 2as \)</li>
+      <li>\( v_{avg} = \frac{v + u}{2} \)</li>
+    </ul>
+
+    <p>Where:<br>
+    \( u \): initial velocity<br>
+    \( v \): final velocity<br>
+    \( a \): acceleration<br>
+    \( s \): displacement<br>
+    \( t \): time</p>
+
+    <p>Let’s see some examples and you will understand how kinematics work</p>
+
+    <button class="collapsible">Example 1</button>
+    <div class="content">
+      <p>A car starts from rest and accelerates at \( 2 \, \text{ms}^{-2} \) for 5 seconds. Find the final velocity of the car and the distance traveled.</p>
+      <p>Known: \( a = 2\,\text{ms}^{-2}, t = 5\,s, u = 0\,\text{ms}^{-1} \)</p>
+      <p>\( v = u + at = 0 + 2 \times 5 = 10\,\text{ms}^{-1} \)</p>
+      <p>\( s = ut + \frac{1}{2}at^2 = 0 + \frac{1}{2} \times 2 \times 25 = 25\,\text{m} \)</p>
+    </div>
+
+    <button class="collapsible">Example 2</button>
+    <div class="content">
+      <p>A ball is thrown vertically upward with an initial velocity of \( 30\,\text{ms}^{-1} \).</p>
+      <p>\( a = -10\,\text{ms}^{-2}, u = 30\,\text{ms}^{-1}, v = 0 \)</p>
+      <p>\( s = \frac{v^2 - u^2}{2a} = \frac{0 - 900}{-20} = 45\,\text{m} \)</p>
+      <p>\( t = \frac{v - u}{a} = \frac{-30}{-10} = 3\,\text{s} \)</p>
+      <p>Total time of flight = \( 2 \times 3 = 6\,s \)</p>
+    </div>
+
+    <button class="collapsible">Example 3</button>
+    <div class="content">
+      <p>A cyclist moving at 5 m/s starts accelerating at 1 m/s² for 10 seconds, then decelerates at 0.5 m/s² until coming to rest. Find the total distance and total time.</p>
+      <p>\( s_1 = ut + \frac{1}{2}at^2 = 5 \times 10 + \frac{1}{2} \times 1 \times 100 = 100\,\text{m} \)</p>
+      <p>\( v = u + at = 5 + 10 = 15\,\text{ms}^{-1} \)</p>
+      <p>\( s_2 = \frac{-v^2}{2a} = \frac{-225}{-1} = 225\,\text{m} \)</p>
+      <p>\( t = \frac{-v}{a} = \frac{-15}{-0.5} = 30\,s \)</p>
+      <p>Total distance = \( 100 + 225 = 325\,\text{m} \), total time = \( 10 + 30 = 40\,s \)</p>
+    </div>
+
+    <button class="collapsible">Example 4</button>
+    <div class="content">
+      <p>A ball is launched with \( 20\,\text{ms}^{-1} \) at \( 45^\circ \). Find the range, max height, and total flight time.</p>
+      <p>\( v_x = 20 \cos(45) = 14.14\,\text{ms}^{-1} \), \( v_y = 20 \sin(45) = 14.14\,\text{ms}^{-1} \)</p>
+      <p>\( s = \frac{-v_y^2}{2a} = \frac{-200}{-19.6} = 10.2\,\text{m} \)</p>
+      <p>\( t = \frac{-v_y}{a} = \frac{-14.14}{-9.8} = 1.44\,s \), total = \( 2.88\,s \)</p>
+      <p>\( x = v_x \cdot t = 14.14 \times 2.88 = 40.72\,\text{m} \)</p>
+    </div>
+
+    <h2>Practice Questions</h2>
+    <ol>
+      <li>A kangaroo jumps 2.62 m high. Find max velocity.</li>
+      <li>A cart accelerates at \( 5\,\text{ms}^{-2} \) for 4 s, starting at \( 2\,\text{ms}^{-1} \). Find final velocity.</li>
+      <li>A ball launched from 10m high at \( 30\,\text{ms}^{-1}, 60^\circ \). Find max height, time, and final velocity (y).</li>
+      <li>A 1000 kg car at 5 m/s skids 20 m to stop. Find friction coefficient.</li>
+    </ol>
+
+    <h2>Answers</h2>
+    <ol>
+      <li>\( 7.17\,\text{ms}^{-1} \)</li>
+      <li>\( 22\,\text{ms}^{-1} \)</li>
+      <li>\( 44.44\,\text{m}, 5.66\,s, 29.51\,\text{ms}^{-1} \)</li>
+      <li>\( \mu = 0.0638 \)</li>
+    </ol>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+</body>
+</html>
