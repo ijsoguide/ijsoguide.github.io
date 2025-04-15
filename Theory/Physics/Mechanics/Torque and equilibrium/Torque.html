@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Torque and Equilibrium</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- MathJax for LaTeX -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f8ff;
+      color: #333;
+      margin: 0;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #2979ff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      flex-wrap: wrap;
+    }
+
+    .navbar .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: white;
+    }
+
+    .nav-links a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Page header */
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 900px;
+      margin: 2rem auto 1rem;
+      padding: 0 2rem;
+    }
+
+    .page-header h2 {
+      font-size: 1.8rem;
+      color: #2979ff;
+    }
+
+    .back-btn {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      color: #333;
+      transition: background-color 0.2s;
+    }
+
+    .back-btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    /* Main content */
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #223;
+    }
+
+    h2 {
+      color: #2b4a8b;
+      margin-top: 2rem;
+      border-bottom: 2px solid #e0e6f6;
+      padding-bottom: 0.3rem;
+    }
+
+    p, ul, ol {
+      line-height: 1.7;
+    }
+
+    ul li, ol li {
+      margin-bottom: 0.5rem;
+    }
+
+    .collapsible {
+      background-color: #e3ecff;
+      color: #000;
+      cursor: pointer;
+      padding: 12px 16px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
+      margin-top: 1.5rem;
+    }
+
+    .active, .collapsible:hover {
+      background-color: #d1dcff;
+    }
+
+    .content {
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      background-color: #f9fbff;
+      border-left: 4px solid #4a76d0;
+      border-radius: 0 0 6px 6px;
+    }
+
+    .content ul, .content p {
+      margin: 1rem 0;
+    }
+
+    img {
+      max-width: 100%;
+      margin: 10px 0;
+      border-radius: 8px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: white;
+      background-color: #2979ff;
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const coll = document.querySelectorAll('.collapsible');
+      coll.forEach(btn => {
+        btn.addEventListener('click', function () {
+          this.classList.toggle('active');
+          const content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + 'px';
+          }
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="../../../../index.html" class="logo">A Guide to the IJSO</a>
+    <div class="nav-links">
+      <a href="../../../theory.html">Home</a>
+      <a href="../../physics.html">Physics</a>
+      <a href="../../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../../../Biology/Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Header Row -->
+  <div class="page-header">
+    <h2>Torque and Equilibrium</h2>
+    <a href="../Mechanics.html" class="back-btn">← Back to Mechanics</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+
+    <h2>What is Torque?</h2>
+    <p>Torque (\( \tau \)) is the measure of the turning effect of a force about a pivot or axis. It determines how effectively a force causes an object to rotate.</p>
+    <p>The formula for torque is:</p>
+    <p>\[ \tau = Fd \sin(\theta) \]</p>
+    <ul>
+      <li>\( F \): Force applied</li>
+      <li>\( d \): Perpendicular distance from the axis of rotation</li>
+      <li>\( \theta \): Angle between the force and lever arm</li>
+    </ul>
+    <p>Torque is a vector quantity and follows the right-hand rule for direction. It's measured in Newton-meters (N·m).</p>
+
+    <h2>Examples of Torque in Daily Life</h2>
+    <ul>
+      <li>Opening a door by pushing on the edge farthest from the hinge.</li>
+      <li>Using a wrench to tighten a bolt.</li>
+      <li>A seesaw rotating around its pivot point.</li>
+    </ul>
+
+    <button class="collapsible">Example 1: Force Perpendicular to a Rod</button>
+    <div class="content">
+      <p>A 3 m long rod is pivoted at one end. A force of 10 N is applied perpendicular to the rod at the other end. Calculate the torque about the pivot.</p>
+      <p>\( \tau = Fd \,\sin\theta = 10\,\text{N} \times 3\,\text{m} \times \sin(90^\circ) = 30\, \text{Nm} \)</p>
+    </div>
+
+    <button class="collapsible">Example 2: Beam with Person</button>
+    <div class="content">
+      <p>A 4 m beam (200 N) is supported at one end. A 300 N person stands 1.5 m from the support. Find the total torque.</p>
+      <p>\( \tau_{\text{beam}} = Fd\,\sin\theta = 200\,\text{N} \times 4\,\text{m} \times \sin(90^\circ) = 800 \, \text{Nm} \)</p>
+      <p>\( \tau_{\text{person}} = Fd\,\sin\theta = 300\,\text{N} \times 1.5\,\text{m} \times \sin(90^\circ) = 450 \, \text{Nm} \)</p>
+      <p><strong>Total Torque:</strong> \( 1250 \, \text{Nm} \)</p>
+    </div>
+
+    <h2>Equilibrium</h2>
+    <p>An object is in equilibrium when the total torque around any pivot is zero.</p>
+
+    <button class="collapsible">Example 3: Balancing a Seesaw</button>
+    <div class="content">
+      <p>20 kg child at 1 m. How far should a 30 kg child sit on the other side?</p>
+      <img src="image1.png" alt ="Example 3 Diagram">
+      <p>Torque due to the 20 kg child, \(\tau  = Fd = 20 \,\text{kg} \times 9.8\:\text{ms}^{-2} \times 1\,\text{m} = 196 \,\text{Nm} \)
+    </p>
+    <p>Since the torque around the pivot is zero (according to laws of equilibrium) , the torque due to the 30 kg child should also be 196 Nm but in the opposite direction.
+    </p>
+    <p> \(196\, \text{Nm} = Fd = 30 \,\text{kg} \times 9.8\,\text{ms}^{-2} \times d \)
+    </p>
+    <p>\(d = 0.67 \:m\)</p>
+    </div>
+
+    <button class="collapsible">Example 4: Signboard with Cable</button>
+    <div class="content">
+      <p>A signboard of weight 200 N is supported by a horizontal beam and a cable at an angle of 45°. Determine the force in the cable and the horizontal/vertical forces at the wall.
+    </p>
+    <p>HINT : WHEN SOLVING TORQUE PROBLEMS, ALWAYS TRY TO DRAW A DIAGRAM INCLUDING ALL THE FORCES THAT YOU KNOW ABOUT
+    </p>
+      <img src="image2.png" alt ="Example 4 Diagram">
+      <p>Now, try to write down all the torques and forces.
+    </p>
+    <p>\(\uparrow \Sigma \text{Forces} = 0\)</p>
+    <p>\(\text{T} \sin 45^{\circ} + \text{R}_y - \text{W} = 0\) - Equation 1</p>
+    <br>
+    <p>\(\rightarrow \Sigma \text{Forces} = 0\)</p>
+    <p>\(\text{T} \cos 45^{\circ} - \text{R}_x = 0\) - Equation 2 </p>
+    <br>
+    <p>\(\Sigma \text{Torque around the hinge} = 0\) </p>
+    <p>\(\text{T} \cos 45^{\circ} \times d - W \times \frac{d}{2} = 0\) - Equation 3</p>
+    <br>
+    <p>Solving equation 3 gives us,</p>
+    <p>\(\text{T}  \cos 45^{\circ} = \frac{W}{2} = \frac{200\,N}{2} = 100\:N\) </p>
+    <p>\(\text{T} \approx 141.4\, N\) </p>
+    <br>
+    <p>Solving equation 2 gives us,</p>
+    <p>\(\text{T} \cos 45^{\circ} = \text{R}_x\)</p>
+    <p>\(\text{R}_x = 100\:N\)</p>
+    <br>
+    <p>Solving equation 1 gives us,</p>
+    <p>\(\text{R}_y = \text{W} - \text{T}\sin 45^{\circ}\)</p>
+    <p>\(\text{R}_y = 200\:\text{N} - 100\:\text{N} = 100\:\text{N}\)</p>
+    </div>
+
+    <button class="collapsible">Example 5: Plank Supported at Both Ends</button>
+    <div class="content">
+      <p>A uniform 3 m long plank of wood with a mass of 20 kg is supported at both ends. A 10 kg box is placed 1 m from one end. Find the reaction forces at both supports. Assume g = 10ms\(^{-2}\)
+    </p>
+    <br>
+    <p>Let's draw a diagram</p>
+      <img src="image3.png" alt ="Example 5 Diagram">
+    <p>Once again, let’s write all the forces and torques </p>
+    <br>
+    <p>\(\uparrow \Sigma \text{Forces} = 0\)</p>
+    <p>\(\text{R}_1 + \text{R}_2 - Mg - mg = 0\) - Equation 1</p>
+    <br>
+    <p>\(\Sigma \text{Torque around the left pivot} = 0\)</p>
+    <p>\(mg \times 1 + Mg \times 1.5 - R_1 \times 3 = 0\) - Equation 2</p>
+    <br>
+    <p>\(\Sigma \text{Torque around the right pivot} = 0\)</p>
+    <p>\(mg \times 2 + Mg \times 1.5 - R_2 \times 3 =0\) - Equation 3</p>
+    <br>
+    <p>Simplifying equation 1, we get:</p>
+    <p>\(R_1 + R_2 = Mg + mg = 300\:N\)</p>
+    <br>
+    <p>Simplyfying equation 2, we get:</p>
+    <p>\(3R_1 = mg + 1.5Mg = 400\:N\) </p>
+    <p>\(R_1 = 133.3\: N\)</p>
+    <br>
+    <p>Simplifying equation 3, we get:</p>
+    <p>\(3R_2 = 2mg + 1.5 Mg = 500N\)</p>
+    <p>\(R_2 = 166.7\:N\)</p>
+    </br>
+    <p>This matches equation 1 as well</p>
+    </div>
+
+    <button class="collapsible">Example 6: Ladder with Friction</button>
+    <div class="content">
+      <p>A ladder 3 m long leans against a smooth wall at an angle of 45° with the ground. The ladder has a mass of 20 kg and a firefighter of 80 kg starts climbing. How far up the ladder can the firefighter climb before it starts tipping over? Friction coefficient between the ladder and the ground is 0.50. Assume g = 10ms\(^{-2}\).</p>
+      <br>
+      <p>Now, like in previous examples, let’s draw a diagram.</p>
+      <img src="image4.png" alt="Example 6 Diagram">
+      <p>\(\uparrow \Sigma \text{Forces} = 0\)</p>
+      <p>\(R_1 - mg - Mg = 0\) - Equation 1</p>
+      <br>
+      <p>\(\rightarrow \Sigma \text{Forces} = 0\)</p>
+      <p>\(R_2 - \mu_sR_1 = 0\) - Equation 2</p>
+      <br>
+      <p>\(\Sigma \text{Torque around Point O}\)</p>
+      <p>\(mg \times x \times \cos45^{\circ} + Mg \times 1.5 \times \cos 45^{\circ} - R_2 \times 3 \times \sin 45^{\circ} = 0\) - Equation 3</p>
+      <br>
+      <p>Solving equation 1 gives us :</p>
+      <p>\(R_1 = mg + Mg = 1000\: N\)</p>
+      <br>
+      <p>Solving equation 2 gives us :</p>
+      <p>\(R_2 = \mu_sR_1 = 0.50 \times 1000\:N = 500\:N\)</p>
+      <br>
+      <p>Solving equation 3 gives us :</p>
+      <p>\(141.4 x = 1060.7 - 848.5 = 212.2\)</p>
+      <p>Maximum distance the person can walk up the ladder, \(x = \frac{212.2}{141.4} = 1.500\:m\)</p>
+
+    </div>
+
+    <h2>Practice Questions</h2>
+    <ol>
+      <li>A 10 kg uniform rod is pivoted at one end and held horizontally by a string attached 0.75 m from the pivot. If the rod is 2 m long, find the tension in the string.
+    </li>
+      <li>A 100 N beam is supported by a hinge at one end and a rope at the other. The rope makes a 30° angle with the beam. Find the tension in the rope and the reaction forces at the hinge.</li>
+      <li>A 5 m ladder leans against a smooth wall at an angle of 60° with the ground. The ladder has a mass of 15 kg and a person of mass 50 kg stands 3 m up the ladder. If the ground is rough and provides all horizontal support, find the normal and friction forces at the ground and find the friction coefficient. Assume g = 10ms\(^{-2}\)</li>
+    </ol>
+
+    <h2>Solutions</h2>
+    <ol>
+      <li>\( T = 130.67\, \text{N} \)</li>
+      <li>\( T = 100\, \text{N}, R_y = 50\, \text{N}, R_x = 86.6\, \text{N} \)</li>
+      <li>Friction = \(147.22\: N\), Reaction = \(450 \:N\), \( \mu = 0.327 \)</li>
+    </ol>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+
+</body>
+</html>
