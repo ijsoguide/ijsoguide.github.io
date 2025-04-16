@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Exam Difficulty by Country</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+  <a href="./index.html"><div class="logo">A Guide to the IJSO</div></a>
+
+  <input type="checkbox" id="nav-toggle" hidden />
+
+    <label for="nav-toggle" class="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+  <ul class="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="Our Team/Team.html">Our Team</a></li>
+      <li class="dropdown">
+        <a href="#">National Junior Science Olympiads</a>
+        <div class="dropdown-content">
+          <a href="#">Home</a>
+          <a href="#">Australia</a>
+          <a href="#">Brazil</a>
+          <a href="#">Costa Rica</a>
+          <a href="#">Cyprus</a>
+          <a href="#">Estonia</a>
+          <a href="#">Germany</a>
+          <a href="#">Hong Kong</a>
+          <a href="#">India</a>
+          <a href="#">Lithuania</a>
+          <a href="#">Romania</a>
+          <a href="#">Serbia</a>
+          <a href="#">Sri Lanka</a>
+        </div>
+      </li>
+      <li><a href="Theory/theory.html">Theory</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+  <h1>National selection tests</h1>
+  <div id="controls">
+    <button onclick="sortByDifficulty(true)">Sort: Easiest → Hardest</button>
+    <button onclick="sortByDifficulty(false)">Sort: Hardest → Easiest</button>
+  </div>
+
+  <div class="grid" id="examGrid"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
