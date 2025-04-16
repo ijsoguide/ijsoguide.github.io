@@ -23,12 +23,12 @@
       align-items: center;
       background-color: white;
       padding: 1rem 2rem;
-      border-bottom: 1px solid #ccc;
+      border-bottom: 1px solid #ddd;
     }
 
     .navbar-left a {
       font-weight: bold;
-      color: #388e3c;
+      color: #2e7d32;
       text-decoration: none;
       font-size: 1.1rem;
     }
@@ -45,7 +45,7 @@
     }
 
     header {
-      background-color: #388e3c;
+      background-color: #2e7d32;
       padding: 3rem 1rem 2rem;
       text-align: center;
       color: white;
@@ -60,7 +60,7 @@
       font-size: 1.1rem;
       max-width: 700px;
       margin: 0 auto;
-      color: #d2f5d3;
+      color: #d9ffd9;
     }
 
     .page-header {
@@ -134,7 +134,7 @@
     .learn-btn {
       display: inline-block;
       padding: 0.5rem 1rem;
-      background-color: #66bb6a;
+      background-color: #43a047;
       color: white;
       border: none;
       border-radius: 6px;
@@ -144,7 +144,7 @@
     }
 
     .learn-btn:hover {
-      background-color: #388e3c;
+      background-color: #2e7d32;
     }
 
     .arrow {
@@ -161,9 +161,9 @@
       margin: 3rem auto;
       padding: 2rem;
       max-width: 800px;
-      background-color: #eafaf0;
+      background-color: #ebfaed;
       border-radius: 10px;
-      border: 1px solid #66bb6a;
+      border: 1px solid #2e7d32;
     }
 
     .practice-section-icon {
@@ -172,7 +172,7 @@
     }
 
     .practice-section h4 {
-      color: #388e3c;
+      color: #2e7d32;
       font-size: 1.4rem;
     }
 
@@ -184,7 +184,7 @@
 
     .practice-section a {
       display: inline-block;
-      background-color: #388e3c;
+      background-color: #2e7d32;
       color: white;
       padding: 0.75rem 1.5rem;
       text-decoration: none;
@@ -193,11 +193,11 @@
     }
 
     .practice-section a:hover {
-      background-color: #2e7d32;
+      background-color: #1b5e20;
     }
 
     footer {
-      background-color: #388e3c;
+      background-color: #2e7d32;
       color: white;
       text-align: center;
       padding: 1rem;
@@ -234,37 +234,101 @@
 
   <!-- Cards -->
   <div class="container">
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Ecosystems and biomes<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Learn about ecosystems, biotic/abiotic factors, and major global biomes.</p>
+        <a class="learn-btn" href="#">Learn More →</a>
+      </div>
+    </div>
 
-    <!-- Repeatable Cards -->
-    <script>
-      const topics = [
-        "Ecosystems and biomes",
-        "Food chains and food webs",
-        "Carbon Cycle",
-        "Nitrogen Cycle",
-        "Water Cycle",
-        "Ozone Cycle",
-        "Phosphorus Cycle",
-        "Population Dynamics",
-        "Symbiosis",
-        "Human impact on the environment",
-        "Acid Rain",
-        "Global Warming"
-      ];
-      document.write(
-        topics.map(topic => `
-          <div class="card" onclick="toggleCard(this)">
-            <div class="card-header">
-              ${topic}<span class="arrow">→</span>
-            </div>
-            <div class="card-content">
-              <p>Learn about ${topic.toLowerCase()} in ecological systems and their real-world implications.</p>
-              <a class="learn-btn" href="#">Learn More →</a>
-            </div>
-          </div>
-        `).join('')
-      );
-    </script>
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Food chains and food webs<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Study energy transfer in ecosystems through producers, consumers, and decomposers.</p>
+        <a class="learn-btn" href="#">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Carbon Cycle<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Explore the movement of carbon through living things and the environment.</p>
+        <a class="learn-btn" href="#">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Nitrogen Cycle<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Understand nitrogen fixation, nitrification, and denitrification processes.</p>
+        <a class="learn-btn" href="#">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Water Cycle<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Study evaporation, condensation, precipitation, and collection in Earth's water systems.</p>
+        <a class="learn-btn" href="#">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Ozone Cycle<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Understand ozone layer formation, destruction, and its role in UV radiation protection.</p>
+        <a class="learn-btn" href="#">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Phosphorus Cycle<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Explore how phosphorus moves through rocks, water, soil, and organisms.</p>
+        <a class="learn-btn" href="#">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Population Dynamics<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Study changes in population size, density, and structure over time.</p>
+        <a class="learn-btn" href="#">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Symbiosis<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Examine mutualism, commensalism, and parasitism between species.</p>
+        <a class="learn-btn" href="#">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Human impact on the environment<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Discover how deforestation, pollution, and resource depletion affect ecosystems.</p>
+        <a class="learn-btn" href="#">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Acid Rain<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Understand causes, effects, and solutions related to acidic precipitation.</p>
+        <a class="learn-btn" href="#">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Global Warming<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Learn about greenhouse gases, climate change, and rising global temperatures.</p>
+        <a class="learn-btn" href="#">Learn More →</a>
+      </div>
+    </div>
 
     <!-- Practice Section -->
     <div class="practice-section">
@@ -275,7 +339,6 @@
         <a href="#">Go to Practice Questions</a>
       </div>
     </div>
-
   </div>
 
   <!-- Footer -->
@@ -283,17 +346,16 @@
     &copy; 2025 A Guide to the IJSO. All rights reserved.
   </footer>
 
-  <!-- JavaScript -->
+  <!-- JS -->
   <script>
     function toggleCard(card) {
       const content = card.querySelector('.card-content');
-      const allCards = document.querySelectorAll('.card');
-      allCards.forEach(c => {
-        if (c !== card) c.querySelector('.card-content').style.display = 'none';
+      const all = document.querySelectorAll('.card-content');
+      all.forEach(c => {
+        if (c !== content) c.style.display = 'none';
       });
       content.style.display = content.style.display === 'block' ? 'none' : 'block';
     }
   </script>
-
 </body>
 </html>
