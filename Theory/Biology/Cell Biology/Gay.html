@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cell Biology</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9fbff;
+      color: #1a1a1a;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .navbar-left a {
+      font-weight: bold;
+      color: #2e7d32;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+
+    .navbar-right a {
+      margin-left: 1.5rem;
+      color: #333;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .navbar-right a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      background-color: #2e7d32;
+      padding: 3rem 1rem 2rem;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+      color: #cde7d4;
+    }
+
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .page-header h2 {
+      font-size: 1.8rem;
+    }
+
+    .back-btn {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      color: #333;
+      transition: background-color 0.2s;
+    }
+
+    .back-btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    .card {
+      background-color: #f9fbff;
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      padding: 1.2rem 1.5rem;
+      cursor: pointer;
+      transition: box-shadow 0.2s;
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      font-size: 1.05rem;
+    }
+
+    .card-content {
+      display: none;
+      margin-top: 0.8rem;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    .card-content p {
+      margin-bottom: 1rem;
+      color: #555;
+    }
+
+    .learn-btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: #388e3c;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: background-color 0.2s;
+    }
+
+    .learn-btn:hover {
+      background-color: #2e7d32;
+    }
+
+    .arrow {
+      font-size: 1.2rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-5px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .practice-section {
+      text-align: center;
+      margin: 3rem auto;
+      padding: 2rem;
+      max-width: 800px;
+      background-color: #e9f6ec;
+      border-radius: 10px;
+      border: 1px solid #2e7d32;
+    }
+
+    .practice-section-icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .practice-section h4 {
+      color: #2e7d32;
+      font-size: 1.4rem;
+    }
+
+    .practice-section p {
+      color: #444;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .practice-section a {
+      display: inline-block;
+      background-color: #2e7d32;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .practice-section a:hover {
+      background-color: #1b5e20;
+    }
+
+    footer {
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="../../../index.html">A Guide to the IJSO</a>
+    </div>
+    <div class="navbar-right">
+      <a href="../../theory.html">Home</a>
+      <a href="../../Physics/physics.html">Physics</a>
+      <a href="../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Cell Biology</h1>
+    <p>Discover the fundamental unit of life and how cells function, grow, and interact with their environment.</p>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>Cell Biology</h2>
+    <a class="back-btn" href="../Biology.html">← Back to Biology</a>
+  </div>
+
+  <!-- Cards -->
+  <div class="container">
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Cell Structure and Organelles<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Understand the roles of organelles like nucleus, mitochondria, ER, and more in cellular function.</p>
+        <a class="learn-btn" href="#">Learn more →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Prokaryotic vs. Eukaryotic Cells<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Compare and contrast the structures and complexity of prokaryotic and eukaryotic cells.</p>
+        <a class="learn-btn" href="#">Learn more →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Cell Membranes and Transport<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Explore membrane structure and how substances move in and out via diffusion, osmosis, and active transport.</p>
+        <a class="learn-btn" href="#">Learn more →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Cell Cycle<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Learn about the stages of cell division including mitosis and the regulatory checkpoints.</p>
+        <a class="learn-btn" href="#">Learn more →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Cellular Respiration<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Understand how cells convert glucose into usable energy through glycolysis, Krebs cycle, and ETC.</p>
+        <a class="learn-btn" href="#">Learn more →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Basic Microscopy Principles<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Study the tools and techniques used to observe cells, including magnification and resolution.</p>
+        <a class="learn-btn" href="#">Learn more →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Practice Section -->
+  <div class="practice-section">
+    <div class="practice-section-icon">🧬</div>
+    <div class="practice-section-content">
+      <h4>Practice Cell Biology</h4>
+      <p>Sharpen your concepts with IJSO-style problems on cells, transport, respiration, and microscopy.</p>
+      <a href="#">Try Practice Questions →</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </footer>
+
+  <script>
+    function toggleCard(card) {
+      const content = card.querySelector('.card-content');
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach(c => {
+        if (c !== card) c.querySelector('.card-content').style.display = 'none';
+      });
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>
