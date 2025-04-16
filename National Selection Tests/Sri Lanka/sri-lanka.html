@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sri Lanka Exams</title>
+  <link rel="stylesheet" href="sri-lanka.css" />
+</head>
+<body>
+  <div id="back-btn">
+  <button onclick="goBack()">← Back</button>
+</div>
+
+  <h1>Sri Lanka Exams (2016–2024)</h1>
+
+  <div id="controls">
+    <button onclick="sortByDifficulty(true)">Sort: Easiest → Hardest</button>
+    <button onclick="sortByDifficulty(false)">Sort: Hardest → Easiest</button>
+  </div>
+
+  <div class="grid" id="examGrid"></div>
+  <footer>
+    <p>&copy; 2025 A Guide to the IJSO. All rights reserved.</p>
+    <p>Built by IJSO participants for future champions. 🌍</p>
+  </footer>
+  <script src="sri-lanka.js"></script>
+  <script>
+  function goBack() {
+    if (document.referrer) {
+      window.history.back();
+    } else {
+      window.location.href = "../selections.html"; // CHANGE TO ACCTUALLY GO BACK
+    }
+  }
+</script>
+
+</body>
+</html>
