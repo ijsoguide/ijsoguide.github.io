@@ -17,13 +17,13 @@ document.addEventListener("DOMContentLoaded", () => {
       name: "Serbia",
       difficulty: 4,
       flag: "https://flagcdn.com/rs.svg",
-      link: "https://example.com/serbian-exams"
+      link: "Serbia/serbia.html"
     },
     {
       name: "Australia",
       difficulty: 3,
       flag: "https://flagcdn.com/au.svg",
-      link: "https://example.com/aussie-exams"
+      link: "Australia/australia.html"
     },
     {
       name: "Romania",
