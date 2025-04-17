@@ -2,34 +2,83 @@ document.addEventListener("DOMContentLoaded", () => {
   const countries = [
     {
       //difficulty only integer for now
-      name: "Sri Lanka",
-      difficulty: 2,
-      flag: "https://flagcdn.com/lk.svg",
-      link: "https://example.com/srilanka-exams"
+    {
+      name: "Australia",
+      difficulty: 3,
+      flag: "https://flagcdn.com/au.svg",
+      link: "Australia/australia.html"
+    },
+    {
+      name: "Brazil",
+      difficulty: 4,
+      flag: "https://flagcdn.com/br.svg",
+      link: "Brazil/brazil.html"
+    },
+    {
+      name: "Costa Rica",
+      difficulty: 4,
+      flag: "https://flagcdn.com/cr.svg",
+      link: "Costa Rica/costarica.html"
+    },
+    {
+      name: "Cyprus",
+      difficulty: 4,
+      flag: "https://flagcdn.com/cy.svg",
+      link: "Cyprus/cyprus.html"
+    },
+    {
+      name: "Estonia",
+      difficulty: 4,
+      flag: "https://flagcdn.com/ee.svg",
+      link: "Estonia/estonia.html"
+    },
+    {
+      name: "Germany",
+      difficulty: 4,
+      flag: "https://flagcdn.com/de.svg",
+      link: "Germany/germany.html"
+    },
+    {
+      name: "Hong Kong",
+      difficulty: 4,
+      flag: "https://flagcdn.com/hk.svg",
+      link: "Hong Kong/hongkong.html"
+    },
+    {
+      name: "Hong Kong",
+      difficulty: 4,
+      flag: "https://flagcdn.com/hk.svg",
+      link: "Hong Kong/hongkong.html"
     },
     {
       name: "India",
       difficulty: 5,
       flag: "https://flagcdn.com/in.svg",
-      link: "https://example.com/india-exams"
+      link: "India/india.html"
     },
     {
-      name: "Serbia",
-      difficulty: 4,
-      flag: "https://flagcdn.com/rs.svg",
-      link: "https://example.com/serbian-exams"
-    },
-    {
-      name: "Australia",
-      difficulty: 3,
-      flag: "https://flagcdn.com/au.svg",
-      link: "https://example.com/aussie-exams"
+      name: "Lithuania",
+      difficulty: 5,
+      flag: "https://flagcdn.com/lt.svg",
+      link: "Lithuania/lithuania.html"
     },
     {
       name: "Romania",
       difficulty: 4,
       flag: "https://flagcdn.com/ro.svg",
-      link: "https://example.com/romanian-exams"
+      link: "Romania/romania.html"
+    }, 
+    {
+      name: "Serbia",
+      difficulty: 4,
+      flag: "https://flagcdn.com/rs.svg",
+      link: "Serbia/serbia.html"
+    },
+    {
+      name: "Sri Lanka",
+      difficulty: 2,
+      flag: "https://flagcdn.com/lk.svg",
+      link: "Sri Lanka/sri-lanka.html"
     }
     //ADD MORE COUNTRIES HERE
     //CHANGE THE PLACEHOLDER LINKS
