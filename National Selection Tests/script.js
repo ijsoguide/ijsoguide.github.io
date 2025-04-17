@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
       name: "Sri Lanka",
       difficulty: 2,
       flag: "https://flagcdn.com/lk.svg",
-      link: "https://example.com/srilanka-exams"
+      link: "Sri Lanka/sri-lanka.html"
     },
     {
       name: "India",
