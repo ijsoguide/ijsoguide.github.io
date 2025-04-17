@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sri Lanka Exams</title>
-  <link rel="stylesheet" href="sri-lanka.css" />
+  <link rel="stylesheet" href="../byyears.css" />
 </head>
 <body>
   <div id="back-btn">
@@ -19,6 +19,7 @@
   </div>
 
   <div class="grid" id="examGrid"></div>
+  <p> All the difficulty ratings for the problems were decided by our team and are therefore subjective.</p>
   <footer>
     <p>&copy; 2025 A Guide to the IJSO. All rights reserved.</p>
     <p>Built by IJSO participants for future champions. 🌍</p>
@@ -26,9 +27,6 @@
   <script src="sri-lanka.js"></script>
   <script>
   function goBack() {
-    if (document.referrer) {
-      window.history.back();
-    } else {
       window.location.href = "../selections.html"; // CHANGE TO ACCTUALLY GO BACK
     }
   }

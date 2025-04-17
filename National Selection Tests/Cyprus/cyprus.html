@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cypriot Exams</title><!-country->
+  <link rel="stylesheet" href="../byyears.css" />
+</head>
+<body>
+  <div id="back-btn">
+  <button onclick="goBack()">← Back</button>
+</div>
+
+  <h1>Cypriot Exams (2016–2024)</h1> <!-country->
+
+  <div id="controls">
+    <button onclick="sortByDifficulty(true)">Sort: Easiest → Hardest</button>
+    <button onclick="sortByDifficulty(false)">Sort: Hardest → Easiest</button>
+  </div>
+
+  <div class="grid" id="examGrid"></div>
+  <p> All the difficulty ratings for the problems were decided by our team and are therefore subjective.</p>
+  <footer>
+    <p>&copy; 2025 A Guide to the IJSO. All rights reserved.</p>
+    <p>Built by IJSO participants for future champions. 🌍</p>
+  </footer>
+  <script src="cyprus.js"></script><!-country->
+  <script>
+  function goBack() {
+      window.location.href = "../selections.html"; // CHANGE TO ACCTUALLY GO BACK
+    }
+  }
+</script>
+
+</body>
+</html>
