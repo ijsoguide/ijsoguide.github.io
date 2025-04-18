@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <title>Theory</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="https://kit.fontawesome.com/04bf603a0f.js" crossorigin="anonymous"></script>
+  <script src="theory.js"></script>
   <style>
     * {
       box-sizing: border-box;
@@ -166,13 +168,25 @@
         flex-direction: column;
       }
 
+      .card {
+        flex: 1 1 auto;
+      }
+
       nav ul {
         flex-direction: column;
         gap: 0.5rem;
+        margin-top: 1rem;
       }
 
       nav {
         align-items: flex-start;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        transition: opacity 0.2s;
       }
     }
   </style>
@@ -189,6 +203,7 @@
       <li><a href="Biology/Biology.html">Biology</a></li>
       <li><a href="#">Mock Tests and Quizzes</a></li>
     </ul>
+   <!--- <i class="fa-solid fa-bars" id="menuToggle"></i>--->
   </nav>
 
   <!-- Header -->
