@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Latent Heat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f8ff;
+      color: #333;
+      margin: 0;
+    }
+
+    .navbar {
+      background-color: #2979ff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    .navbar .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: white;
+    }
+
+    .nav-links a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 900px;
+      margin: 2rem auto 1rem;
+      padding: 0 2rem;
+    }
+
+    .page-header h2 {
+      font-size: 1.8rem;
+      color: #2979ff;
+    }
+
+    .back-btn {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      color: #333;
+      transition: background-color 0.2s;
+    }
+
+    .back-btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    }
+
+    h1 {
+      text-align: center;
+      color: #223;
+    }
+
+    h2 {
+      color: #2b4a8b;
+      margin-top: 2rem;
+      border-bottom: 2px solid #e0e6f6;
+      padding-bottom: 0.3rem;
+    }
+
+    p, ul, ol {
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+
+    ul li, ol li {
+      margin-bottom: 0.5rem;
+    }
+
+    .collapsible {
+      background-color: #e3f0ff;
+      color: #2b4a8b;
+      cursor: pointer;
+      padding: 0.7rem 1rem;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 1.05rem;
+      border-radius: 8px;
+      margin-top: 1rem;
+      font-weight: 600;
+    }
+
+    .collapsible:hover {
+      background-color: #d0e6ff;
+    }
+
+    .content {
+      padding: 0 1rem;
+      display: none;
+      overflow: hidden;
+      background-color: #f9fcff;
+      border: 1px solid #d3e8ff;
+      border-radius: 6px;
+      margin-top: 0.5rem;
+    }
+
+    .footer {
+      background-color: #2979ff;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="../../../../index.html" class="logo">A Guide to the IJSO</a>
+    <div class="nav-links">
+      <a href="../../../theory.html">Home</a>
+      <a href="../../../Physics/physics.html">Physics</a>
+      <a href="../../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../../../Biology/Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Latent Heat</h2>
+    <a href="../Thermo.html" class="back-btn">← Back to Thermodynamics</a>
+  </div>
+
+  <!-- Main content -->
+  <div class="container">
+
+    <p>As we all know, heat is stored inside substances and the amount of heat depends on its temperature and its state.</p>
+
+    <p>Heat energy is needed to convert a solid into a liquid (melting) and a liquid into a gas (evaporation). Heat is released when a gas turns into a liquid (condensation) and when a liquid turns into a solid (freezing).</p>
+
+    <p>The Latent heat of fusion/melting (\( L_f \)) = the amount of heat needed to convert 1 kg of a solid into a 1kg of liquid under standard conditions.</p>
+
+    <p>= Energy released when 1kg of liquid turns into a solid \( L_f \)</p>
+
+    <p>Similarly, \( L_v \) (latent heat of vaporisation) = Energy needed to evaporate 1 kg of liquid into a gas.</p>
+
+    <p><strong>Q = mL</strong></p>
+    <ul>
+      <li>Q = energy needed to change the state of a substance (with unknown mass)</li>
+      <li>m = mass</li>
+      <li>L = latent heat of the conversion process</li>
+    </ul>
+
+    <p>One important thing to notice is that</p>
+
+    <p><strong>Latent heat of sublimation = Latent heat of fusion + Latent heat of vaporisation</strong></p>
+
+    <h2>Examples:</h2>
+
+    <button class="collapsible">Example 1 : Energy Needed</button>
+    <div class="content">
+      <p><strong>How much energy is needed to convert 0.5kg of water into water vapour?<br>
+      (Given that \( L_v \) of water = 2.26 × 10⁶ J/kg)</strong></p>
+      <p>\( Q = m \times L_v \)<br>
+      Substitute \( m = 0.5 \text{ kg} \) and \( L_v = 2.26 \times 10^6 \text{ J/kg} \)<br>
+      \( Q = 0.5 \times 2.26 \times 10^6 = 1.13 \times 10^6 \text{ J} \)</p>
+    </div>
+
+    <button class="collapsible">Example 2 : Remaining Heat</button>
+    <div class="content">
+      <p><strong>A 2 kg block of ice at 0°C is placed in a container. If 670 kJ of heat is supplied to the ice, determine how much of it melts. (Latent heat of fusion of ice = 334 kJ/kg). If any ice remains, what will be its final mass? If all ice melts, how much energy will be left?</strong></p>
+      <p>To melt all the ice, it takes energy:<br>
+      \( Q = mL_f = 2 \times 334 = 668 \text{ kJ} \)</p>
+      <p>Since 670kJ is supplied:<br>
+      \( 670 - 668 = 2 \text{ kJ} \) is left. This remaining energy will be used to heat the water.</p>
+    </div>
+
+    <h2>Questions:</h2>
+    <ol>
+      <li>Find the amount of energy released when 400g of liquid ethanol freezes into solid ethanol. \( L_f \) (Ethanol) = 108 J/g and \( L_v \) (Ethanol) = 841 J/g</li>
+      <li>How much liquid ethanol should freeze in order to release enough energy to evaporate 1 litre of water at 100°C?</li>
+    </ol>
+
+    <h2>Answers:</h2>
+    <ol>
+      <li>\(43200\:J \)</li>
+      <li>\(20.926 \:\text{kg}\)</li>
+    </ol>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+
+  <!-- JavaScript for collapsibles -->
+  <script>
+    const coll = document.querySelectorAll(".collapsible");
+    coll.forEach(btn => {
+      btn.addEventListener("click", function () {
+        this.classList.toggle("active");
+        const content = this.nextElementSibling;
+        content.style.display = content.style.display === "block" ? "none" : "block";
+      });
+    });
+  </script>
+
+</body>
+</html>
