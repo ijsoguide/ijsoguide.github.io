@@ -1,7 +1,76 @@
 document.addEventListener("DOMContentLoaded", () => {
   const countries = [
     {
+      name: "Australia",
+      difficulty: 3,
+      flag: "https://flagcdn.com/au.svg",
+      link: "Australia/australia.html"
+    },
+    
+    {
+      name: "Brazil",
+      difficulty: 1,
+      flag: "https://flagcdn.com/br.svg",
+      link: "Brazil/brazil.html"
+    },
+    {
+      name: "Costa Rica",
+      difficulty: 1,
+      flag: "https://flagcdn.com/cr.svg",
+      link: "Costa Rica/costarica.html"
+    },
+    {
+      name: "Cyprus",
+      difficulty: 1,
+      flag: "https://flagcdn.com/cy.svg",
+      link: "Cyprus/cyprus.html"
+    },
+    {
+      name: "Estonia",
+      difficulty: 1,
+      flag: "https://flagcdn.com/ee.svg",
+      link: "Estonia/estonia.html"
+    },
+    {
+      name: "Germany",
+      difficulty: 1,
+      flag: "https://flagcdn.com/de.svg",
+      link: "Germany/germany.html"
+    },
+    {
+      name: "Hong Kong",
+      difficulty: 1,
+      flag: "https://flagcdn.com/hk.svg",
+      link: "Hong Kong/hongkong.html"
+    },
+    {
+      name: "India",
+      difficulty: 1,
+      flag: "https://flagcdn.com/in.svg",
+      link: "India/india.html"
+    },
+    {
+      name: "Lithuania",
+      difficulty: 1,
+      flag: "https://flagcdn.com/lt.svg",
+      link: "Lithuania/lithuania.html"
+    },
+    {
+      name: "Romania",
+      difficulty: 1,
+      flag: "https://flagcdn.com/ro.svg",
+      link: "Romania/romania.html"
+    },
+    
+    {
+      name: "Serbia",
+      difficulty: 4,
+      flag: "https://flagcdn.com/rs.svg",
+      link: "Serbia/serbia.html"
+    },
+    {
       //difficulty only integer for now
+<<<<<<< HEAD
     {
       name: "Australia",
       difficulty: 3,
@@ -80,6 +149,13 @@ document.addEventListener("DOMContentLoaded", () => {
       flag: "https://flagcdn.com/lk.svg",
       link: "Sri Lanka/sri-lanka.html"
     }
+=======
+      name: "Sri Lanka",
+      difficulty: 2,
+      flag: "https://flagcdn.com/lk.svg",
+      link: "Sri Lanka/sri-lanka.html"
+    },
+>>>>>>> new_website
     //ADD MORE COUNTRIES HERE
     //CHANGE THE PLACEHOLDER LINKS
   ];
