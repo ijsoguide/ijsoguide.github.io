@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Molecular Biology</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../sectionPages.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="../../../index.html">A Guide to the IJSO</a>
+    </div>
+    <div class="navbar-right">
+      <a href="../../theory.html">Home</a>
+      <a href="../../Physics/physics.html">Physics</a>
+      <a href="../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Molecular Biology</h1>
+    <p>Learn about classification and the evolutionary relationship between organisms.</p>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>Systematics</h2>
+    <a class="back-btn" href="../Biology.html">← Back to Biology</a>
+  </div>
+
+  <!-- Cards -->
+  <div class="container">
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Mutations and Genetic Disorders<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p></p>
+        <a class="learn-btn" href="#">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        DNA Replication, Transcription and Translation<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p></p>
+        <a class="learn-btn" href="">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        DNA Structure and Function<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p></p>
+        <a class="learn-btn" href="#">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Plant Classification<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Know about the plant kingdom by tracing the common features that link ferns to towering trees</p>
+        <a class="learn-btn" href="#">Learn More →</a>
+      </div>
+    </div>
+
+    <!-- Practice Section -->
+    <div class="practice-section">
+      <div class="practice-section-icon"></div>
+      <div class="practice-section-content">
+        <h4>Practice Microbiology and Biotechnology</h4>
+        <p>Challenge yourself with practice problems related to microbes, aseptic techniques, and biotechnology basics.</p>
+        <a href="#">Go to Practice Questions</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </footer>
+
+  <!-- JS -->
+  <script>
+    function toggleCard(card) {
+      const content = card.querySelector('.card-content');
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach(c => {
+        if (c !== card) c.querySelector('.card-content').style.display = 'none';
+      });
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>
