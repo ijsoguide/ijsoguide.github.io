@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bond Energy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- MathJax for LaTeX -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async 
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #faf6ff;
+      margin: 0;
+      color: #333;
+    }
+
+    .navbar {
+      background-color: #9c27b0;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      flex-wrap: wrap;
+    }
+
+    .navbar .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: white;
+    }
+
+    .nav-links a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 900px;
+      margin: 2rem auto 1rem;
+      padding: 0 2rem;
+    }
+
+    .page-header h2 {
+      font-size: 1.8rem;
+      color: #9c27b0;
+    }
+
+    .back-btn {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      color: #333;
+      transition: background-color 0.2s;
+    }
+
+    .back-btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #4a004e;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      color: #9c27b0;
+      margin-top: 2rem;
+      border-bottom: 2px solid #e5c6f0;
+      padding-bottom: 0.3rem;
+    }
+
+    h3 {
+      color: #9c27b0;
+      margin-top: 1.5rem;
+    }
+
+    p, ul, ol {
+      line-height: 1.7;
+    }
+
+    ul li, ol li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer {
+      background-color: #9c27b0;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+      font-size: 0.9em;
+    }
+
+    .diagram-placeholder {
+      border: 2px dashed #ccc;
+      padding: 1rem;
+      text-align: center;
+      margin: 2rem 0;
+      border-radius: 8px;
+      background-color: #f9f2ff;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="../../../../index.html" class="logo">A Guide to the IJSO</a>
+    <div class="nav-links">
+      <a href="../../../theory.html">Home</a>
+      <a href="../../../Physics/physics.html">Physics</a>
+      <a href="../../Chemistry.html">Chemistry</a>
+      <a href="../../../Biology/Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Bond Energy</h2>
+    <a href="../Thermochemistry.html" class="back-btn">← Back to Thermochemistry</a>
+  </div>
+
+  <!-- Main content -->
+  <div class="container">
+<h2>Bond dissociation energy </h2>
+<p>Bond dissociation energy is defined as the value of required energy to dissociate 1 mol of a specific type of bond in the gas phase. For example, 436 kJ/mol of energy is required to dissociate one H-H bond in hydrogen molecules.</p>
+<p>\({\text{H}_2 \text{(g)} + 436\ \text{kJ/mol} \rightarrow \text{H (g)} + \text{H(g)}}\)</p>
+<p>Thus, the bond dissociation energy of H-H bond in hydrogen  molecules is 436 kJ/mol. </p>
+
+<h2>Bond Energy</h2>
+<p>Bond energy is average value of bond dissociation energy for all bonds of the same type within the same chemical species. </p>
+<p>For example, consider the stepwise of methane \(\text{CH}_4\) into atoms.</p>
+<p>\(\text{CH}_4 \text{(g)} + 435\, \text{kJ/mol} \rightarrow \text{CH}_3 \text{(g)}+\text{H(g)}\)</p>
+<p>\(\text{CH}_3 \text{(g)} + 453\, \text{kJ/mol} \rightarrow \text{CH}_2 \text{(g)} +\text{H(g)}\)</p>
+<p>\(\text{CH}_2 \text{(g)} + 425\, \text{kJ/mol} \rightarrow \text{CH(g)}+\text{H(g)}\)</p>
+<p>\(\text{CH(g)} + 339\, \text{kJ/mol} \rightarrow \text{C(g)}+\text{H(g)} \)</p>
+<p>The bond energy of C-H in methane is \(\frac{435+453+425+339}{4}=413 \:\text{kJ/mol}\)</p>
+<p>The following table is average bond energy of various bond</p>
+<img src="image1.png" alt="Bond Energy Table" class="diagram-placeholder">
+<p>Bond energy represents strength of the bond; a higher value of bond energy means a strong bond. For instance, bond energy of N=N (418 kJ/mol) bond is greater than N-N (160 kJ/mol) , which means N=N bond is stronger than the  N-N bond. Generally, multiple bonds are stronger than single bonds.</p>
+
+<h2>Bond energy and Enthalpy</h2>
+<p>In chemical reactions, some bonds are broken and new bonds are formed. In order to dissociate bonds, energy should be added to the system. When bonds are formed, energy is released from the system. So, enthalpy change of reaction is (added energy to break bonds)+(released energy when new bonds are formed).</p>
+
+<p><strong>Method of calculate \(\Delta H\) using bond energy:</strong></p>
+<p>\(\Delta H = \Sigma (n \times D(break))- \Sigma(n \times D(form))\)</p>
+<p>(D: bond energy per mole, n: number of each bond type (mol))</p>
+<p>Example:</p>
+<p>\(2\text{H}_2 \text{(g)} +\text{O}_2 \text{(g)} \rightarrow 2\text{H}_2\text{O (g)}\)</p>
+<p>In this reaction, two H-H bonds and one O=O bond are broken down, and four H-O bonds are formed. The \(\Delta H\) is:</p>
+<p>\(\Delta H =2D_{H-H} +D_{O=O} -4D_{O-H}\)</p>
+</div>
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+
+</body>
+</html>
