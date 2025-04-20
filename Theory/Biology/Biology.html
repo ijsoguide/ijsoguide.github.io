@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <title>Biology | IJSO Guide</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/04bf603a0f.js" crossorigin="anonymous"></script>
+  <script src="../theory.js" defer></script>
+  <link rel="stylesheet" href="../subjectPageNavbar.css">
   <style>
     body {
       margin: 0;
@@ -181,6 +184,12 @@
       margin-top: 4rem;
       font-size: 0.9rem;
     }
+
+    @media(width <= 768px){
+      #navbarList{
+        background-color: #2e7d32;
+      }
+    }
   </style>
 </head>
 <body>
@@ -188,12 +197,13 @@
   <!-- Navbar -->
   <nav class="navbar">
     <a href="../../index.html" class="logo">A Guide to the IJSO</a>
-    <ul>
+    <ul id="navbarList">
       <li><a href="../theory.html">Home</a></li>
       <li><a href="../Physics/physics.html">Physics</a></li>
       <li><a href="../Chemistry/Chemistry.html">Chemistry</a></li>
       <li><a href="Biology.html">Biology</a></li>
     </ul>
+    <i class="fa-solid fa-bars" id="menuToggle"></i>
   </nav>
 
   <!-- Header -->

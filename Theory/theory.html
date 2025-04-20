@@ -5,7 +5,7 @@
   <title>Theory</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <script src="https://kit.fontawesome.com/04bf603a0f.js" crossorigin="anonymous"></script>
-  <script src="theory.js"></script>
+  <script src="theory.js" defer></script>
   <style>
     * {
       box-sizing: border-box;
@@ -163,6 +163,10 @@
       margin-top: 3rem;
     }
 
+    #menuToggle{
+      display: none;
+    }
+
     @media (max-width: 768px) {
       .cards {
         flex-direction: column;
@@ -170,12 +174,6 @@
 
       .card {
         flex: 1 1 auto;
-      }
-
-      nav ul {
-        flex-direction: column;
-        gap: 0.5rem;
-        margin-top: 1rem;
       }
 
       nav {
@@ -188,6 +186,28 @@
         font-weight: 500;
         transition: opacity 0.2s;
       }
+
+      #menuToggle{
+        display: block;
+        z-index: 10;
+        margin: auto 0 auto 0;
+      }
+      #navbarList{
+        z-index: 5;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        padding: 1rem;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: #2979ff;
+        padding: 0 2rem 0 2rem;
+        transition: all 0.4s ease-in-out;
+      }
+      #navbarList.show{
+        right: 0;
+      }
     }
   </style>
 </head>
@@ -196,14 +216,14 @@
   <!-- Navbar -->
   <nav>
     <a href="../index.html"><div class="logo">A Guide to the IJSO</div></a>
-    <ul>
+    <ul id="navbarList">
       <li><a href="theory.html">Home</a></li>
       <li><a href="Physics/physics.html">Physics</a></li>
       <li><a href="Chemistry/Chemistry.html">Chemistry</a></li>
       <li><a href="Biology/Biology.html">Biology</a></li>
       <li><a href="#">Mock Tests and Quizzes</a></li>
     </ul>
-   <!--- <i class="fa-solid fa-bars" id="menuToggle"></i>--->
+    <i class="fa-solid fa-bars" id="menuToggle"></i>
   </nav>
 
   <!-- Header -->
