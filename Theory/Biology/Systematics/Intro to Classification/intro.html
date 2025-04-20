@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Introduction to Classification</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4fef4;
+      margin: 0;
+      color: #333;
+    }
+
+    .navbar {
+      background-color: #2e7d32;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      flex-wrap: wrap;
+    }
+
+    .navbar .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: white;
+    }
+
+    .nav-links a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 900px;
+      margin: 2rem auto 1rem;
+      padding: 0 2rem;
+    }
+
+    .page-header h2 {
+      font-size: 1.8rem;
+      color: #2e7d32;
+    }
+
+    .back-btn {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      color: #333;
+      transition: background-color 0.2s;
+    }
+
+    .back-btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #1b5e20;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      color: #2e7d32;
+      margin-top: 2rem;
+      border-bottom: 2px solid #c8e6c9;
+      padding-bottom: 0.3rem;
+    }
+
+    h3 {
+      color: #2e7d32;
+      margin-top: 1.5rem;
+    }
+
+    p, ul, ol {
+      line-height: 1.7;
+    }
+
+    ul, ol {
+      margin-left: 1.2rem;
+    }
+
+    ul li, ol li {
+      margin-bottom: 0.5rem;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      margin: 1.5rem auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    table {
+      border-collapse: collapse;
+      margin: 1rem 0;
+      width: 100%;
+    }
+
+    table, th, td {
+      border: 1px solid #aaa;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    .footer {
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="../../../../index.html" class="logo">A Guide to the IJSO</a>
+    <div class="nav-links">
+      <a href="../../../theory.html">Home</a>
+      <a href="../../../Physics/physics.html">Physics</a>
+      <a href="../../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../../Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Introduction to Classification</h2>
+    <a href="../Systematics.html" class="back-btn">← Back to Systematics</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+<h2>Biological Classification</h2>
+<p>The natural world is teeming with an incredible diversity of life. To make sense of this vast array of organisms, scientists have developed systems of <strong>biological classification</strong>. This involves organizing living things into groups based on their shared characteristics and evolutionary relationships.</p>
+
+<h2>The Linnaean System</h2>
+<p>The cornerstone of modern biological classification is the system developed by the Swedish botanist, physician, and zoologist <strong>Carl Linnaeus</strong> (originally Carl von Linné) in the 18th century. His work, particularly his book Systema Naturae, laid the groundwork for how we name and categorize organisms today.</p>
+
+<h3>Key Contributions of Linnaeus</h3>
+<ul>
+    <li><strong>Hierarchical Classification</strong>: Linnaeus established a hierarchical system of classifying organisms, arranging them into a series of nested ranks or <strong>taxa</strong> (singular: taxon). Think of it like a set of increasingly specific boxes within boxes. The major ranks he established are still largely in use today:
+    <ul>
+        <li><strong>Kingdom</strong> (the broadest category)</li>
+        <li><strong>Class</strong></li>
+        <li><strong>Order</strong></li>
+        <li><strong>Genus</strong></li>
+        <li><strong>Species</strong> (the most specific category)</li>
+    </ul>
+    </li>
+    <br>
+    <li>Later, the ranks of <strong>Phylum</strong> (for animals and protists) or <Strong>Division</Strong> (often used for plants and fungi) were introduced between Kingdom and Class, and <Strong>Family</Strong> was inserted between Order and Genus to provide more levels of organization.</li>
+    <br>
+    <li><strong>Binomial Nomenclature:</strong> This is a standardized way of naming each species using two Latin (or Latinized) names:
+        <ul>
+            <li>The first name is the <strong>genus</strong> (plural: genera),in which the first letter is always capitalized.</li>
+            <li>The second name is the <strong>specific epithet </strong>(often called the species name), which is always lowercase</li>
+            <li>Together, the genus and specific epithet constitute the unique scientific name of a species.</li>
+        </ul>
+    </li>
+    <br>
+    <li>For example, the scientific name for the garden rose is Rosa <i>indica</i>. Here, <i>Rosa</i> is the genus, and <i>indica</i> is the specific epithet. This system provides a universal and unambiguous name for every known organism, regardless of common names that can vary by region or language.</li>
+    <br>
+    <li><strong>Standardized System:</strong> Before Linnaeus, naming organisms was often inconsistent and cumbersome, with long descriptive phrases. His system provided a concise and universally accepted method, greatly facilitating communication and understanding among scientists worldwide.</li>
+</ul>
+
+<h2>Evolution of the Taxonomic Hierarchy</h2>
+<p>Our understanding of evolutionary relationships has advanced significantly since the 18th century. Modern classification aims to reflect the <strong>phylogeny</strong> (evolutionary history) of organisms. This means that organisms are grouped together based on their shared ancestry.</p>
+<p>As a result, the Linnaean hierarchy has been adapted and expanded. We now often use additional ranks like:</p>
+<ul>
+    <li><strong>Domain:</strong> A level above Kingdom, recognizing the fundamental differences between Bacteria, Archaea, and Eukarya (which includes plants).</li>
+    <li><strong>Subphylum, Superclass, Suborder, Subfamily, Tribe, Subspecies:</strong> These are used to provide even finer levels of classification within the major ranks</li>
+</ul>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+
+</body>
+</html>

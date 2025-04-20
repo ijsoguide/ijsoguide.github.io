@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mechanisms of Heat Transfer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f8ff;
+      margin: 0;
+      color: #333;
+    }
+
+    .navbar {
+      background-color: #2979ff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      flex-wrap: wrap;
+    }
+
+    .navbar .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: white;
+    }
+
+    .nav-links a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 900px;
+      margin: 2rem auto 1rem;
+      padding: 0 2rem;
+    }
+
+    .page-header h2 {
+      font-size: 1.8rem;
+      color: #2979ff;
+    }
+
+    .back-btn {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      color: #333;
+      transition: background-color 0.2s;
+    }
+
+    .back-btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #223;
+    }
+
+    h2 {
+      color: #2979ff;
+      margin-top: 2rem;
+      border-bottom: 2px solid #cde8ff;
+      padding-bottom: 0.3rem;
+    }
+
+    p, ul, ol {
+      line-height: 1.7;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    ul li, ol li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: white;
+      background-color: #2979ff;
+    }
+
+    /* Collapsible Styling */
+    .collapsible {
+      background-color: #e3f2fd;
+      color: #2979ff;
+      cursor: pointer;
+      padding: 0.75rem 1rem;
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+      text-align: left;
+      outline: none;
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-top: 1.5rem;
+    }
+
+    .collapsible:hover {
+      background-color: #d1eaff;
+    }
+
+    .content {
+      padding: 0 1rem;
+      display: none;
+      overflow: hidden;
+      border-left: 3px solid #2979ff;
+      margin-top: 0.5rem;
+      background-color: #f9fbff;
+      border-radius: 0 0 8px 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="../../../../index.html" class="logo">A Guide to the IJSO</a>
+    <div class="nav-links">
+      <a href="../../../theory.html">Home</a>
+      <a href="../../../Physics/physics.html">Physics</a>
+      <a href="../../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../../../Biology/Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Mechanisms of Heat Transfer</h2>
+    <a href="../Thermo.html" class="back-btn">← Back to Thermodynamics</a>
+  </div>
+
+  <!-- Main content -->
+  <div class="container">
+    <p>Heat transfer occurs through three primary mechanisms: conduction, convection, and radiation. Each plays a crucial role in the movement of thermal energy in different situations.</p>
+
+    <h2>Conduction</h2>
+    <ul>
+      <li>Conduction is the transfer of heat through direct contact between molecules.</li>
+      <li>It occurs mainly in solids (especially metals) because their atoms are closely packed.</li>
+      <li>The rate of conduction depends on the thermal conductivity of the material.</li>
+      <li>Formula:<br>
+      \[
+      Q = \frac{kA \Delta T}{d}
+      \]</li>
+      <li>Example: A metal spoon gets hot when placed in a boiling pot.</li>
+    </ul>
+
+    <h2>Convection</h2>
+    <ul>
+      <li>Convection is the transfer of heat in fluids (liquids and gases) due to motion of the fluid itself.</li>
+      <li>It happens because warmer fluids expand, become less dense, and rise, while cooler fluids sink.</li>
+      <li>Two types:
+        <ol>
+          <li><strong>Natural Convection:</strong> Occurs due to density differences (e.g., warm air rising).</li>
+          <li><strong>Forced Convection:</strong> Occurs when an external force moves the fluid (e.g., a fan or pump).</li>
+        </ol>
+      </li>
+      <li>Formula:<br>
+      \[
+      Q = hA \Delta T
+      \]</li>
+      <li>Example: Hot air rising above a candle flame.</li>
+    </ul>
+
+    <h2>Radiation</h2>
+    <ul>
+      <li>Radiation is the transfer of heat via electromagnetic waves without needing a medium.</li>
+      <li>All objects emit radiation based on their temperature.</li>
+      <li>The amount of radiation emitted follows the Stefan-Boltzmann Law:<br>
+      \[
+      P = \sigma A T^4
+      \]</li>
+      <li>Example: The Sun heating the Earth.</li>
+    </ul>
+
+    <p>These three modes often work together. For example, a hot cup of coffee conducts heat through the cup, convects heat to the surrounding air, and radiates heat as infrared waves.</p>
+
+    <button class="collapsible">Example 1 : Rate of Heat Transfer</button>
+    <div class="content">
+      <p>A metal rod of length 1.5 m and cross-sectional area 2 cm² has one end maintained at 100°C and the other at 30°C. The thermal conductivity of the metal is 200 W/m·K. Find the rate of heat transfer through the rod.</p>
+      <p>Convert units:</p>
+      \[
+      A = 2 \times 10^{-4} \, \text{m}^2, \quad \Delta T = 70^\circ C, \quad d = 1.5 \, \text{m}
+      \]
+      \[
+      Q = \frac{200 \times 2 \times 10^{-4} \times 70}{1.5} = 1.87 \, \text{W}
+      \]
+    </div>
+
+    <button class="collapsible">Example 2 : Peak Wavelength of Radiation</button>
+    <div class="content">
+      <p>If the Sun’s surface temperature is 5800 K and it emits radiation like a black body, what is the peak wavelength of its radiation?</p>
+      <p>Using Wien’s law:</p>
+      \[
+      \lambda_{\text{max}} T = 2.9 \times 10^{-3} \, \text{m·K}
+      \Rightarrow \lambda_{\text{max}} = \frac{2.9 \times 10^{-3}}{5800} = 500 \, \text{nm}
+      \]
+    </div>
+
+    <h2>Questions</h2>
+    <ol>
+      <li>A hot metal plate at 500°C is radiating energy. If the surrounding temperature is 20°C, by what factor will the radiated power increase if the plate’s temperature is doubled?</li>
+      <li>A 1.5 kW heater is used to warm a 20 m³ room. If the room has no heat loss and the specific heat capacity of air is 1005 J/kg·K, how long will it take to raise the temperature by 10°C? (Density of air = 1.2 kg/m³)</li>
+    </ol>
+
+    <h2>Solutions</h2>
+    <ol>
+      <li>\( \approx 17.38\) times</li>
+      <li>\( \approx 160.8 \, \text{seconds} \)</li>
+    </ol>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+
+  <script>
+    const collapsibles = document.querySelectorAll(".collapsible");
+    collapsibles.forEach(button => {
+      button.addEventListener("click", () => {
+        button.classList.toggle("active");
+        const content = button.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

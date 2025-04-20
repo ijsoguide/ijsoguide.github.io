@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cladistics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4fef4;
+      margin: 0;
+      color: #333;
+    }
+
+    .navbar {
+      background-color: #2e7d32;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      flex-wrap: wrap;
+    }
+
+    .navbar .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: white;
+    }
+
+    .nav-links a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 900px;
+      margin: 2rem auto 1rem;
+      padding: 0 2rem;
+    }
+
+    .page-header h2 {
+      font-size: 1.8rem;
+      color: #2e7d32;
+    }
+
+    .back-btn {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      color: #333;
+      transition: background-color 0.2s;
+    }
+
+    .back-btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #1b5e20;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      color: #2e7d32;
+      margin-top: 2rem;
+      border-bottom: 2px solid #c8e6c9;
+      padding-bottom: 0.3rem;
+    }
+
+    h3 {
+      color: #2e7d32;
+      margin-top: 1.5rem;
+    }
+
+    p, ul, ol {
+      line-height: 1.7;
+    }
+
+    ul, ol {
+      margin-left: 1.2rem;
+    }
+
+    ul li, ol li {
+      margin-bottom: 0.5rem;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      margin: 1.5rem auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    table {
+      border-collapse: collapse;
+      margin: 1rem 0;
+      width: 100%;
+    }
+
+    table, th, td {
+      border: 1px solid #aaa;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    .footer {
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="../../../../index.html" class="logo">A Guide to the IJSO</a>
+    <div class="nav-links">
+      <a href="../../../theory.html">Home</a>
+      <a href="../../../Physics/physics.html">Physics</a>
+      <a href="../../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../../Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Cladistics</h2>
+    <a href="../Systematics.html" class="back-btn">← Back to Systematics</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+
+    <h2>What is it</h2>
+    <p>Cladistics is a method of biological classification that groups organisms based on their shared derived characteristics (synapomorphies) and evolutionary relationships. It aims to reconstruct the evolutionary history (phylogeny) of organisms and represent these relationships in a branching diagram called a cladogram.</p>
+
+    <h2>Key Principles of Cladistics</h2>
+    <ol>
+      <li><strong>Common Ancestry:</strong> All organisms in a cladogram are related by descent from a common ancestor.</li>
+      <li><strong>Bifurcating Pattern of Lineage Splitting (Cladogenesis):</strong> Lineages split into exactly two descendant lineages.</li>
+      <li><strong>Change in Characteristics Over Time:</strong> Characteristics of organisms change over evolutionary time, allowing the identification of different lineages.</li>
+    </ol>
+
+    <h2>Important Terms in Cladistics</h2>
+    <ul>
+      <li><strong>Clade (Monophyletic Group):</strong> A group that includes a common ancestor and all of its descendants.</li>
+      <li><strong>Character:</strong> A heritable feature compared across organisms (e.g., backbone, leaf type, DNA sequence).</li>
+      <li><strong>Character State:</strong> Forms a character can take (e.g., backbone present/absent).</li>
+      <li><strong>Plesiomorphy (Ancestral Character):</strong> Inherited from distant ancestors, not useful within small groups.</li>
+      <li><strong>Apomorphy (Derived Character):</strong> A recently evolved character state.</li>
+      <li><strong>Synapomorphy:</strong> A shared derived character inherited from the most recent common ancestor.</li>
+      <li><strong>Autapomorphy:</strong> A derived character unique to a single taxon.</li>
+      <li><strong>Homoplasy:</strong> A character shared due to convergence or reversal, not common ancestry.</li>
+      <li><strong>Paraphyletic Group:</strong> Includes common ancestor and some but not all descendants.</li>
+      <li><strong>Polyphyletic Group:</strong> Includes taxa with different ancestors (invalid group).</li>
+      <li><strong>Cladogram:</strong> Diagram of evolutionary relationships.</li>
+      <li><strong>Nodes:</strong> Points where lineages split (common ancestor).</li>
+      <li><strong>Branches (Internodes):</strong> Lines representing lineages.</li>
+      <li><strong>Terminal Nodes (Tips):</strong> Represent current taxa.</li>
+      <li><strong>Root:</strong> Most recent common ancestor of all taxa in the tree.</li>
+      <li><strong>Sister Taxa:</strong> Two taxa sharing an immediate common ancestor.</li>
+      <li><strong>Outgroup:</strong> A related taxon not part of the main group, used for comparison.</li>
+    </ul>
+
+    <h2>Steps in Cladistic Analysis</h2>
+    <ol>
+      <li>Select Taxa (ingroup + outgroup).</li>
+      <li>Select Characters (morphological, behavioral, molecular).</li>
+      <li>Determine Character States.</li>
+      <li>Polarize Characters (use outgroup to determine ancestral vs. derived).</li>
+      <li>Construct a Cladogram using synapomorphies and principle of parsimony.</li>
+      <li>Evaluate the Cladogram by assessing consistency and identifying homoplasy.</li>
+    </ol>
+
+    <h2>Example</h2>
+    <p>Consider the following taxa and characters:</p>
+
+    <table>
+      <tr><th>Character</th><th>A</th><th>B</th><th>C</th><th>D</th></tr>
+      <tr><td>Backbone</td><td>Present</td><td>Present</td><td>Present</td><td>Absent</td></tr>
+      <tr><td>Hair</td><td>Present</td><td>Present</td><td>Absent</td><td>Absent</td></tr>
+      <tr><td>Amniotic Egg</td><td>Present</td><td>Absent</td><td>Absent</td><td>Absent</td></tr>
+    </table>
+
+    <p>Conclusion:</p>
+    <ul>
+      <li>D is the outgroup and branches off early</li>
+      <li>Backbone evolves after D branches</li>
+      <li>C branches off</li>
+      <li>Hair evolves</li>
+      <li>B branches</li>
+      <li>Amniotic egg evolves in A</li>
+    </ul>
+
+    <p>The possible cladogram must follow this branching sequence.</p>
+
+    <!-- Insert diagram image here -->
+    <img src="image1.png" alt="Cladogram Diagram Placeholder">
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+
+</body>
+</html>
