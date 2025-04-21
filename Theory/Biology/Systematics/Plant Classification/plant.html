@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Plant Classification</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4fef4;
+      margin: 0;
+      color: #333;
+    }
+
+    .navbar {
+      background-color: #2e7d32;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      flex-wrap: wrap;
+    }
+
+    .navbar .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: white;
+    }
+
+    .nav-links a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 900px;
+      margin: 2rem auto 1rem;
+      padding: 0 2rem;
+    }
+
+    .page-header h2 {
+      font-size: 1.8rem;
+      color: #2e7d32;
+    }
+
+    .back-btn {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      color: #333;
+      transition: background-color 0.2s;
+    }
+
+    .back-btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #1b5e20;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      color: #2e7d32;
+      margin-top: 2rem;
+      border-bottom: 2px solid #c8e6c9;
+      padding-bottom: 0.3rem;
+    }
+
+    h3 {
+      color: #2e7d32;
+      margin-top: 1.5rem;
+    }
+
+    p, ul, ol {
+      line-height: 1.7;
+    }
+
+    ul, ol {
+      margin-left: 1.2rem;
+    }
+
+    ul li, ol li {
+      margin-bottom: 0.5rem;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      margin: 1.5rem auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    table {
+      border-collapse: collapse;
+      margin: 1rem 0;
+      width: 100%;
+    }
+
+    table, th, td {
+      border: 1px solid #aaa;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    .footer {
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="../../../../index.html" class="logo">A Guide to the IJSO</a>
+    <div class="nav-links">
+      <a href="../../../theory.html">Home</a>
+      <a href="../../../Physics/physics.html">Physics</a>
+      <a href="../../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../../Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Plant Classification</h2>
+    <a href="../Systematics.html" class="back-btn">← Back to Systematics</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+<img src="image1.png" >
+
+<h2>Bryophytes (Non-vascular Plants)</h2>
+<ul>
+  <li>Include mosses, liverworts, and hornworts.</li>
+  <li>Lack true vascular tissues (xylem and phloem).</li>
+  <li>Small in size and typically found in moist environments.</li>
+  <li>Dominant gametophyte generation (the main plant body is haploid).</li>
+  <li>Water is essential for fertilization (motile sperm).</li>
+  <li>Examples: Funaria (moss), Marchantia (liverwort).</li>
+</ul>
+
+<h2>Pteridophytes (Vascular Seedless Plants)</h2>
+<ul>
+  <li>Include ferns, horsetails, and whisk ferns.</li>
+  <li>Possess true vascular tissues (xylem and phloem).</li>
+  <li>Have true roots, stems, and leaves.</li>
+  <li>Dominant sporophyte generation (the main plant body is diploid).</li>
+  <li>Reproduce via spores produced in sporangia.</li>
+  <li>Water is still required for fertilization.</li>
+  <li>Examples: Dryopteris (fern), Equisetum (horsetail).</li>
+</ul>
+
+<h2>Gymnosperms (Vascular Seed Plants - Naked Seeds)</h2>
+<ul>
+  <li>Include conifers (pines, firs, spruces), cycads, ginkgoes, and gnetophytes.</li>
+  <li>Possess well-developed vascular tissues.</li>
+  <li>Produce seeds that are not enclosed within a fruit ("naked seeds").</li>
+  <li>Pollination occurs directly by wind (anemophily).</li>
+  <li>Dominant sporophyte generation.</li>
+  <li>Examples: Pinus (pine), Cycas.</li>
+</ul>
+
+<h2>Angiosperms (Vascular Seed Plants - Flowering Plants)</h2>
+<ul>
+  <li>The most diverse and dominant group of plants.</li>
+  <li>Possess well-developed vascular tissues.</li>
+  <li>Produce flowers, which are the reproductive structures.</li>
+  <li>Seeds are enclosed within fruits, which develop from the ovary.</li>
+  <li>Double fertilization is a unique characteristic (one sperm fertilizes the egg to form the zygote, and another sperm fuses with the polar nuclei in the central cell to form the endosperm - food supply for seed).</li>
+  <li>Pollination can occur by wind, water, insects, birds, and other animals.</li>
+  <li>Dominant sporophyte generation.</li>
+  <li>Performs <strong>alternation of generations</strong> - featuring a diploid sporophyte generation and haploid gametophyte generation - alternating between the two generations in a cyclical manner.</li>
+  <li>Divided into two main classes:</li>
+  <ul>
+    <li><strong>Dicotyledonae (Dicots):</strong> Two cotyledons (seed leaves), net-like venation in leaves, taproot system, floral parts usually in multiples of four or five. Examples: Hibiscus, Mango, Bean.</li>
+    <li><strong>Monocotyledonae (Monocots):</strong> One cotyledon, parallel venation in leaves, fibrous root system, floral parts usually in multiples of three. Examples: Rice, Wheat, Maize, Lily.l.</li>
+  <img src="image2.png" >
+  </ul>
+</ul>
+
+<h2>Important Terms to Know:</h2>
+<ul>
+  <li><strong>Vascular tissue:</strong> Xylem (transports water and minerals) and phloem (transports food).</li>
+  <li><strong>Spores:</strong> Haploid reproductive cells that can develop into a new organism without fertilization.</li>
+  <li><strong>Seeds:</strong> Mature ovules containing an embryo and stored food, enclosed by a protective coat.</li>
+  <li><strong>Fruit:</strong> Mature ovary containing seeds.</li>
+  <li><strong>Cotyledon:</strong> An embryonic leaf in seed-bearing plants, one or more of which are the first leaves to appear from a germinating seed.</li>
+  <li><strong>Pollination:</strong> Transfer of pollen grains from the anther to the stigma.</li>
+  <li><strong>Fertilization:</strong> Fusion of the male and female gametes.</li>
+  <li><strong>Gametophyte:</strong> Haploid generation in the plant life cycle that produces gametes.</li>
+  <li><strong>Sporophyte:</strong> Diploid generation in the plant life cycle that produces spores.</li>
+  <li><strong>Alternation of Generations:</strong> The life cycle of plants that involves both haploid and diploid multicellular stages.</li>
+  <img src="image3.png" >
+</ul>
+</div>
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+
+</body>
+</html>
