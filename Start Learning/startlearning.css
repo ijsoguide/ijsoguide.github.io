@@ -213,6 +213,13 @@ ul.menu li a:hover {
   transform: scale(1.1);
 }
 
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #112240;
+  border-top: 2px solid #233554;
+}
+
 /* Mobile responsive */
 @media (max-width: 768px) {
   .grid {
