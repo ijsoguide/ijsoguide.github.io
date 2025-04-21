@@ -227,3 +227,9 @@ footer {
     grid-template-rows: repeat(6, 33vh);
   }
 }
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #112240;
+  border-top: 2px solid #233554;
+}
