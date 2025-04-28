@@ -296,6 +296,42 @@ h2 {
   cursor: pointer;
 }
 
+.pre-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  flex-wrap: wrap;
+}
+
+.pre-footer-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.pre-footer-right {
+  flex: 1;
+  min-width: 250px;
+  text-align: right;
+}
+
+.pre-footer-icons a {
+  margin: 0 8px;
+}
+
+.pre-footer-icons img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.pre-footer-icons img:hover {
+  transform: scale(1.2);
+}
+
 footer {
   text-align: center;
   padding: 2rem 1rem;
