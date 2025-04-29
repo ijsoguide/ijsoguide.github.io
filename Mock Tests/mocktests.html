@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mock Tests</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="https://kit.fontawesome.com/04bf603a0f.js" crossorigin="anonymous"></script>
+  <script src="theory.js" defer></script>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f9ff;
+      color: #333;
+    }
+
+    /* Navbar */
+    nav {
+      background: #2979ff;
+      padding: 1rem 2rem;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav a{
+      text-decoration: none;
+    }
+
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      cursor: default;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.2s;
+    }
+
+    nav ul li a:hover {
+      opacity: 0.8;
+    }
+
+    header {
+      background: linear-gradient(90deg, #2979ff, #00c6ff);
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+    }
+
+    .card {
+      flex: 1 1 300px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card .content {
+      padding: 1.5rem;
+    }
+
+    /* Color-coded headings */
+    .physics h2 {
+      color: #2979ff;
+    }
+
+    .chemistry h2 {
+      color: #9c27b0;
+    }
+
+    .biology h2 {
+      color: #43a047;
+    }
+
+    .card p {
+      color: #555;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .physics a {
+      background-color: #2979ff;
+    }
+
+    .physics a:hover {
+      background-color: #0d47a1;
+    }
+
+    .chemistry a {
+      background-color: #9c27b0;
+    }
+
+    .chemistry a:hover {
+      background-color: #6a0080;
+    }
+
+    .biology a {
+      background-color: #43a047;
+    }
+
+    .biology a:hover {
+      background-color: #2e7d32;
+    }
+
+    .card a {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    footer {
+      background-color: #2979ff;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+
+    #menuToggle{
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .cards {
+        flex-direction: column;
+      }
+
+      .card {
+        flex: 1 1 auto;
+      }
+
+      nav {
+        align-items: flex-start;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        transition: opacity 0.2s;
+      }
+
+      #menuToggle{
+        display: block;
+        z-index: 10;
+        margin: auto 0 auto 0;
+      }
+      #navbarList{
+        z-index: 5;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        padding: 1rem;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: #2979ff;
+        padding: 0 2rem 0 2rem;
+        transition: all 0.4s ease-in-out;
+      }
+      #navbarList.show{
+        right: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="../index.html"><div class="logo">A Guide to the IJSO</div></a>
+    <ul id="navbarList">
+      <li><a href="mocktests.html">Home</a></li>
+      <li><a href="Physics/physics.html">Physics</a></li>
+      <li><a href="Chemistry/Chemistry.html">Chemistry</a></li>
+      <li><a href="Biology/Biology.html">Biology</a></li>
+      <li><a href="../Theory/theory.html">Theory</a></li>
+    </ul>
+    <i class="fa-solid fa-bars" id="menuToggle"></i>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Mock Tests</h1>
+    <p>Put your knowledge to the test with full-length mock exams designed to simulate the real challenge—covering a mix of theory, application, and tricky twists across Biology, Chemistry, and Physics to sharpen your timing, accuracy, and confidence.</p>
+  </header>
+
+  <!-- Cards Section -->
+  <div class="container">
+    <div class="cards">
+      <!-- General Mock Tests -->
+      <div class="card" style="border: 2px solid #2979ff;">
+        <img src="generalmock.jpg" alt="General Mock Tests" />
+        <div class="content">
+          <h2 style="color: #2979ff;">General Mock Tests</h2>
+          <p>Test your skills with combined mock exams covering interdisciplinary IJSO-style challenges, perfect for final prep.</p>
+          <a href="general.html" style="background-color: #2979ff;">Try General Test</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Subject Mock Tests -->
+    <div class="cards" style="margin-top: 2rem;">
+      <!-- Physics -->
+      <div class="card physics">
+        <img src="physics.jpeg" alt="Physics" />
+        <div class="content">
+          <h2>Physics</h2>
+          <p>Mechanics, thermodynamics, electricity — everything in motion and force!</p>
+          <a href="Physics/physics.html">Explore Physics</a>
+        </div>
+      </div>
+
+      <!-- Chemistry -->
+      <div class="card chemistry">
+        <img src="chemistry.avif" alt="Chemistry" />
+        <div class="content">
+          <h2>Chemistry</h2>
+          <p>Discover atoms, bonds, reactions, and the wonders of molecular science.</p>
+          <a href="Chemistry/Chemistry.html">Explore Chemistry</a>
+        </div>
+      </div>
+
+      <!-- Biology -->
+      <div class="card biology">
+        <img src="biology.avif" alt="Biology" />
+        <div class="content">
+          <h2>Biology</h2>
+          <p>Unravel the secrets of life — from DNA to ecosystems and evolution.</p>
+          <a href="Biology/Biology.html">Explore Biology</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 A Guide to the IJSO. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

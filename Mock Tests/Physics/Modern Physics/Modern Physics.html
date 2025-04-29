@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Modern Physics Mock Tests</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../sectionPages.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="../../../index.html">A Guide to the IJSO</a>
+    </div>
+    <div class="navbar-right">
+      <a href="../../mocktests.html">Home</a>
+      <a href="../physics.html">Physics</a>
+      <a href="../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../../Biology/Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Modern Physics Mock Tests</h1>
+    <p>Test your knowledge of quantum mechanics, relativity, and particle physics with these Modern Physics mock tests.</p>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>Modern Physics Mock Tests</h2>
+    <a class="back-btn" href="../physics.html">← Back to Physics Mock Tests</a>
+  </div>
+
+    <!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">📘</div>
+  <div class="practice-section-content">
+    <h4>Ready to dive into modern physics theory?</h4>
+    <p>Explore our collection of theory content in modern physics, designed to enhance your understanding and knowledge of key concepts.</p>
+    <a href="../../../Theory/Physics/Modern Physics/Modern Physics.html">View Modern Physics Theory Content</a>
+  </div>
+</div>
+
+<!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">🎯</div>
+  <div class="practice-section-content">
+    <h4>Ready to take IJSO-style modern physics practice questions?</h4>
+    <p>Apply your knowledge with our collection of IJSO-style modern physics problems.</p>
+    <a href="../../../Practice Questions/Physics/Modern Physics/Modern Physics.html">View Modern Physics Practice Questions</a>
+  </div>
+</div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 A Guide to the IJSO. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleCard(card) {
+      const content = card.querySelector('.card-content');
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach(c => {
+        if (c !== card) c.querySelector('.card-content').style.display = 'none';
+      });
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>
