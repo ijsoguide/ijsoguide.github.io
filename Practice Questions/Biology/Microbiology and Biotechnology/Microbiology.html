@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Microbiology and Biotechnology Problems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../sectionPages.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="../../../index.html">A Guide to the IJSO</a>
+    </div>
+    <div class="navbar-right">
+      <a href="../../practicequestions.html">Home</a>
+      <a href="../../Physics/physics.html">Physics</a>
+      <a href="../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Microbiology and Biotechnology Problems</h1>
+    <p>Tackle practice questions on microbiology and biotechnology by exploring the roles of microorganisms in fermentation, medicine, and genetic engineering, and understanding how biotechnology is used in fields like agriculture and healthcare.</p>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>Microbiology and Biotechnology Problems</h2>
+    <a class="back-btn" href="../Biology.html">← Back to Biology Problems</a>
+  </div>
+
+  <!-- Cards -->
+  <div class="container">
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Microorganisms: Bacteria, Viruses, Fungi, Protozoa<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Explore practice questions on microorganisms by identifying the characteristics, structures, and roles of bacteria, viruses, fungi, and protozoa in ecosystems, health, and biotechnology applications.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Useful and harmful microbes<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Tackle practice questions on useful and harmful microbes by distinguishing between beneficial microorganisms in processes like fermentation and nitrogen fixation, and harmful microbes that cause diseases and infections.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Sterilization and aseptic techniques<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Test your grasp of sterilization and aseptic techniques by solving practice questions that explore methods like autoclaving, filtration, and flame sterilization, and their roles in preventing contamination.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Vaccines and antibiotics<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Tackle practice questions on vaccines and antibiotics by analyzing how they function to prevent or treat infections, their mechanisms of action, and challenges like resistance and immune response.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Intro to biotechnology<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Dive into practice questions on the basics of biotechnology by exploring its foundational concepts, tools like plasmids and restriction enzymes, and real-world applications in medicine, agriculture, and industry.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+   <!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">📘</div>
+  <div class="practice-section-content">
+    <h4>Ready to dive into microbiology and biotechnology theory?</h4>
+    <p>Explore our collection of theory content in microbiology and biotechnology, designed to enhance your understanding and knowledge of key concepts.</p>
+    <a href="../../../Theory/Biology/Microbiology and Biotechnology/Microbiology.html">View Microbiology Theory Content</a>
+  </div>
+</div>
+
+<!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">📝</div>
+  <div class="practice-section-content">
+    <h4>Ready to take IJSO-style microbiology and biotechnology mock tests?</h4>
+    <p>Challenge yourself with our collection of IJSO-style mock tests in microbiology and biotechnology, designed to test your problem-solving skills and understanding.</p>
+    <a href="#">View Microbiology and Biotechnology Mock Tests</a>
+  </div>
+</div>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </footer>
+
+  <!-- JS -->
+  <script>
+    function toggleCard(card) {
+      const content = card.querySelector('.card-content');
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach(c => {
+        if (c !== card) c.querySelector('.card-content').style.display = 'none';
+      });
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>

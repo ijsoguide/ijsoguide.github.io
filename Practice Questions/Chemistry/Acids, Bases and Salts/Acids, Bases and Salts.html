@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Acids, Bases and Salts Problems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../sectionPages.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="../../../index.html">A Guide to the IJSO</a>
+    </div>
+    <div class="navbar-right">
+      <a href="../../practicequestions.html">Home</a>
+      <a href="../../Physics/physics.html">Physics</a>
+      <a href="../Chemistry.html">Chemistry</a>
+      <a href="../../Biology/Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Acids, Bases and Salts Problems</h1>
+    <p>Tackle scenarios involving neutralization, titrations, and salt formation, and figure out who’s acidic, who’s basic, and what they leave behind.</p>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>Acids, Bases and Salts Problems</h2>
+    <a class="back-btn" href="../Chemistry.html">← Back to Chemistry Problems</a>
+  </div>
+
+  <!-- Cards -->
+  <div class="container">
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Varying Definitions of Acids & Bases<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Compare and apply the Arrhenius, Brønsted-Lowry, and Lewis definitions to different reactions, and decide who’s donating what to whom.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Properties of Acids and Bases<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Tackle problems that reveal the characteristic tastes, reactions, conductivity, and pH behavior of acids and bases in everyday and lab settings.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        pH Scale and Indicators<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Crack the code of acidity and alkalinity by using pH values and indicators to classify solutions and predict their behavior in reactions.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Strong vs Weak Acids / Bases<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Explore how strong and weak acids or bases differ in ionization, conductivity, and pH—then tackle problems that test your ability to spot the difference.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Neutralization Reactions<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Tackle problems where acids and bases go head-to-head, forming water and salt—figure out the balanced equation and the energy changes involved.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Preparations of Salts<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Explore different methods of salt preparation—neutralization, precipitation, and metal reactions—and decide which route fits each chemical scenario best.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Titrations<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Step into the lab with titration challenges—calculate unknown concentrations, pinpoint the equivalence point, and master the art of the indicator switch.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">📘</div>
+  <div class="practice-section-content">
+    <h4>Ready to dive into acids, bases and salts theory?</h4>
+    <p>Explore our collection of theory content in acids, bases and salts, designed to enhance your understanding and knowledge of key concepts.</p>
+    <a href="../../../Theory/Chemistry/Acids, Bases and Salts/Acids, Bases and Salts.html">View Acids, Bases and Salts Theory Content</a>
+  </div>
+</div>
+
+<!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">📝</div>
+  <div class="practice-section-content">
+    <h4>Ready to take IJSO-style acids, bases and salts mock tests?</h4>
+    <p>Challenge yourself with our collection of IJSO-style mock tests in acids, bases and salts, designed to test your problem-solving skills and understanding.</p>
+    <a href="#">View Acids, Bases and Salts Mock Tests</a>
+  </div>
+</div>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleCard(card) {
+      const content = card.querySelector('.card-content');
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach(c => {
+        if (c !== card) c.querySelector('.card-content').style.display = 'none';
+      });
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>

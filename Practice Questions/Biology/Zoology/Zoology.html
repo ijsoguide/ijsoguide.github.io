@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Zoology Problems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../sectionPages.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="../../../index.html">A Guide to the IJSO</a>
+    </div>
+    <div class="navbar-right">
+      <a href="../../practicequestions.html">Home</a>
+      <a href="../../Physics/physics.html">Physics</a>
+      <a href="../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Zoology Problems</h1>
+    <p>Dive into practice questions on zoology by classifying animal species, analyzing adaptations, and exploring the physiology, behavior, and life cycles of different animal groups.</p>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>Zoology Problems</h2>
+    <a class="back-btn" href="../Biology.html">← Back to Biology Problems</a>
+  </div>
+
+  <!-- Cards -->
+  <div class="container">
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Animal Adaptations<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Tackle practice questions on animal adaptations by identifying physical and behavioral traits that help animals survive in their environments, and understanding the role of natural selection in shaping these adaptations.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Symmetry and Body Plans<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Explore practice questions on symmetry and body plans by identifying types of symmetry (bilateral, radial, asymmetry) and understanding how they influence the structure and function of different animal groups.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Cellular Respiration<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Explore practice questions on cellular respiration by tracing the steps of glycolysis, the Krebs cycle, and the electron transport chain, and calculating ATP production under various conditions.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+     <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Locomotion in Animals<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Tackle practice questions on locomotion in animals by analyzing different modes of movement (e.g., walking, swimming, flying), understanding the structures involved, and exploring the adaptations that enhance locomotion in various environments.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+     <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Reproduction and Development<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Explore practice questions on reproduction and development by identifying reproductive strategies, comparing asexual and sexual reproduction, and tracing the stages of embryonic development in different organisms.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Life Cycles and Metamorphosis<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Tackle practice questions on life cycles and metamorphosis by comparing complete and incomplete metamorphosis, identifying stages in the life cycle of various species, and understanding how these processes help organisms adapt to their environment.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Animal Behaviour<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Explore practice questions on animal behavior by analyzing instinctive and learned behaviors, exploring the role of hormones and environment in shaping behavior, and understanding concepts like territoriality, mating rituals, and migration.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Feeding and Nutrition<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Tackle practice questions on feeding and nutrition by identifying different feeding strategies (herbivores, carnivores, omnivores), understanding digestive processes, and exploring the role of enzymes and nutrient absorption in various organisms.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+    
+    </div>
+<!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">📘</div>
+  <div class="practice-section-content">
+    <h4>Ready to dive into zoology theory?</h4>
+    <p>Explore our collection of theory content in zoology, designed to enhance your understanding and knowledge of key concepts.</p>
+    <a href="../../../Theory/Biology/Zoology/Zoology.html">View Zology Theory Content</a>
+  </div>
+</div>
+
+<!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">📝</div>
+  <div class="practice-section-content">
+    <h4>Ready to take IJSO-style zoology mock tests?</h4>
+    <p>Challenge yourself with our collection of IJSO-style mock tests in zoology, designed to test your problem-solving skills and understanding.</p>
+    <a href="#">View Zoology Mock Tests</a>
+  </div>
+</div>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleCard(card) {
+      const content = card.querySelector('.card-content');
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach(c => {
+        if (c !== card) c.querySelector('.card-content').style.display = 'none';
+      });
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Genetics Problems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../sectionPages.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="../../../index.html">A Guide to the IJSO</a>
+    </div>
+    <div class="navbar-right">
+      <a href="../../practicequestions.html">Home</a>
+      <a href="../../Physics/physics.html">Physics</a>
+      <a href="../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Genetics Problems</h1>
+    <p>Explore practice questions on genetics by analyzing inheritance patterns, solving monohybrid and dihybrid crosses, and understanding how genes, alleles, and chromosomes influence traits.</p>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>Genetics Problems</h2>
+    <a class="back-btn" href="../Biology.html">← Back to Biology Problems</a>
+  </div>
+
+  <!-- Cards -->
+  <div class="container">
+
+  <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        DNA as the Genetic Material<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Tackle practice questions on DNA as the genetic material by identifying key historical experiments, examining DNA’s double helix structure, and understanding how it encodes, stores, and transfers genetic information.</p>
+        <a class="learn-btn" href="#">Learn More →</a>
+      </div>
+    </div>
+    
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Mendelian Genetics<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Explore practice questions on Mendelian genetics by solving inheritance problems, applying laws of segregation and independent assortment, and analyzing trait patterns across generations.</p>
+        <a class="learn-btn" href="#">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Alleles and Inheritacnce Patterns<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Tackle practice questions on alleles and inheritance patterns by distinguishing between dominant, recessive, codominant, and incomplete dominance traits, and predicting genotypic and phenotypic ratios using Punnett squares.</p>
+        <a class="learn-btn" href="#">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Sex - linked inheritance<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Explore practice questions on sex-linked inheritance by analyzing X-linked and Y-linked traits, predicting inheritance patterns, and understanding how these traits are passed differently in males and females.</p>
+        <a class="learn-btn" href="#">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Pedigree Analysis<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Tackle practice questions on pedigree analysis by interpreting family trees, identifying inheritance patterns of genetic disorders, and deducing genotypes across generations.</p>
+        <a class="learn-btn" href="#">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Genetic Disorders<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Explore practice questions on genetic disorders by identifying inheritance modes of conditions like cystic fibrosis or hemophilia, analyzing carrier probabilities, and distinguishing between chromosomal and single-gene disorders.</p>
+        <a class="learn-btn" href="#">Learn More →</a>
+      </div>
+    </div>
+
+     <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Population Genetics<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Tackle practice questions on population genetics by applying the Hardy-Weinberg principle, analyzing allele frequency changes, and exploring how factors like selection, mutation, and gene flow influence genetic variation.</p>
+        <a class="learn-btn" href="#">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Selective Breeding and Genetic Variation<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Explore practice questions on selective breeding and genetic variation by comparing artificial selection methods, understanding the genetic basis of desired traits, and evaluating how breeding practices impact biodiversity and evolution.</p>
+        <a class="learn-btn" href="#">Learn More →</a>
+      </div>
+    </div>
+    
+  </div>
+
+ <!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">📘</div>
+  <div class="practice-section-content">
+    <h4>Ready to dive into genetics theory?</h4>
+    <p>Explore our collection of theory content in genetics, designed to enhance your understanding and knowledge of key concepts.</p>
+    <a href="../../../Theory/Biology/Genetics/Genetics.html">View Genetics Theory Content</a>
+  </div>
+</div>
+
+<!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">📝</div>
+  <div class="practice-section-content">
+    <h4>Ready to take IJSO-style genetics mock tests?</h4>
+    <p>Challenge yourself with our collection of IJSO-style mock tests in genetics, designed to test your problem-solving skills and understanding.</p>
+    <a href="#">View Genetics Mock Tests</a>
+  </div>
+</div>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </footer>
+
+  <script>
+    function toggleCard(card) {
+      const content = card.querySelector('.card-content');
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach(c => {
+        if (c !== card) c.querySelector('.card-content').style.display = 'none';
+      });
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>

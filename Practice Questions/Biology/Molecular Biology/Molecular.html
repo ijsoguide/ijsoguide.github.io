@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Molecular Biology Problems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../sectionPages.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="../../../index.html">A Guide to the IJSO</a>
+    </div>
+    <div class="navbar-right">
+      <a href="../../practicequestions.html">Home</a>
+      <a href="../../Physics/physics.html">Physics</a>
+      <a href="../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Molecular Biology Problems</h1>
+    <p>Tackle practice questions on molecular biology by exploring processes like DNA replication, transcription, translation, and the role of enzymes in genetic expression, while understanding how mutations can affect protein synthesis.</p>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>Molecular Biology Problems</h2>
+    <a class="back-btn" href="../Biology.html">← Back to Biology Problems</a>
+  </div>
+
+  <!-- Cards -->
+  <div class="container">
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Structure of DNA and RNA<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Explore practice questions on the structure of DNA and RNA by identifying key components like nucleotides, base pairing, and the differences between double-stranded DNA and single-stranded RNA, and understanding how these structures support genetic function.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        DNA Replication<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Tackle practice questions on DNA replication by tracing the steps of the process, identifying key enzymes like helicase and DNA polymerase, and understanding how the leading and lagging strands are synthesized.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+     <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Gene Expression<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Explore practice questions on gene expression by analyzing the processes of transcription and translation, understanding how RNA is synthesized from DNA, and exploring the role of codons and tRNA in protein synthesis.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Types of RNA and Their Functions<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Tackle practice questions on types of RNA and their functions by identifying mRNA, tRNA, and rRNA, and understanding their roles in transcription, translation, and protein synthesis.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        The Genetic Code<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Explore practice questions on the genetic code by decoding mRNA sequences, understanding codons, and determining how specific sequences of nucleotides correspond to amino acids in protein synthesis.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Mutations<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Tackle practice questions on mutations by identifying types like point mutations, insertions, and deletions, and analyzing their effects on protein function and inheritance.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Protein Synthesis Summary<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Explore practice questions on protein synthesis by summarizing the processes of transcription and translation, understanding the role of mRNA, tRNA, and ribosomes, and explaining how genes are expressed to form functional proteins.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Simple Biotechnology Applications<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Tackle practice questions on simple biotechnology applications by exploring genetic modification, cloning, and PCR, and understanding how these technologies are used in fields like agriculture, medicine, and forensics.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+    
+
+    <!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">📘</div>
+  <div class="practice-section-content">
+    <h4>Ready to dive into molecular biology theory?</h4>
+    <p>Explore our collection of theory content in molecular biology, designed to enhance your understanding and knowledge of key concepts.</p>
+    <a href="../../../Theory/Biology/Molecular Biology/Molecular.html">View Molecular Biology Theory Content</a>
+  </div>
+</div>
+
+<!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">📝</div>
+  <div class="practice-section-content">
+    <h4>Ready to take IJSO-style molecular biology mock tests?</h4>
+    <p>Challenge yourself with our collection of IJSO-style mock tests in molecular biology, designed to test your problem-solving skills and understanding.</p>
+    <a href="#">View Molecular Biology Mock Tests</a>
+  </div>
+</div>
+</div>
+
+ 
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </footer>
+
+  <!-- JS -->
+  <script>
+    function toggleCard(card) {
+      const content = card.querySelector('.card-content');
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach(c => {
+        if (c !== card) c.querySelector('.card-content').style.display = 'none';
+      });
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>

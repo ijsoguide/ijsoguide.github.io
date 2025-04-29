@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>States of Matter Questions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../sectionPages.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="../../../index.html">A Guide to the IJSO</a>
+    </div>
+    <div class="navbar-right">
+      <a href="../../practicequestions.html">Home</a>
+      <a href="../../Physics/physics.html">Physics</a>
+      <a href="../Chemistry.html">Chemistry</a>
+      <a href="../../Biology/Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>States of Matter Questions</h1>
+    <p>Tackle practice problems on the states of matter, focusing on the properties and behavior of solids, liquids, and gases under varying conditions.</p>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>States of Matter Questions</h2>
+    <a class="back-btn" href="../Chemistry.html">← Back to Chemistry Problems</a>
+  </div>
+
+  <!-- Cards -->
+  <div class="container">
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Solids, Liquids and Gases<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Solve practice problems on solids, liquids, and gases to understand their unique properties, particle arrangements, and responses to temperature and pressure changes.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Changes of State<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Work through practice problems on changes of state to explore energy transfer during melting, freezing, condensation, evaporation, and sublimation.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Latent Heat<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Solve practice problems on latent heat to understand energy absorption or release during phase changes without temperature change.</p>
+        <a class="learn-btn" href="">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Heating Curves and Cooling Curves<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Explore heating and cooling curves to analyze how temperature changes during phase transitions and understand the energy involved at each stage.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Gas Laws<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Apply your understanding of gas laws to examine the relationships between pressure, volume, temperature, and amount in various real-world and theoretical scenarios.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Kinetic Molecular Theory of Gases<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Dive into the Kinetic Molecular Theory to explain gas behavior at the particle level, connecting microscopic motion to macroscopic properties like pressure and temperature.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">📘</div>
+  <div class="practice-section-content">
+    <h4>Ready to dive into states of matter theory?</h4>
+    <p>Explore our collection of theory content in states of matter, designed to enhance your understanding and knowledge of key concepts.</p>
+    <a href="../../../Theory/Chemistry/States of matter/States of Matter.html">View States of Matter Theory Content</a>
+  </div>
+</div>
+
+<!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">📝</div>
+  <div class="practice-section-content">
+    <h4>Ready to take IJSO-style states of matter mock tests?</h4>
+    <p>Challenge yourself with our collection of IJSO-style mock tests in states of matter, designed to test your problem-solving skills and understanding.</p>
+    <a href="#">View States of Matter Mock Tests</a>
+  </div>
+</div>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </footer>
+
+  <!-- JS -->
+  <script>
+    function toggleCard(card) {
+      const content = card.querySelector('.card-content');
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach(c => {
+        if (c !== card) c.querySelector('.card-content').style.display = 'none';
+      });
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>

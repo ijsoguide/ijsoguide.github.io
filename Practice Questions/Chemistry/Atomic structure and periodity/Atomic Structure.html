@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Atomic Structure and Periodicity Problems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../sectionPages.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="../../../index.html">A Guide to the IJSO</a>
+    </div>
+    <div class="navbar-right">
+      <a href="../../practicequestions.html">Home</a>
+      <a href="../../Physics/physics.html">Physics</a>
+      <a href="../Chemistry.html">Chemistry</a>
+      <a href="../../Biology/Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Atomic Structure and Periodicity Problems</h1>
+    <p>Test your understanding of atomic structure and periodicity with these practice questions on electron configurations, periodic trends, and quantum numbers.</p>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>Atomic Structure and Periodicity Problems</h2>
+    <a class="back-btn" href="../Chemistry.html">← Back to Chemistry Problems</a>
+  </div>
+
+  <!-- Cards -->
+  <div class="container">
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Structure of Particles and Atoms<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Sharpen your grasp on fundamental particles and atomic models with practice questions covering protons, neutrons, electrons, and early atomic theories.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Elements, Isotopes<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Practice identifying elements, calculating relative atomic mass, and distinguishing between isotopes with targeted conceptual and calculation-based questions.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Relative Atomic Mass<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Strengthen your skills with practice problems on calculating relative atomic mass using isotopic abundance data.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Electronic Configuration<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Master electronic configurations through practice questions focused on orbital filling, Aufbau principle, and identifying elements by their configurations.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Periodic Table Layout and Trends<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Test your knowledge of the periodic table with practice questions on group and period identification, atomic radius, ionization energy, and electronegativity trends.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Group Properties<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Reinforce your understanding of group properties with practice questions on reactivity trends, valence electrons, and characteristic behaviors of element groups.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">📘</div>
+  <div class="practice-section-content">
+    <h4>Ready to dive into atomic structure and periodicity theory?</h4>
+    <p>Explore our collection of theory content in atomic structure and periodicity, designed to enhance your understanding and knowledge of key concepts.</p>
+    <a href="../../../Theory/Chemistry/Atomic structure and periodity/Atomic Structure.html">View Atomic Structure and Periodicity Theory Content</a>
+  </div>
+</div>
+
+<!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">📝</div>
+  <div class="practice-section-content">
+    <h4>Ready to take IJSO-style atomic structure and periodicity mock tests?</h4>
+    <p>Challenge yourself with our collection of IJSO-style mock tests in atomic structure and periodicity, designed to test your problem-solving skills and understanding.</p>
+    <a href="#">View Atomic Structure and Periodicity Mock Tests</a>
+  </div>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 A Guide to the IJSO. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleCard(card) {
+      const content = card.querySelector('.card-content');
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach(c => {
+        if (c !== card) c.querySelector('.card-content').style.display = 'none';
+      });
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>

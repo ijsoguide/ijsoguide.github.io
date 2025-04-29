@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chemical Equilibrium Problems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../sectionPages.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="../../../index.html">A Guide to the IJSO</a>
+    </div>
+    <div class="navbar-right">
+      <a href="../../practicequestions.html">Home</a>
+      <a href="../../Physics/physics.html">Physics</a>
+      <a href="../Chemistry.html">Chemistry</a>
+      <a href="../../Biology/Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Chemical Equilibrium Problems</h1>
+    <p>Tackle chemical equilibrium problems by predicting the direction of reversible reactions, calculating equilibrium constants, and analyzing changes using Le Chatelier’s Principle.</p>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>Chemical Equilibrium Problems</h2>
+    <a class="back-btn" href="../Chemistry.html">← Back to Chemistry Problems</a>
+  </div>
+
+  <!-- Cards -->
+  <div class="container">
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Dynamic Equilibrium Concept<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Explore the concept of dynamic equilibrium by tackling problems where forward and backward reactions occur at the same rate, and predict how systems respond to external changes.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Le Chatelier’s Principle<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Tackle problems using Le Chatelier’s Principle to predict how changes in concentration, temperature, or pressure shift the position of equilibrium in a chemical system.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Acid Base Equilibria<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Dive into acid-base equilibria by tackling problems that involve calculating pH, Ka, Kb, and predicting the strengths and behavior of weak acids and bases at equilibrium.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Solubility Equilibria<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Explore solubility equilibria by working through problems involving Ksp calculations, predicting when precipitates form, and analyzing how common ions affect solubility.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Equilibrium Calculations<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Master equilibrium calculations by finding equilibrium concentrations, solving for Kc or Kp, and figuring out how systems adjust when disturbed.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Buffer Solutions<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Dive into buffer solution problems by calculating pH changes after adding acids or bases, and explore how buffers resist drastic shifts in acidity.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Henderson - Hasselbalch Equation<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Apply the Henderson-Hasselbalch equation to calculate the pH of buffer solutions and explore how the ratio of conjugate base to acid influences a buffer’s effectiveness.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">📘</div>
+  <div class="practice-section-content">
+    <h4>Ready to dive into chemical equilibrium theory?</h4>
+    <p>Explore our collection of theory content in chemical equilibirium, designed to enhance your understanding and knowledge of key concepts.</p>
+    <a href="../../../Theory/Chemistry/Equilibrium/Equilibrium.html">View Chemical Equilibrium Theory Content</a>
+  </div>
+</div>
+
+<!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">📝</div>
+  <div class="practice-section-content">
+    <h4>Ready to take IJSO-style chemical equilibrium mock tests?</h4>
+    <p>Challenge yourself with our collection of IJSO-style mock tests in chemical equilibrium, designed to test your problem-solving skills and understanding.</p>
+    <a href="#">View Chemical Equilibrium Mock Tests</a>
+  </div>
+</div>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </footer>
+
+  <!-- JS -->
+  <script>
+    function toggleCard(card) {
+      const content = card.querySelector('.card-content');
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach(c => {
+        if (c !== card) c.querySelector('.card-content').style.display = 'none';
+      });
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>

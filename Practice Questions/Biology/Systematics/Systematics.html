@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Systematics Problems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../sectionPages.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="../../../index.html">A Guide to the IJSO</a>
+    </div>
+    <div class="navbar-right">
+      <a href="../../practicequestions.html">Home</a>
+      <a href="../../Physics/physics.html">Physics</a>
+      <a href="../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Systematics Problems</h1>
+    <p>Tackle practice questions on systematics by classifying organisms based on evolutionary relationships, interpreting phylogenetic trees, and applying binomial nomenclature and taxonomic ranks.</p>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>Systematics Problems</h2>
+    <a class="back-btn" href="../Biology.html">← Back to Biology Problems</a>
+  </div>
+
+  <!-- Cards -->
+  <div class="container">
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Cladistics<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Challenge yourself with practice questions on cladistics by analyzing evolutionary trees, identifying shared derived characteristics, and determining relationships based on common ancestry.</p>
+        <a class="learn-btn" href="">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Introduction to Classification<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Explore practice questions on classification by organizing organisms into hierarchical groups, understanding the basis of modern taxonomy, and distinguishing between major kingdoms and domains.</p>
+        <a class="learn-btn" href="">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Animal Classification<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Tackle practice questions on animal classification by sorting organisms into phyla and classes based on characteristics like body symmetry, segmentation, and presence of a backbone.</p>
+        <a class="learn-btn" href="">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Plant Classification<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Dive into practice questions on plant classification by grouping plants into major divisions like bryophytes, pteridophytes, gymnosperms, and angiosperms based on features such as vascular tissue, seeds, and flowers.</p>
+        <a class="learn-btn" href="">Practice Now →</a>
+      </div>
+    </div>
+
+    <!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">📘</div>
+  <div class="practice-section-content">
+    <h4>Ready to dive into systematics theory?</h4>
+    <p>Explore our collection of theory content in systematics, designed to enhance your understanding and knowledge of key concepts.</p>
+    <a href="../../../Theory/Biology/Systematics/Systematics.html">View Systematics Theory Content</a>
+  </div>
+</div>
+
+<!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">📝</div>
+  <div class="practice-section-content">
+    <h4>Ready to take IJSO-style systematics mock tests?</h4>
+    <p>Challenge yourself with our collection of IJSO-style mock tests in systematics, designed to test your problem-solving skills and understanding.</p>
+    <a href="#">View Systematics Mock Tests</a>
+  </div>
+</div>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </footer>
+
+  <!-- JS -->
+  <script>
+    function toggleCard(card) {
+      const content = card.querySelector('.card-content');
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach(c => {
+        if (c !== card) c.querySelector('.card-content').style.display = 'none';
+      });
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>

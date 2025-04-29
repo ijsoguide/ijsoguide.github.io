@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Chemical Bonding Problems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../sectionPages.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="../../../index.html">A Guide to the IJSO</a>
+    </div>
+    <div class="navbar-right">
+      <a href="../../practicequestions.html">Home</a>
+      <a href="../../Physics/physics.html">Physics</a>
+      <a href="../Chemistry.html">Chemistry</a>
+      <a href="../../Biology/Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Chemical Bonding Problems</h1>
+    <p>Sharpen your understanding of chemical bonding with practice questions on ionic, covalent, and metallic bonds, Lewis structures, and molecular geometry.</p>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>Chemical Bonding Problems</h2>
+    <a class="back-btn" href="../Chemistry.html">← Back to Chemistry Problems</a>
+  </div>
+
+  <!-- Cards -->
+  <div class="container">
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Types of Bonding<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Test your grasp of ionic, covalent, and metallic bonding with targeted practice questions that challenge your conceptual and application skills.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Lewis Dot Structures<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Practice drawing and interpreting Lewis dot structures to master electron arrangements and bonding in molecules.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Polar and Non-Polar Molecules<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Tackle questions that test your ability to determine molecular polarity based on shape and electronegativity differences.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Intermolecular Forces<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Strengthen your skills with practice questions on hydrogen bonding, dipole-dipole interactions, and London dispersion forces.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Molecular Shapes and VSEPR Theory<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Apply VSEPR theory through practice problems that test your ability to predict molecular shapes and bond angles.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <!-- Practice Section (NOT collapsible) -->
+    <div class="practice-section">
+      <div class="practice-section-icon">📘</div>
+      <div class="practice-section-content">
+        <h4>Ready to dive into chemical bonding theory?</h4>
+        <p>Explore our collection of theory content in chemical bonding, designed to enhance your understanding and knowledge of key concepts.</p>
+        <a href="../../../Theory/Chemistry/Chemical bonding/Chemical Bonding.html">View Chemical Bonding Theory
+          Content</a>
+      </div>
+    </div>
+
+    <!-- Practice Section (NOT collapsible) -->
+    <div class="practice-section">
+      <div class="practice-section-icon">📝</div>
+      <div class="practice-section-content">
+        <h4>Ready to take IJSO-style chemical bonding mock tests?</h4>
+        <p>Challenge yourself with our collection of IJSO-style mock tests in chemical bonding, designed to test your problem-solving skills and understanding.</p>
+        <a href="#">View Chemical Bonding Mock Tests</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 A Guide to the IJSO. All rights reserved.</p>
+  </footer>
+
+  <!-- JS for collapse -->
+  <script>
+    function toggleCard(card) {
+      const content = card.querySelector('.card-content');
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach(c => {
+        if (c !== card) c.querySelector('.card-content').style.display = 'none';
+      });
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+
+</html>

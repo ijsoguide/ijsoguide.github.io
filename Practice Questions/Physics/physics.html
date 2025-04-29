@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Physics Problems| IJSO Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/04bf603a0f.js" crossorigin="anonymous"></script>
+  <script src="../theory.js" defer></script>
+  <link rel="stylesheet" href="../subjectPageNavbar.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      color: #000;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #0d47a1;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar .logo {
+      color: #fff;
+      font-size: 1.4rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: color 0.2s;
+    }
+
+    .navbar ul li a:hover {
+      color: #bbdefb;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+      background-color: #2979ff;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: 0 auto;
+      color: #e0f7ff;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      color: #2979ff;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .topic-card {
+      background-color: #2979ff;
+      color: white;
+      border-radius: 10px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .topic-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .topic-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .topic-card h3 {
+      margin-top: 0;
+      font-size: 1.4rem;
+      color: white;
+    }
+
+    .topic-card p {
+      font-size: 0.95rem;
+      color: #e0f7ff;
+      min-height: 60px;
+    }
+
+    .topic-card a {
+      display: inline-block;
+      margin-top: 1rem;
+      background-color: white;
+      color: #2979ff;
+      padding: 0.6rem 1.2rem;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .topic-card a:hover {
+      background-color: #0d47a1;
+      color: white;
+    }
+
+    /* Practice Section */
+    .practice-section {
+      text-align: center;
+      margin: 3rem auto;
+      padding: 2rem;
+      max-width: 800px;
+      background-color: #f2f6ff;
+      border-radius: 10px;
+      border: 1px solid #2979ff;
+    }
+
+    .practice-section h2 {
+      color: #2979ff;
+    }
+
+    .practice-section p {
+      color: #444;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .practice-section a {
+      display: inline-block;
+      background-color: #2979ff;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .practice-section a:hover {
+      background-color: #0d47a1;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #2979ff;
+      color: white;
+      margin-top: 4rem;
+      font-size: 0.9rem;
+    }
+
+    @media(width <= 768px){
+      #navbarList{
+        background-color: #0d47a1;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="../../index.html" class="logo">A Guide to the IJSO</a>
+    <ul id="navbarList">
+      <li><a href="../practicequestions.html">Home</a></li>
+      <li><a href="physics.html">Physics</a></li>
+      <li><a href="../Chemistry/Chemistry.html">Chemistry</a></li>
+      <li><a href="../Biology/Biology.html">Biology</a></li>
+    </ul>
+    <i class="fa-solid fa-bars" id="menuToggle"></i>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Physics Problems</h1>
+    <p>Tackle challenging problems from mechanics, waves, light, thermodynamics, electricity, modern physics, and astrophysics to deepen your understanding of the universe.</p>
+  </header>
+
+  <!-- Topics Title -->
+  <div class="section-title">Topics</div>
+
+  <!-- Topics Grid -->
+  <div class="grid">
+    <div class="topic-card">
+      <img src="images/mechanics.png" alt="Mechanics">
+      <h3>Mechanics</h3>
+      <p>Forces, motion, energy, and momentum</p>
+      <a href="Mechanics/Mechanics.html">Practice Now</a>
+    </div>
+
+    <div class="topic-card">
+      <img src="images/waves.png" alt="Waves">
+      <h3>Waves</h3>
+      <p>Sound, light, and wave phenomena</p>
+      <a href="Waves/Waves.html">Practice Now</a>
+    </div>
+
+    <div class="topic-card">
+      <img src="images/light.png" alt="Light">
+      <h3>Light</h3>
+      <p>Properties and behavior of light</p>
+      <a href="Light/Light.html">Practice Now</a>
+    </div>
+
+    <div class="topic-card">
+      <img src="images/thermo.png" alt="Thermodynamics">
+      <h3>Thermodynamics</h3>
+      <p>Heat, temperature, and energy transfer</p>
+      <a href="Thermodynamics/Thermo.html">Practice Now</a>
+    </div>
+
+    <div class="topic-card">
+      <img src="images/electro.png" alt="Electricity">
+      <h3>Electricity & Magnetism</h3>
+      <p>Electric fields, circuits, and magnetic phenomena</p>
+      <a href="Electricity & Magnetism/electricity.html">Practice Now</a>
+    </div>
+
+    <div class="topic-card">
+      <img src="images/modern.png" alt="Modern Physics">
+      <h3>Modern Physics</h3>
+      <p>Atoms, Nuclear physics, and Radiation </p>
+      <a href="Modern Physics/Modern Physics.html">Practice Now</a>
+    </div>
+
+    <div class="topic-card">
+      <img src="images/astrophysics.png" alt="Astrophysics">
+      <h3>Astrophysics</h3>
+      <p>Stars, galaxies, and cosmology</p>
+      <a href="Astrophysics/Astrophysics.html">Practice Now</a>
+    </div>
+  </div>
+
+    <!-- Practice Section -->
+<!-- Theory Box -->
+<div class="practice-section">
+  <div class="practice-section-icon">📘</div>
+  <div class="practice-section-content">
+    <h4>Master concepts with comprehensive Physics theory</h4>
+    <p>Deepen your understanding with detailed explanations and key insights into core Physics topics, aligned with the IJSO syllabus.</p>
+    <a href="../../Theory/Physics/physics.html">Explore Theory</a>
+  </div>
+</div>
+
+  <!-- Practice Section -->
+<!-- Mock Tests Box -->
+<div class="practice-section">
+  <div class="practice-section-icon">📝</div>
+  <div class="practice-section-content">
+    <h4>Test your readiness with IJSO-style physics mock tests</h4>
+    <p>Simulate the real exam experience with full-length Physics mock tests crafted in the spirit of the IJSO.</p>
+    <a href="#">View Mock Tests</a>
+  </div>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </footer>
+
+</body>
+</html>

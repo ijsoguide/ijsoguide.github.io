@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Astrophysics Problems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../sectionPages.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="../../../index.html">A Guide to the IJSO</a>
+    </div>
+    <div class="navbar-right">
+      <a href="../../practicequestions.html">Home</a>
+      <a href="../physics.html">Physics</a>
+      <a href="../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../../Biology/Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Astrophysics Problems</h1>
+    <p>Challenge your understanding of astrophysics with these practice problems on stellar evolution, gravitational forces, cosmic phenomena, and the life cycle of stars.</p>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>Astrophysics Problems</h2>
+    <a class="back-btn" href="../physics.html">← Back to Physics</a>
+  </div>
+
+  <!-- Cards -->
+  <div class="container">
+
+    <!-- Structure of the Universe -->
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Structure of the Universe <span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Test your knowledge of the structure of the universe with these practice problems on galaxies, cosmic scale, dark matter, and the organization of celestial bodies.</p>
+        <a class="learn-btn" href="">Practice Now →</a>
+      </div>
+    </div>
+
+    <!-- Solar System -->
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Solar System <span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Challenge your understanding of the solar system with these practice problems on planetary motion, orbital mechanics, and the characteristics of celestial bodies.</p>
+        <a class="learn-btn" href="">Practice Now →</a>
+      </div>
+    </div>
+
+    <!-- Celestial Mechanics -->
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Celestial Mechanics <span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Test your grasp of celestial mechanics with these practice problems on gravitational interactions, Kepler’s laws, and the motion of planets and satellites.</p>
+        <a class="learn-btn" href="">Practice Now →</a>
+      </div>
+    </div>
+
+    <!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">📘</div>
+  <div class="practice-section-content">
+    <h4>Ready to dive into astrophysics theory?</h4>
+    <p>Explore our collection of theory content in astrophysics, designed to enhance your understanding and knowledge of key concepts.</p>
+    <a href="../../../Theory/Physics/Astrophysics/Astrophysics.html">View Astrophysics Theory Content</a>
+  </div>
+</div>
+
+<!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">📝</div>
+  <div class="practice-section-content">
+    <h4>Ready to take IJSO-style astrophysics mock tests?</h4>
+    <p>Challenge yourself with our collection of IJSO-style mock tests in astrophysics, designed to test your problem-solving skills and understanding.</p>
+    <a href="#">View Astrophysics Mock Tests</a>
+  </div>
+</div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 A Guide to the IJSO. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleCard(card) {
+      const content = card.querySelector('.card-content');
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach(c => {
+        if (c !== card) c.querySelector('.card-content').style.display = 'none';
+      });
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>

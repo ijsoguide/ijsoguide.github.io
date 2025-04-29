@@ -1,0 +1,28 @@
+@media(width <= 768px){
+    #menuToggle{
+      display: block;
+      z-index: 10;
+      margin: auto 0 auto 0;
+      color: white;
+    }
+    #navbarList{
+        z-index: 5;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      padding: 1rem;
+      position: fixed;
+      top: 0rem;
+      right: -100%;
+      padding: 0 4rem 0 4rem;
+      transition: all 0.4s ease-in-out;
+    }
+    #navbarList.show{
+      right: 0;
+    }
+}
+@media(width > 768px){
+    #menuToggle{
+        display: none;
+    }
+}

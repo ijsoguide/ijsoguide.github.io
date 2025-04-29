@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Thermochemistry Problems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../sectionPages.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="../../../index.html">A Guide to the IJSO</a>
+    </div>
+    <div class="navbar-right">
+      <a href="../../practicequestions.html">Home</a>
+      <a href="../../Physics/physics.html">Physics</a>
+      <a href="../Chemistry.html">Chemistry</a>
+      <a href="../../Biology/Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Thermochemistry Problems</h1>
+    <p>Tackle thermochemistry problems by analyzing heat flow, calculating enthalpy changes, and understanding the energy transformations during chemical reactions.</p>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>Thermochemistry Problems</h2>
+    <a class="back-btn" href="../Chemistry.html">← Back to Chemistry Problems</a>
+  </div>
+
+  <!-- Cards -->
+  <div class="container">
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Heat of Reaction, Combustion and Neutralization<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Dive into problems involving heat changes during reactions—calculate the heat of reaction, explore combustion energy, and figure out the energy shifts in neutralization.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Enthalpy Diagrams<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Explore enthalpy diagrams to visualize energy changes during reactions, and tackle problems where you identify activation energy, heat of reaction, and the path of the reaction.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Energy Level Diagrams<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Dive into energy level diagrams and tackle problems where you analyze the energy states of reactants and products, and predict the reaction’s spontaneity and activation energy.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Bond Energy<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Tackle problems by calculating bond energies, determining the heat of reaction, and figuring out how much energy is required to break or form bonds in a chemical reaction.</p>
+        <a class="learn-btn" href="">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Entropy<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Explore entropy by tackling problems that examine disorder in reactions, and calculate the change in entropy to predict spontaneity and direction of chemical processes.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Gibbs Free Energy<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Dive into Gibbs Free Energy problems and calculate whether reactions are spontaneous, based on the interplay between enthalpy, entropy, and temperature.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">📘</div>
+  <div class="practice-section-content">
+    <h4>Ready to dive into thermochemistry theory?</h4>
+    <p>Explore our collection of theory content in thermochemistry, designed to enhance your understanding and knowledge of key concepts.</p>
+    <a href="../../../Theory/Chemistry/Thermochemistry/Thermochemistry.html">View Thermochemistry Theory Content</a>
+  </div>
+</div>
+
+<!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">📝</div>
+  <div class="practice-section-content">
+    <h4>Ready to take IJSO-style themochemistry mock tests?</h4>
+    <p>Challenge yourself with our collection of IJSO-style mock tests in thermochemistry, designed to test your problem-solving skills and understanding.</p>
+    <a href="#">View Thermochemistry Mock Tests</a>
+  </div>
+</div>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleCard(card) {
+      const content = card.querySelector('.card-content');
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach(c => {
+        if (c !== card) c.querySelector('.card-content').style.display = 'none';
+      });
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>

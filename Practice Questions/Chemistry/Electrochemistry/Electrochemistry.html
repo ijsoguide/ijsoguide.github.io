@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Electrochemistry Problems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../sectionPages.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="../../../index.html">A Guide to the IJSO</a>
+    </div>
+    <div class="navbar-right">
+      <a href="../../practicequestions.html">Home</a>
+      <a href="../../Physics/physics.html">Physics</a>
+      <a href="../Chemistry.html">Chemistry</a>
+      <a href="../../Biology/Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Electrochemistry Problems</h1>
+    <p>Explore electrochemistry by calculating cell potentials, balancing redox reactions, and analyzing how voltage changes during oxidation and reduction in electrochemical cells.</p>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>Electrochemistry Problems</h2>
+    <a class="back-btn" href="../Chemistry.html">← Back to Chemistry Problems</a>
+  </div>
+
+  <!-- Cards -->
+  <div class="container">
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Electrolysis<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Delve into electrolysis problems by calculating the amount of substance produced at the electrodes, understanding ion migration, and predicting reactions in different electrolyte solutions.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Faraday's Law of Electrolysis<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Explore Faraday’s Law of Electrolysis by calculating the amount of substance deposited or liberated during electrolysis, based on current, time, and molar mass.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Electrolytes and Non-Electrolytes<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Examine electrolytes and non-electrolytes by identifying which substances conduct electricity in solution and predicting their behavior in different solvent environments.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Electrodes<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Explore electrode problems by analyzing the role of anode and cathode in electrochemical cells, and predict the reactions occurring at each electrode during redox processes.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Redox Reactions in Electrolysis<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Dive into redox reactions in electrolysis by balancing the oxidation and reduction half-reactions at the anode and cathode, and predicting the products formed during electrolysis.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">📘</div>
+  <div class="practice-section-content">
+    <h4>Ready to dive into electrochemistry theory?</h4>
+    <p>Explore our collection of theory content in electrochemistry, designed to enhance your understanding and knowledge of key concepts.</p>
+    <a href="../../../Theory/Chemistry/Electrochemistry/Electrochemistry.html">View Electrochemistry Theory Content</a>
+  </div>
+</div>
+
+<!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">📝</div>
+  <div class="practice-section-content">
+    <h4>Ready to take IJSO-style electrochemistry mock tests?</h4>
+    <p>Challenge yourself with our collection of IJSO-style mock tests in electrochemistry, designed to test your problem-solving skills and understanding.</p>
+    <a href="#">View Electrochemistry Mock Tests</a>
+  </div>
+</div>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleCard(card) {
+      const content = card.querySelector('.card-content');
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach(c => {
+        if (c !== card) c.querySelector('.card-content').style.display = 'none';
+      });
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>

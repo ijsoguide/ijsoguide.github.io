@@ -1,0 +1,176 @@
+body {
+	margin: 0;
+	font-family: "Segoe UI", sans-serif;
+	background-color: #ffffff;
+	color: #000;
+}
+
+/* Navbar */
+.navbar {
+	background-color: #2e7d32;
+	padding: 1rem 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar .logo {
+	color: #fff;
+	font-size: 1.4rem;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.navbar ul {
+	list-style: none;
+	display: flex;
+	gap: 1.5rem;
+	margin: 0;
+	padding: 0;
+}
+
+.navbar ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 1rem;
+	transition: color 0.2s;
+}
+
+.navbar ul li a:hover {
+	color: #c8e6c9;
+}
+
+/* Header */
+header {
+	text-align: center;
+	padding: 3rem 1rem 2rem;
+	background-color: #43a047;
+	color: white;
+}
+
+header h1 {
+	font-size: 2.5rem;
+	margin-bottom: 0.5rem;
+}
+
+header p {
+	font-size: 1.1rem;
+	max-width: 800px;
+	margin: 0 auto;
+	color: #e0f7ff;
+}
+
+.section-title {
+	text-align: center;
+	font-size: 2rem;
+	color: #43a047;
+	margin-top: 3rem;
+	margin-bottom: 1rem;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 2rem;
+	padding: 2rem;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.topic-card {
+	background-color: #43a047;
+	color: white;
+	border-radius: 10px;
+	padding: 1.5rem;
+	text-align: center;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.topic-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.topic-card img {
+	width: 100%;
+	height: 160px;
+	object-fit: cover;
+	border-radius: 8px;
+	margin-bottom: 1rem;
+}
+
+.topic-card h3 {
+	margin-top: 0;
+	font-size: 1.4rem;
+	color: white;
+}
+
+.topic-card p {
+	font-size: 0.95rem;
+	color: #e0f7ff;
+	min-height: 60px;
+}
+
+.topic-card a {
+	display: inline-block;
+	margin-top: 1rem;
+	background-color: white;
+	color: #43a047;
+	padding: 0.6rem 1.2rem;
+	text-decoration: none;
+	border-radius: 6px;
+	font-weight: bold;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.topic-card a:hover {
+	background-color: #2e7d32;
+	color: white;
+}
+
+/* Practice Section */
+.practice-section {
+	text-align: center;
+	margin: 3rem auto;
+	padding: 2rem;
+	max-width: 800px;
+	background-color: #e8f5e9;
+	border-radius: 10px;
+	border: 1px solid #43a047;
+}
+
+.practice-section h2 {
+	color: #43a047;
+}
+
+.practice-section p {
+	color: #444;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+
+.practice-section a {
+	display: inline-block;
+	background-color: #43a047;
+	color: white;
+	padding: 0.75rem 1.5rem;
+	text-decoration: none;
+	border-radius: 6px;
+	font-weight: bold;
+}
+
+.practice-section a:hover {
+	background-color: #2e7d32;
+}
+
+/* Footer */
+footer {
+	text-align: center;
+	padding: 2rem 1rem;
+	background-color: #2e7d32;
+	color: white;
+	margin-top: 4rem;
+	font-size: 0.9rem;
+}

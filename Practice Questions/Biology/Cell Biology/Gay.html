@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cell Biology Problems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../sectionPages.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="../../../index.html">A Guide to the IJSO</a>
+    </div>
+    <div class="navbar-right">
+      <a href="../../practicequestions.html">Home</a>
+      <a href="../../Physics/physics.html">Physics</a>
+      <a href="../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Cell Biology Problems</h1>
+    <p>Explore cell biology by identifying cell structures, understanding their functions, and solving problems related to cell theory, organelles, and cellular processes.</p>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>Cell Biology Problems</h2>
+    <a class="back-btn" href="../Biology.html">← Back to Biology Problems</a>
+  </div>
+
+  <!-- Cards -->
+  <div class="container">
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Cell Structure and Organelles<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Dive into cell structure and organelle challenges by labeling diagrams, matching organelles to their functions, and predicting how cells adapt to different environments.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Prokaryotic vs. Eukaryotic Cells<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Tackle comparisons between prokaryotic and eukaryotic cells by identifying key differences in structure, genetic material, and cellular processes.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+     <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Plant vs. Animal Cells<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Explore the differences between plant and animal cells by comparing organelles, structures, and functions, and predict how these differences affect their roles in the organism.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Cell Membranes and Transport<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Dive into cell membrane and transport problems by exploring how substances move in and out of cells through diffusion, osmosis, and active transport mechanisms.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Cell Cycle<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Explore the cell cycle by analyzing the stages of mitosis and meiosis, understanding checkpoints, and predicting how errors in the cycle can lead to diseases like cancer.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Cellular Respiration<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Tackle cellular respiration problems by tracing the steps of glycolysis, the Krebs cycle, and the electron transport chain, and calculating ATP production under different conditions.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Basic Microscopy Principles<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Explore basic microscopy principles by learning how to use microscopes effectively, understanding magnification, resolution, and contrast, and identifying cellular structures at various magnifications.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+     <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Biomolecules<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Dive into biomolecule problems by identifying and analyzing the structure and function of proteins, lipids, carbohydrates, and nucleic acids, and exploring their roles in living organisms.</p>
+        <a class="learn-btn" href="#">Practice Now →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">📘</div>
+  <div class="practice-section-content">
+    <h4>Ready to dive into cell biology theory?</h4>
+    <p>Explore our collection of theory content in cell biology, designed to enhance your understanding and knowledge of key concepts.</p>
+    <a href="../../../Theory/Biology/Cell Biology/Gay.html">View Cell Biology Theory Content</a>
+  </div>
+</div>
+
+<!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">📝</div>
+  <div class="practice-section-content">
+    <h4>Ready to take IJSO-style cell biology mock tests?</h4>
+    <p>Challenge yourself with our collection of IJSO-style mock tests in cell biology, designed to test your problem-solving skills and understanding.</p>
+    <a href="#">View Cell Biology Mock Tests</a>
+  </div>
+</div>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </footer>
+
+  <script>
+    function toggleCard(card) {
+      const content = card.querySelector('.card-content');
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach(c => {
+        if (c !== card) c.querySelector('.card-content').style.display = 'none';
+      });
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>
