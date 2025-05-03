@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mutations</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f8ff;
+      margin: 0;
+      color: #333;
+    }
+
+    .navbar {
+      background-color: #2e7d32;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      flex-wrap: wrap;
+    }
+
+    .navbar .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: white;
+    }
+
+    .nav-links a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 900px;
+      margin: 2rem auto 1rem;
+      padding: 0 2rem;
+    }
+
+    .page-header h2 {
+      font-size: 1.8rem;
+      color: #2e7d32;
+    }
+
+    .back-btn {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      color: #333;
+      transition: background-color 0.2s;
+    }
+
+    .back-btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #223;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      color: #2e7d32;
+      margin-top: 2rem;
+      border-bottom: 2px solid #cde8cc;
+      padding-bottom: 0.3rem;
+    }
+
+    h3 {
+      margin-top: 1.5rem;
+      color: #1b5e20;
+    }
+
+    p, ul {
+      line-height: 1.7;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.6rem;
+      text-align: left;
+    }
+
+    th {
+      background-color: #e8f5e9;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: white;
+      background-color: #2e7d32;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="../../../../index.html" class="logo">A Guide to the IJSO</a>
+    <div class="nav-links">
+      <a href="../../../theory.html">Home</a>
+      <a href="../../../Physics/physics.html">Physics</a>
+      <a href="../../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../../Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Mutations</h2>
+    <a href="../Molecular.html" class="back-btn">← Back to Molecular Biology</a>
+  </div>
+
+  <!-- Main content -->
+  <div class="container">
+    <h3>What Are Mutations?</h3>
+    <ul>
+        <li>Mutations are changes in the DNA sequence that can affect how genes function.</li>
+        <li>Mutations can occur naturally or be caused by environmental factors like UV radiation or chemicals.</li>
+        <li>Mutations may result in a change in protein structure, which can affect traits or lead to diseases.</li>
+    </ul>
+
+    <h3>Types of Mutations</h3>
+    <p>Mutations can be classified into two main types based on their impact on the codons:</p>
+    <ol type="1">
+        <li>Point Mutations
+            <ul>
+                <li>Definition: A change in one single nucleotide of the DNA sequence.</li>
+                <li>Subtypes:
+                    <ul>
+                        <li>Substitution: One nucleotide is replaced with another.
+                            <ul>
+                                <li>Example: A → G (Adenine is replaced by Guanine).</li>
+                                <li>Effect: Can lead to:
+                                    <ul>
+                                        <li>Silent mutation (no change to the protein).</li>
+                                        <li>Missense mutation (a different amino acid is produced).</li>
+                                        <li>Nonsense mutation (introduces a stop codon, shortening the protein).</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Insertion: One or more nucleotides are added to the DNA sequence.
+                            <ul>
+                                <li>Example: A new nucleotide is added between two existing bases.</li>
+                                <li>Effect: Insertion can sometimes lead to a frameshift, but if the change is small, it can still be considered a point mutation.</li>
+                            </ul>
+                        </li>
+                        <li>Deletion: One or more nucleotides are removed from the DNA sequence.
+                            <ul>
+                                <li>Example: One nucleotide is removed from the sequence.</li>
+                                <li>Effect: Deletion can also cause a frameshift, but if it’s small, it’s considered a point mutation.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Frameshift Mutations
+            <ul>
+                <li>Definition: A mutation where insertions or deletions cause a shift in the reading frame of the codons.</li>
+                <li>Effect: This shifts the entire codon sequence, altering the protein from the point of mutation onward.
+                    <ul>
+                        <li>Insertion: Adding a base shifts the reading frame.</li>
+                        <li>Deletion: Removing a base shifts the reading frame.</li>
+                    </ul>
+                </li>
+                <li>Impact: Frameshift mutations almost always lead to severe changes in the protein’s structure and function.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h3>Types of Mutations Based on Their Effect on the Protein:</h3>
+    <ol type="1">
+        <li>Silent Mutation:
+            <ul>
+                <li>Definition: A mutation that does not affect the protein because the new codon still codes for the same amino acid.</li>
+                <li>Example: A change in DNA that results in the same amino acid being added to the protein.</li>
+            </ul>
+        </li>
+        <li>Missense Mutation:
+            <ul>
+                <li>Definition: A mutation that results in a different amino acid being incorporated into the protein.</li>
+                <li>Effect:
+                    The protein may function differently, or in some cases, may be nonfunctional.</li>
+                <li>Example:
+                    Sickle cell disease is caused by a missense mutation in the hemoglobin gene.</li>
+            </ul>
+        </li>
+        <li>Nonsense Mutation:
+            <ul>
+                <li>Definition: A mutation that causes an early stop codon, leading to a truncated (shortened) protein.</li>
+                <li>Effect:
+                    The protein is often nonfunctional or incomplete.</li>
+                <li>Example: A mutation in a gene that causes cystic fibrosis can be caused by a nonsense mutation.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h3>Causes of Mutations</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Type of Cause</th>
+                <th>Examples</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Spontaneous Mutations</td>
+                <td>Errors during DNA replication or repair.</td>
+            </tr>
+            <tr>
+                <td>Induced Mutations</td>
+                <td>Environmental factors like UV light, chemicals, or radiation.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Effects of Mutations</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Type of Effect</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Neutral Mutation</td>
+                <td>No effect on the organism or protein.</td>
+            </tr>
+            <tr>
+                <td>Beneficial Mutation</td>
+                <td>Provides an advantage (e.g., resistance to a disease).</td>
+            </tr>
+            <tr>
+                <td>Harmful Mutation</td>
+                <td>Causes disease or dysfunction (e.g., cancer, genetic disorders).</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Mutation in the Context of Evolution</h3>
+    <ul>
+        <li>Mutations are a key source of genetic variation in populations.</li>
+        <li>Beneficial mutations can be selected for over generations, leading to evolution.</li>
+    </ul>
+
+    <h3>🎯 Pro Tip</h3>
+    <ul>
+        <li>Point Mutations = Small changes in the DNA sequence (Substitution, Insertion, Deletion).</li>
+        <li>Frameshift Mutations = Larger changes that shift the codon reading frame (Insertions and Deletions).</li>
+        <li>Silent, Missense, and Nonsense = Based on how the mutation impacts the protein structure.</li>
+    </ul>
+
+    <p style="text-align: right; font-size: 0.9em; color: #555;">
+      Written by <strong>Kasiban Parthipan</strong>
+    </p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+
+</body>
+</html>
