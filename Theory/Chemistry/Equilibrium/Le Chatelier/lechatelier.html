@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Le Chatelier's Principle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f3fb;
+      margin: 0;
+      color: #1a1a1a;
+    }
+
+    .navbar {
+      background-color: #9c27b0;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      flex-wrap: wrap;
+    }
+
+    .navbar .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: white;
+    }
+
+    .nav-links a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 900px;
+      margin: 2rem auto 1rem;
+      padding: 0 2rem;
+    }
+
+    .page-header h2 {
+      font-size: 1.8rem;
+      color: #9c27b0;
+    }
+
+    .back-btn {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      color: #333;
+      transition: background-color 0.2s;
+    }
+
+    .back-btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    }
+
+    h1 {
+      text-align: center;
+      color: #9c27b0;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      color: #9c27b0;
+      margin-top: 2rem;
+      border-bottom: 2px solid #e1bee7;
+      padding-bottom: 0.3rem;
+    }
+
+    p, ul, ol, pre {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    ul li, ol li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: white;
+      background-color: #9c27b0;
+    }
+
+    .collapsible {
+      background-color: #f3e5f5;
+      color: #333;
+      cursor: pointer;
+      padding: 1rem;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 1rem;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+
+    .collapsible:hover {
+      background-color: #e1bee7;
+    }
+
+    .content {
+      padding: 0 1rem;
+      display: none;
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+
+    .code-block {
+      background-color: #f5f5f5;
+      padding: 0.7rem;
+      border-radius: 5px;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="../../../../index.html" class="logo">A Guide to the IJSO</a>
+    <div class="nav-links">
+      <a href="../../../theory.html">Home</a>
+      <a href="../../../Physics/physics.html">Physics</a>
+      <a href="../../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../../../Biology/Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Le Chatelier's Principle</h2>
+    <a href="../Equilibrium.html" class="back-btn">← Back to Equilibrium</a>
+  </div>
+
+<!-- Main content -->
+<div class="container">  
+    <p>Le Chatelier’s principle states that if a system at equilibrium is subjected to a change in temperature, pressure or the concentration of a reactant or product, then the system readjusts itself to counteract the effect of the change and a new equilibrium is established.</p>
+  
+    <h2>1. Change in concentration:</h2>
+    <p>If the concentration of a species is increased, then the equilibrium moves in the direction that reduces the concentration of that species. If the concentration of a species is decreased, then the equilibrium moves in the direction that increases the concentration of that species.</p>
+  
+    <p><strong>Example:</strong></p>
+    <p>For the equilibrium: </p>
+    <p>\[\ce{H2(g) + I2(g) <=> 2HI(g)}\]</p>
+    <ul>
+      <li>If the concentration of H<sub>2</sub> is increased, the equilibrium moves to the right (towards products) to use up the added H<sub>2</sub>.</li>
+      <li>If the concentration of HI is decreased, the equilibrium moves to the right to increase the concentration of HI.</li>
+    </ul>
+  
+    <h2>2. Change in pressure:</h2>
+    <p>Changing pressure affects equilibria involving gases. Increasing the pressure shifts the equilibrium toward the side with fewer moles of gas. Decreasing pressure shifts it toward the side with more moles of gas.</p>
+  
+    <p><strong>Example:</strong></p>
+    <p>For the equilibrium:</p>
+    <p>\[\ce{N2(g) + 3H2(g) <=> 2NH3(g)}\]</p>
+    <p>There are 4 moles of gas on the left and 2 on the right.</p>
+    <ul>
+      <li>Increasing pressure shifts the equilibrium to the right.</li>
+      <li>Decreasing pressure shifts it to the left.</li>
+    </ul>
+  
+    <p><em>Note: If the number of gas moles on both sides is equal, pressure change has no effect on equilibrium.</em></p>
+  
+    <h2>3. Change in temperature:</h2>
+    <p>For endothermic reactions (\( \Delta H > 0 \)), increasing temperature shifts equilibrium to the right (favoring products). For exothermic reactions (\( \Delta H < 0 \)), increasing temperature shifts it to the left (favoring reactants).</p>
+  
+    <p><strong>Example:</strong></p>
+    <p>\[\ce{2NO2(g) <=> N2O4(g)} \quad \Delta H = -57.2\, \text{kJ/mol}\]</p>
+    <ul>
+      <li>This is exothermic in the forward direction.</li>
+      <li>Increasing temperature shifts equilibrium to the left (more brown NO<sub>2</sub> color is seen).</li>
+    </ul>
+  
+    <h2>4. Effect of a catalyst:</h2>
+    <p>A catalyst speeds up the rate of both the forward and reverse reactions equally. It does not affect the position of equilibrium, only the rate at which equilibrium is achieved.</p>
+  
+  </div>
+     <p style="text-align: right; font-size: 0.9em; color: #555;">
+    Written by <strong>Fillios Memtsoudis</strong>
+
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+
+  <script>
+    const coll = document.querySelectorAll(".collapsible");
+    coll.forEach(btn => {
+      btn.addEventListener("click", function () {
+        this.classList.toggle("active");
+        const content = this.nextElementSibling;
+        content.style.display = content.style.display === "block" ? "none" : "block";
+      });
+    });
+  </script>
+</body>
+</html>
