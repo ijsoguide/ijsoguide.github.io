@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Types of Radioactive Decay</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- MathJax for LaTeX -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async 
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f8ff;
+      color: #333;
+    }
+
+    .navbar {
+      background-color: #2979ff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      flex-wrap: wrap;
+    }
+
+    .navbar .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: white;
+    }
+
+    .nav-links a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .page-header {
+      max-width: 900px;
+      margin: 2rem auto 1rem;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .page-header h2 {
+      font-size: 1.8rem;
+      color: #2979ff;
+    }
+
+    .back-btn {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      color: #333;
+      transition: background-color 0.2s;
+    }
+
+    .back-btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+      color: #2b4a8b;
+    }
+
+    p, ul, ol {
+      line-height: 1.6;
+    }
+
+    ul li, ol li {
+      margin-bottom: 0.5rem;
+    }
+
+    .collapsible {
+      background-color: #e3ecff;
+      color: #000;
+      cursor: pointer;
+      padding: 12px 16px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
+      margin-top: 1.5rem;
+    }
+
+    .active, .collapsible:hover {
+      background-color: #d1dcff;
+    }
+
+    .content {
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      background-color: #f9fbff;
+      border-left: 4px solid #4a76d0;
+      border-radius: 0 0 6px 6px;
+    }
+
+    .content ul, .content p {
+      margin: 1rem 0;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: #2979ff;
+      color: white;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const coll = document.querySelectorAll('.collapsible');
+      coll.forEach(btn => {
+        btn.addEventListener('click', function () {
+          this.classList.toggle('active');
+          const content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + 'px';
+          }
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="../../../../index.html" class="logo">A Guide to the IJSO</a>
+    <div class="nav-links">
+      <a href="../../../theory">Home</a>
+      <a href="../../physics.html">Physics</a>
+      <a href="../../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../../../Biology/Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Header with Back Button -->
+  <div class="page-header">
+    <h2>Types of Radioactive Decay</h2>
+    <a href="../Modern Physics.html" class="back-btn">← Back to Modern Physics</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div>
+            <p>
+              Radioactive decay is a natural process by which unstable atomic nuclei transform into more stable configurations by emitting particles or energy. Each type of decay affects the atomic number and/or mass number differently.
+            </p>
+          
+            <h2>Alpha Decay (α decay)</h2>
+            <p>
+              In alpha decay, the nucleus emits an <strong>alpha particle</strong>, which consists of 2 protons and 2 neutrons. This reduces the atomic number by 2 and the mass number by 4.
+            </p>
+            <p><strong>Example:</strong>  
+                \(\ce{^{238}_{92}U -> ^{234}_{90}Th + ^{4}_{2}He}\)
+            </p>
+            <img src="image1.png" alt="Alpha Decay Diagram" style="width: 50%; max-width: 600px; margin: 1rem 0;">
+          
+            <h2>Beta-minus Decay (β⁻ decay)</h2>
+            <p>
+              In beta-minus decay, a neutron in the nucleus converts into a proton and emits a <strong>beta-minus particle</strong> (an electron) and an antineutrino. The atomic number increases by 1.
+            </p>
+            <p><strong>Example:</strong>  
+              \(\ce{^{14}_{6}C -> ^{14}_{7}N + \beta^- + \bar{\nu}_e}\)
+            </p>
+            
+            <h2>Beta-plus Decay (β⁺ decay / Positron Emission)</h2>
+            <p>
+              In beta-plus decay, a proton transforms into a neutron, emitting a <strong>positron</strong> (β⁺) and a neutrino. The atomic number decreases by 1.
+            </p>
+            <p><strong>Example:</strong>  
+              \(\ce{^{11}_{6}C -> ^{11}_{5}B + \beta^+ + \nu_e}\)
+            </p>
+            <img src="image2.png" alt="Beta-plus Decay Diagram" style="width: 50%; max-width: 600px; margin: 1rem 0;">
+            <h2>Electron Capture (EC)</h2>
+            <p>
+              In electron capture, an inner orbital electron is captured by the nucleus and combines with a proton to form a neutron. This process emits a neutrino and decreases the atomic number by 1.
+            </p>
+            <p><strong>Example:</strong>  
+              \(\ce{^{7}_{4}Be + e^- -> ^{7}_{3}Li + \nu_e}\)
+            </p>
+            <img src="image3.gif" alt="Electron Capture Diagram" style="width: 50%; max-width: 600px; margin: 1rem 0;">
+            <h2>Gamma Emission (γ decay)</h2>
+            <p>
+              Gamma decay occurs when a nucleus in an excited state releases excess energy as a <strong>gamma ray</strong> (high-energy photon). There is no change in atomic number or mass number.
+            </p>
+            <p><strong>Example:</strong>  
+              \(\ce{^{60}_{27}Co -> ^{60}_{28}Ni + \beta^- + \gamma}\)
+            </p>
+            <img src="image4.png" alt="Gamma Emission Diagram" style="width: 50%; max-width: 600px; margin: 1rem 0;">
+            <h2>Summary Table</h2>
+            <table border="1" cellpadding="8" cellspacing="0">
+              <tr>
+                <th>Decay Type</th>
+                <th>Emission</th>
+                <th>Change in Atomic Number</th>
+                <th>Change in Mass Number</th>
+              </tr>
+              <tr>
+                <td>Alpha (α)</td>
+                <td>He nucleus (2p, 2n)</td>
+                <td>-2</td>
+                <td>-4</td>
+              </tr>
+              <tr>
+                <td>Beta-minus (β⁻)</td>
+                <td>Electron + antineutrino</td>
+                <td>+1</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Beta-plus (β⁺)</td>
+                <td>Positron + neutrino</td>
+                <td>-1</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Electron Capture</td>
+                <td>Neutrino</td>
+                <td>-1</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Gamma (γ)</td>
+                <td>Gamma photon</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+            </table>
+          </div>
+
+    <p style="text-align: right; font-size: 0.9em; color: #555;">
+    Written by <strong>Thenura Dilruk</strong>
+
+    </p>
+    </div>
+ 
+
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+</body>
+</html>
