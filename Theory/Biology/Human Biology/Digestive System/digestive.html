@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Digestive System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- MathJax for LaTeX -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async 
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f8ff;
+      color: #333;
+    }
+
+    .navbar {
+      background-color: #2e7d32;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      flex-wrap: wrap;
+    }
+
+    .navbar .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: white;
+    }
+
+    .nav-links a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .page-header {
+      max-width: 900px;
+      margin: 2rem auto 1rem;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .page-header h2 {
+      font-size: 1.8rem;
+      color: #2e7d32;
+    }
+
+    .back-btn {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      color: #333;
+      transition: background-color 0.2s;
+    }
+
+    .back-btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2, h3 {
+      color: #2e7d32;
+    }
+
+    p, ul, ol {
+      line-height: 1.6;
+    }
+
+    ul li, ol li {
+      margin-bottom: 0.5rem;
+    }
+
+    .collapsible {
+      background-color: #e3ecff;
+      color: #000;
+      cursor: pointer;
+      padding: 12px 16px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
+      margin-top: 1.5rem;
+    }
+
+    .active, .collapsible:hover {
+      background-color: #d1dcff;
+    }
+
+    .content {
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      background-color: #f9fbff;
+      border-left: 4px solid #2e7d32;
+      border-radius: 0 0 6px 6px;
+    }
+
+    .content ul, .content p {
+      margin: 1rem 0;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: #2e7d32;
+      color: white;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="../../../../index.html" class="logo">A Guide to the IJSO</a>
+    <div class="nav-links">
+      <a href="../../../theory">Home</a>
+      <a href="../../../Physics/physics.html">Physics</a>
+      <a href="../../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../../Biology.html">Biology</a>
+    </div>
+  </nav>
+
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>Digestive System</h2>
+    <a class="back-btn" href="../Human.html">← Back to Human Biology</a>
+  </div>
+
+  <!-- Content Container -->
+  <div class="container">
+    <h2>Overview & Purpose</h2>
+    <ul>
+        <li><strong>Digestion:</strong> The process of breaking down complex, large, insoluble food molecules into simpler, smaller, soluble molecules that can be absorbed into the bloodstream.</li>
+        <li><strong>Purpose:</strong> To extract nutrients (carbohydrates, proteins, fats, vitamins, minerals, water) from food for energy, growth, and repair.</li>
+        <li><strong>Two Main Types:</strong>
+        <ul>
+            <li>Mechanical Digestion: Physical breakdown of food into smaller pieces (e.g., chewing, churning). Increases surface area for enzymes.</li>
+            <li>Chemical Digestion: Breakdown of complex molecules into simpler ones using enzymes (biological catalysts).</li>
+        </ul></li>
+    </ul>
+
+    <h2>The Alimentary Canal: Path of Food</h2>
+    <p>This is the tube through which food passes.</p>
+    <img src="image1.png" alt="Alimentary Canal" style="width: 60%; max-width: 600px; border-radius: 10px; margin: 1rem 0;" />
+
+    <h3>(a) Mouth (Oral Cavity)</h3>
+    <ul>
+        <li>Ingestion: Taking food in.</li>
+        <li>Mechanical: Teeth perform mastication (chewing). Tongue mixes food with saliva.</li>
+        <li>Chemical: Saliva (from salivary glands) contains:
+            <ul>
+                <li>Salivary Amylase (Ptyalin): Begins carbohydrate digestion (Starch → Maltose).</li>
+                <li>Mucus: Lubricates food, forming a bolus.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>(b) Pharynx & Esophagus</h3>
+    <ul>
+        <li>Pharynx: Common passage for food and air. Epiglottis (a flap) prevents food from entering the trachea (windpipe) during swallowing (deglutition).</li>
+        <li>Esophagus: Muscular tube connecting pharynx to stomach. Food moves down via peristalsis (wave-like muscular contractions). No digestion occurs here.</li>
+    </ul>
+
+    <h3>(c) Stomach:</h3>
+    <ul>
+        <li>J-shaped muscular organ. Stores food temporarily (2-4 hours).</li>
+        <li>Mechanical: Churning action mixes food with gastric juice, forming chyme.</li>
+        <li>Chemical: Gastric glands secrete gastric juice containing:
+            <ul>
+                <li>Hydrochloric Acid (HCl): Kills bacteria, provides acidic pH (≈1.5−3.5), activates pepsinogen.</li>
+                <li>Pepsinogen: Inactive enzyme, activated by HCl to Pepsin. Pepsin begins protein digestion (Proteins → Polypeptides).</li>
+                <li>Mucus: Protects stomach lining from HCl and pepsin.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>(d) Small Intestine</h3>
+    <ul>
+        <li>Long (~6-7 meters), coiled tube; the primary site for chemical digestion and absorption of nutrients.</li>
+        <li>Divided into three parts: Duodenum (first ~25 cm), Jejunum (middle section), and Ileum (final section).</li>
+        <li>Duodenum: Receives acidic chyme from the stomach. Crucially, it also receives secretions from the liver/gallbladder (bile) and the pancreas (pancreatic juice), mixing them with the chyme.</li>
+        <li>Bile:
+            <ul>
+                <li>Produced by the liver, stored and concentrated in the gallbladder.</li>
+                <li>Emulsifies fats: Breaks large fat globules into smaller droplets, increasing the surface area for lipase action (this is a form of mechanical processing).</li>
+                <li>Neutralizes Acid: Bile contains bicarbonate ions (like Sodium Bicarbonate, \(\ce{NaHCO3​}\)) which help neutralize the highly acidic chyme coming from the stomach.</li>
+                <li>Why Neutralize? The acidic pH (1.5-3.5) of chyme would inactivate enzymes in the small intestine. Both pancreatic and intestinal enzymes require an alkaline environment (optimal pH around 8) to function effectively.</li>
+            </ul>
+        </li>
+        <li>Enzymes Acting in the Small Intestine: Digestion is completed here by enzymes from two sources:
+            <ul>
+                <li>Pancreatic Enzymes (from Pancreatic Juice):
+                    <ul>
+                        <li>Pancreatic Amylase: Continues starch digestion → Disaccharides (e.g., Maltose).</li>
+                        <li>Trypsin: (Secreted as inactive Trypsinogen, activated in duodenum) Digests proteins and polypeptides → Smaller Peptides.</li>
+                        <li>Pancreatic Lipase: Digests emulsified fats (triglycerides) → Fatty Acids and Glycerol.</li>
+                        <li>Pancreatic Nucleases (DNase, RNase): Digest nucleic acids (DNA, RNA) → Nucleotides.</li>
+                    </ul>
+                </li>
+                <li>Intestinal Enzymes (Brush Border Enzymes - located in the cell membranes of the intestinal lining):
+                    <ul>
+                        <li>Disaccharidases: (e.g., Maltase, Sucrase, Lactase) Digest disaccharides → Monosaccharides (Maltose → Glucose; Sucrose → Glucose + Fructose; Lactose → Glucose + Galactose).</li>
+                        <li>Peptidases: (e.g., Aminopeptidases, Dipeptidases) Digest small peptides → Amino Acids.</li>
+                        <li>Nucleotidases & Nucleosidases: Continue breakdown of nucleotides → Nitrogenous bases, pentose sugars, and phosphate ions.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Absorption: The Jejunum and Ileum are the main sites for absorption of the final products of digestion (monosaccharides, amino acids, fatty acids, glycerol, nucleotides) as well as vitamins, minerals, and water.</li>
+        <li>Adaptations for Absorption: Huge surface area created by internal folds, villi (finger-like projections), and microvilli (microscopic projections on the surface of villi cells). Each villus contains blood capillaries and a lacteal (lymph capillary) for nutrient uptake.</li>
+    </ul>
+
+    <h3>(e) Large Intestine</h3>
+    <ul>
+        <li>Wider diameter, shorter length (~1.5 meters).</li>
+        <li>Includes: Cecum, Colon (ascending, transverse, descending, sigmoid), Rectum, Anus.</li>
+        <li>Functions:
+            <ul>
+                <li>Absorption of water and electrolytes.</li>
+                <li>Formation and storage of feces (undigested material, bacteria, water).</li>
+                <li>Houses gut bacteria that synthesize some vitamins (e.g., Vitamin K, some B vitamins).</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>(f) Anus</h3>
+    <ul>
+        <li>Opening through which feces are eliminated from the body (egestion or defecation). Controlled by sphincter muscles.</li>
+    </ul>
+
+    <h2>Accessory Digestive Organs</h2>
+    <p>These organs assist digestion but food does not pass through them.</p>
+
+    <h3>(a) Salivary Glands</h3>
+    <ul>
+        <li>(Parotid, submandibular, sublingual) Produce saliva.</li>
+    </ul>
+
+    <h3>(b) Liver</h3>
+    <ul>
+        <li>Largest internal organ. Many metabolic functions.</li>
+        <li>Digestive Function: Produces Bile. Bile emulsifies fats (breaks large fat globules into smaller droplets), increasing surface area for lipase action. Note: Emulsification is mechanical, not chemical digestion. Bile also helps neutralize stomach acid.</li>
+    </ul>
+
+    <h3>(c) Gallbladder</h3>
+    <ul>
+        <li>Small organ located beneath the liver.</li>
+        <li>Stores and concentrates bile produced by the liver.</li>
+        <li>Releases bile into the duodenum via the bile duct.</li>
+    </ul>
+
+    <h3>(d) Pancreas</h3>
+    <ul>
+        <li>Located behind the stomach. Has both endocrine and exocrine functions.</li>
+        <li>Exocrine Function: Produces pancreatic juice, released into the duodenum. Contains:
+            <ul>
+                <li>Pancreatic Amylase: Digests remaining starch to disaccharides.</li>
+                <li>Trypsin(ogen): Secreted as inactive trypsinogen, activated in duodenum. Digests proteins/polypeptides to smaller peptides.</li>
+                <li>Lipase: Digests fats (triglycerides) into fatty acids and glycerol.</li>
+                <li>Bicarbonate ions (\(\ce{HCO3^−}\)​): Neutralize the acidic chyme from the stomach, providing optimal alkaline pH for intestinal enzymes.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>Summary</h2>
+    <table border="1" cellpadding="10" cellspacing="0", text-align="center">
+        <thead>
+            <tr>
+                <th>Location</th>
+                <th>Enzyme(s)</th>
+                <th>Source</th>
+                <th>Substrate</th>
+                <th>Product(s)</th>
+                <th>Optimal pH</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mouth</td>
+                <td>Salivary Amylase</td>
+                <td>Salivary Glands</td>
+                <td>Starch</td>
+                <td>Maltose (Disaccharide)</td>
+                <td>6.7-7.0</td>
+            </tr>
+            <tr>
+                <td>Stomach</td>
+                <td>Pepsin</td>
+                <td>Gastric Glands</td>
+                <td>Proteins</td>
+                <td>Polypeptides</td>
+                <td>1.5-3.5</td>
+            </tr>
+            <tr>
+                <td>Small Intestine</td>
+                <td>Pancreatic Amylase</td>
+                <td>Pancreas</td>
+                <td>Starch</td>
+                <td>Maltose (Disaccharide)</td>
+                <td>Alkaline</td>
+            </tr>
+            <tr>
+                <td>Small Intestine</td>
+                <td>Trypsin</td>
+                <td>Pancreas</td>
+                <td>Polypeptides</td>
+                <td>Smaller Peptides</td>
+                <td>Alkaline</td>
+            </tr>
+            <tr>
+                <td>Small Intestine</td>
+                <td>Nuclease (DNAse RNAse)</td>
+                <td>Pancreas</td>
+                <td>DNA & RNA</td>
+                <td>Nucleotides</td>
+                <td>Alkaline</td>
+            </tr>
+            <tr>
+                <td>Small Intestine</td>
+                <td>Lipase</td>
+                <td>Pancreas</td>
+                <td>Fats (emulsified)</td>
+                <td>Fatty Acids & Glycerol</td>
+                <td>Alkaline</td>
+            </tr>
+            <tr>
+                <td>Small Intestine</td>
+                <td>Disaccharidases (e.g., Maltase)</td>
+                <td>Intestinal Wall</td>
+                <td>Disaccharides</td>
+                <td>Monosaccharides (e.g., Glucose)</td>
+                <td>Alkaline</td>
+            </tr>
+            <tr>
+                <td>Small Intestine</td>
+                <td>Peptidase</td>
+                <td>Intestinal Wall</td>
+                <td>Peptides</td>
+                <td>Amino Acids</td>
+                <td>Alkaline</td>
+            </tr>
+            <tr>
+                <td>Small Intestine</td>
+                <td>Nucleotidase and Nucleosidase</td>
+                <td>Intestinal wall</td>
+                <td>Nucleotide</td>
+                <td>Pentose sugar, Nitrogen base and phosphate ion</td>
+                <td>Alkaline</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+   <p style="text-align: right; font-size: 0.9em; color: #555;">
+    Written by <strong>Parthipan Kasiban</strong>
+</p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+
+  <!-- JavaScript for Collapsible -->
+  <script>
+    const collapsibles = document.querySelectorAll(".collapsible");
+    collapsibles.forEach(btn => {
+      btn.addEventListener("click", function () {
+        this.classList.toggle("active");
+        const content = this.nextElementSibling;
+        content.style.display = content.style.display === "block" ? "none" : "block";
+      });
+    });
+  </script>
+
+</body>
+</html>
