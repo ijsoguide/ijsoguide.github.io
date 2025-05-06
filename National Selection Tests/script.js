@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       
       card.onclick = () => {
-        window.open(country.link, "_blank");
+        window.open(country.link, "_self");
       };
 
       const overlay = document.createElement("div");
