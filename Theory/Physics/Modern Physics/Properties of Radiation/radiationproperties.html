@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Properties of Radiation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- MathJax for LaTeX -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async 
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f8ff;
+      color: #333;
+    }
+
+    .navbar {
+      background-color: #2979ff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      flex-wrap: wrap;
+    }
+
+    .navbar .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: white;
+    }
+
+    .nav-links a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .page-header {
+      max-width: 900px;
+      margin: 2rem auto 1rem;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .page-header h2 {
+      font-size: 1.8rem;
+      color: #2979ff;
+    }
+
+    .back-btn {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      color: #333;
+      transition: background-color 0.2s;
+    }
+
+    .back-btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2, h3 {
+      color: #2b4a8b;
+    }
+
+    p, ul, ol {
+      line-height: 1.6;
+    }
+
+    ul li, ol li {
+      margin-bottom: 0.5rem;
+    }
+
+    .collapsible {
+      background-color: #e3ecff;
+      color: #000;
+      cursor: pointer;
+      padding: 12px 16px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
+      margin-top: 1.5rem;
+    }
+
+    .active, .collapsible:hover {
+      background-color: #d1dcff;
+    }
+
+    .content {
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      background-color: #f9fbff;
+      border-left: 4px solid #4a76d0;
+      border-radius: 0 0 6px 6px;
+    }
+
+    .content ul, .content p {
+      margin: 1rem 0;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: #2979ff;
+      color: white;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const coll = document.querySelectorAll('.collapsible');
+      coll.forEach(btn => {
+        btn.addEventListener('click', function () {
+          this.classList.toggle('active');
+          const content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + 'px';
+          }
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="../../../../index.html" class="logo">A Guide to the IJSO</a>
+    <div class="nav-links">
+      <a href="../../../theory">Home</a>
+      <a href="../../physics.html">Physics</a>
+      <a href="../../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../../../Biology/Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Header with Back Button -->
+  <div class="page-header">
+    <h2>Properties of Radiation</h2>
+    <a href="../Modern Physics.html" class="back-btn">← Back to Modern Physics</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <p>Radiation emitted by radioactive substances can be categorized into three main types: alpha (α), beta (β), and gamma (γ) radiation. Each type has distinct physical properties and behaviors.</p>
+
+    <h2>Penetration Ability</h2>
+  <p>Different types of radiation have different penetration abilities:</p>
+  <ul>
+    <li><strong>Alpha (α):</strong> Stopped by paper or a few cm of air.</li>
+    <li><strong>Beta (β):</strong> Penetrates paper, stopped by thin aluminum.</li>
+    <li><strong>Gamma (γ):</strong> Requires lead or concrete shielding.</li>
+    <li><strong>Neutron:</strong> Highly penetrating; stopped by water, paraffin, or concrete.</li>
+  </ul>
+  <img src="image1.png" alt="Penetration ability of radiation types" style="width: 100%; max-width: 600px;">
+
+  <h2>Ionising Power</h2>
+  <p>Ionising power is the ability to remove electrons from atoms:</p>
+  <ul>
+    <li><strong>Alpha:</strong> Strongly ionising.</li>
+    <li><strong>Beta:</strong> Moderately ionising.</li>
+    <li><strong>Gamma:</strong> Weakly ionising.</li>
+    <li><strong>Neutron:</strong> Indirectly ionising—causes ionisation via collisions.</li>
+  </ul>
+  
+  <h2>Deflection by Electric and Magnetic Fields</h2>
+  <p>This tells us about their charge and how they behave in fields:</p>
+  <ul>
+    <li><strong>Alpha:</strong> Deflected (positive charge).</li>
+    <li><strong>Beta:</strong> Deflected in opposite direction to alpha (negative charge).</li>
+    <li><strong>Gamma:</strong> Not deflected (neutral).</li>
+    <li><strong>Neutron:</strong> Not deflected (neutral), but has magnetic moment.</li>
+  </ul>
+  
+  <h2>Speed</h2>
+  <p>The speed varies with mass and energy:</p>
+  <ul>
+    <li><strong>Alpha:</strong> ~5–7% of light speed.</li>
+    <li><strong>Beta:</strong> Up to ~99% of light speed.</li>
+    <li><strong>Gamma:</strong> Speed of light.</li>
+    <li><strong>Neutron:</strong> Depends on energy; thermal = ~2200 m/s, fast = ~10% of light speed.</li>
+  </ul>
+  
+  <h2>Mass and Charge</h2>
+  <p>Mass and charge help classify the radiation:</p>
+  <ul>
+    <li><strong>Alpha:</strong> Mass = 4u, Charge = +2e.</li>
+    <li><strong>Beta:</strong> Mass ≈ 1/2000u, Charge = –1e.</li>
+    <li><strong>Gamma:</strong> No mass or charge.</li>
+    <li><strong>Neutron:</strong> Mass ≈ 1u, Charge = 0.</li>
+  </ul>
+  
+    <h2>Detection Methods</h2>
+    <p>Each type of radiation is detected using different techniques:</p>
+    <ul>
+      <li><strong>Geiger-Müller (GM) tubes</strong> – detect all types but with varying sensitivity.
+        <img src="image2.png" alt="Geiger-Müller tube" style="width: 100%; max-width: 600px;">
+      </li>
+
+      <li><strong>Cloud chambers</strong> – show tracks left by charged particles.</li>
+      <li><strong>Photographic film</strong> – darkens in response to exposure.</li>
+    </ul>
+
+
+    <h2>Uses of Radiation</h2>
+    <h3>Uses of Alpha Radiation</h3>
+    <ul>
+      <li><strong>Smoke Detectors:</strong> Alpha particles ionise air; smoke disrupts this, triggering the alarm.
+      <img src="image3.jpeg" alt="Alpha radiation smoke detector" style="width: 30%; max-width: 600px;">
+      </li>
+      <li><strong>Static Eliminators:</strong> Used in industries to remove static electricity from materials.
+      <img src="image4.avif" alt="Alpha radiation static eliminator" style="width: 40%; max-width: 600px;">
+      </li>
+      <li><strong>Medical Treatment:</strong> Some cancer therapies use alpha-emitting isotopes for targeted cell destruction.
+      <img src="image5.png" alt="Alpha radiation medical treatment" style="width: 100%; max-width: 600px;">
+      </li>
+    </ul>
+
+    <h3>Uses of Beta Radiation</h3>
+    <ul>
+      <li><strong>Thickness Gauges:</strong> Measure the thickness of materials like paper, foil, or plastic during production.
+      <img src="image6.gif" alt="Beta radiation thickness gauge" style="width: 100%; max-width: 600px;">
+      </li>
+      <li><strong>Medical Tracers:</strong> Used to trace the movement of substances through the body (e.g., phosphorus-32).</li>
+      <li><strong>Radiotherapy:</strong> Beta emitters like strontium-90 used to treat certain eye and bone conditions.</li>
+    </ul>
+   
+  
+    <h3>Uses of Gamma Radiation</h3>
+    <ul>
+      <li><strong>Medical Imaging and Treatment:</strong> Gamma cameras for diagnosis, cobalt-60 for cancer radiotherapy.
+      <img src="image7.jpg" alt="Gamma radiation medical imaging" style="width: 100%; max-width: 600px;">
+      </li>
+      <li><strong>Sterilisation:</strong> Kills bacteria on medical equipment and food without heat or chemicals.</li>
+      <li><strong>Industrial Radiography:</strong> Checks for cracks or flaws in metal structures or welds.</li>
+    </ul>
+    
+  
+    <h3>Uses of Neutron Radiation</h3>
+    <ul>
+      <li><strong>Neutron Activation Analysis:</strong> Identifies materials by detecting the radiation emitted after neutron absorption.
+      <img src="image10.jpg" alt="Neutron activation analysis" style="width: 100%; max-width: 600px;">
+      </li>
+      <li><strong>Medical Isotope Production:</strong> Neutrons used in reactors to produce radioisotopes for diagnostics and treatment.
+      <img src="image9.webp" alt="Neutron activation analysis" style="width: 100%; max-width: 600px;">
+      </li>
+      <li><strong>Nuclear Reactors:</strong> Neutrons sustain the chain reaction in fission reactors.
+      <img src="image8.png" alt="Nuclear reactor" style="width: 100%; max-width: 600px;">
+      </li>
+    </ul>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Properties of Radiation Table</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f6ff;
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2b4a8b;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2rem 0;
+      background-color: white;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    th {
+      background-color: #2979ff;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9fbff;
+    }
+
+    tr:hover {
+      background-color: #eef4ff;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Comparison of Radiation Types</h1>
+
+  <table>
+    <tr>
+      <th>Property</th>
+      <th>Alpha (α)</th>
+      <th>Beta (β)</th>
+      <th>Gamma (γ)</th>
+      <th>Neutron</th>
+    </tr>
+    <tr>
+      <td>Penetration</td>
+      <td>Stopped by paper or skin</td>
+      <td>Penetrates paper, stopped by aluminum</td>
+      <td>Penetrates most materials, reduced by lead/concrete</td>
+      <td>Highly penetrating, slowed by water or concrete</td>
+    </tr>
+    <tr>
+      <td>Ionizing Power</td>
+      <td>Very high</td>
+      <td>Moderate</td>
+      <td>Low</td>
+      <td>Indirect (via collisions)</td>
+    </tr>
+    <tr>
+      <td>Electric Charge</td>
+      <td>+2</td>
+      <td>–1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Mass</td>
+      <td>4u</td>
+      <td>~1/2000u</td>
+      <td>0</td>
+      <td>1u</td>
+    </tr>
+    <tr>
+      <td>Deflection by Fields</td>
+      <td>Deflected (towards negative)</td>
+      <td>Deflected (towards positive)</td>
+      <td>Not deflected</td>
+      <td>Not deflected</td>
+    </tr>
+    <tr>
+      <td>Speed</td>
+      <td>~5–7% of light speed</td>
+      <td>Up to 99% of light speed</td>
+      <td>Speed of light</td>
+      <td>Variable (e.g., 2200 m/s for thermal)</td>
+    </tr>
+    <tr>
+      <td>Typical Sources</td>
+      <td>Americium-241</td>
+      <td>Strontium-90</td>
+      <td>Cobalt-60</td>
+      <td>Nuclear fission</td>
+    </tr>
+    <tr>
+      <td>Uses</td>
+      <td>Smoke detectors, static removal</td>
+      <td>Thickness gauges, tracers</td>
+      <td>Sterilization, imaging</td>
+      <td>Nuclear reactors, research</td>
+    </tr>
+  </table>
+
+</body>
+</html>
+   
+  
+
+
+    <p style="text-align: right; font-size: 0.9em; color: #555;">
+    Written by <strong>Thenura Dilruk</strong>
+
+    </p>
+    </div>
+ 
+
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+</body>
+</html>
