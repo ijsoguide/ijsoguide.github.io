@@ -11,7 +11,7 @@ html {
 
 
 nav {
-  background-color: #112240;
+  background-color: #1c0972;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -336,6 +336,6 @@ h2 {
 footer {
   text-align: center;
   padding: 2rem 1rem;
-  background-color: #112240;
+  background-color: #1c0972;
   border-top: 2px solid #233554;
 }
