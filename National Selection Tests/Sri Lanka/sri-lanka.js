@@ -45,14 +45,14 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       year: 2017,
       difficulty: 3,
-      paperLink: "Final2017SriLanka.pdf",
-      solutionLink: "https://example.com/sri-lanka/2017-solutions.pdf"
+      paperLink: "",
+      solutionLink: "Solutions/Final2017SriLanka.pdf"
     },
     {
       year: 2016,
       difficulty: 2,
-      paperLink: "Solutions/Final2016SriLanka.pdf",
-      solutionLink: "https://example.com/sri-lanka/2016-solutions.pdf"
+      paperLink: "",
+      solutionLink: "Solutions/Final2016SriLanka.pdf"
     }
   ];
 
