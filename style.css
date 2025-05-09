@@ -1,5 +1,6 @@
 :root {
-  --bgdark: #1103cb;
+  --bgdark: #0a192f;
+  --navblue: #131347;
   --white: #ffffff;
 }
 body {
@@ -15,7 +16,7 @@ html {
 
 
 nav {
-  background-color: #1c0972;
+  background-color: var(--navblue);
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -159,7 +160,7 @@ header {
 }
 
 .hero-box {
-  background-color: var(--bgdark);
+  background-color: var(--navblue);
   padding: 3rem;
   max-width: 600px;
   margin: 3rem auto;
