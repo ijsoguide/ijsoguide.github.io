@@ -91,7 +91,7 @@ ul.menu li a:hover {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #112240;
+  background-color: var(--navblue);
   min-width: 200px;
   top: 100%;
   left: 0;
