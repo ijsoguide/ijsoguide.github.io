@@ -1,7 +1,11 @@
+:root {
+  --bgdark: #1103cb;
+  --white: #ffffff;
+}
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #0a192f;
+  background-color: var(--bgdark);
   color: #f0e9d6;
 }
 
@@ -155,7 +159,7 @@ header {
 }
 
 .hero-box {
-  background-color: #112240;
+  background-color: var(--bgdark);
   padding: 3rem;
   max-width: 600px;
   margin: 3rem auto;
