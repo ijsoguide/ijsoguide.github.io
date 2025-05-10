@@ -86,7 +86,7 @@ export let problems = [
         detailed: "The correct hierarchy from simplest to most complex, based on your notes, is: Species (a group of interbreeding organisms) → Population (all individuals of one species in an area) → Community (all populations of different species in an area) → Ecosystem (the community plus its non-living environment). Option D introduces Biome out of sequence for the first four levels."
     },
     {
-        questions:"Which marine zone is characterized by being relatively shallow, overlying the continental shelf, receiving ample sunlight, and supporting a high diversity of life including coral reefs in warmer regions? ",
+        question:"Which marine zone is characterized by being relatively shallow, overlying the continental shelf, receiving ample sunlight, and supporting a high diversity of life including coral reefs in warmer regions? ",
         options:[
             "Abyssal Zone",
             "Hadal Zone",
@@ -98,7 +98,7 @@ export let problems = [
         detailed: "The Neritic zone is the shallow part of the ocean that extends from the low tide mark to the edge of the continental shelf. 1 It receives ample sunlight, allowing for photosynthesis, and is rich in nutrients, supporting a high diversity of marine life, including phytoplankton, zooplankton, fish, and, in warmer waters, coral reefs. The Abyssal, Hadal, and Bathyal zones are all much deeper, with significantly less or no sunlight and different types of organisms adapted to those conditions."
     },
     {
-        questions:"Plants absorbing mineral nutrients from the soil to support their growth is an example of:",
+        question:"Plants absorbing mineral nutrients from the soil to support their growth is an example of:",
         options:[
             "A Living-Living interaction.",
             "A Non-Living - Non-Living interaction.",
@@ -110,7 +110,7 @@ export let problems = [
         detailed: "This is an example of a Living - Non-Living interaction. The plant (a biotic, living component) is interacting with and taking up mineral nutrients from the soil (an abiotic, non-living component) to facilitate its growth and survival. Living-Living interactions are between two or more organisms. Non-Living-Non-Living interactions are between two abiotic factors (e.g., sunlight heating a rock). Predation is a specific type of Living-Living interaction."
     },
     {
-        questions:"The term 'Biome', as described in the levels of ecological organization, refers to:",
+        question:"The term 'Biome', as described in the levels of ecological organization, refers to:",
         options:[
             "A small, localized area with a unique climate, like the underside of a rock.",
             "All individuals of a single species living in a defined area.",
@@ -122,7 +122,7 @@ export let problems = [
         detailed: "A Biome is defined as 'A group of ecosystems with similar climates and organisms.' Option A describes a microclimate, Option B a population, and Option D is similar to a community but incorrectly excludes the environment from a habitat context."
     },
     {
-        questions:"A team of ecologists is conducting a large-scale study across the entirety of the Siberian wilderness. They are analyzing how the prevailing cold temperatures, specific precipitation patterns, and the dominant coniferous forests interact to define this vast ecological region and distinguish it from other major global ecological units. Their study is primarily focused at the level of a(n):",
+        question:"A team of ecologists is conducting a large-scale study across the entirety of the Siberian wilderness. They are analyzing how the prevailing cold temperatures, specific precipitation patterns, and the dominant coniferous forests interact to define this vast ecological region and distinguish it from other major global ecological units. Their study is primarily focused at the level of a(n):",
         options:[
             "Global Biosphere",
             "Biome",
@@ -134,7 +134,7 @@ export let problems = [
         detailed: "A biome is defined as a group of ecosystems with similar climates and organisms. The Siberian wilderness, characterized by its cold temperatures, specific precipitation, and coniferous forests (the Taiga), represents such a vast ecological unit. The study's focus on how these climatic and vegetation factors interact to define this large-scale region is operating at the biome level. While it contains many ecosystems, the scale and focus on the defining characteristics of this major global ecological unit point to a biome. A 'specific ecosystem' would be more localized; an 'extensive community' would only consider the living organisms; and the 'global biosphere' is too broad (encompassing all life on Earth)."
     },
     {
-        questions:"Imagine a region currently identified as a Grassland biome. If this region experiences a long-term climatic shift involving a significant increase in average annual rainfall and humidity, along with consistently warmer temperatures, to which of the following biomes might it most likely transition over many decades, assuming no significant barriers to species dispersal?",
+        question:"Imagine a region currently identified as a Grassland biome. If this region experiences a long-term climatic shift involving a significant increase in average annual rainfall and humidity, along with consistently warmer temperatures, to which of the following biomes might it most likely transition over many decades, assuming no significant barriers to species dispersal?",
         options:[
             "From Grassland to Desert",
             "From Grassland to Tundra",
@@ -146,7 +146,7 @@ export let problems = [
         detailed: "Grasslands are typically characterized by moderate rainfall, often with distinct dry seasons, which limits the growth of large forests. A significant, long-term increase in average annual rainfall and humidity, coupled with consistently warmer temperatures, would create conditions more favorable for the growth of trees and more lush, diverse vegetation. Depending on the exact magnitude of these climatic shifts, the area could transition towards a wetter type of Temperate Forest if the temperature increases are moderate, or even a Tropical Rainforest if the conditions become sufficiently hot and humid with high rainfall throughout the year. Transitioning to a Desert, Tundra, or Taiga would require decreases in temperature and/or precipitation, which is the opposite of what is described."
     },
     {
-        questions:"In the deepest parts of ocean trenches, within the Hadal zone, unique ecosystems can be found thriving around hydrothermal vents. Organisms here are highly specialized. Which of the following sets of adaptations and environmental conditions would be most characteristic of life in such an environment?",
+        question:"In the deepest parts of ocean trenches, within the Hadal zone, unique ecosystems can be found thriving around hydrothermal vents. Organisms here are highly specialized. Which of the following sets of adaptations and environmental conditions would be most characteristic of life in such an environment?",
         options:[
             "Reliance on sunlight for primary production, tolerance to moderate pressures, and diurnal (daily) behavioral rhythms.",
             "Ability to photosynthesize in low light, tolerance to fluctuating salinity, and adaptations for intertidal exposure.",
