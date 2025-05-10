@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title id="pageTitle"></title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script type="module" src="./script_dynamic.js" defer></script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="../../../index.html" class="nav-logo">A Guide to the IJSO</a>
+    </div>
+    <div class="navbar-right">
+      <a href="../../practicequestions.html">Home</a>
+      <a href="../physics.html">Physics</a>
+      <a href="../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../../Biology/Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <div class="landing-page" id="landing">
+    <div class="overlay">
+      <div class="landing-content">
+        <h1>Ready to Practice?</h1>
+        <p><span id="landingProblemCounter"></span> MCQs</p>
+        <button id="startPracticeButton">Start Practicing</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="main-content" class="non-active">
+    <div class="top-bar">
+      <h2 id="dynamicMainContentTitle"></h2>
+      <a class="back-btn" href="">← Go back</a>
+    </div>
+
+    <div class="toggle-bar" id="dynamicToggleBar">
+      
+    </div>
+
+    <div class="container">
+
+      <div class="problem" id="dynamicProblem">
+        <h3 id="dynamicProblemHeader"></h3>
+        <p id="dynamicProblemText"></p>
+        <form id="dynamicProblemForm">
+          <label><input type="radio" value="A" id="inputA"><span id="optionSpanA"></span></label><br>
+          <label><input type="radio" value="B" id="inputB"><span id="optionSpanB"></span></label><br>
+          <label><input type="radio" value="C" id="inputC"><span id="optionSpanC"></span></label><br>
+          <label><input type="radio" value="D" id="inputD"><span id="optionSpanD"></span></label>
+        </form>
+        <div class="buttons" id="dynamicButtons">
+          <button id="checkSolutionButton">Check the Solution</button>
+          <button id="hintButton">Hint</button>
+          <button id="skipButton">Skip</button>
+        </div>
+        <p class="hint" id="dynamicHint"></p>
+        <p class="feedback" id="dynamicFeedback"></p>
+        <p class="detailed-answer" id="dynamicExplanation"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="result-page" id="result" class="non-active">
+    <div class="container">
+      <h2>Results</h2>
+      <p id="score-display"></p>
+      <div class="buttons">
+        <a class="back-btn" href="" id="backLink">← Go back</a>
+        <button id="try-again-btn">Try Again</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+</body>
+</html>
