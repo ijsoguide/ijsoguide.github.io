@@ -1,0 +1,137 @@
+:root {
+    --bgdark: #0a192f;
+    --navblue: #131347;
+    --txtorange: #ffa756;
+  }
+
+nav {
+    background-color: var(--navblue);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  nav a{
+    text-decoration: none;
+  }
+  
+  nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--txtorange);
+    z-index: 1001;
+  }
+  
+  /* Menu styles */
+  ul.menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+    
+  }
+  
+  ul.menu li {
+    position: relative;
+  }
+  
+  ul.menu li a {
+    color: #fff;
+    transition: color 0.3s;
+    text-decoration: none;
+  }
+  
+  ul.menu li a:hover {
+    color: var(--txtorange);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--navblue);
+    min-width: 200px;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--txtorange)
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  #menuToggle{
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+  
+    nav{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+    }
+  
+    #menuToggle{
+      display: block;
+      font-size: larger;
+      z-index: 100;
+      position: fixed;
+      top: 1.5rem;
+      right: 2rem;
+      color: var(--txtorange);
+    }
+  
+    ul.menu {
+      flex-direction: column;
+      background-color: #112240;
+      position: fixed;
+      top: 0;
+      right: -250px;
+      width: 250px;
+      height: 100%;
+      padding: 3rem 1rem 1rem 1rem;
+      margin: 0;
+      transition: right 0.3s ease-in-out, opacity 0.3s ease;
+      opacity: 0;
+      z-index: 10;
+      gap: 0;
+    }
+  
+    
+    ul.menu.active {
+      right: 0; 
+      opacity: 1;
+    }
+  
+    ul.menu li {
+      padding: 1.5rem 0 1.5rem 0;
+      border-bottom: 1px solid #444;
+    }
+  
+    .dropdown-content {
+      position: static;
+      background: none;
+    }
+  
+    .dropdown:hover .dropdown-content {
+      display: none;
+    }
+  
+    .dropdown-content a {
+      padding-left: 2rem;
+    }
+  }
