@@ -155,6 +155,6 @@ export let problems = [
         ],
         correct:"D",
         hint: "Think about how many individuals there are at each level versus their total collective mass. One tree is few in number but large in mass. Many insects are large in number but individually small in mass.",
-        detailed: "Pyramid of Numbers: There is one tree (producer) supporting many insects (primary consumers). So, the number of producers is small, and the number of primary consumers is large. This results in an inverted pyramid of numbers at these two levels." <br> "Pyramid of Biomass: The single tree, being very large, possesses a substantial total dry mass. The numerous insects, although many, are individually very small, and their collective biomass is likely to be less than the biomass of the large tree that supports them. This results in an upright pyramid of biomass."
+        detailed: "Pyramid of Numbers: There is one tree (producer) supporting many insects (primary consumers). So, the number of producers is small, and the number of primary consumers is large. This results in an inverted pyramid of numbers at these two levels. <br> Pyramid of Biomass: The single tree, being very large, possesses a substantial total dry mass. The numerous insects, although many, are individually very small, and their collective biomass is likely to be less than the biomass of the large tree that supports them. This results in an upright pyramid of biomass."
     }
 ]
