@@ -8,6 +8,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background-color: var(--bgdark);
   color: var(--txtorange);
+  font-family: 'Montserrat', sans-serif;
 }
 
 html {
@@ -36,34 +37,6 @@ nav .logo {
   z-index: 1001;
 }
 
-/* Hamburger styling */
-.nav-toggle {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  z-index: 1001;
-}
-
-.nav-toggle span {
-  height: 3px;
-  width: 25px;
-  background: var(--txtorange);
-  margin: 4px 0;
-  transition: 0.4s;
-  border-radius: 2px;
-}
-
-/* Animate hamburger into X */
-#nav-toggle:checked + .nav-toggle span:nth-child(1) {
-  transform: rotate(45deg) translate(6px, 10px);
-}
-#nav-toggle:checked + .nav-toggle span:nth-child(2) {
-  opacity: 0;
-}
-#nav-toggle:checked + .nav-toggle span:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -9px);
-}
-
 /* Menu styles */
 ul.menu {
   list-style: none;
@@ -72,6 +45,7 @@ ul.menu {
   margin: 0;
   padding: 0;
   transition: all 0.3s ease;
+  
 }
 
 ul.menu li {
@@ -107,12 +81,27 @@ ul.menu li a:hover {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-#nav-toggle:checked ~ ul.menu {
-  backdrop-filter: blur(1000px);
+
+#menuToggle{
+  display: none;
 }
+
 @media (max-width: 768px) {
-  .nav-toggle {
-    display: flex;
+
+  nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  #menuToggle{
+    display: block;
+    font-size: larger;
+    z-index: 100;
+    position: fixed;
+    top: 1.5rem;
+    right: 2rem;
   }
 
   ul.menu {
@@ -123,21 +112,22 @@ ul.menu li a:hover {
     right: -250px;
     width: 250px;
     height: 100%;
-    padding: 0.5rem;
+    padding: 3rem 1rem 1rem 1rem;
     margin: 0;
     transition: right 0.3s ease-in-out, opacity 0.3s ease;
     opacity: 0;
-    z-index: 1000;
+    z-index: 10;
+    gap: 0;
   }
 
   
-  #nav-toggle:checked ~ ul.menu {
+  ul.menu.active {
     right: 0; 
     opacity: 1;
   }
 
   ul.menu li {
-    padding: 1rem 0;
+    padding: 1.5rem 0 1.5rem 0;
     border-bottom: 1px solid #444;
   }
 

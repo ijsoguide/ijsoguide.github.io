@@ -6,6 +6,10 @@
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/04bf603a0f.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -14,18 +18,13 @@
 
   <input type="checkbox" id="nav-toggle" hidden />
 
-    <!-- 2. Label linked to checkbox -->
-    <label for="nav-toggle" class="nav-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
+  <i class="fa-solid fa-bars" id="menuToggle"></i>
 
-  <ul class="menu">
+  <ul class="menu" id="menu">
       <li><a href="#">Home</a></li>
       <li><a href="#about">About Us</a></li>
       <li class="dropdown">
-        <a href="Start Learning/startlearning.html">Start Preparing ▾</a>
+        <a href="Start Learning/startlearning.html" id="startPreparingToggle">Start Preparing ▾</a>
         <div class="dropdown-content">
           <a href="Start Learning/startlearning.html">Home</a>
           <a href="Theory/theory.html">Theory</a>
@@ -37,7 +36,7 @@
         </div>
       </li>
       <li class="dropdown">
-        <a href="National Selection Tests/selections.html">National Selection Tests ▾</a>
+        <a href="National Selection Tests/selections.html" id="nationalSelectionsToggle">National Selection Tests ▾</a>
         <div class="dropdown-content">
           <a href="National Selection Tests/selections.html">Home</a>
           <a href="National Selection Tests/Australia/australia.html">Australia</a>
@@ -171,10 +170,27 @@
   </footer>
 
   <script>
-    function toggleMenu() {
-      const menu = document.querySelector("nav ul");
-      menu.classList.toggle("show");
-    }
+    let menuToggle = document.getElementById('menuToggle')
+    menuToggle.addEventListener('click', ()=>{
+      document.getElementById('menu').classList.toggle('active')
+      if (menuToggle.classList.contains('fa-bars')){
+        menuToggle.classList.remove('fa-bars');
+        menuToggle.classList.add('fa-xmark')
+      } else{
+        menuToggle.classList.add('fa-bars');
+        menuToggle.classList.remove('fa-xmark')
+      }
+    })
+
+    const menuItems = document.querySelectorAll('#menu li');
+
+    // Loop through the list and add an event listener to each
+    menuItems.forEach((item)=>{
+      item.addEventListener('click', ()=>{
+        menuToggle.click();
+      })
+    });
+
   </script>
 
 </body>
