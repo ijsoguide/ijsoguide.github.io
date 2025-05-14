@@ -1,4 +1,4 @@
-export let title = "Ozone Cycle MCQ Problems"
+export let title = "Symbiosis MCQ Problems"
 
 export let problems = [
     {
