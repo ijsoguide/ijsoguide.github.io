@@ -3,55 +3,43 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       year: 2024,
       difficulty: 3,
-      paperLink: "https://example.com/sri-lanka/2024-paper.pdf",
+      paperLink: "Papers/2024SriLanka.pdf",
       solutionLink: "https://example.com/sri-lanka/2024-solutions.pdf"
     },
     {
       year: 2023,
       difficulty: 3,
-      paperLink: "https://example.com/sri-lanka/2023-paper.pdf",
+      paperLink: "Papers/2023SriLanka.pdf",
       solutionLink: "https://example.com/sri-lanka/2023-solutions.pdf"
     },
     {
       year: 2022,
       difficulty: 4,
-      paperLink: "https://example.com/sri-lanka/2022-paper.pdf",
+      paperLink: "Papers/2022SriLanka.pdf",
       solutionLink: "https://example.com/sri-lanka/2022-solutions.pdf"
-    },
-    {
-      year: 2021,
-      difficulty: 3,
-      paperLink: "https://example.com/sri-lanka/2021-paper.pdf",
-      solutionLink: "https://example.com/sri-lanka/2021-solutions.pdf"
-    },
-    {
-      year: 2020,
-      difficulty: 2,
-      paperLink: "https://example.com/sri-lanka/2020-paper.pdf",
-      solutionLink: "https://example.com/sri-lanka/2020-solutions.pdf"
     },
     {
       year: 2019,
       difficulty: 2,
-      paperLink: "https://example.com/sri-lanka/2019-paper.pdf",
+      paperLink: "Papers/2019SriLanka.pdf",
       solutionLink: "https://example.com/sri-lanka/2019-solutions.pdf"
     },
     {
       year: 2018,
       difficulty: 1,
-      paperLink: "https://example.com/sri-lanka/2018-paper.pdf",
+      paperLink: "Papers/2018SriLanka.pdf",
       solutionLink: "https://example.com/sri-lanka/2018-solutions.pdf"
     },
     {
       year: 2017,
       difficulty: 3,
-      paperLink: "",
+      paperLink: "Papers/2017SriLanka.pdf",
       solutionLink: "Solutions/Final2017SriLanka.pdf"
     },
     {
       year: 2016,
       difficulty: 2,
-      paperLink: "",
+      paperLink: "Papers/2016SriLanka.pdf",
       solutionLink: "Solutions/Final2016SriLanka.pdf"
     }
   ];
