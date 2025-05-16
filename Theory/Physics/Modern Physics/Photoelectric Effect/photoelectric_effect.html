@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Photoelectric Effect</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- MathJax for LaTeX -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async 
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f8ff;
+      color: #333;
+    }
+
+    .navbar {
+      background-color: #2979ff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      flex-wrap: wrap;
+    }
+
+    .navbar .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: white;
+    }
+
+    .nav-links a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .page-header {
+      max-width: 900px;
+      margin: 2rem auto 1rem;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .page-header h2 {
+      font-size: 1.8rem;
+      color: #2979ff;
+    }
+
+    .back-btn {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      color: #333;
+      transition: background-color 0.2s;
+    }
+
+    .back-btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2, h3 {
+      color: #2b4a8b;
+    }
+
+    p, ul, ol {
+      line-height: 1.6;
+    }
+    p {
+        text-align: justify;
+    }
+
+    ul li, ol li {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Collapsible Example Style */
+    details {
+      background-color: #e3f2fd;
+      padding: 1rem;
+      border-radius: 6px;
+      margin-top: 1rem;
+      border-left: 4px solid #2979ff;
+    }
+
+    summary {
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      color: #0d47a1;
+      margin-bottom: 0.5rem;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: #2979ff;
+      color: white;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="../../../../index.html" class="logo">A Guide to the IJSO</a>
+    <div class="nav-links">
+      <a href="../../../theory.html">Home</a>
+      <a href="../../physics.html">Physics</a>
+      <a href="../../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../../../Biology/Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>The Photoelectric Effect</h2>
+    <a href="../Modern Physics.html" class="back-btn">← Back to Modern Physics</a>
+  </div>
+
+  <!-- Main content -->
+  <div class="container">
+        <p>
+          The photoelectric effect is a phenomenon where electrons are emitted from a metal surface when it is exposed to electromagnetic radiation (typically UV light). It provided crucial evidence for the particle nature of light.
+        </p>
+      
+        <h2>Key Observations</h2>
+        <ul>
+          <li>Electron emission occurs only if the incident light has a frequency above a certain threshold, regardless of its intensity.</li>
+          <li>Below the threshold frequency, no electrons are emitted — even if the light is very intense.</li>
+          <li>Increasing the light intensity increases the number of electrons ejected, but not their energy.</li>
+          <li>The energy of the emitted electrons depends on the frequency, not the intensity, of the light.</li>
+          <li>Emission is instantaneous, without delay.</li>
+        </ul>
+      
+        <h2>Einstein’s Photoelectric Equation</h2>
+        <p>
+          Einstein proposed that light consists of discrete packets of energy called photons. The energy of a photon is:
+        </p>
+        <p>\[ E = hf \]</p>
+        <ul>
+          <li>\( h \): Planck's constant \( (6.626 \times 10^{-34}\, \text{Js}) \)</li>
+          <li>\( f \): frequency of the incident light</li>
+        </ul>
+        <p>
+          The energy of the photon is used to overcome the work function \( \phi \) (the minimum energy needed to remove an electron from the metal), and any remaining energy becomes the kinetic energy \( K.E \) of the electron:
+        </p>
+        <p>\[ hf = \phi + \frac{1}{2}mv^2 \]</p>
+      
+        <h2>Graphical Interpretation</h2>
+        <p>
+          If you plot the maximum kinetic energy of the electrons against the frequency of incident light:
+        </p>
+        <ul>
+          <li>The slope is \( h \), Planck’s constant.</li>
+          <li>The x-intercept gives the threshold frequency \( f_0 \) where emission just begins.</li>
+          <li>The y-intercept (if extended) gives the negative of the work function \( -\phi \).</li>
+        </ul>
+      
+        <h2> Significance</h2>
+        <ul>
+          <li>This effect could not be explained by classical wave theory.</li>
+          <li>It confirmed that light behaves as both a wave and a particle**.</li>
+          <li>Won Einstein the Nobel Prize in Physics in 1921.</li>
+        </ul>
+    
+     <p style="text-align: right; font-size: 0.9em; color: #555;">
+      Written by <strong>Thenura Dilruk</strong>
+    </p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+</body>
+</html>
