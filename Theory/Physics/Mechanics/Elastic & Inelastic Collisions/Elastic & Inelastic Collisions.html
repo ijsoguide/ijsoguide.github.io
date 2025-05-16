@@ -203,6 +203,67 @@
       <li>Momentum: \( m_1u_1 + m_2u_2 = m_1v_1 + m_2v_2 \)</li>
       <li>Kinetic Energy: \( \frac{1}{2}m_1u_1^2 + \frac{1}{2}m_2u_2^2 = \frac{1}{2}m_1v_1^2 + \frac{1}{2}m_2v_2^2 \)</li>
     </ul>
+    
+    <button class="collapsible">Example: Elastic Collision – Find Final Velocities</button>
+<div class="content">
+  <p>Two carts are on a frictionless track. Cart A has a mass of 2 kg and is moving to the right at 4 m/s. Cart B has a mass of 1 kg and is initially at rest. The two carts collide elastically.</p>
+  <p><strong>Question:</strong> What are the final velocities of both carts after the collision?</p>
+
+  <p>Assume the velocity of cart A to be \(v_A\) and the velocity of cart B to be \(v_B\).</p>
+
+  <h4>Momentum Conservation:</h4>
+  <p>Initial momentum = \(2 \times 4 + 0 = 8 \, \text{kg} \cdot \text{m/s}\)</p>
+  <p>Final momentum = \(2v_A + v_B = 8\)</p>
+  <p>⇒ \(v_B = 8 - 2v_A\)</p>
+
+  <h4>Kinetic Energy Conservation:</h4>
+  <p>Initial energy = \(\frac{1}{2} \times 2 \times 4^2 = 16 \, \text{J}\)</p>
+  <p>Final energy = \(\frac{1}{2} \times 2 \times v_A^2 + \frac{1}{2} \times 1 \times v_B^2 = v_A^2 + 0.5 v_B^2\)</p>
+
+  <p>Substitute \(v_B = 8 - 2v_A\) into the energy equation:</p>
+  <p>\[
+  v_A^2 + 0.5(8 - 2v_A)^2 = 16
+  \]</p>
+
+  <p>Expand the square:</p>
+  <p>\[
+  v_A^2 + 0.5(64 - 32v_A + 4v_A^2) = 16
+  \]</p>
+
+  <p>Now simplify:</p>
+  <p>\[
+  v_A^2 + 32 - 16v_A + 2v_A^2 = 16
+  \]</p>
+  <p>\[
+  3v_A^2 - 16v_A + 32 = 16
+  \]</p>
+  <p>\[
+  3v_A^2 - 16v_A + 16 = 0
+  \]</p>
+
+  <h4>Solving the Quadratic:</h4>
+  <p>Use the quadratic formula:</p>
+  <p>\[
+  v_A = \frac{16 \pm \sqrt{(-16)^2 - 4 \cdot 3 \cdot 16}}{2 \cdot 3} = \frac{16 \pm \sqrt{256 - 192}}{6}
+  = \frac{16 \pm \sqrt{64}}{6} = \frac{16 \pm 8}{6}
+  \]</p>
+
+  <p>So, \(v_A = \frac{24}{6} = 4\) or \(v_A = \frac{8}{6} = \frac{4}{3}\)</p>
+
+  <p>If \(v_A = 4\), then \(v_B = 8 - 2 \cdot 4 = 0\) — but this is the initial state, so it’s not the result after collision.</p>
+  <p>So the physical solution is:</p>
+
+  <ul>
+    <li>\(v_A = \frac{4}{3} \, \text{m/s}\)</li>
+    <li>\(v_B = 8 - 2 \cdot \frac{4}{3} = \frac{16}{3} \, \text{m/s}\)</li>
+  </ul>
+
+  <p><strong>Answer:</strong> After the elastic collision:</p>
+  <ul>
+    <li>Cart A moves at \( \frac{4}{3} \, \text{m/s} \)</li>
+    <li>Cart B moves at \( \frac{16}{3} \, \text{m/s} \)</li>
+  </ul>
+</div>
 
     <h2>Inelastic Collisions</h2>
     <p>Only momentum is conserved. Some kinetic energy is lost to heat, sound, or deformation. In perfectly inelastic collisions, the objects stick together.</p>
