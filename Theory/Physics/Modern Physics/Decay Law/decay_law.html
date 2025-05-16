@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Half-Life and Radioactive Decay Law</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- MathJax for LaTeX -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async 
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f8ff;
+      color: #333;
+    }
+
+    .navbar {
+      background-color: #2979ff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      flex-wrap: wrap;
+    }
+
+    .navbar .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: white;
+    }
+
+    .nav-links a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .page-header {
+      max-width: 900px;
+      margin: 2rem auto 1rem;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .page-header h2 {
+      font-size: 1.8rem;
+      color: #2979ff;
+    }
+
+    .back-btn {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      color: #333;
+      transition: background-color 0.2s;
+    }
+
+    .back-btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2, h3 {
+      color: #2b4a8b;
+    }
+
+    p, ul, ol {
+      line-height: 1.6;
+    }
+
+    ul li, ol li {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Collapsible Example Style */
+    details {
+      background-color: #e3f2fd;
+      padding: 1rem;
+      border-radius: 6px;
+      margin-top: 1rem;
+      border-left: 4px solid #2979ff;
+    }
+
+    summary {
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      color: #0d47a1;
+      margin-bottom: 0.5rem;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: #2979ff;
+      color: white;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="../../../../index.html" class="logo">A Guide to the IJSO</a>
+    <div class="nav-links">
+      <a href="../../../theory.html">Home</a>
+      <a href="../../physics.html">Physics</a>
+      <a href="../../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../../../Biology/Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Half-Life and Radioactive Decay Law</h2>
+    <a href="../Modern Physics.html" class="back-btn">← Back to Modern Physics</a>
+  </div>
+
+  <!-- Main content -->
+  <div class="container">
+    <h3>Radioactive Decay</h3>
+    <p>Radioactive decay is a spontaneous process in which unstable nuclei lose energy by emitting radiation. This process follows an exponential decay law.</p>
+
+    <h3>The Decay Law</h3>
+    <p>The number of undecayed nuclei at time \( t \) is given by:</p>
+    <p>\[ N(t) = N_0 e^{-\lambda t} \]</p>
+    <ul>
+      <li>\( N_0 \): initial number of nuclei</li>
+      <li>\( N(t) \): number of nuclei remaining after time \( t \)</li>
+      <li>\( \lambda \): decay constant (probability of decay per unit time)</li>
+    </ul>
+
+    <h3>Half-life (\( t_{1/2} \))</h3>
+    <p>The half-life is the time required for half the radioactive nuclei to decay. It is related to the decay constant by:</p>
+    <p>\[ t_{1/2} = \frac{\ln 2}{\lambda} \]</p>
+
+    <h3>Key Characteristics</h3>
+    <ul>
+      <li>Radioactive decay is random and spontaneous</li>
+      <li>It does not depend on external factors like temperature or pressure</li>
+      <li>The decay curve is exponential — never reaches zero</li>
+    </ul>
+
+    <h3>Application Tips</h3>
+    <ul>
+      <li>Use \( N = N_0 \cdot \left( \frac{1}{2} \right)^{t/t_{1/2}} \) for problems involving discrete half-lives</li>
+      <li>If asked for mass or activity instead of number of atoms, the same formula applies</li>
+    </ul>
+
+
+    <details>
+      <summary><strong>Example 1:</strong> Half-life Calculation</summary>
+      <p>A 160 g sample of a radioactive isotope with a half-life of 10 hours is left undisturbed. How much remains after 30 hours?</p>
+      <p><strong>Solution:</strong> Since 30 hours is 3 half-lives:</p>
+      <ul>
+        <li>After 1 half-life: 160 g → 80 g</li>
+        <li>After 2 half-lives: 80 g → 40 g</li>
+        <li>After 3 half-lives: 40 g → 20 g</li>
+      </ul>
+      <p><strong>Final Answer: 20 g remains</strong></p>
+    </details>
+
+    <details>
+      <summary><strong>Example 2:</strong> Using the Decay Formula</summary>
+      <p>Given \( N_0 = 100 \), \( t = 5 \) hours, and \( t_{1/2} = 2 \) hours, use the formula:</p>
+      <p>\[ N = N_0 \left(\frac{1}{2}\right)^{t / t_{1/2}} \]</p>
+      <p>\[ N = 100 \left(\frac{1}{2}\right)^{5 / 2} = 100 \cdot \left(\frac{1}{2}\right)^{2.5} \approx 17.68 \]</p>
+      <p><strong>Final Answer: ~17.7 nuclei remain</strong></p>
+    </details>
+
+    <p style="text-align: right; font-size: 0.9em; color: #555;">
+      Written by <strong>Thenura Dilruk</strong>
+    </p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+</body>
+</html>
