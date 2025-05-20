@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Changes of State</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f3fb;
+      margin: 0;
+      color: #1a1a1a;
+    }
+
+    .navbar {
+      background-color: #9c27b0;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      flex-wrap: wrap;
+    }
+
+    .navbar .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: white;
+    }
+
+    .nav-links a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 900px;
+      margin: 2rem auto 1rem;
+      padding: 0 2rem;
+    }
+
+    .page-header h2 {
+      font-size: 1.8rem;
+      color: #9c27b0;
+    }
+
+    .back-btn {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      color: #333;
+      transition: background-color 0.2s;
+    }
+
+    .back-btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    }
+
+    h1 {
+      text-align: center;
+      color: #9c27b0;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      color: #9c27b0;
+      margin-top: 2rem;
+      border-bottom: 2px solid #e1bee7;
+      padding-bottom: 0.3rem;
+    }
+
+    p, ul, ol, pre {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    ul li, ol li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: white;
+      background-color: #9c27b0;
+    }
+
+    .collapsible {
+      background-color: #f3e5f5;
+      color: #333;
+      cursor: pointer;
+      padding: 1rem;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 1rem;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+
+    .collapsible:hover {
+      background-color: #e1bee7;
+    }
+
+    .content {
+      padding: 0 1rem;
+      display: none;
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+
+    .code-block {
+      background-color: #f5f5f5;
+      padding: 0.7rem;
+      border-radius: 5px;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="../../../../index.html" class="logo">A Guide to the IJSO</a>
+    <div class="nav-links">
+      <a href="../../../theory.html">Home</a>
+      <a href="../../../Physics/physics.html">Physics</a>
+      <a href="../../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../../../Biology/Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Changes of State</h2>
+    <a href="../States of Matter.html" class="back-btn">← Back to States of Matter</a>
+  </div>
+
+  <!-- Main content -->
+  <div class="container">
+    <h2>Melting (Solid → Liquid)</h2>
+    <p>Melting is the process where a solid turns into a liquid upon heating. As temperature increases, particles in a solid gain kinetic energy and begin to vibrate more vigorously. At a specific temperature known as the <strong>melting point</strong>, these vibrations become strong enough to overcome the forces holding the particles in fixed positions, allowing the substance to become a liquid.</p>
+    <p><em>Example:</em> Ice melting into water at 0°C.</p>
+    <img src="image1.avif">
+    
+    <h2>Freezing (Liquid → Solid)</h2>
+    <p>Freezing occurs when a liquid loses energy and turns into a solid. As temperature drops, the motion of particles slows down. At the <strong>freezing point</strong> (same as melting point for pure substances), particles arrange into a fixed, orderly structure. This process is exothermic, releasing energy to the surroundings.</p>
+    <p><em>Example:</em> Water freezing into ice at 0°C.</p>
+    <img src="image2.jpg">
+    
+    <h2>Boiling / Evaporation (Liquid → Gas)</h2>
+    <p>This is the process where a liquid changes into a gas. <strong>Boiling</strong> happens at the boiling point, where bubbles of gas form within the liquid and rise to the surface. <strong>Evaporation</strong> is a slower process that can occur at temperatures below the boiling point, typically only at the surface of the liquid. Both require heat energy (endothermic).</p>
+    <p><em>Example:</em> Water boiling at 100°C; puddles evaporating in the sun.</p>
+    <img src="image3.jpeg">
+    
+    <h2>Condensation (Gas → Liquid)</h2>
+    <p>Condensation is the process where a gas loses energy and turns into a liquid. As gas particles cool down, their kinetic energy decreases, and they come closer together, forming intermolecular attractions. This process releases heat (exothermic).</p>
+    <p><em>Example:</em> Water droplets forming on the outside of a cold glass.</p>
+    <img src="image4.jpeg">
+    
+    <h2>Sublimation (Solid → Gas)</h2>
+    <p>Sublimation is the direct change of a solid to a gas without passing through the liquid phase. This occurs when a solid gains enough energy for its particles to break free directly into the gas phase. Sublimation usually occurs under low pressure and specific temperature conditions.</p>
+    <p><em>Example:</em> Dry ice (solid CO₂) sublimating into carbon dioxide gas.</p>
+    <img src="image5.jpeg">
+    
+    <h2>Deposition (Gas → Solid)</h2>
+    <p>Deposition is the reverse of sublimation, where a gas transforms directly into a solid without becoming a liquid. This process releases energy and typically occurs when gas particles lose energy rapidly.</p>
+    <p><em>Example:</em> Frost forming on cold surfaces from water vapor in the air.</p>
+    <img src="image6.jpeg">
+    
+    <h2>Ionization (Gas → Plasma)</h2>
+    <p>Ionization is the process in which a gas is given enough energy that its atoms or molecules lose electrons, forming a collection of positive ions and free electrons called plasma. Plasma is often referred to as the fourth state of matter and is found in stars and lightning.</p>
+    <p><em>Example:</em> The formation of plasma in a neon light or the Sun’s core.</p>
+    
+    <h2>Recombination (Plasma → Gas)</h2>
+    <p>Recombination, also called deionization, is the reverse of ionization. It occurs when free electrons recombine with ions, neutralizing the plasma and returning it to the gaseous state. This process often emits light or other forms of energy.</p>
+    <p><em>Example:</em> The fading glow of a neon sign once the power is turned off.</p>
+    <h2>Summary</h2>
+    <img src="image7.png" width="50%">
+
+     <p style="text-align: right; font-size: 0.9em; color: #555;">
+    Written by <strong>Thenura Dilruk</strong>
+</p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+
+  <script>
+    const coll = document.querySelectorAll(".collapsible");
+    coll.forEach(btn => {
+      btn.addEventListener("click", function () {
+        this.classList.toggle("active");
+        const content = this.nextElementSibling;
+        content.style.display = content.style.display === "block" ? "none" : "block";
+      });
+    });
+  </script>
+</body>
+</html>
