@@ -51,6 +51,9 @@ document.getElementById('signinButton').addEventListener('click', (e)=>{
             console.log(user)
             // ...
         })
+        .then(()=>{
+          window.location.href = "settings.html"
+        })
         .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;

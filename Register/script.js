@@ -78,7 +78,9 @@ document.getElementById('signupButton').addEventListener('click', (e)=>{
             })
             console.log('database data written')
             // ...
-            
+        })
+        .then(()=>{
+            window.location.href = "settings.html"
         })
         .catch((error) => {
             const errorCode = error.code;
