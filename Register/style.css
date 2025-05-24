@@ -1,12 +1,15 @@
-body {
-    background-color: #001f3f;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
+*{
+  font-family: 'Montserrat', sans-serif;
+}
 
-  nav {
+body {
+  background-color: #001f3f;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+  /*nav {
     background-color: #112240;
     padding: 1rem 2rem;
     display: flex;
@@ -27,7 +30,6 @@ body {
     z-index: 1001;
   }
   
-  /* Hamburger styling */
   .nav-toggle {
     display: none;
     flex-direction: column;
@@ -44,7 +46,7 @@ body {
     border-radius: 2px;
   }
   
-  /* Animate hamburger into X */
+
   #nav-toggle:checked + .nav-toggle span:nth-child(1) {
     transform: rotate(45deg) translate(6px, 10px);
   }
@@ -55,7 +57,7 @@ body {
     transform: rotate(-45deg) translate(5px, -9px);
   }
   
-  /* Menu styles */
+
   ul.menu {
     list-style: none;
     display: flex;
@@ -144,81 +146,82 @@ body {
     .dropdown-content a {
       padding-left: 2rem;
     }
-  }
+  }*/
 
-  .container {
-    max-width: 600px;
-    margin: 60px auto;
-    background-color: #002b5c;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-  }
+.container {
+  max-width: 600px;
+  width: 80%;
+  margin: 3rem auto 3rem auto;
+  background-color: #002b5c;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
 
-  .container p a{
-    color: white;
-    text-decoration: underline;
-  }
+.container p a{
+  color: white;
+  text-decoration: underline;
+}
 
-  h2 {
-    text-align: center;
-    margin-bottom: 30px;
-  }
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
 
-  label {
-    display: block;
-    margin-top: 15px;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
 
-  input, select {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #004080;
-    color: white;
-    font-size: 16px;
-  }
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #004080;
+  color: white;
+  font-size: 16px;
+}
 
-  input[type="checkbox"] {
-    width: auto;
-    margin-right: 10px;
-  }
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+}
 
-  .checkbox-container {
-    display: flex;
-    align-items: center;
-    margin-top: 15px;
-  }
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
 
-  button {
-    margin-top: 25px;
-    width: 100%;
-    padding: 12px;
-    background-color: #0074D9;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
-  }
+button {
+  margin-top: 25px;
+  width: 100%;
+  padding: 12px;
+  background-color: #0074D9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
 
-  button:hover {
-    background-color: #005fa3;
-  }
+button:hover {
+  background-color: #005fa3;
+}
 
-  .success-message {
-    text-align: center;
-    margin-top: 20px;
-    color: #2ecc71;
-    font-weight: bold;
-  }
+.success-message {
+  text-align: center;
+  margin-top: 20px;
+  color: #2ecc71;
+  font-weight: bold;
+}
 
-  .error-message {
-    text-align: center;
-    margin-top: 20px;
-    color: #ff4d4d;
-    font-weight: bold;
-  }
+.error-message {
+  text-align: center;
+  margin-top: 20px;
+  color: #ff4d4d;
+  font-weight: bold;
+}
