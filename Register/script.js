@@ -72,16 +72,19 @@ document.getElementById('signupButton').addEventListener('click', (e)=>{
                 password: password,
             }
             setDoc(docRef, data)
-
-            setDoc(doc(db, "userData", uid), {
-              tests: 0
+            .then(()=>{
+              setDoc(doc(db, "userData", uid), {
+                tests: 0
+              }).then(()=>{
+                window.location.href = "settings.html"
+              })
             })
+            
+
             console.log('database data written')
             // ...
         })
-        .then(()=>{
-            window.location.href = "settings.html"
-        })
+        
         .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
