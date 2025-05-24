@@ -52,7 +52,14 @@ document.getElementById('signinButton').addEventListener('click', (e)=>{
             // ...
         })
         .then(()=>{
-          window.location.href = "settings.html"
+          let redirect = window.location.href.split('redirect=')[1];
+          console.log(redirect)
+          if (redirect != null){
+            window.location.href = redirect;
+          } /*else{
+            window.location.href = "settings.html"
+          }*/
+          
         })
         .catch((error) => {
             const errorCode = error.code;

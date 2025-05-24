@@ -155,6 +155,7 @@ function main(module){
     if (id >= totalProblems){
       if (countCompleted == totalProblems){
         showResults();
+        return;
       }
       id = 0;
     }
@@ -206,11 +207,26 @@ function main(module){
       if (status[i] === "correct") correctCount++;
     }
 
+    
+
     const percent = Math.round((correctCount / totalProblems) * 100);
     document.getElementById("score-display").textContent = `You got ${percent}% correct.`;
 
+    
+
     const tryAgainBtn = document.getElementById("try-again-btn");
     tryAgainBtn.style.display = percent === 100 ? "none" : "inline-block";
+
+    const event = new CustomEvent("testCompleted", {
+      detail: {
+        score: percent,
+        testTitle: title,
+        time: Date.now(),
+        subject: "physics"
+      }
+    });
+    console.log('dispatchingevent')
+    window.dispatchEvent(event);
   }
 
   document.getElementById('try-again-btn').addEventListener('click', resetPractice)

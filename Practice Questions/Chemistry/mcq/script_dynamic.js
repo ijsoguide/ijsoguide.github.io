@@ -155,7 +155,7 @@ function main(module){
     if (id >= totalProblems){
       if (countCompleted == totalProblems){
         showResults();
-        return
+        return;
       }
       id = 0;
     }
@@ -218,7 +218,7 @@ function main(module){
         score: percent,
         testTitle: title,
         time: Date.now(),
-        subject: "biology"
+        subject: "chemistry"
       }
     });
     console.log('dispatchingevent')
@@ -230,3 +230,4 @@ function main(module){
     location.reload();
   }
 }
+
