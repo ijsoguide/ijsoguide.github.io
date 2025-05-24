@@ -41,11 +41,45 @@ onAuthStateChanged(auth, (user) => {
             console.log("Error getting document:", error);
         });
 
-        getDoc(doc(db, "userData", uid))
+        /*getDoc(doc(db, "userData", uid))
         .then((data)=> {
             if(data.exists()){
                 document.getElementById('additionalData').innerHTML = data.data().tests;
             }
+        })
+        .catch(error => {
+            console.log("Error getting document:", error);
+        });*/
+
+        getDocs(collection(db, "userData", uid, "testHistory"))
+        .then((querySnapshot1)=> {
+            querySnapshot1.forEach((doc) => {
+                //tests.push(doc.data().title);
+                let finishTime = new Date(doc.data().finishTime);
+                let p = document.createElement('p');
+                p.innerHTML = "<b>" + doc.data().title + "</b>" + ": " + doc.data().percent + "% - " + finishTime;
+                document.getElementById('testHistory').appendChild(p);
+            });
+            /*tests.forEach((e)=>{
+                
+
+                b2.addEventListener('click', ()=>{
+                    if (elementCounter.courts > 1){
+                        deleteDoc(doc(db, uid, 'defaultCentre','courts', e))
+                        .then(() => {
+                            console.log("Document deleted successfully!");
+                            elementCounter.courts--;
+                            loadCourts();
+                            
+                        })
+                        .catch((error) => {
+                            console.error("Error deleting document: ", error);
+                        });
+                    }
+                    else alert('There has to be at least one court!');
+                    
+                })
+            })*/
         })
         .catch(error => {
             console.log("Error getting document:", error);
