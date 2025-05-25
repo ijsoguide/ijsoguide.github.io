@@ -27,7 +27,7 @@ if(subjectName == "physics"){
 
 const referrer = document.referrer;
 if (referrer) {
-    document.querySelectorAll('.back-btn').forEach(link => {
+    document.querySelectorAll('.back-btn:not(#stats)').forEach(link => {
         link.href = referrer;
     });
 } else {
