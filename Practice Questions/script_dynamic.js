@@ -9,6 +9,21 @@ function getQueryParam(param) {
   return null;
 }
 const unitName = getQueryParam("unit");
+const subjectName = getQueryParam("subject");
+
+function loadStylesheet(href) {
+  const link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = href;
+  document.head.appendChild(link);
+}
+if(subjectName == "physics"){
+  loadStylesheet("./Physics/mcq/style.css")
+} else if (subjectName == "chemistry"){
+  loadStylesheet("./Chemistry/style.css")
+} else if (subjectName == "biology"){
+  loadStylesheet("./Biology/mcq/style.css")
+}
 
 const referrer = document.referrer;
 if (referrer) {
@@ -25,7 +40,14 @@ if (referrer) {
 
 (async (unitName) => {
   try {
-    let module = await import (`./tests/${unitName}.js`);
+    let module;
+    if(subjectName == "physics"){
+      module = await import (`./Physics/mcq/tests/${unitName}.js`);
+    } else if (subjectName == "chemistry"){
+      module = await import (`./Chemistry/mcq/tests/${unitName}.js`);
+    } else if (subjectName == "biology"){
+      module = await import (`./Biology/mcq/tests/${unitName}.js`);
+    }
     main(module);
   } catch (err) {
     console.error("Failed to load unit:", err);
@@ -207,8 +229,12 @@ function main(module){
       if (status[i] === "correct") correctCount++;
     }
 
+    
+
     const percent = Math.round((correctCount / totalProblems) * 100);
     document.getElementById("score-display").textContent = `You got ${percent}% correct.`;
+
+    
 
     const tryAgainBtn = document.getElementById("try-again-btn");
     tryAgainBtn.style.display = percent === 100 ? "none" : "inline-block";
@@ -218,7 +244,7 @@ function main(module){
         score: percent,
         testTitle: title,
         time: Date.now(),
-        subject: "chemistry"
+        subject: subjectName
       }
     });
     console.log('dispatchingevent')

@@ -35,6 +35,17 @@ onAuthStateChanged(auth, (user) => {
       // https://firebase.google.com/docs/reference/js/auth.user
       uid = user.uid;
       console.log(uid)
+      let userName;
+      getDoc(doc(db, "users", uid))
+      .then((data)=> {
+          if(data.exists()){
+              userName = data.data().name;
+              document.getElementById('alreadyLoggedInMessage').innerHTML = "It seems like you are already signed in as " + userName + ". You can see your account settings " + "<a href=" + "./settings.html" + ">here</a>";
+          }
+      })
+      .catch(error => {
+          console.log("Error getting document:", error);
+      });
       //window.location.href = "settings.html"
       // ...
     } else {
