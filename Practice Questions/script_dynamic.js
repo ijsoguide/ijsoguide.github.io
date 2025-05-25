@@ -32,7 +32,7 @@ if (referrer) {
     });
 } else {
   // fallback if there's no referrer (e.g. user opened the page directly)
-  document.querySelectorAll('.back-btn').forEach(link => {
+  document.querySelectorAll('.back-btn:not(#stats)').forEach(link => {
     link.href = "";
   });
 }

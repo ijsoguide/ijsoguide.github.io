@@ -5,7 +5,6 @@
   <title>Practice Questions</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <script src="https://kit.fontawesome.com/04bf603a0f.js" crossorigin="anonymous"></script>
-  <script src="theory.js" defer></script>
   <style>
     * {
       box-sizing: border-box;
@@ -272,6 +271,15 @@
   <footer>
     <p>&copy; 2025 A Guide to the IJSO. All rights reserved.</p>
   </footer>
+
+  <script>
+    let list = document.getElementById('navbarList')
+    let hamburger = document.getElementById("menuToggle")
+
+    hamburger.addEventListener('click', ()=>{
+        list.classList.toggle('show')
+    })
+  </script>
 
 </body>
 </html>
