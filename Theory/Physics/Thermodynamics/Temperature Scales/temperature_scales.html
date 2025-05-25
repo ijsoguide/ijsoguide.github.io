@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Temperature Scales</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f8ff;
+      margin: 0;
+      color: #333;
+    }
+
+    .navbar {
+      background-color: #2979ff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      flex-wrap: wrap;
+    }
+
+    .navbar .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: white;
+    }
+
+    .nav-links a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 900px;
+      margin: 2rem auto 1rem;
+      padding: 0 2rem;
+    }
+
+    .page-header h2 {
+      font-size: 1.8rem;
+      color: #2979ff;
+    }
+
+    .back-btn {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      color: #333;
+      transition: background-color 0.2s;
+    }
+
+    .back-btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #223;
+    }
+
+    h2 {
+      color: #2979ff;
+      margin-top: 2rem;
+      border-bottom: 2px solid #cde8ff;
+      padding-bottom: 0.3rem;
+    }
+
+    p, ul, ol {
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    h3 {
+        color: #2979ff;
+        margin-top: 2rem;
+        font-size: x-large;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    ul li, ol li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: white;
+      background-color: #2979ff;
+    }
+
+    /* Collapsible Styling */
+    .collapsible {
+      background-color: #e3f2fd;
+      color: #2979ff;
+      cursor: pointer;
+      padding: 0.75rem 1rem;
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+      text-align: left;
+      outline: none;
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-top: 1.5rem;
+    }
+
+    .collapsible:hover {
+      background-color: #d1eaff;
+    }
+
+    .content {
+      padding: 0 1rem;
+      display: none;
+      overflow: hidden;
+      border-left: 3px solid #2979ff;
+      margin-top: 0.5rem;
+      background-color: #f9fbff;
+      border-radius: 0 0 8px 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="../../../../index.html" class="logo">A Guide to the IJSO</a>
+    <div class="nav-links">
+      <a href="../../../theory.html">Home</a>
+      <a href="../../../Physics/physics.html">Physics</a>
+      <a href="../../../Chemistry/Chemistry.html">Chemistry</a>
+      <a href="../../../Biology/Biology.html">Biology</a>
+    </div>
+  </nav>
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Temperature Scales</h2>
+    <a href="../Thermo.html" class="back-btn">← Back to Thermodynamics</a>
+  </div>
+
+  <!-- Main content -->
+  <div class="container">
+    <p>
+        Temperature is a fundamental physical quantity that helps us describe how hot or cold something is. Since different countries and scientific communities have developed their own ways of measuring temperature, several temperature scales are in use today. The most common ones are Celsius, Fahrenheit, and Kelvin. Each scale has its own reference points and is used in different contexts—whether in daily life, weather forecasting, or scientific research. In this lesson, we'll explore how these scales work, how to convert between them, and why understanding them is essential in both everyday and scientific applications.
+      </p>
+        <h3>Celsius (°C)</h3>
+        <p>
+          The Celsius scale is based on the freezing and boiling points of water at 0°C and 100°C, respectively, under standard atmospheric pressure.
+        </p>
+      
+        <h3>Fahrenheit (°F)</h3>
+        <p>
+          The Fahrenheit scale sets the freezing point of water at 32°F and the boiling point at 212°F. It is commonly used in the United States.
+        </p>
+      
+        <h3>Kelvin (K)</h3>
+        <p>
+          The Kelvin scale is the SI unit of temperature. It starts at absolute zero (0 K), the theoretical lowest possible temperature. It does not use the degree symbol.
+        </p>
+      
+        <h3>Conversions</h3>
+        <ul>
+          <li><strong>Celsius to Fahrenheit:</strong> <code>°F = (°C × 9/5) + 32</code></li>
+          <li><strong>Fahrenheit to Celsius:</strong> <code>°C = (°F − 32) × 5/9</code></li>
+          <li><strong>Celsius to Kelvin:</strong> <code>K = °C + 273.15</code></li>
+          <li><strong>Kelvin to Celsius:</strong> <code>°C = K − 273.15</code></li>
+        </ul>
+      
+        <h3>Absolute Zero</h3>
+        <p>
+          Absolute zero is the theoretical temperature at which particles have minimum thermal motion. It is 0 K, equivalent to −273.15°C or −459.67°F.
+        </p>
+    <p style="text-align: right; font-size: 0.9em; color: #555;">
+    Written by <strong>Thenura Dilruk</strong>
+</p>  
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+
+  <script>
+    const collapsibles = document.querySelectorAll(".collapsible");
+    collapsibles.forEach(button => {
+      button.addEventListener("click", () => {
+        button.classList.toggle("active");
+        const content = button.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
