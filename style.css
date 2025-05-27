@@ -1,19 +1,21 @@
 :root {
-  --bgdark: #0a192f;
-  --navblue: #131347;
+  --bgdark: #100839;
+  --navblue: #1f1359;
   --txtorange: #ffa756;
 }
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: var(--bgdark);
-  color: var(--txtorange);
-  font-family: 'Montserrat', sans-serif;
+  background-color: #100839;
+  color: white;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
 }
+
+
 
 header {
   text-align: center;
@@ -21,34 +23,35 @@ header {
 }
 
 .hero-box {
-  background-color: var(--navblue);
+  background-color: #1f1359;
   padding: 3rem;
   max-width: 600px;
   margin: 3rem auto;
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(0,0,0,0.3);
   text-align: center;
+  font-size: 1.3rem;
 }
 
 .hero-box h1 {
   margin-top: 0;
-  color: var(--txtorange);
+  color: white;
 }
 
 .hero-box a {
   display: inline-block;
   margin: 1rem;
   padding: 0.75rem 1.5rem;
-  background-color: var(--txtorange);
-  color: var(--navblue);
+  background-color: #469df6;
+  color: white;
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
 }
-
 .hero-box a:hover {
-  background-color: #fbb46d;
+  background-color: #3d51ff;
 }
+
 
 section {
   padding: 3rem 1rem;
@@ -58,7 +61,6 @@ section {
 
 h2 {
   font-size: 2rem;
-  border-left: 5px solid var(--txtorange);
   padding-left: 10px;
   margin-bottom: 2rem;
 }
@@ -67,7 +69,7 @@ h2 {
   text-align: center;
   max-width: 800px;
   margin: auto;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   margin-bottom: 2rem;
 }
 
@@ -76,19 +78,16 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
+  
 }
 
 .about-box {
-  background-color: #112240;
-  padding: 1.5rem;
+  background-color: #1f1359;
+  padding: 0.7rem;
   border-radius: 10px;
   border: 1px solid #233554;
   text-align: center;
-}
-
-.about-box h3 {
-  color: #ff9933;
-  margin-top: 0;
+  font-size: 1.3rem;
 }
 
 .features {
@@ -98,12 +97,14 @@ h2 {
 }
 
 .feature-box {
-  background-color: #112240;
-  padding: 1.5rem;
+  background-color: #1f1359;
+  padding: 0.5rem;
   border-radius: 10px;
   border: 1px solid #233554;
   cursor: pointer;
   transition: background-color 0.3s;
+  font-size: 1.3rem;
+  text-align: center;
 }
 
 .feature-box:hover {
@@ -111,7 +112,7 @@ h2 {
 }
 
 .feature-box h3 {
-  color: #ff9933;
+  color: #fff;
 }
 
 .success-stories {
@@ -148,13 +149,13 @@ h2 {
   border-radius: 6px;
   border: none;
   font-size: 1.1rem;
-  background-color: #ff9933;
-  color: #0a192f
+  background-color: #1f1359;
+  color: white
 }
 
 .contact button {
-  background-color: #ff9933;
-  color: #0a192f;
+  background-color: #1f1359;
+  color: white;
   padding: 0.8rem;
   border: none;
   font-weight: bold;
@@ -166,7 +167,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #112240; 
+  background-color: #1f1359; 
   color: #f0e9d6; 
   padding: 20px;
   font-family: 'Segoe UI', sans-serif;
@@ -201,7 +202,33 @@ h2 {
 
 footer {
   text-align: center;
-  padding: 2rem 1rem;
-  background-color: #1c0972;
+  padding: 1rem 1rem;
+  background-color: #140d3c;
   border-top: 2px solid #233554;
 }
+
+
+
+.header-about-us{
+  font-size: 1.7rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: auto;
+  height: 45px;
+  margin-right: 15px;
+  margin-left: -15px;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+
