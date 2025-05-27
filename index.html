@@ -10,13 +10,33 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="icon" href="./favicon.png" type="image/x-ico"/>
   <script src="https://kit.fontawesome.com/04bf603a0f.js" crossorigin="anonymous"></script>
   <script src="mobilenavigation.js" defer></script>
 </head>
 <body>
 
+    <!--Contact info placeholder text styling-->
+<style>
+  input::placeholder,
+  textarea::placeholder {
+    color: #806aed;
+  }
+
+  
+  input,
+  textarea {
+    color: white;
+    background-color: transparent; 
+    border: 1px solid #806aed
+  }
+</style>
+
   <nav>
-  <a href="./index.html"><div class="logo">A Guide to the IJSO</div></a>
+  <a href="./index.html"><div class="logo" >
+    <img src="favicon.png" alt="Logo" class = "logo-image" />
+    <span class="logo-text">A Guide to the IJSO</span>
+  </div></a>
 
   <input type="checkbox" id="nav-toggle" hidden />
 
@@ -67,66 +87,66 @@
     <h1>to IJSO Preparation</h1>
     <p>Comprehensive resources, past papers, solutions, and interactive quizzes – all in one place!</p>
     <a href="Start Learning/startlearning.html">Start Preparing Now</a>
-    <a href="./Register/index.html">Join the Community</a>
+    <a href="Register/register.html">Join the Community</a>
   </div>
 
   <section id="about">
-    <h2>About the IJSO Guide</h2>
+    <h2 style="border-left: 5px solid #469df6;">About the IJSO Guide</h2>
     <p class="about-description">
       Created by former IJSO medalists and science educators, this guide aims to provide accessible, high-quality resources for students preparing for the International Junior Science Olympiad. Our mission is to level the playing field and help students worldwide excel in science competitions.
     </p>
     <div class="about-boxes">
       <div class="about-box">
-        <h3>Free & Open to All</h3>
+        <h3  class="header-about-us" style="color: #56a9ff;" >Free & Open to All</h3>
         <p>All resources are freely available to students worldwide, regardless of background.</p>
       </div>
       <div class="about-box">
-        <h3>Covers All Syllabus Topics</h3>
+        <h3 class="header-about-us" style="color: #b561ff;">Covers All Syllabus Topics</h3>
         <p>Comprehensive coverage of physics, chemistry, and biology topics in the IJSO syllabus.</p>
       </div>
       <div class="about-box">
-        <h3>Past Papers and Solutions</h3>
+        <h3 class="header-about-us" style="color: #40cb7a;">Past Papers and Solutions</h3>
         <p>Access to previous years' national junior science olympiad papers with detailed, step-by-step solutions and explanations.</p>
       </div>
       <div class="about-box">
-        <h3>Mock Tests & Quizzes</h3>
+        <h3 class="header-about-us" style="color: #ffcb58">Mock Tests & Quizzes</h3>
         <p>Interactive practice tests and quizzes to test knowledge and track progress.</p>
       </div>
     </div>
   </section>
 
   <section id="features">
-    <h2>Features</h2>
+    <h2 style= "border-left: 5px solid #b561ff;">Features</h2>
     <div class="features">
       <div class="feature-box" onclick="window.location.href='mock-tests.html'">
-        <h3>Mock Tests & Quizzes</h3>
+        <h3 style="color: #56a9ff;">Mock Tests & Quizzes</h3>
         <p>Practice with full-length, realistic mock exams with answers.</p>
       </div>
       <div class="feature-box" onclick="window.location.href='National Selection Tests/selections.html'">
-        <h3>National Junior Science Olympiad Papers</h3>
+        <h3 style="color: #b561ff;">National Junior Science Olympiad Papers</h3>
         <p>Massive collection of national junior science olympiad papers of diffrent countries.</p>
       </div>
       <div class="feature-box" onclick="window.location.href='common-mistakes.html'">
-        <h3>Common Mistakes & Tips</h3>
+        <h3 style="color: #40cb7a;">Common Mistakes & Tips</h3>
         <p>Avoid frequent pitfalls and exam traps with this helpful guide.</p>
       </div>
       <div class="feature-box" onclick="window.location.href='study-materials.html'">
-        <h3>Study Materials</h3>
+        <h3 style="color: #40cb7a;">Study Materials</h3>
         <p>Top books, notes, and links for mastering all IJSO topics.</p>
       </div>
       <div class="feature-box" onclick="window.location.href='Mindset Guide/mindset.html'">
-        <h3>Mindset & Motivation</h3>
+        <h3 style="color: #56a9ff;">Mindset & Motivation</h3>
         <p>Learn from gold medalists how to think, work, and win.</p>
       </div>
       <div class="feature-box" onclick="window.location.href='lab-guide.html'">
-        <h3>Lab Apparatus Guide</h3>
+        <h3 style="color: #b561ff;"><strong>Lab Apparatus Guide</strong></h3>
         <p>Understand and recognize all key experimental tools in physics, chem, and bio.</p>
       </div>
     </div>
   </section>
 
   <section id="success">
-    <h2>Success Stories</h2>
+    <h2  style= "border-left: 5px solid #40cb7a">Success Stories</h2>
     <div class="success-stories">
       <img src="09EFA5C1-6098-4371-9402-DF98CF48F4DB.png" alt="Success Story 1">
       <img src="A7045F35-0B8D-48CD-86B9-3FB7E19C3A38.png" alt="Success Story 2">
@@ -135,8 +155,8 @@
   </section>
 
   <section class="contact" id="contact">
-    <h2>Contact Us</h2>
-    <p>If you wish to contact us, feel free to fill out this short form or email us at ijsoguide@gmail.com. We will be happy to hear from you!</p>
+    <h2  style= "border-left: 5px solid #ffcb58;">Contact Us</h2>
+    <p style="font-size: 1.3rem; text-align: justify; padding: 0.5rem;">If you wish to contact us, feel free to fill out this short form or email us at ijsoguide@gmail.com. We will be happy to hear from you!</p>
     <form action="https://formsubmit.co/ijsoguide@gmail.com" method="POST">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
