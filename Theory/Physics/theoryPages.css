@@ -115,6 +115,20 @@ body {
   ul li, ol li {
     margin-bottom: 0.5rem;
   }
+  summary {
+      font-weight: bold;
+      font-size: 1.1rem;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    details {
+      background: #e6f0ff;
+      padding: 15px;
+      margin-top: 15px;
+      border-radius: 6px;
+      border: 1px solid #cce0ff;
+    }
   code {
       background-color: #eef;
       padding: 0.2rem 0.4rem;
