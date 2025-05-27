@@ -4,84 +4,21 @@
     <meta charset="UTF-8" />
     <title>Our Team | A Guide to the IJSO</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../mobilenavigation.css">
     <style>
       body {
-        font-family: 'Segoe UI', sans-serif;
         margin: 0;
-        padding: 0;
-        background-color: #f4f8ff;
-        color: #333;
-      }
-  
-      /* Navbar */
-      .navbar {
-        background-color: #2979ff;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 2rem;
-        flex-wrap: wrap;
-      }
-  
-      .navbar .logo {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #100839;
         color: white;
-        text-decoration: none;
-        font-size: 1.6rem;
-        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
       }
-  
-      .nav-links {
-        display: flex;
-        gap: 1.5rem;
-        align-items: center;
-      }
-  
-      .nav-links a {
-        color: white;
-        text-decoration: none;
-        font-size: 1rem;
-        font-weight: 500;
-      }
-  
-      .nav-links a:hover {
-        text-decoration: underline;
-      }
-  
-      .dropdown {
-        position: relative;
-      }
-  
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: white;
-        min-width: 180px;
-        top: 100%;
-        left: 0;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-        border-radius: 6px;
-      }
-  
-      .dropdown-content a {
-        color: #2979ff;
-        padding: 10px 15px;
-        display: block;
-        text-decoration: none;
-        font-weight: 500;
-      }
-  
-      .dropdown-content a:hover {
-        background-color: #f0f0f0;
-      }
-  
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
+      
   
       h2.section-title {
         text-align: center;
-        color: #2979ff;
+        color: white;
         margin: 2rem 0 1rem;
         font-size: 2rem;
       }
@@ -95,7 +32,7 @@
       }
   
       .member-card {
-        background: white;
+        background: #1f1359;
         border-radius: 10px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         width: 250px;
@@ -128,10 +65,11 @@
         border-radius: 4px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
       }
-  
+  /* Remove all navbar-related styles here. 
+    The navbar will now use styles from ../style.css and ../mobilenavigation.css */
       .member-card h3 {
         margin: 0.8rem 0 0.4rem;
-        color: #2b4a8b;
+        color: white;
       }
   
       .view-all-btn {
@@ -155,59 +93,59 @@
       .view-btn-container {
         text-align: center;
       }
-  
-      footer {
-        text-align: center;
-        padding: 1.5rem 1rem;
-        background-color: #2979ff;
-        color: white;
-        font-size: 0.9rem;
-      }
     </style>
   </head>
 <body>
 
-  <!-- Navbar -->
-   <nav class="navbar">
-    <a href="../index.html" class="logo">A Guide to the IJSO</a>
-    <div class="nav-links">
-      <a href="../index.html">Home</a>
-      <a href="../index.html#about">About Us</a>
-      <div class="dropdown">
-        <a href="../Start Learning/startlearning.html">Start Preparing ▾</a>
-        <div class="dropdown-content">
-          <a href="../Start Learning/startlearning.html">Home</a>
-          <a href="../Theory/theory.html">Theory</a>
-          <a href="../Practice Questions/practicequestions.html">Practice Questions</a>
-          <a href="../Mock Tests/mocktests.html">Mock Tests</a>
-          <a href="">Laboratory Guide</a>
-          <a href="../Mindeset Guide/mindset.html">Mindset Guide</a>
-          <a href="">Study Materials</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <a href="../National Selection Tests/selections.html">National Selection Tests ▾</a>
-        <div class="dropdown-content">
-          <a href="../National Selection Tests/selections.html">Home</a>
-          <a href="../National Selection Tests/Australia/australia.html">Australia</a>
-          <a href="../National Selection Tests/Brazil/brazil.html">Brazil</a>
-          <a href="../National Selection Tests/Cosra Rica/costarica.html">Costa Rica</a>
-          <a href="../National Selection Tests/Cyprus/cyprus.html">Cyprus</a>
-          <a href="../National Selection Tests/Estonia/estonia.html">Estonia</a>
-          <a href="../National Selection Tests/Germany/germany.html">Germany</a>
-          <a href="../National Selection Tests/Hong Kong/hongkong.html">Hong Kong</a>
-          <a href="../National Selection Tests/India/india.html">India</a>
-          <a href="../National Selection Tests/Lithuania/lithuania.html">Lithuania</a>
-          <a href="../National Selection Tests/Romania/romania.html">Romania</a>
-          <a href="../National Selection Tests/Serbia/serbia.html">Serbia</a>
-          <a href="../National Selection Tests/Sri Lanka/sri-lanka.html">Sri Lanka</a>
-        </div>
-      </div>
-      <a href="">Podcasts</a>
-      <a href="../Our Team/Team.html">Our Team</a>
-      <a href="../index.html#contact">Contact Us</a>
-    </div>
+  <nav>
+    <a href="../index.html"><div class="logo" >
+      <img src="../favicon.png" alt="Logo" class = "logo-image" />
+      <span class="logo-text">A Guide to the IJSO</span>
+    </div></a>
+  
+    <input type="checkbox" id="nav-toggle" hidden />
+  
+    <i class="fa-solid fa-bars" id="menuToggle"></i>
+  
+    <ul class="menu" id="menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html">About Us</a></li>
+        <li class="dropdown">
+          <a href="../Start Learning/startlearning.html" id="startPreparingToggle">Start Preparing ▾</a>
+          <div class="dropdown-content">
+            <a href="../Start Learning/startlearning.html">Home</a>
+            <a href="../Theory/theory.html">Theory</a>
+            <a href="../Practice Questions/practicequestions.html">Practice Questions</a>
+            <a href="../Mock Tests/mocktests.html">Mock Tests</a>
+            <a href="">Laboratory Guide</a>
+            <a href="../Mindset Guide/mindset.html">Mindset Guide</a>
+            <a href="">Study Materials</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="../National Selection Tests/selections.html" id="nationalSelectionsToggle">National Selection Tests ▾</a>
+          <div class="dropdown-content">
+            <a href="../National Selection Tests/selections.html">Home</a>
+            <a href="../National Selection Tests/Australia/australia.html">Australia</a>
+            <a href="../National Selection Tests/Brazil/brazil.html">Brazil</a>
+            <a href="../National Selection Tests/Cosra Rica/costarica.html">Costa Rica</a>
+            <a href="../National Selection Tests/Cyprus/cyprus.html">Cyprus</a>
+            <a href="../National Selection Tests/Estonia/estonia.html">Estonia</a>
+            <a href="../National Selection Tests/Germany/germany.html">Germany</a>
+            <a href="../National Selection Tests/Hong Kong/hongkong.html">Hong Kong</a>
+            <a href="../National Selection Tests/India/india.html">India</a>
+            <a href="../National Selection Tests/Lithuania/lithuania.html">Lithuania</a>
+            <a href="../National Selection Tests/Romania/romania.html">Romania</a>
+            <a href="../National Selection Tests/Serbia/serbia.html">Serbia</a>
+            <a href="../National Selection Tests/Sri Lanka/sri-lanka.html">Sri Lanka</a>
+          </div>
+        </li>
+        <li><a href="">Podcasts</a></li>
+        <li><a href="../Our Team/Team.html">Our Team</a></li>
+        <li><a href="../index.html#contact">Contact Us</a></li>
+      </ul>
   </nav>
+        
 
   <!-- Leader Section -->
   <h2 class="section-title">Leader</h2>
