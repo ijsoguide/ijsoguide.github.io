@@ -167,14 +167,15 @@ body {
   }
 
   .content {
-    padding: 0 1rem;
-    display: none;
-    overflow: hidden;
-    border-left: 3px solid #2979ff;
-    margin-top: 0.5rem;
-    background-color: #f9fbff;
-    border-radius: 0 0 8px 8px;
-  }
+  padding: 0 1rem;
+  overflow: hidden;
+  border-left: 3px solid #2979ff;
+  margin-top: 0.5rem;
+  background-color: #f9fbff;
+  border-radius: 0 0 8px 8px;
+  max-height: 0; 
+  transition: max-height 0.3s ease-out;
+}
  .content ul {
       margin: 1rem 0;
     }
