@@ -1,7 +1,13 @@
 fetch('/navigation.html')
     .then(response => response.text())
     .then(data => {
-      document.querySelector('nav').innerHTML = data;
+        if(!document.body.innerHTML.includes("<nav>")){
+            let n = document.createElement('nav')
+            //document.querySelector('nav').innerHTML = data;
+            n.innerHTML = data;
+            document.body.insertBefore(n, document.body.firstChild)
+        }
+        
 
 
       let menuToggle = document.getElementById('menuToggle')
