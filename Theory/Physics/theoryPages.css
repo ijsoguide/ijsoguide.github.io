@@ -10,34 +10,6 @@ body {
     color: #333;
   }
 
-  .navbar {
-    background-color: #2979ff;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    flex-wrap: wrap;
-  }
-
-  .navbar .logo {
-    font-weight: bold;
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: white;
-  }
-
-  .nav-links a {
-    color: white;
-    margin-left: 1.5rem;
-    text-decoration: none;
-    font-weight: 500;
-  }
-
-  .nav-links a:hover {
-    text-decoration: underline;
-  }
-
 /* Top Bar */
     .top-bar {
       max-width: 900px;
