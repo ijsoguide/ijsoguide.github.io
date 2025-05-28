@@ -5,45 +5,6 @@ body {
   margin: 0;
   padding: 20px;
 }
-/* Navbar */
-    nav {
-      background: #2979ff;
-      padding: 1rem 2rem;
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    nav a{
-      text-decoration: none;
-    }
-
-    nav .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: white;
-      text-decoration: none;
-      cursor: default;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1.5rem;
-    }
-
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-      transition: opacity 0.2s;
-    }
-
-    nav ul li a:hover {
-      opacity: 0.8;
-    }
 
 h1 {
   text-align: center;

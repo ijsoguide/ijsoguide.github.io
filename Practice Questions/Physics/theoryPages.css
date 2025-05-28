@@ -11,33 +11,7 @@ body {
     color: #333;
 }
 
-/* Navbar */
-.navbar {
-    background-color: #2979ff;
-    color: white;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.navbar-left a {
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-.navbar-right a {
-    margin-left: 1.5rem;
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.navbar-right a:hover {
-    text-decoration: underline;
-}
 
 /* Header */
 .header-section {

@@ -5,41 +5,7 @@ body {
 	color: #000;
 }
 
-/* Navbar */
-.navbar {
-	background-color: #2e7d32;
-	padding: 1rem 2rem;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
 
-.navbar .logo {
-	color: #fff;
-	font-size: 1.4rem;
-	font-weight: bold;
-	text-decoration: none;
-}
-
-.navbar ul {
-	list-style: none;
-	display: flex;
-	gap: 1.5rem;
-	margin: 0;
-	padding: 0;
-}
-
-.navbar ul li a {
-	color: #fff;
-	text-decoration: none;
-	font-weight: 500;
-	font-size: 1rem;
-	transition: color 0.2s;
-}
-
-.navbar ul li a:hover {
-	color: #c8e6c9;
-}
 
 /* Header */
 header {
