@@ -7,22 +7,7 @@
   
   <link rel="stylesheet" href="../../theoryPages.css">
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const coll = document.querySelectorAll('.collapsible');
-      coll.forEach(btn => {
-        btn.addEventListener('click', function () {
-          this.classList.toggle('active');
-          const content = this.nextElementSibling;
-          if (content.style.display === "block") {
-            content.style.display = "none";
-          } else {
-            content.style.display = "block";
-          }
-        });
-      });
-    });
-  </script>
+  
 </head>
 <body>
 
@@ -92,6 +77,6 @@
   <footer>
     &copy; 2025 A Guide to the IJSO. All rights reserved.
   </footer>
-
+<script src="../../../collapsibles.js"></script>
 </body>
 </html>

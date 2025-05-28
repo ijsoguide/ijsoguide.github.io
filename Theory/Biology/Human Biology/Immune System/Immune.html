@@ -137,17 +137,6 @@
     &copy; 2025 A Guide to the IJSO. All rights reserved.
   </div>
 
-  <!-- JS -->
-  <script>
-    const collapsibles = document.querySelectorAll('.collapsible');
-    collapsibles.forEach(btn => {
-      btn.addEventListener('click', () => {
-        btn.classList.toggle('active');
-        const content = btn.nextElementSibling;
-        content.style.display = content.style.display === 'block' ? 'none' : 'block';
-      });
-    });
-  </script>
-
+  <script src="../../../collapsibles.js"></script>
 </body>
 </html>

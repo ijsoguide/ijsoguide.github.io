@@ -12,18 +12,6 @@
   </script>
 
   <link rel="stylesheet" href="../../theoryPages.css">
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const buttons = document.querySelectorAll('.collapsible');
-      buttons.forEach(button => {
-        button.addEventListener('click', function () {
-          this.classList.toggle('active');
-          const content = this.nextElementSibling;
-          content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + "px";
-        });
-      });
-    });
-  </script>
 </head>
 <body>
 
@@ -154,6 +142,6 @@ Y = \frac{\text{Stress}}{\text{Strain}} = \frac{F/A}{\Delta L / L} = \frac{F L}{
   <div class="footer">
     &copy; 2025 A Guide to the IJSO. All rights reserved.
   </div>
-
+<script src="../../../collapsibles.js"></script>
 </body>
 </html>
