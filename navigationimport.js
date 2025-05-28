@@ -4,13 +4,18 @@ fetch('/navigation.html')
       document.querySelector('nav').innerHTML = data;
 });
 
-const link1 = document.createElement('link');
-link1.rel = 'stylesheet';
-link1.href = "/mobilenavigation.css";
+if (!(document.head.innerHTML.includes("mobilenavigation.css"))){
+    const link1 = document.createElement('link');
+    link1.rel = 'stylesheet';
+    link1.href = "/mobilenavigation.css";
+    
+    document.head.appendChild(link1);
+}
 
-const link2 = document.createElement('script');
-link2.src = "/mobilenavigation.js"
-link2.defer = true;
+if (!(document.head.innerHTML.includes("mobilenavigation.js"))){
+    const link2 = document.createElement('script');
+    link2.src = "/mobilenavigation.js"
+    link2.defer = true;
 
-document.head.appendChild(link1);
-document.head.appendChild(link2)
+    document.head.appendChild(link2)
+}
