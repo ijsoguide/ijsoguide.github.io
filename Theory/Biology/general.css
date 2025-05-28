@@ -124,3 +124,31 @@
       color: white;
       background-color: #2e7d32;
     }
+.collapsible {
+      background-color: #e8f5e9;
+      color: #2e7d32;
+      cursor: pointer;
+      padding: 1rem;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 1.05rem;
+      margin-top: 1rem;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .collapsible:hover {
+      background-color: #d0ebd2;
+    }
+
+    .content {
+      padding: 0 1rem;
+      display: none;
+      overflow: hidden;
+      background-color: #f9fdf9;
+      border-left: 3px solid #2e7d32;
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
