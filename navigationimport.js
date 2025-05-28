@@ -3,7 +3,7 @@ fetch('/navigation.html')
     .then(data => {
       document.querySelector('nav').innerHTML = data;
 
-      
+
       let menuToggle = document.getElementById('menuToggle')
     menuToggle.addEventListener('click', ()=>{
       document.getElementById('menu').classList.toggle('active')
@@ -32,12 +32,4 @@ if (!(document.head.innerHTML.includes("mobilenavigation.css"))){
     link1.href = "/mobilenavigation.css";
     
     document.head.appendChild(link1);
-}
-
-if (!(document.head.innerHTML.includes("mobilenavigation.js"))){
-    const link2 = document.createElement('script');
-    link2.src = "/mobilenavigation.js"
-    link2.defer = true;
-
-    document.head.appendChild(link2)
 }
