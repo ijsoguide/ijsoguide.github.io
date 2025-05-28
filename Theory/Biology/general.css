@@ -86,16 +86,16 @@
     }
 
     p, ul, ol {
-      line-height: 1.7;
-     text-align: justify;
-    }
+    line-height: 1.7;
+  }
 
-    ul li {
-      margin-bottom: 0.5rem;
-     text-align: justify;
-    }
-  ul, ol {     margin-left: 2em;
-         }
+  p {
+    text-align: justify
+  }
+
+  ul li, ol li {
+    margin-bottom: 0.5rem;
+  }
 
     img {
       display: block;
