@@ -94,6 +94,8 @@
       margin-bottom: 0.5rem;
      text-align: justify;
     }
+  ul, ol {     margin-left: 2em;
+         }
 
     img {
       display: block;
