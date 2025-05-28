@@ -101,6 +101,7 @@ body {
     color: #2979ff;
     margin-top: 2rem;
     padding-bottom: 0.3rem;
+border-bottom: 2px solid #cde8ff;
   }
 
   p, ul, ol {
