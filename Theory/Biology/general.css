@@ -87,6 +87,7 @@
 
     p, ul, ol {
       line-height: 1.7;
+     text-align: justify;
     }
 
     ul li {
