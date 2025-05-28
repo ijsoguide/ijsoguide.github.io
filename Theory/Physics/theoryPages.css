@@ -106,6 +106,7 @@ body {
 
   p, ul, ol {
     line-height: 1.7;
+        text-align: justify;
   }
 
   ul {
@@ -114,10 +115,8 @@ body {
 
   ul li, ol li {
     margin-bottom: 0.5rem;
-  }
-p, li {
       text-align: justify;
-}
+  }
   summary {
       font-weight: bold;
       font-size: 1.1rem;
