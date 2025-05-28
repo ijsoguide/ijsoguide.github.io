@@ -86,14 +86,16 @@
     }
 
     p, ul, ol {
-      line-height: 1.7;
-     text-align: justify;
-    }
+    line-height: 1.7;
+  }
 
-    ul li {
-      margin-bottom: 0.5rem;
-     text-align: justify;
-    }
+  p {
+    text-align: justify
+  }
+
+  ul li, ol li {
+    margin-bottom: 0.5rem;
+  }
 
     img {
       display: block;
@@ -145,7 +147,7 @@
 
     .content {
       padding: 0 1rem;
-      display: none;
+      max-height: 0;
       overflow: hidden;
       background-color: #f9fdf9;
       border-left: 3px solid #2e7d32;
