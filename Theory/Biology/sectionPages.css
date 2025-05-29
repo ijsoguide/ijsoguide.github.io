@@ -17,7 +17,7 @@
     background-color: #100839;
     padding: 3rem 1rem 2rem;
     text-align: center;
-    color: white;
+    color: #f0f0f0;
   }
 
   header h1 {
@@ -29,7 +29,7 @@
     font-size: 1.1rem;
     max-width: 700px;
     margin: 0 auto;
-    color: #e6e6e6;
+    color: #f0f0f0;
   }
 
   /* Page Header */
@@ -101,14 +101,14 @@
 
   .card-content p {
     margin-bottom: 1rem;
-    color: #FFFFFF;
+    color: #f0f0f0;
   }
 
   .learn-btn {
     display: inline-block;
     padding: 0.5rem 1rem;
     background-color: #40cb7a;
-    color: white;
+    color: #f0f0f0;
     border: none;
     border-radius: 6px;
     text-decoration: none;
@@ -151,7 +151,7 @@
   }
 
   .practice-section p {
-    color: #FFFFFF;
+    color: #f0f0f0;
     margin-top: 1rem;
     margin-bottom: 2rem;
   }
@@ -174,7 +174,7 @@
   /* Footer */
   footer {
     background-color: #1f1359;
-    color: white;
+    color: #f0f0f0;
     text-align: center;
     padding: 1rem;
     margin-top: 3rem;
