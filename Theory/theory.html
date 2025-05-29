@@ -15,17 +15,17 @@
 
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f9ff;
+      background-color: #100839;
       color: #333;
     }
 
+
     header {
-  background: linear-gradient(rgba(41, 121, 255, 0.6), rgba(0, 198, 255, 0.6)),
-              url('image.png') center/cover no-repeat;
-  color: white;
-  padding: 3rem 1rem;
-  text-align: center;
-}
+      background: #100839;
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
 
     .container {
       max-width: 1200px;
@@ -42,7 +42,7 @@
 
     .card {
       flex: 1 1 300px;
-      background-color: white;
+      background-color: #1f1359;
       border-radius: 12px;
       box-shadow: 0 8px 20px rgba(0,0,0,0.08);
       overflow: hidden;
@@ -65,110 +65,63 @@
 
     /* Color-coded headings */
     .physics h2 {
-      color: #2979ff;
+      color: #56a9ff;
     }
 
     .chemistry h2 {
-      color: #9c27b0;
+      color: #b561ff;
     }
 
     .biology h2 {
-      color: #43a047;
+      color: #40cb7a;
     }
 
     .card p {
-      color: #555;
+      color: white;
       font-size: 1rem;
       margin-bottom: 1rem;
     }
 
     .physics a {
-      background-color: #2979ff;
+      background-color: #56a9ff;
     }
 
     .physics a:hover {
-      background-color: #0d47a1;
+      background-color: #56a9ff;
     }
 
     .chemistry a {
-      background-color: #9c27b0;
+      background-color: #b561ff;
     }
 
     .chemistry a:hover {
-      background-color: #6a0080;
+      background-color: #b561ff;
     }
 
     .biology a {
-      background-color: #43a047;
+      background-color: #40cb7a;
     }
 
     .biology a:hover {
-      background-color: #2e7d32;
+      background-color: #40cb7a;
     }
 
     .card a {
       display: inline-block;
       padding: 0.6rem 1.2rem;
-      color: white;
       border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
       transition: background-color 0.3s;
+      color: white;
     }
 
     footer {
-      background-color: #000f89;
+      background-color: #1f1359;
       color: white;
       text-align: center;
       padding: 1rem;
       margin-top: 3rem;
-    }
-
-    #menuToggle{
-      display: none;
-    }
-
-    @media (max-width: 768px) {
-      .cards {
-        flex-direction: column;
-      }
-
-      .card {
-        flex: 1 1 auto;
-      }
-
-      nav {
-        align-items: flex-start;
-      }
-
-      nav ul li a {
-        color: white;
-        text-decoration: none;
-        font-weight: 500;
-        transition: opacity 0.2s;
-      }
-
-      #menuToggle{
-        display: block;
-        z-index: 10;
-        margin: auto 0 auto 0;
-      }
-      #navbarList{
-        z-index: 5;
-        flex-direction: column;
-        justify-content: center;
-        height: 100%;
-        padding: 1rem;
-        position: fixed;
-        top: 0;
-        right: -100%;
-        background-color: #2979ff;
-        padding: 0 2rem 0 2rem;
-        transition: all 0.4s ease-in-out;
-      }
-      #navbarList.show{
-        right: 0;
-      }
     }
   </style>
   <script src="/navigationimport.js" defer></script>
