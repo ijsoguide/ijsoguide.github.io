@@ -82,7 +82,8 @@ border-bottom: 2px solid #cde8ff;
   p, ul, ol {
     line-height: 1.7;
         text-align: justify;
-        color: #FFFFFF
+        color: #e0e0e0;
+
   }
 
   ul {
@@ -118,7 +119,7 @@ border-bottom: 2px solid #cde8ff;
     padding: 20px;
     margin-top: 30px;
     font-size: 0.9em;
-    color: white;
+    color: #e0e0e0;
     background-color: #1f1359;
   }
   /* Collapsible Styling */
