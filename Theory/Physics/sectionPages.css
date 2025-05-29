@@ -6,7 +6,7 @@
 
   body {
     font-family: 'Segoe UI', sans-serif;
-    background-color: #f9fbff;
+    background-color: #100839;
     color: #1a1a1a;
   }
 
@@ -14,7 +14,7 @@
 
   /* Header Section */
   header {
-    background-color: #2979ff;
+    background-color: #100839;
     padding: 3rem 1rem 2rem;
     text-align: center;
     color: white;
@@ -44,10 +44,11 @@
 
   .page-header h2 {
     font-size: 1.8rem;
+    color: #56a9ff;
   }
 
   .back-btn {
-    background-color: #fff;
+    background-color: #56a9ff;
     border: 1px solid #ccc;
     padding: 0.5rem 1rem;
     border-radius: 8px;
@@ -70,7 +71,7 @@
   }
 
   .card {
-    background-color: #f9fbff;
+    background-color: #1f1359;
     border: 1px solid #e0e0e0;
     border-radius: 10px;
     margin-bottom: 1rem;
@@ -89,6 +90,7 @@
     align-items: center;
     font-weight: 600;
     font-size: 1.05rem;
+    color: #56a9ff;
   }
 
   .card-content {
@@ -99,13 +101,13 @@
 
   .card-content p {
     margin-bottom: 1rem;
-    color: #555;
+    color: #FFFFFF;
   }
 
   .learn-btn {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background-color: #2979ff;
+    background-color: #56a9ff;
     color: white;
     border: none;
     border-radius: 6px;
@@ -133,9 +135,9 @@
     margin: 3rem auto;
     padding: 2rem;
     max-width: 800px;
-    background-color: #f2f6ff;
+    background-color: #1f1359;
     border-radius: 10px;
-    border: 1px solid #2979ff;
+    border: 1px solid #56a9ff;
   }
 
   .practice-section-icon {
@@ -149,18 +151,19 @@
   }
 
   .practice-section p {
-    color: #444;
+    color: #FFFFFF;
     margin-top: 1rem;
     margin-bottom: 2rem;
   }
 
   .practice-section a {
     display: inline-block;
-    background-color: #2979ff;
-    color: white;
+    background-color: #56a9ff;
+    color: #333;
     padding: 0.75rem 1.5rem;
     text-decoration: none;
     border-radius: 6px;
+    border-color: #1f1359;
     font-weight: bold;
   }
 
@@ -170,7 +173,7 @@
 
   /* Footer */
   footer {
-    background-color: #2979ff;
+    background-color: #1f1359;
     color: white;
     text-align: center;
     padding: 1rem;
