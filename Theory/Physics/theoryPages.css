@@ -5,7 +5,7 @@
     }
 body {
     font-family: 'Segoe UI', sans-serif;
-    background-color: #f4f8ff;
+    background-color: #100839;
     margin: 0;
     color: #333;
   }
@@ -22,7 +22,7 @@ body {
 
     .top-bar h2 {
       font-size: 1.5rem;
-      color: #2979ff;
+      color: #56a9ff;
     }
 
   .page-header {
@@ -36,11 +36,11 @@ body {
 
   .page-header h2 {
     font-size: 1.8rem;
-    color: #2979ff;
+    color: #56a9ff;
   }
 
   .back-btn {
-    background-color: #fff;
+    background-color: #56a9ff;
     border: 1px solid #ccc;
     padding: 0.5rem 1rem;
     border-radius: 8px;
@@ -58,7 +58,7 @@ body {
   .container {
     max-width: 900px;
     margin: auto;
-    background: white;
+    background: #1f1359;
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
@@ -70,15 +70,19 @@ body {
   }
 
   h2 {
-    color: #2979ff;
+    color: #56a9ff;
     margin-top: 2rem;
     padding-bottom: 0.3rem;
 border-bottom: 2px solid #cde8ff;
+  }
+  h3 {
+    color: #56a9ff;
   }
 
   p, ul, ol {
     line-height: 1.7;
         text-align: justify;
+        color: #FFFFFF
   }
 
   ul {
@@ -115,13 +119,12 @@ border-bottom: 2px solid #cde8ff;
     margin-top: 30px;
     font-size: 0.9em;
     color: white;
-    background-color: #2979ff;
+    background-color: #1f1359;
   }
-
   /* Collapsible Styling */
   .collapsible {
-    background-color: #e3f2fd;
-    color: #2979ff;
+    background-color: #56a9ff;
+    color: #333;
     cursor: pointer;
     padding: 0.75rem 1rem;
     width: 100%;
@@ -134,18 +137,18 @@ border-bottom: 2px solid #cde8ff;
     margin-top: 1.5rem;
   }
   .active, .collapsible:hover {
-      background-color: #d1dcff;
+      background-color: #539fdd;
     }
   .collapsible:hover {
-    background-color: #d1eaff;
+    background-color: #539fdd;
   }
 
   .content {
   padding: 0 1rem;
   overflow: hidden;
-  border-left: 3px solid #2979ff;
+  border-left: 3px solid #56a9ff;
   margin-top: 0.5rem;
-  background-color: #f9fbff;
+  background-color: #1f1359;
   border-radius: 0 0 8px 8px;
   max-height: 0; 
   transition: max-height 0.3s ease-out;
@@ -169,7 +172,33 @@ border-bottom: 2px solid #cde8ff;
 .note {
       background: #e3ecff;
       padding: 10px 15px;
-      border-left: 4px solid #4a76d0;
+      border-left: 4px solid #56a9ff;
       border-radius: 6px;
       margin-top: 1rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.5rem;
+      text-align: center;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    
+    thead {
+      background-color: #1e88e5; /* light blue header */
+      color: #56a9ff;
+    }
+    
+    th, td {
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    
+    tbody tr:nth-child(even) {
+      background-color: #2c2c2c; /* dark gray rows */
+    }
+    
+    tbody tr:nth-child(odd) {
+      background-color: #1f1f1f; /* slightly lighter for contrast */
     }
