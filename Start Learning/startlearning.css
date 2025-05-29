@@ -7,9 +7,10 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #0a192f;
+  background-color: #100839;
   color: #f0e9d6;
 }
+
 
 html {
   scroll-behavior: smooth;
@@ -89,6 +90,6 @@ html {
 footer {
   text-align: center;
   padding: 2rem 1rem;
-  background-color: #112240;
+  background-color: #140d3c;
   border-top: 2px solid #233554;
 }
