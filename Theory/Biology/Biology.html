@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://kit.fontawesome.com/04bf603a0f.js" crossorigin="anonymous"></script>
   <script src="../theory.js" defer></script>
-<style>
+  <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
@@ -41,25 +41,59 @@
       margin-top: 3rem;
       margin-bottom: 1rem;
     }
+    .back-button-right {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 900px;
+  margin: 0 auto 1rem auto;
+  padding-right: 1.5rem; /* matches padding of file-actions */
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      padding: 2rem;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
+.back-button-right a {
+  padding: 0.5rem 1.2rem;
+  background-color: #40cb7a;
+  color: #333;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
 
-    .topic-card {
-      background-color: #1f1359;
-      color: #f0f0f0;
-      border-radius: 10px;
-      padding: 1.5rem;
-      text-align: center;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+.back-button-right a:hover {
+  background-color: #7eebab;
+}
+
+.grid-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.topic-card {
+  background-color: #1f1359;
+  color: #f0f0f0;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 430px;
+  width: 250px; /* optional, but useful for consistency */
+}
 
     .topic-card:hover {
       transform: translateY(-5px);
@@ -169,11 +203,13 @@
     <p>Explore the science of life from molecular foundations to complex ecosystems. Build your knowledge and problem-solving skills for the IJSO biology section.</p>
   </header>
 
-  <!-- Topics Title -->
-  <div class="section-title">Topics</div>
+   <div class="back-button-right">
+    <a href="../theory.html">← Back to Theory</a>
+  </div>
 
   <!-- Topics Grid -->
-  <div class="grid">
+  <div class="grid-row">
+    <div class="row">
     <div class="topic-card">
       <img src="gay-ahh-shii.png" alt="Cell Biology">
       <h3>Cell Biology</h3>
@@ -201,7 +237,8 @@
       <p>Plant structure, function, and diversity</p>
       <a href="Botany/Botany.html">Explore Topic</a>
     </div>
-
+    </div>
+    <div class="row">
     <div class="topic-card">
       <img src="genetics.png" alt="Genetics">
       <h3>Genetics</h3>
@@ -229,12 +266,14 @@
       <p>Study of microorganisms and their effects</p>
       <a href="Microbiology and Biotechnology/Microbiology.html">Explore Topic</a>
     </div>
-
+    </div>
+    <div class="row">
      <div class="topic-card">
       <img src="systematics.jpeg" alt="Systematics">
       <h3>Systematics</h3>
       <p>Study of classification and the evolutionary relationship between organisms.</p>
       <a href="Systematics/Systematics.html">Explore Topic</a>
+    </div>
     </div>
   </div>
 
