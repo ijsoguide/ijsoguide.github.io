@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Chemistry Problems| IJSO Guide</title>
+  <title>Chemistry Problems</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <script src="https://kit.fontawesome.com/04bf603a0f.js" crossorigin="anonymous"></script>
   <script src="../theory.js" defer></script>
@@ -10,18 +10,16 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #ffffff;
-      color: #000;
+      background-color: #100839;
     }
 
-   
 
     /* Header */
     header {
       text-align: center;
       padding: 3rem 1rem 2rem;
-      background-color: #9c27b0;
-      color: white;
+      background-color: #100839;
+      color: #f0f0f0;
     }
 
     header h1 {
@@ -33,35 +31,69 @@
       font-size: 1.1rem;
       max-width: 800px;
       margin: 0 auto;
-      color: #f3e5f5;
+      color: #f0f0f0;
     }
 
     .section-title {
       text-align: center;
       font-size: 2rem;
-      color: #9c27b0;
+      color: #b561ff;
       margin-top: 3rem;
       margin-bottom: 1rem;
     }
+    .back-button-right {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 900px;
+  margin: 0 auto 1rem auto;
+  padding-right: 1.5rem; /* matches padding of file-actions */
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      padding: 2rem;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
+.back-button-right a {
+  padding: 0.5rem 1.2rem;
+  background-color: #b561ff;
+  color: #333;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
 
-    .topic-card {
-      background-color: #9c27b0;
-      color: white;
-      border-radius: 10px;
-      padding: 1.5rem;
-      text-align: center;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-    }
+.back-button-right a:hover {
+  background-color: #cea5f2;
+}
+
+.grid-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.topic-card {
+  background-color: #1f1359;
+  color: #f0f0f0;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 430px;
+  width: 250px; /* optional, but useful for consistency */
+}
 
     .topic-card:hover {
       transform: translateY(-5px);
@@ -78,21 +110,21 @@
 
     .topic-card h3 {
       margin-top: 0;
-      font-size: 1.3rem;
-      color: white;
+      font-size: 1.4rem;
+      color: #b561ff;
     }
 
     .topic-card p {
       font-size: 0.95rem;
-      color: #fbefff;
+      color: #f0f0f0;
       min-height: 60px;
     }
 
     .topic-card a {
       display: inline-block;
       margin-top: 1rem;
-      background-color: white;
-      color: #9c27b0;
+      background-color: #b561ff;
+      color: #1f1359;
       padding: 0.6rem 1.2rem;
       text-decoration: none;
       border-radius: 6px;
@@ -101,62 +133,69 @@
     }
 
     .topic-card a:hover {
-      background-color: #6a0080;
-      color: white;
+      background-color: #0d47a1;
+      color: #f0f0f0;
     }
 
+    /* Practice Section */
     .practice-section {
       text-align: center;
       margin: 3rem auto;
       padding: 2rem;
       max-width: 800px;
-      background-color: #f5e6fb;
+      background-color: #1f1359;
       border-radius: 10px;
-      border: 1px solid #9c27b0;
+      border: 1px solid #100839;
     }
 
     .practice-section h2 {
-      color: #9c27b0;
+      color: #b561ff;
     }
 
     .practice-section p {
-      color: #444;
+      color: #f0f0f0;
       margin-top: 1rem;
       margin-bottom: 2rem;
     }
 
     .practice-section a {
       display: inline-block;
-      background-color: #9c27b0;
-      color: white;
+      background-color: #b561ff;
+      color: #333;
       padding: 0.75rem 1.5rem;
       text-decoration: none;
       border-radius: 6px;
       font-weight: bold;
     }
-
-    .practice-section a:hover {
-      background-color: #6a0080;
+    .practice-section h4{
+      color: #b561ff;
     }
 
+    .practice-section a:hover {
+      background-color: #0d47a1;
+    }
+
+    /* Footer */
     footer {
       text-align: center;
       padding: 2rem 1rem;
-      background-color: #9c27b0;
-      color: white;
-      font-size: 0.9rem;
+      background-color: #1f1359;
+      color: #f0f0f0;
       margin-top: 4rem;
+      font-size: 0.9rem;
     }
 
     @media(width <= 768px){
       #navbarList{
-        background-color: #6a0080;
+        background-color: #0d47a1;
       }
     }
+    
   </style>
   <script src="/navigationimport.js" defer></script>
 </head>
 <body>
+
 
   <!-- Header -->
   <header>
@@ -164,107 +203,121 @@
     <p>Tackle challenging IJSO-style chemistry problems designed to sharpen your analytical skills and test conceptual depth.</p>
   </header>
 
-  <!-- Topics Title -->
-  <div class="section-title">Topics</div>
-
+  <div class="back-button-right">
+    <a href="../practicequestions.html">← Back to Practice Questions</a>
+  </div>
   <!-- Topics Grid -->
-  <div class="grid">
+  <div class="grid-row">
+    <div class="row">
     <div class="topic-card">
       <img src="/images/chemistry/Atomic Strcuture.jpeg" alt="Atomic Structure">
       <h3>Atomic Structure and Periodicity</h3>
-      <p>Atoms, subatomic particles, and trends in the periodic table.</p>
-      <a href="./Atomic structure and periodity/Atomic Structure.html">Practice Now</a>
+      <p>Explore atoms, subatomic particles, and trends in the periodic table.</p>
+      <a href="./Atomic structure and periodity/Atomic Structure.html">Explore Topic</a>
     </div>
 
     <div class="topic-card">
       <img src="/images/chemistry/Chemical Bonding.jpg" alt="Chemical Bonding">
       <h3>Chemical Bonding</h3>
-      <p>Ionic, covalent, and metallic bonding.</p>
-      <a href="./Chemical bonding/Chemical Bonding.html">Practice Now</a>
+      <br>
+      <p>Understand ionic, covalent, and metallic bonding with real-world examples.</p>
+      <a href="./Chemical bonding/Chemical Bonding.html">Explore Topic</a>
     </div>
 
     <div class="topic-card">
       <img src="/images/chemistry/States of Matter.png" alt="States of Matter">
       <h3>States of Matter</h3>
+      <br>
       <p>Solid, liquid, gas — and how particles behave in each state.</p>
-      <a href="./States of matter/States of Matter.html">Practice Now</a>
+      <a href="./States of matter/States of Matter.html">Explore Topic</a>
     </div>
 
     <div class="topic-card">
-      <img src="/images/chemistry/stoich.webp" alt="Stoichiometry">
+      <img src="/images/chemistry/Stoichiometry.jpg" alt="Stoichiometry">
       <h3>Stoichiometry</h3>
+      <br>
       <p>Balance equations and calculate moles, mass, and volume.</p>
-      <a href="./Stoichiometry/Stoichiometry.html">Practice Now</a>
+      <a href="./Stoichiometry/Stoichiometry.html">Explore Topic</a>
     </div>
-
+  </div>
+  <div class="row">
     <div class="topic-card">
       <img src="/images/chemistry/Chemical Reactions.jpg" alt="Chemical Reactions">
       <h3>Chemical Reactions</h3>
+      <br>
       <p>Types of reactions, balancing, and predicting products.</p>
-      <a href="Chemical Reactions/Chemical Reactions.html">Practice Now</a>
+      <a href="Chemical Reactions/Chemical Reactions.html">Explore Topic</a>
     </div>
 
     <div class="topic-card">
       <img src="/images/chemistry/Acids.jpg" alt="Acids and Bases">
       <h3>Acids, Bases and Salts</h3>
+      <br>
       <p>pH, indicators, neutralization, and common reactions.</p>
-      <a href="Acids, Bases and Salts/Acids, Bases and Salts.html">Practice Now</a>
+      <a href="Acids, Bases and Salts/Acids, Bases and Salts.html">Explore Topic</a>
     </div>
 
     <div class="topic-card">
       <img src="/images/chemistry/Thermochemistry.png" alt="Thermochemistry">
       <h3>Thermochemistry</h3>
-      <p>Energy changes in chemical reactions.</p>
-      <a href="Thermochemistry/Thermochemistry.html">Practice Now</a>
+      <br>
+      <p>Study energy changes in chemical reactions.</p>
+      <a href="Thermochemistry/Thermochemistry.html">Explore Topic</a>
     </div>
 
     <div class="topic-card">
       <img src="/images/chemistry/kinetics.webp" alt="Chemical Kinetics">
       <h3>Chemical Kinetics</h3>
-      <p>Reaction rates, catalysts, and mechanisms.</p>
-      <a href="Chemical Kinetics/Kinetics.html">Practice Now</a>
+      <br>
+      <p>Explore reaction rates, catalysts, and mechanisms.</p>
+      <a href="Chemical Kinetics/Kinetics.html">Explore Topic</a>
     </div>
-
+    </div>
+    <div class="row">
     <div class="topic-card">
       <img src="/images/chemistry/Equilibrium.jpg" alt="Equilibrium">
       <h3>Equilibrium</h3>
+      <br>
       <p>Dynamic equilibrium, Le Chatelier’s principle, and constants.</p>
-      <a href="Equilibrium/Equilibrium.html">Practice Now</a>
+      <a href="Equilibrium/Equilibrium.html">Explore Topic</a>
     </div>
 
     <div class="topic-card">
       <img src="/images/chemistry/Electrochemistry.jpg" alt="Electrochemistry">
       <h3>Electrochemistry</h3>
+      <br>
       <p>Electrolysis, redox reactions, and electrochemical cells.</p>
-      <a href="Electrochemistry/Electrochemistry.html">Practice Now</a>
+      <a href="Electrochemistry/Electrochemistry.html">Explore Topic</a>
     </div>
 
     <div class="topic-card">
       <img src="/images/chemistry/Organic.jpeg" alt="Organic Chemistry">
       <h3>Organic Chemistry</h3>
+      <br>
       <p>Hydrocarbons, functional groups, and basic reaction types.</p>
-      <a href="Organic Chemistry/Organic.html">Practice Now</a>
+      <a href="Organic Chemistry/Organic.html">Explore Topic</a>
+    </div>
     </div>
   </div>
 
   <!-- Practice Section -->
-<!-- Theory Box -->
+<!-- Mock Tests Box -->
 <div class="practice-section">
   <div class="practice-section-icon">📘</div>
   <div class="practice-section-content">
-    <h4>Master concepts with comprehensive Chemistry theory</h4>
-    <p>Deepen your understanding with detailed explanations and key insights into core Chemistry topics, aligned with the IJSO syllabus.</p>
+    <h4>Master concepts with comprehensive chemistry theory</h4>
+    <p>Deepen your understanding with detailed explanations and key insights into core chemistry topics, aligned with the IJSO syllabus.</p>
     <a href="../../Theory/Chemistry/Chemistry.html">Explore Theory</a>
   </div>
 </div>
 
-  <!-- Practice Section -->
+<!-- Practice Section -->
 <!-- Mock Tests Box -->
 <div class="practice-section">
   <div class="practice-section-icon">📝</div>
   <div class="practice-section-content">
     <h4>Test your readiness with IJSO-style chemistry mock tests</h4>
-    <p>Simulate the real exam experience with full-length Chemistry mock tests crafted in the spirit of the IJSO.</p>
+    <p>Simulate the real exam experience with full-length chemistry mock tests crafted in the spirit of the IJSO.</p>
     <a href="../../Mock Tests/Chemistry/Chemistry.html">View Mock Tests</a>
   </div>
 </div>

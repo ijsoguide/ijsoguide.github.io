@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Biology Problems| IJSO Guide</title>
+  <title>Biology Problems</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://kit.fontawesome.com/04bf603a0f.js" crossorigin="anonymous"></script>
   <script src="../theory.js" defer></script>
@@ -10,18 +10,16 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #ffffff;
-      color: #000;
+      background-color: #100839;
     }
 
-   
 
     /* Header */
     header {
       text-align: center;
       padding: 3rem 1rem 2rem;
-      background-color: #43a047;
-      color: white;
+      background-color: #100839;
+      color: #f0f0f0;
     }
 
     header h1 {
@@ -33,35 +31,69 @@
       font-size: 1.1rem;
       max-width: 800px;
       margin: 0 auto;
-      color: #e0f7ff;
+      color: #f0f0f0;
     }
 
     .section-title {
       text-align: center;
       font-size: 2rem;
-      color: #43a047;
+      color: #40cb7a;
       margin-top: 3rem;
       margin-bottom: 1rem;
     }
+    .back-button-right {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 900px;
+  margin: 0 auto 1rem auto;
+  padding-right: 1.5rem; /* matches padding of file-actions */
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      padding: 2rem;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
+.back-button-right a {
+  padding: 0.5rem 1.2rem;
+  background-color: #40cb7a;
+  color: #333;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
 
-    .topic-card {
-      background-color: #43a047;
-      color: white;
-      border-radius: 10px;
-      padding: 1.5rem;
-      text-align: center;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+.back-button-right a:hover {
+  background-color: #7eebab;
+}
+
+.grid-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.topic-card {
+  background-color: #1f1359;
+  color: #f0f0f0;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 430px;
+  width: 250px; /* optional, but useful for consistency */
+}
 
     .topic-card:hover {
       transform: translateY(-5px);
@@ -79,20 +111,20 @@
     .topic-card h3 {
       margin-top: 0;
       font-size: 1.4rem;
-      color: white;
+      color: #40cb7a;
     }
 
     .topic-card p {
       font-size: 0.95rem;
-      color: #e0f7ff;
+      color: #f0f0f0;
       min-height: 60px;
     }
 
     .topic-card a {
       display: inline-block;
       margin-top: 1rem;
-      background-color: white;
-      color: #43a047;
+      background-color: #40cb7a;
+      color: #1f1359;
       padding: 0.6rem 1.2rem;
       text-decoration: none;
       border-radius: 6px;
@@ -101,8 +133,8 @@
     }
 
     .topic-card a:hover {
-      background-color: #2e7d32;
-      color: white;
+      background-color: #0d47a1;
+      color: #f0f0f0;
     }
 
     /* Practice Section */
@@ -111,56 +143,59 @@
       margin: 3rem auto;
       padding: 2rem;
       max-width: 800px;
-      background-color: #e8f5e9;
+      background-color: #1f1359;
       border-radius: 10px;
-      border: 1px solid #43a047;
+      border: 1px solid #100839;
     }
 
     .practice-section h2 {
-      color: #43a047;
+      color: #40cb7a;
     }
 
     .practice-section p {
-      color: #444;
+      color: #f0f0f0;
       margin-top: 1rem;
       margin-bottom: 2rem;
     }
 
     .practice-section a {
       display: inline-block;
-      background-color: #43a047;
-      color: white;
+      background-color: #40cb7a;
+      color: #333;
       padding: 0.75rem 1.5rem;
       text-decoration: none;
       border-radius: 6px;
       font-weight: bold;
     }
+    .practice-section h4{
+      color: #40cb7a;
+    }
 
     .practice-section a:hover {
-      background-color: #2e7d32;
+      background-color: #0d47a1;
     }
 
     /* Footer */
     footer {
       text-align: center;
       padding: 2rem 1rem;
-      background-color: #2e7d32;
-      color: white;
+      background-color: #1f1359;
+      color: #f0f0f0;
       margin-top: 4rem;
       font-size: 0.9rem;
     }
 
     @media(width <= 768px){
       #navbarList{
-        background-color: #2e7d32;
+        background-color: #0d47a1;
       }
     }
+    
   </style>
   <script src="/navigationimport.js" defer></script>
 </head>
 <body>
 
-  
 
   <!-- Header -->
   <header>
@@ -168,77 +203,82 @@
     <p>Tackle biology problems by exploring life processes, understanding cellular structures, and connecting biological concepts to real-world systems and organisms.</p>
   </header>
 
-  <!-- Topics Title -->
-  <div class="section-title">Topics</div>
+   <div class="back-button-right">
+    <a href="../theory.html">← Back to Theory</a>
+  </div>
 
   <!-- Topics Grid -->
-  <div class="grid">
+  <div class="grid-row">
+    <div class="row">
     <div class="topic-card">
       <img src="/images/biology/gay-ahh-shii.png" alt="Cell Biology">
       <h3>Cell Biology</h3>
       <p>Cell structure, function, and processes</p>
-      <a href="Cell Biology/Gay.html">Practice Now</a>
+      <a href="Cell Biology/cellbio.html">Explore Topic</a>
     </div>
 
     <div class="topic-card">
       <img src="/images/biology/human biology.webp" alt="Human Biology">
       <h3>Human Biology</h3>
       <p>Human structure, function, and behavior</p>
-      <a href="Human Biology/Human.html">Practice Now</a>
+      <a href="Human Biology/Human.html">Explore Topic</a>
     </div>
 
     <div class="topic-card">
       <img src="/images/biology/zoologgy.png" alt="Zoology">
       <h3>Zoology</h3>
       <p>Animal structure, function, and behavior</p>
-      <a href="Zoology/Zoology.html">Practice Now</a>
+      <a href="Zoology/Zoology.html">Explore Topic</a>
     </div>
 
     <div class="topic-card">
       <img src="/images/biology/botany.jpg" alt="Botany">
       <h3>Botany</h3>
       <p>Plant structure, function, and diversity</p>
-      <a href="Botany/Botany.html">Practice Now</a>
+      <a href="Botany/Botany.html">Explore Topic</a>
     </div>
-
+    </div>
+    <div class="row">
     <div class="topic-card">
       <img src="/images/biology/genetics.png" alt="Genetics">
       <h3>Genetics</h3>
       <p>Inheritance, DNA, and genetic mechanisms</p>
-      <a href="Genetics/Genetics.html">Practice Now</a>
+      <a href="Genetics/Genetics.html">Explore Topic</a>
     </div>
 
     <div class="topic-card">
       <img src="/images/biology/mol_bio.png" alt="Molecular">
       <h3>Molecular Biology</h3>
       <p>Invisible world that governs all living organisms</p>
-      <a href="Molecular Biology/Molecular.html">Practice Now</a>
+      <a href="Molecular Biology/Molecular.html">Explore Topic</a>
     </div>
     
     <div class="topic-card">
       <img src="/images/biology/ecology.png" alt="Ecology and Environment">
       <h3>Ecology and Environment</h3>
       <p>Interactions between organisms and environment</p>
-      <a href="Ecology and Environment/Ecology.html">Practice Now</a>
+      <a href="Ecology and Environment/Ecology.html">Explore Topic</a>
     </div>
 
     <div class="topic-card">
       <img src="/images/biology/microbiology.png" alt="Microbiology and Biotechnology">
       <h3>Microbiology and Biotechnology</h3>
       <p>Study of microorganisms and their effects</p>
-      <a href="Microbiology and Biotechnology/Microbiology.html">Practice Now</a>
+      <a href="Microbiology and Biotechnology/Microbiology.html">Explore Topic</a>
     </div>
-
+    </div>
+    <div class="row">
      <div class="topic-card">
       <img src="/images/biology/systematics.jpeg" alt="Systematics">
       <h3>Systematics</h3>
       <p>Study of classification and the evolutionary relationship between organisms.</p>
-      <a href="Systematics/Systematics.html">Practice Now</a>
+      <a href="Systematics/Systematics.html">Explore Topic</a>
+    </div>
     </div>
   </div>
 
- <!-- Practice Section -->
-<!-- Theory Box -->
+  <!-- Practice Section -->
+<!-- Mock Tests Box -->
 <div class="practice-section">
   <div class="practice-section-icon">📘</div>
   <div class="practice-section-content">
@@ -248,7 +288,7 @@
   </div>
 </div>
 
-  <!-- Practice Section -->
+<!-- Practice Section -->
 <!-- Mock Tests Box -->
 <div class="practice-section">
   <div class="practice-section-icon">📝</div>

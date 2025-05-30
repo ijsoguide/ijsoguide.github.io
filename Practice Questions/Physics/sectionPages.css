@@ -1,176 +1,181 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f9fbff;
-    color: #1a1a1a;
-  }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #100839;
+  color: #1a1a1a;
+}
 
-  /* Header Section */
-  header {
-    background-color: #2979ff;
-    padding: 3rem 1rem 2rem;
-    text-align: center;
-    color: white;
-  }
 
-  header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
 
-  header p {
-    font-size: 1.1rem;
-    max-width: 700px;
-    margin: 0 auto;
-    color: #e6e6e6;
-  }
+/* Header Section */
+header {
+  background-color: #100839;
+  padding: 3rem 1rem 2rem;
+  text-align: center;
+  color: #e0e0e0;
+}
 
-  /* Page Header */
-  .page-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
-    max-width: 900px;
-    margin: auto;
-  }
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
 
-  .page-header h2 {
-    font-size: 1.8rem;
-  }
+header p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #e0e0e0;
+}
 
-  .back-btn {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    font-weight: 500;
-    cursor: pointer;
-    text-decoration: none;
-    color: #333;
-    transition: background-color 0.2s;
-  }
+/* Page Header */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
 
-  .back-btn:hover {
-    background-color: #f0f0f0;
-  }
+.page-header h2 {
+  font-size: 1.8rem;
+  color: #56a9ff;
+}
 
-  /* Cards */
-  .container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 1rem;
-  }
+.back-btn {
+  background-color: #56a9ff;
+  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.2s;
+}
 
-  .card {
-    background-color: #f9fbff;
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-    padding: 1.2rem 1.5rem;
-    cursor: pointer;
-    transition: box-shadow 0.2s;
-  }
+.back-btn:hover {
+  background-color: #e0e0e0;
+}
 
-  .card:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-  }
+/* Cards */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
 
-  .card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 600;
-    font-size: 1.05rem;
-  }
+.card {
+  background-color: #1f1359;
+  border: 1px solid #56a9ff;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  padding: 1.2rem 1.5rem;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
 
-  .card-content {
-    display: none;
-    margin-top: 0.8rem;
-    animation: fadeIn 0.3s ease-in-out;
-  }
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
 
-  .card-content p {
-    margin-bottom: 1rem;
-    color: #555;
-  }
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #56a9ff;
+}
 
-  .learn-btn {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: #2979ff;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    text-decoration: none;
-    font-size: 0.9rem;
-    transition: background-color 0.2s;
-  }
+.card-content {
+  display: none;
+  margin-top: 0.8rem;
+  animation: fadeIn 0.3s ease-in-out;
+}
 
-  .learn-btn:hover {
-    background-color: #004ecb;
-  }
+.card-content p {
+  margin-bottom: 1rem;
+  color: #e0e0e0;
+}
 
-  .arrow {
-    font-size: 1.2rem;
-  }
+.learn-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #56a9ff;
+  color: #333;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
 
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-5px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
+.learn-btn:hover {
+  background-color: #004ecb;
+}
 
-  /* Practice Section */
-  .practice-section {
-    text-align: center;
-    margin: 3rem auto;
-    padding: 2rem;
-    max-width: 800px;
-    background-color: #f2f6ff;
-    border-radius: 10px;
-    border: 1px solid #2979ff;
-  }
+.arrow {
+  font-size: 1.2rem;
+}
 
-  .practice-section-icon {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
-  .practice-section h4 {
-    color: #2979ff;
-    font-size: 1.4rem;
-  }
+/* Practice Section */
+.practice-section {
+  text-align: center;
+  margin: 3rem auto;
+  padding: 2rem;
+  max-width: 800px;
+  background-color: #1f1359;
+  border-radius: 10px;
+  border: 1px solid #56a9ff;
+}
 
-  .practice-section p {
-    color: #444;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-  }
+.practice-section-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
 
-  .practice-section a {
-    display: inline-block;
-    background-color: #2979ff;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-  }
+.practice-section h4 {
+  color: #2979ff;
+  font-size: 1.4rem;
+}
 
-  .practice-section a:hover {
-    background-color: #0d47a1;
-  }
+.practice-section p {
+  color: #e0e0e0;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
 
-  /* Footer */
-  footer {
-    background-color: #2979ff;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 3rem;
-  }
+.practice-section a {
+  display: inline-block;
+  background-color: #56a9ff;
+  color: #333;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 6px;
+  border-color: #1f1359;
+  font-weight: bold;
+}
+
+.practice-section a:hover {
+  background-color: #0d47a1;
+}
+
+/* Footer */
+footer {
+  background-color: #1f1359;
+  color: #e0e0e0;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
