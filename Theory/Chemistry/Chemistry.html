@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <script src="https://kit.fontawesome.com/04bf603a0f.js" crossorigin="anonymous"></script>
   <script src="../theory.js" defer></script>
- <style>
+  <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
@@ -41,25 +41,59 @@
       margin-top: 3rem;
       margin-bottom: 1rem;
     }
+    .back-button-right {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 900px;
+  margin: 0 auto 1rem auto;
+  padding-right: 1.5rem; /* matches padding of file-actions */
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      padding: 2rem;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
+.back-button-right a {
+  padding: 0.5rem 1.2rem;
+  background-color: #b561ff;
+  color: #333;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
 
-    .topic-card {
-      background-color: #1f1359;
-      color: #f0f0f0;
-      border-radius: 10px;
-      padding: 1.5rem;
-      text-align: center;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+.back-button-right a:hover {
+  background-color: #cea5f2;
+}
+
+.grid-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.topic-card {
+  background-color: #1f1359;
+  color: #f0f0f0;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 430px;
+  width: 250px; /* optional, but useful for consistency */
+}
 
     .topic-card:hover {
       transform: translateY(-5px);
@@ -169,11 +203,12 @@
     <p>Dive into atoms, reactions, and the molecular magic that powers everything around us. Designed for IJSO excellence.</p>
   </header>
 
-  <!-- Topics Title -->
-  <div class="section-title">Topics</div>
-
+  <div class="back-button-right">
+    <a href="../theory.html">← Back to Theory</a>
+  </div>
   <!-- Topics Grid -->
-  <div class="grid">
+  <div class="grid-row">
+    <div class="row">
     <div class="topic-card">
       <img src="Atomic Strcuture.jpeg" alt="Atomic Structure">
       <h3>Atomic Structure and Periodicity</h3>
@@ -184,6 +219,7 @@
     <div class="topic-card">
       <img src="Chemical Bonding.jpg" alt="Chemical Bonding">
       <h3>Chemical Bonding</h3>
+      <br>
       <p>Understand ionic, covalent, and metallic bonding with real-world examples.</p>
       <a href="./Chemical bonding/Chemical Bonding.html">Explore Topic</a>
     </div>
@@ -191,6 +227,7 @@
     <div class="topic-card">
       <img src="States of Matter.png" alt="States of Matter">
       <h3>States of Matter</h3>
+      <br>
       <p>Solid, liquid, gas — and how particles behave in each state.</p>
       <a href="./States of matter/States of Matter.html">Explore Topic</a>
     </div>
@@ -198,13 +235,16 @@
     <div class="topic-card">
       <img src="stoich.webp" alt="Stoichiometry">
       <h3>Stoichiometry</h3>
+      <br>
       <p>Balance equations and calculate moles, mass, and volume.</p>
       <a href="./Stoichiometry/Stoichiometry.html">Explore Topic</a>
     </div>
-
+  </div>
+  <div class="row">
     <div class="topic-card">
       <img src="Chemical Reactions.jpg" alt="Chemical Reactions">
       <h3>Chemical Reactions</h3>
+      <br>
       <p>Types of reactions, balancing, and predicting products.</p>
       <a href="Chemical Reactions/Chemical Reactions.html">Explore Topic</a>
     </div>
@@ -212,6 +252,7 @@
     <div class="topic-card">
       <img src="Acids.jpg" alt="Acids and Bases">
       <h3>Acids, Bases and Salts</h3>
+      <br>
       <p>pH, indicators, neutralization, and common reactions.</p>
       <a href="Acids, Bases and Salts/Acids, Bases and Salts.html">Explore Topic</a>
     </div>
@@ -219,6 +260,7 @@
     <div class="topic-card">
       <img src="Thermochemistry.png" alt="Thermochemistry">
       <h3>Thermochemistry</h3>
+      <br>
       <p>Study energy changes in chemical reactions.</p>
       <a href="Thermochemistry/Thermochemistry.html">Explore Topic</a>
     </div>
@@ -226,13 +268,16 @@
     <div class="topic-card">
       <img src="kinetics.webp" alt="Chemical Kinetics">
       <h3>Chemical Kinetics</h3>
+      <br>
       <p>Explore reaction rates, catalysts, and mechanisms.</p>
       <a href="Chemical Kinetics/Kinetics.html">Explore Topic</a>
     </div>
-
+    </div>
+    <div class="row">
     <div class="topic-card">
       <img src="Equilibrium.jpg" alt="Equilibrium">
       <h3>Equilibrium</h3>
+      <br>
       <p>Dynamic equilibrium, Le Chatelier’s principle, and constants.</p>
       <a href="Equilibrium/Equilibrium.html">Explore Topic</a>
     </div>
@@ -240,6 +285,7 @@
     <div class="topic-card">
       <img src="Electrochemistry.jpg" alt="Electrochemistry">
       <h3>Electrochemistry</h3>
+      <br>
       <p>Electrolysis, redox reactions, and electrochemical cells.</p>
       <a href="Electrochemistry/Electrochemistry.html">Explore Topic</a>
     </div>
@@ -247,8 +293,10 @@
     <div class="topic-card">
       <img src="Organic.jpeg" alt="Organic Chemistry">
       <h3>Organic Chemistry</h3>
+      <br>
       <p>Hydrocarbons, functional groups, and basic reaction types.</p>
       <a href="Organic Chemistry/Organic.html">Explore Topic</a>
+    </div>
     </div>
   </div>
 
