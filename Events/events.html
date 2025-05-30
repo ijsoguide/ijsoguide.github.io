@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IJSO Guide – Events</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #100839;
+      color: #f0f0f0;
+    }
+
+    header {
+      background-color: #1e1e1e;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.5em;
+      color: #00e676;
+      margin: 0;
+    }
+
+    main {
+      padding: 30px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: #00e676;
+      margin-bottom: 40px;
+    }
+    .events-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+    .event-card {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+}
+
+    .event-title {
+      font-size: 1.2em;
+      color: #00e676;
+      margin-bottom: 10px;
+    }
+
+    .event-date {
+      font-size: 0.9em;
+      color: #aaaaaa;
+      margin-bottom: 10px;
+    }
+    .event-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 2px solid #333;
+}
+
+    .event-description {
+      font-size: 1em;
+      color: #f0f0f0;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #1f1359;
+      padding: 15px;
+      text-align: center;
+      color: #f0f0f0;
+      margin-top: 50px;
+    }
+  </style>
+  <script src="/navigationimport.js" defer></script>
+</head>
+<body>
+
+
+  <main>
+    <h2>Upcoming & Past Events</h2>
+<div class="events-container">
+      <!-- Podcast Card -->
+      <div class="event-card" style="align-items: center;">
+        <img src="images/podcast-cover.jpg" alt="Podcast" class="event-image">
+        <div class="event-title">🎙️ IJSO Guide Podcast Launch</div>
+        <div class="event-date">Released: May , 2025</div>
+        <div class="event-description">
+          Tune into our brand-new podcast where we talk to former IJSO medalists, discuss strategies, and share tips on how to conquer the competition. Available on Spotify, Apple Podcasts, and YouTube.
+        </div>
+      </div>
+      <div class="event-card" style="align-items: center;">
+        <img src-="images/website.jpg" alt="Website Launch" class="event-image">
+        <div class="event-title">🌐 A Guide to the IJSO Website Launch</div>
+        <div class="event-date">Launched: August 01, 2025</div>
+        <div class="event-description">
+          Explore our new website designed to help students prepare for the IJSO. Find resources, practice problems, and community support all in one place. 
+      </div>
+    </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </footer>
+
+</body>
+</html>
