@@ -1,6 +1,6 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #0a192f;
+  background-color: #100839;
   color: #f0e9d6;
   margin: 0;
   padding: 20px;
@@ -42,7 +42,7 @@ button:hover {
 
 .card {
   position: relative;
-  background-color: #112240;
+  background-color: #1f1359;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
@@ -113,7 +113,34 @@ button:hover {
 footer {
   text-align: center;
   padding: 2rem 1rem;
-  background-color: #112240;
+  background-color: #1f1359;
   border-top: 2px solid #233554;
   margin-top: 3rem;
+}
+.back-button-right {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 900px;
+  margin: 0 auto 1rem auto;
+  padding-right: 1.5rem; /* matches padding of file-actions */
+}
+
+.back-button-right a {
+  padding: 0.5rem 1.2rem;
+  background-color: #1e3a8a;
+  color: #f0f0f0;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.back-button-right a:hover {
+  background-color: #2946b5;
+}
+p{
+  text-align: center;
+  font-size: 0.9em;
+  color: #b0b0b0;
+  margin-top: 20px;
 }

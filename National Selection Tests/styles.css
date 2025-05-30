@@ -9,13 +9,10 @@ html {
   scroll-behavior: smooth;
 }
 
-
-
 header {
   text-align: center;
   padding: 3rem 1rem;
 }
-
 
 h1 {
   text-align: center;
@@ -82,4 +79,32 @@ button {
 
 button:hover {
   background-color: yellow;
+}
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #1f1359;
+  border-top: 2px solid #233554;
+  margin-top: 3rem;
+}
+.back-button-right {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 900px;
+  margin: 0 auto 1rem auto;
+  padding-right: 1.5rem; /* matches padding of file-actions */
+}
+
+.back-button-right a {
+  padding: 0.5rem 1.2rem;
+  background-color: #1e3a8a;
+  color: #f0f0f0;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.back-button-right a:hover {
+  background-color: #2946b5;
 }
