@@ -64,20 +64,18 @@
 }
 
 .grid-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 80%;
+  margin: auto;
 }
 
-.row {
-  display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
-  gap: 2rem;
-  margin-bottom: 2rem;
+@media(width < 768px){
+  .grid-row{
+    grid-template-columns: 1fr;
+  }
 }
 
 .topic-card {
@@ -209,7 +207,7 @@
 
   <!-- Topics Grid -->
   <div class="grid-row">
-    <div class="row">
+
     <div class="topic-card">
       <img src="/images/biology/gay-ahh-shii.png" alt="Cell Biology">
       <h3>Cell Biology</h3>
@@ -237,8 +235,7 @@
       <p>Plant structure, function, and diversity</p>
       <a href="Botany/Botany.html">Explore Topic</a>
     </div>
-    </div>
-    <div class="row">
+
     <div class="topic-card">
       <img src="/images/biology/genetics.png" alt="Genetics">
       <h3>Genetics</h3>
@@ -266,8 +263,7 @@
       <p>Study of microorganisms and their effects</p>
       <a href="Microbiology and Biotechnology/Microbiology.html">Explore Topic</a>
     </div>
-    </div>
-    <div class="row">
+
      <div class="topic-card">
       <img src="/images/biology/systematics.jpeg" alt="Systematics">
       <h3>Systematics</h3>
