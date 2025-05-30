@@ -16,11 +16,11 @@ html {
   scroll-behavior: smooth;
 }
 
-@media (width <= 768px){
+/*@media (width <= 768px){
   .grid{
     margin-top: 65px;
   }
-}
+}*/
 
 
 .grid {

@@ -39,3 +39,10 @@ if (!(document.head.innerHTML.includes("mobilenavigation.css"))){
     
     document.head.appendChild(link1);
 }
+if (!(document.head.innerHTML.includes("https://kit.fontawesome.com/04bf603a0f.js"))){
+  const link2 = document.createElement('script');
+  link2.src = "https://kit.fontawesome.com/04bf603a0f.js";
+  link2.crossOrigin = "anonymous";
+  
+  document.head.appendChild(link2);
+}
