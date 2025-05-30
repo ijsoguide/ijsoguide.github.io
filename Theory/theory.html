@@ -37,7 +37,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 2rem;
-      justify-content: space-between;
+      justify-content: center;
     }
 
     .card {
@@ -60,8 +60,12 @@
     }
 
     .card .content {
-      padding: 1.5rem;
-    }
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 
     /* Color-coded headings */
     .physics h2 {
@@ -138,13 +142,14 @@
   <!-- Cards Section -->
   <div class="container">
     <div class="cards">
-
       <!-- Physics -->
       <div class="card physics">
         <img src="physics.jpeg" alt="Physics" />
         <div class="content">
           <h2>Physics</h2>
+          <br>
           <p>Mechanics, thermodynamics, electricity — everything in motion and force!</p>
+          <br>
           <a href="Physics/physics.html">Explore Physics</a>
         </div>
       </div>
@@ -154,7 +159,9 @@
         <img src="chemistry.avif" alt="Chemistry" />
         <div class="content">
           <h2>Chemistry</h2>
+          <br>
           <p>Discover atoms, bonds, reactions, and the wonders of molecular science.</p>
+          <br>
           <a href="Chemistry/Chemistry.html">Explore Chemistry</a>
         </div>
       </div>
@@ -164,7 +171,9 @@
         <img src="biology.avif" alt="Biology" />
         <div class="content">
           <h2>Biology</h2>
+          <br>
           <p>Unravel the secrets of life — from DNA to ecosystems and evolution.</p>
+          <br>
           <a href="Biology/Biology.html">Explore Biology</a>
         </div>
       </div>
