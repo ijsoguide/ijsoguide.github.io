@@ -8,15 +8,15 @@
   <script src="/navigationimport.js" defer></script>
 </head>
 <body>
-  <div id="back-btn">
-  <button onclick="goBack()">← Back</button>
-</div>
 
   <h1>Australian Exams (2020–2023)</h1> <!-country->
 
   <div id="controls">
     <button onclick="sortByDifficulty(true)">Sort: Easiest → Hardest</button>
     <button onclick="sortByDifficulty(false)">Sort: Hardest → Easiest</button>
+  </div>
+  <div class="back-button-right">
+    <a href="../selections.html">← Back to National Selection Tests</a>
   </div>
 
   <div class="grid" id="examGrid"></div>
