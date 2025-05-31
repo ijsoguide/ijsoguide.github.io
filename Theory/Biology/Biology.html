@@ -63,19 +63,24 @@
   background-color: #7eebab;
 }
 
-.grid-row {
+/*.grid-row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
   padding: 2rem;
   max-width: 80%;
   margin: auto;
-}
+}*/
 
-@media(width < 768px){
-  .grid-row{
-    grid-template-columns: 1fr;
-  }
+.grid-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 95%;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .topic-card {
@@ -186,6 +191,10 @@
     @media(width <= 768px){
       #navbarList{
         background-color: #0d47a1;
+      }
+      
+      .topic-card{
+        width: 100%;
       }
     }
     
