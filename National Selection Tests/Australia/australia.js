@@ -1,12 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const exams = [
-    {
-      year: 2024,
-      difficulty: 3,
-      paperLink: "https://example.com/australia/2024-paper.pdf",
-      solutionLink: "https://example.com/australia/2024-solutions.pdf"
-    },
-    {
+       {
       year: 2023,
       difficulty: 3,
       paperLink: "https://example.com/australia/2023-paper.pdf",
@@ -30,30 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
       paperLink: "https://example.com/australia/2020-paper.pdf",
       solutionLink: "https://example.com/australia/2020-solutions.pdf"
     },
-    {
-      year: 2019,
-      difficulty: 4,
-      paperLink: "https://example.com/australia/2019-paper.pdf",
-      solutionLink: "https://example.com/australia/2019-solutions.pdf"
-    },
-    {
-      year: 2018,
-      difficulty: 3,
-      paperLink: "https://example.com/australia/2018-paper.pdf",
-      solutionLink: "https://example.com/australia/2018-solutions.pdf"
-    },
-    {
-      year: 2017,
-      difficulty: 3,
-      paperLink: "https://example.com/australia/2017-paper.pdf",
-      solutionLink: "https://example.com/australia/2017-solutions.pdf"
-    },
-    {
-      year: 2016,
-      difficulty: 4,
-      paperLink: "https://example.com/australia/2016-paper.pdf",
-      solutionLink: "https://example.com/australia/2016-solutions.pdf"
-    }
   ];
 
   function renderExams(list) {
