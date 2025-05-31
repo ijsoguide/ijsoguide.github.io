@@ -1,59 +1,149 @@
 document.addEventListener("DOMContentLoaded", () => {
   const exams = [
     {
-      year: 2024,
-      difficulty: 1,
-      paperLink: "https://example.com/romania/2024-paper.pdf",
-      solutionLink: "https://example.com/romania/2024-solutions.pdf"
+      title: "2023 Nationals",
+      difficulty: 3,
+      paperRO: "https://example.com/romania/2023-paper-ro.pdf",
+      paperEN: "https://example.com/romania/2023-paper-en.pdf",
+      solutionsRO: "https://example.com/romania/2023-solutions-ro.pdf",
+      solutionsEN: "https://example.com/romania/2023-solutions-en.pdf"
     },
     {
-      year: 2023,
-      difficulty: 1,
-      paperLink: "https://example.com/romania/2023-paper.pdf",
-      solutionLink: "https://example.com/romania/2023-solutions.pdf"
+      title: "2023 Regionals",
+      difficulty: 2,
+      paperRO: "https://example.com/romania/2023-regionals-paper-ro.pdf",
+      paperEN: "https://example.com/romania/2023-regionals-paper-en.pdf",
+      solutionsRO: "https://example.com/romania/2023-regionals-solutions-ro.pdf",
+      solutionsEN: "https://example.com/romania/2023-regionals-solutions-en.pdf"
     },
     {
-      year: 2022,
-      difficulty: 1,
-      paperLink: "https://example.com/romania/2022-paper.pdf",
-      solutionLink: "https://example.com/romania/2022-solutions.pdf"
+      title: "2022 Nationals",
+      difficulty: 3,
+      paperRO: "https://example.com/romania/2023-paper-ro.pdf",
+      paperEN: "https://example.com/romania/2023-paper-en.pdf",
+      solutionsRO: "https://example.com/romania/2023-solutions-ro.pdf",
+      solutionsEN: "https://example.com/romania/2023-solutions-en.pdf"
     },
     {
-      year: 2021,
-      difficulty: 1,
-      paperLink: "https://example.com/romania/2021-paper.pdf",
-      solutionLink: "https://example.com/romania/2021-solutions.pdf"
+      title: "2022 Regionals",
+      difficulty: 2,
+      paperRO: "https://example.com/romania/2023-regionals-paper-ro.pdf",
+      paperEN: "https://example.com/romania/2023-regionals-paper-en.pdf",
+      solutionsRO: "https://example.com/romania/2023-regionals-solutions-ro.pdf",
+      solutionsEN: "https://example.com/romania/2023-regionals-solutions-en.pdf"
     },
     {
-      year: 2020,
-      difficulty: 1,
-      paperLink: "https://example.com/romania/2020-paper.pdf",
-      solutionLink: "https://example.com/romania/2020-solutions.pdf"
+      title: "2021 Nationals",
+      difficulty: 3,
+      paperRO: "https://example.com/romania/2023-paper-ro.pdf",
+      paperEN: "https://example.com/romania/2023-paper-en.pdf",
+      solutionsRO: "https://example.com/romania/2023-solutions-ro.pdf",
+      solutionsEN: "https://example.com/romania/2023-solutions-en.pdf"
     },
     {
-      year: 2019,
-      difficulty: 1,
-      paperLink: "https://example.com/romania/2019-paper.pdf",
-      solutionLink: "https://example.com/romania/2019-solutions.pdf"
+      title: "2021 Regionals",
+      difficulty: 2,
+      paperRO: "https://example.com/romania/2023-regionals-paper-ro.pdf",
+      paperEN: "https://example.com/romania/2023-regionals-paper-en.pdf",
+      solutionsRO: "https://example.com/romania/2023-regionals-solutions-ro.pdf",
+      solutionsEN: "https://example.com/romania/2023-regionals-solutions-en.pdf"
     },
     {
-      year: 2018,
-      difficulty: 1,
-      paperLink: "https://example.com/romania/2018-paper.pdf",
-      solutionLink: "https://example.com/romania/2018-solutions.pdf"
+      title: "2020 Nationals",
+      difficulty: 3,
+      paperRO: "https://example.com/romania/2023-paper-ro.pdf",
+      paperEN: "https://example.com/romania/2023-paper-en.pdf",
+      solutionsRO: "https://example.com/romania/2023-solutions-ro.pdf",
+      solutionsEN: "https://example.com/romania/2023-solutions-en.pdf"
     },
     {
-      year: 2017,
-      difficulty: 1,
-      paperLink: "https://example.com/romania/2017-paper.pdf",
-      solutionLink: "https://example.com/romania/2017-solutions.pdf"
+      title: "2020 Regionals",
+      difficulty: 2,
+      paperRO: "https://example.com/romania/2023-regionals-paper-ro.pdf",
+      paperEN: "https://example.com/romania/2023-regionals-paper-en.pdf",
+      solutionsRO: "https://example.com/romania/2023-regionals-solutions-ro.pdf",
+      solutionsEN: "https://example.com/romania/2023-regionals-solutions-en.pdf"
     },
     {
-      year: 2016,
-      difficulty: 1,
-      paperLink: "https://example.com/romania/2016-paper.pdf",
-      solutionLink: "https://example.com/romania/2016-solutions.pdf"
-    }
+      title: "2019 Nationals",
+      difficulty: 3,
+      paperRO: "https://example.com/romania/2023-paper-ro.pdf",
+      paperEN: "https://example.com/romania/2023-paper-en.pdf",
+      solutionsRO: "https://example.com/romania/2023-solutions-ro.pdf",
+      solutionsEN: "https://example.com/romania/2023-solutions-en.pdf"
+    },
+    {
+      title: "2019 Regionals",
+      difficulty: 2,
+      paperRO: "https://example.com/romania/2023-regionals-paper-ro.pdf",
+      paperEN: "https://example.com/romania/2023-regionals-paper-en.pdf",
+      solutionsRO: "https://example.com/romania/2023-regionals-solutions-ro.pdf",
+      solutionsEN: "https://example.com/romania/2023-regionals-solutions-en.pdf"
+    },
+    {
+      title: "2018 Nationals",
+      difficulty: 3,
+      paperRO: "https://example.com/romania/2023-paper-ro.pdf",
+      paperEN: "https://example.com/romania/2023-paper-en.pdf",
+      solutionsRO: "https://example.com/romania/2023-solutions-ro.pdf",
+      solutionsEN: "https://example.com/romania/2023-solutions-en.pdf"
+    },
+    {
+      title: "2018 Regionals",
+      difficulty: 2,
+      paperRO: "https://example.com/romania/2023-regionals-paper-ro.pdf",
+      paperEN: "https://example.com/romania/2023-regionals-paper-en.pdf",
+      solutionsRO: "https://example.com/romania/2023-regionals-solutions-ro.pdf",
+      solutionsEN: "https://example.com/romania/2023-regionals-solutions-en.pdf"
+    },
+    {
+      title: "2017 Nationals",
+      difficulty: 3,
+      paperRO: "https://example.com/romania/2023-paper-ro.pdf",
+      paperEN: "https://example.com/romania/2023-paper-en.pdf",
+      solutionsRO: "https://example.com/romania/2023-solutions-ro.pdf",
+      solutionsEN: "https://example.com/romania/2023-solutions-en.pdf"
+    },
+    {
+      title: "2017 Regionals",
+      difficulty: 2,
+      paperRO: "https://example.com/romania/2023-regionals-paper-ro.pdf",
+      paperEN: "https://example.com/romania/2023-regionals-paper-en.pdf",
+      solutionsRO: "https://example.com/romania/2023-regionals-solutions-ro.pdf",
+      solutionsEN: "https://example.com/romania/2023-regionals-solutions-en.pdf"
+    },
+    {
+      title: "2016 Nationals",
+      difficulty: 3,
+      paperRO: "https://example.com/romania/2023-paper-ro.pdf",
+      paperEN: "https://example.com/romania/2023-paper-en.pdf",
+      solutionsRO: "https://example.com/romania/2023-solutions-ro.pdf",
+      solutionsEN: "https://example.com/romania/2023-solutions-en.pdf"
+    },
+    {
+      title: "2016 Regionals",
+      difficulty: 2,
+      paperRO: "https://example.com/romania/2023-regionals-paper-ro.pdf",
+      paperEN: "https://example.com/romania/2023-regionals-paper-en.pdf",
+      solutionsRO: "https://example.com/romania/2023-regionals-solutions-ro.pdf",
+      solutionsEN: "https://example.com/romania/2023-regionals-solutions-en.pdf"
+    },
+    {
+      title: "2015 Nationals",
+      difficulty: 3,
+      paperRO: "https://example.com/romania/2023-paper-ro.pdf",
+      paperEN: "https://example.com/romania/2023-paper-en.pdf",
+      solutionsRO: "https://example.com/romania/2023-solutions-ro.pdf",
+      solutionsEN: "https://example.com/romania/2023-solutions-en.pdf"
+    },
+    {
+      title: "2015 Regionals",
+      difficulty: 2,
+      paperRO: "https://example.com/romania/2023-regionals-paper-ro.pdf",
+      paperEN: "https://example.com/romania/2023-regionals-paper-en.pdf",
+      solutionsRO: "https://example.com/romania/2023-regionals-solutions-ro.pdf",
+      solutionsEN: "https://example.com/romania/2023-regionals-solutions-en.pdf"
+    },
   ];
 
   function renderExams(list) {
@@ -64,9 +154,9 @@ document.addEventListener("DOMContentLoaded", () => {
       const card = document.createElement("div");
       card.className = "card";
 
-      const year = document.createElement("div");
-      year.className = "year";
-      year.textContent = exam.year;
+      const title = document.createElement("div");
+      title.className = "year";
+      title.textContent = exam.title;
 
       const stars = document.createElement("div");
       stars.className = "stars";
@@ -75,11 +165,13 @@ document.addEventListener("DOMContentLoaded", () => {
       const tooltip = document.createElement("div");
       tooltip.className = "tooltip";
       tooltip.innerHTML = `
-        <a href="${exam.paperLink}" target="_blank">Paper</a>
-        <a href="${exam.solutionLink}" target="_blank">Solutions</a>
+        <a href="${exam.paperRO}" target="_blank">Paper (RO)</a>
+        <a href="${exam.paperEN}" target="_blank">Paper (EN)</a>
+        <a href="${exam.solutionsRO}" target="_blank">Solutions (RO)</a>
+        <a href="${exam.solutionsEN}" target="_blank">Solutions (EN)</a>
       `;
 
-      card.appendChild(year);
+      card.appendChild(title);
       card.appendChild(stars);
       card.appendChild(tooltip);
 
