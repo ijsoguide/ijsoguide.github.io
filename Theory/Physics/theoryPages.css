@@ -187,19 +187,16 @@ border-bottom: 2px solid #cde8ff;
     }
     
     thead {
-      background-color: #1e88e5; /* light blue header */
-      color: #56a9ff;
+      color: #56a9ff; 
+      background-color: #000000;
     }
     
     th, td {
       padding: 10px;
-      border: 1px solid #ccc;
+      border: 1px solid #444; 
     }
     
-    tbody tr:nth-child(even) {
-      background-color: #2c2c2c; /* dark gray rows */
-    }
-    
-    tbody tr:nth-child(odd) {
-      background-color: #1f1f1f; /* slightly lighter for contrast */
+    tbody tr{
+      background-color: #2a2a2a; 
+      color: #d0d0d0; 
     }
