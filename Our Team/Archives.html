@@ -9,6 +9,9 @@
   <link rel="icon" href="../favicon.png" type="image/x-ico"/>
   <script src="https://kit.fontawesome.com/04bf603a0f.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="/mobilenavigation.css">
+  <link rel="stylesheet" href="preload.css">
+  <script src="preload.js" defer></script>
    <style>
     body {
       font-family: 'Montserrat', 'Segoe UI', sans-serif;
@@ -32,6 +35,20 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       padding: 1.5rem;
       margin-bottom: 1.5rem;
+    }
+
+    @media (width < 768px){
+      .member-box{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+      .member-box img{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 1rem;
+      }
     }
 
     .member-box img {
@@ -76,6 +93,8 @@
   <script src="/navigationimport.js" defer></script>
 </head>
 <body>
+
+  <div id="preload"></div>
  
   <!-- Main Content -->
   <div class="container">
@@ -117,7 +136,7 @@ Now, I’m super excited to be a coordinator for this IJSO preparation platform.
       </div>
     
       <div class="member-box">
-        <img src="andrej.jpg" alt="andrej">
+        <img src="Images/placeholder.png" alt="andrej">
         <div class="member-details">
           <h3>Andrej Tasikj</h3>
           <h4>Physics Team Member</h4>
@@ -135,7 +154,7 @@ Now, I’m super excited to be a coordinator for this IJSO preparation platform.
     </div>
 
     <div class="member-box">
-      <img src="" alt="Jujen">
+      <img src="Images/placeholder.png" alt="Jujen">
       <div class="member-details">
         <h3>Butu Alexia</h3>
         <h4>Biology Teams Memberr</h4>
@@ -180,7 +199,7 @@ Now, I’m super excited to be a coordinator for this IJSO preparation platform.
       </div>
 
     <div class="member-box">
-      <img src="filip.jpg" alt="Filip Kilibarda">
+      <img src="Images/placeholder.png" alt="Filip Kilibarda">
       <div class="member-details">
         <h3>Filip Kilibarda</h3>
         <h4>Podcast Coordinator, Lead Writer, Physics + Chemistry + Biology + Website Teams Member</h4>
@@ -225,16 +244,16 @@ Now, I’m super excited to be a coordinator for this IJSO preparation platform.
       </div>
     
     <div class="member-box">
-        <img src="josephine.jpg" alt="josephine">
+        <img src="Images/josephine.jpg" alt="josephine">
         <div class="member-details">
           <h3>Josephine Ankomah</h3>
           <h4>Biology Team Leader</h4>
-          <p>Description here.</p>
+          <p>My name is Josephine Ankomah and I am from Canada. I am passionate about neuroscience, biology, and medical research. I enjoy swimming, skating, and playing volleyball. I hope to make a positive difference and promote inclusivity among fellow young scientists!</p>
         </div>
       </div>
 
      <div class="member-box">
-      <img src="kasiban.jpg" alt="keyner">
+      <img src="Images/placeholder.png" alt="keyner">
       <div class="member-details">
         <h3>Keyner Avendano</h3>
         <h4>Spanish Translator</h4>
@@ -252,7 +271,7 @@ Now, I’m super excited to be a coordinator for this IJSO preparation platform.
     </div>
 
     <div class="member-box">
-      <img src="mahart.jpg" alt="Maharat">
+      <img src="Images/placeholder.png" alt="Maharat">
       <div class="member-details">
         <h3>Maharat [Last Name]</h3>
         <h4>Chemistry Team Member</h4>
@@ -297,7 +316,7 @@ Now, I’m super excited to be a coordinator for this IJSO preparation platform.
       </div>
 
       <div class="member-box">
-        <img src="nemanja.jpg" alt="nemanja">
+        <img src="Images/placeholder.png" alt="nemanja">
         <div class="member-details">
           <h3>Nemanja Maslak </h3>
           <h4>Physics + Chemistry Teams Member</h4>
@@ -343,7 +362,7 @@ Now, I’m super excited to be a coordinator for this IJSO preparation platform.
 
     
     <div class="member-box">
-        <img src="chlorplast.jpg" alt="chlorplast">
+        <img src="Images/placeholder.png" alt="chlorplast">
         <div class="member-details">
           <h3>Rares Gheorghe</h3>
           <h4>Biology Team Leader</h4>
@@ -352,7 +371,7 @@ Now, I’m super excited to be a coordinator for this IJSO preparation platform.
       </div>
     
       <div class="member-box">
-        <img src="muntean.jpg" alt="muntean">
+        <img src="Images/muntean.jpeg" alt="muntean">
         <div class="member-details">
           <h3>Rares Muntean</h3>
           <h4>Physics Team Member</h4>
@@ -370,7 +389,7 @@ Now, I’m super excited to be a coordinator for this IJSO preparation platform.
       </div>
 
       <div class="member-box">
-        <img src="tamara.jpg" alt="tamara">
+        <img src="Images/placeholder.png" alt="tamara">
         <div class="member-details">
           <h3>Tamara [Last Name]</h3>
           <h4>Biology Team Member</h4>
