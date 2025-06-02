@@ -21,21 +21,21 @@
 
   <!-- Main content -->
   <div class="container">
-<h3>Basics of the Genetic Code</h3>
+<h2>Basics of the Genetic Code</h2>
 <ul>
     <li>The genetic code is the set of rules by which mRNA sequences are translated into proteins.</li>
     <li>mRNA is made of four bases: Adenine (A), Uracil (U), Cytosine (C), and Guanine (G).</li>
     <li>These bases are read three at a time in units called codons.</li>
 </ul>
 
-<h3>Codons</h3>
+<h2>Codons</h2>
 <ul>
     <li>A codon is a sequence of three mRNA bases that corresponds to one amino acid or a signal.</li>
     <li>There are 64 codons (4³ combinations).</li>
     <li>Some amino acids have more than one codon (redundancy).</li>
 </ul>
 
-<h3>Start and Stop Codons</h3>
+<h2>Start and Stop Codons</h2>
 <ul>
     <li>The Start codon is AUG – it codes for Methionine (Met) and signals the start of translation.</li>
     <li>Stop codons do not code for any amino acid. They signal the end of translation:
@@ -47,7 +47,7 @@
     </li>
 </ul>
 
-<h3>Reading Frame and Codon Identification</h3>
+<h2>Reading Frame and Codon Identification</h2>
 <p>To read an mRNA sequence:</p>
 <ol type="1">
     <li>Start scanning from the 5’ end until you find the first AUG.</li>
@@ -56,15 +56,15 @@
     <li>Translation only happens in one reading frame.</li>
 </ol>
 
-<h3>How to Translate a Random Sequence</h3>
+<h2>How to Translate a Random Sequence</h2>
 <p>If given a sequence (e.g., bases 671 to 700), follow these steps:</p>
 
-<h4>Step 1: Count how many total bases</h4>
+<h3>Step 1: Count how many total bases</h3>
 <ul>
     <li>Example: 700 – 671 + 1 = 30 bases</li>
 </ul>
 
-<h4>Step 2: Find if the sequence starts in the middle of a codon</h4>
+<h3>Step 2: Find if the sequence starts in the middle of a codon</h3>
 <ul>
     <li>Divide the starting base number (e.g., 671) by 3</li>
     <li>Do 671 ÷ 3 = 223 remainder 2</li>
@@ -73,17 +73,16 @@
 <p>🔹 Remainder 1 → skip 2 bases (start from base 673)</p>
 <p>🔹 Remainder 2 → skip 1 base (start from base 672)</p>
 
-<h4>Step 3: After adjusting, divide the remaining sequence into groups of 3 (codons)</h4>
+<h3>Step 3: After adjusting, divide the remaining sequence into groups of 3 (codons)</h3>
 
-<h3>🔬 Example</h3>
+<h2>🔬 Example</h2>
 <p>Given: Bases 671 to 700:</p>
 <p style="color :green;"> C U C G A G U U G C A U A A C C G U G A A G U G C A G A G U U</p>
-<h4>Step 1: 30 bases</h4>
-<h4>Step 2: 671 ÷ 3 = remainder 2 → skip 1 base (start from base 672)</h4>
-<p>New sequence (29 bases):</p>
+<h3>Step 1: 30 bases</h3>
+<h3>Step 2: 671 ÷ 3 = remainder 2 → skip 1 base (start from base 672)</h3>
 <p style="color :green;">U C G A G U U G C A U A A C C G U G A A G U G C A G A G U U</p>
 
-<h4>Step 3: Divide into codons:</h4>
+<h3>Step 3: Divide into codons:</h3>
 <ul>
     <li>UCG → Ser</li>
     <li>AGU → Ser</li>
@@ -97,7 +96,7 @@
     <li>GUU →Valine</li>
 </ul>
 
-<h4>✅ Amino acids:</h4>
+<h3>✅ Amino acids:</h3>
 <p> Ser - Ser - Cys - Ile - Thr - Val - Lys - Cys - Arg - Val</p>
     <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
       Written by <strong>Kasiban Parthipan</strong>
