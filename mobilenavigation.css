@@ -6,7 +6,8 @@
 
 nav {
     background-color: var(--navblue);
-    padding: 1rem 2rem;
+    height: 85px; /* Fixed height */
+    padding: 0 2rem; /* Remove vertical padding */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,7 +15,6 @@ nav {
     position: relative;
     font-family: 'Montserrat', sans-serif;
   }
-
   .logo {
     display: flex;
     align-items: center;
@@ -22,7 +22,7 @@ nav {
   
   .logo-image {
     width: auto;
-    height: 45px;
+    height: 85px;
     margin-right: 15px;
     margin-left: -15px;
   }
