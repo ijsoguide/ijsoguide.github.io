@@ -115,7 +115,7 @@ nav {
   
     ul.menu {
       flex-direction: column;
-      background-color: #112240;
+      background-color: var(--navblue);
       position: fixed;
       top: 0;
       right: -250px;
