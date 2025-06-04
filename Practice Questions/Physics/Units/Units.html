@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Units and Dimensions Problems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../sectionPages.css">
+  <script src="/navigationimport.js" defer></script>
+</head>
+<body>
+
+  
+
+  <!-- Header Section -->
+  <header>
+    <h1>Units and Dimensions Problems</h1>
+    <p>Test your grasp of physical quantities, SI units, and dimensional formulas with questions that lay the foundation for solving real-world physics problems.</p>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>Units and Dimensions Problems</h2>
+    <a class="back-btn" href="../physics.html">← Back to Physics</a>
+  </div>
+
+  <!-- Cards -->
+  <div class="container">
+
+    <!-- Units -->
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Units <span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Practice identifying base and derived units, using SI prefixes, and solving problems that test your understanding of how physical quantities are measured.</p>
+        <a class="learn-btn" href="">Practice Now →</a>
+      </div>
+    </div>
+
+    <!-- Dimensions -->
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Dimensions <span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Strengthen your ability to break down complex quantities into their fundamental dimensions and validate equations using dimensional reasoning.</p>
+        <a class="learn-btn" href="">Practice Now →</a>
+      </div>
+    </div>
+
+    <!-- Dimensional Analysis -->
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Dimensional Analysis <span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Practice verifying physical equations, identifying errors, and deriving relationships — all through the power of dimensional analysis.</p>
+        <a class="learn-btn" href="">Practice Now →</a>
+      </div>
+    </div>
+
+    <!-- Unit Conversions -->
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Unit Conversions <span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Sharpen your skill in switching between units, using prefixes, and solving multi-step problems that demand precise conversions.</p>
+        <a class="learn-btn" href="">Practice Now →</a>
+      </div>
+    </div>
+
+
+    <!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">📘</div>
+  <div class="practice-section-content">
+    <h4>Ready to dive into units theory?</h4>
+    <p>Explore our collection of theory content in units, designed to enhance your understanding and knowledge of key concepts.</p>
+    <a href="../../../Theory/Physics/Astrophysics/Astrophysics.html">View Units Theory Content</a>
+  </div>
+</div>
+
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 A Guide to the IJSO. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleCard(card) {
+      const content = card.querySelector('.card-content');
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach(c => {
+        if (c !== card) c.querySelector('.card-content').style.display = 'none';
+      });
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>
