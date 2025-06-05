@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coming Soon – Guide to IJSO</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #100839;
+      color: #d0d0d0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      padding: 30px;
+      border: 2px solid #ffcb58;
+      border-radius: 20px;
+      background-color: #1f1359;
+      box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+      max-width: 600px;
+    }
+
+    h1 {
+      color: #ffcb58;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    .date {
+      margin-top: 15px;
+      font-size: 1rem;
+      color: #999;
+      font-style: italic;
+    }
+
+    .back-button {
+      margin-top: 25px;
+      padding: 10px 20px;
+      background-color: #ffcb58;
+      color: #100839;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #f5bf26;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Coming Soon!</h1>
+    <p>This page is currently under development as part of our Main Launch.</p>
+    <p>It will be completed and fully available by our official release date.</p>
+    <div class="date">📅 Full Launch: 6th September 2025</div>
+
+    <button class="back-button" onclick="goBack()">← Go Back</button>
+  </div>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</body>
+</html>
