@@ -1,24 +1,8 @@
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: #f4f4f9;
-    color: #333;
+    background: #100839;
+    color: #f0f0f0;
     margin: 0;
-  }
-  
-  .navbar {
-    background-color: #2e7d32;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-  }
-  
-  .navbar a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    margin-left: 1rem;
   }
   
   .landing-page {
@@ -29,7 +13,7 @@ body {
   }
   
   .overlay {
-    background: rgba(0,0,0,0.6);
+    background: #100839;
     height: 100%;
     width: 100%;
     display: flex;
@@ -39,7 +23,7 @@ body {
   
   .landing-content {
     text-align: center;
-    color: white;
+    color: #f0f0f0;
     position: relative;
   }
   
@@ -55,11 +39,11 @@ body {
   
   .landing-content button {
     padding: 0.75rem 1.5rem;
-    background: #2e7d32;
+    background: #40cb7a;
     border: none;
     border-radius: 6px;
     font-size: 1rem;
-    color: white;
+    color: #333;
     cursor: pointer;
   }
   
@@ -79,11 +63,11 @@ body {
   }
   
   .back-btn {
-    background-color: #fff;
+    background-color: #40cb7a;
     border: 1px solid #ccc;
     padding: 0.5rem 1rem;
     border-radius: 6px;
-    color: #2e7d32;
+    color: #333;
     text-decoration: none;
     font-weight: 500;
   }
@@ -102,7 +86,7 @@ body {
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    background-color: #ccc;
+    background-color: #1f1359;
     border: none;
     position: relative;
     cursor: pointer;
@@ -117,7 +101,7 @@ body {
   .toggle-button span {
     position: relative;
     z-index: 2;
-    color: white;
+    color: #f0f0f0;
   }
   
   .toggle-button.green { background-color: #4caf50; }
@@ -160,7 +144,7 @@ body {
   .container {
     max-width: 800px;
     margin: auto;
-    background: white;
+    background: #1f1359;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -185,8 +169,8 @@ body {
   
   .buttons button {
     padding: 0.5rem 1rem;
-    background-color: #2e7d32;
-    color: white;
+    background-color: #40cb7a;
+    color: #333;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -202,8 +186,8 @@ body {
   }
   
   .footer {
-    background: #2e7d32;
-    color: white;
+    background: #1f1359;
+    color: #f0f0f0;
     text-align: center;
     padding: 20px;
     font-size: 0.9em;
