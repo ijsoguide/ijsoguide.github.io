@@ -26,36 +26,35 @@ color: #333;
 }
 
 .page-header {
-      display: flex;
-      flex-direction: column;
-      max-width: 900px;
-      margin: 2rem auto 1rem;
-      padding: 0 2rem;
-    }
-    
-    .page-header h2 {
-      font-size: 1.8rem;
-      color: #40cb7a;
-      margin-bottom: 1rem;
-    }
-    
-    .back-btn {
-      display: inline-block;
-      background-color: #40cb7a;
-      border: 1px solid #ccc;
-      padding: 0.5rem 1rem;
-      border-radius: 8px;
-      font-weight: 500;
-      cursor: pointer;
-      text-decoration: none;
-      color: #333;
-      transition: background-color 0.2s;
-      margin-top: 0.5rem;
-      margin-left: auto;
-    }
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .page-header h2 {
+    font-size: 1.8rem;
+    color: #40cb7a;
+  }
+  
+  .back-btn {
+    background-color: #40cb7a;
+    border: 1px solid #ccc;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.2s;
+    margin-top: 0.5rem;
+    margin-left: auto;
+  }
 
 .back-btn:hover {
-background-color: #f0f0f0;
+background-color: #7eebab;
 }
 
 .container {
