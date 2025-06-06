@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calorimeters</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../theoryPages.css">
+  <script src="/navigationimport.js" defer></script>
+</head>
+<body>
+
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Calorimeters</h2>
+    <a href="../Thermo.html" class="back-btn">← Back to Thermodynamics</a>
+  </div>
+
+  <!-- Main content -->
+  <div class="container">
+    <p>
+      A <strong>calorimeter</strong> is a device used to measure the heat exchanged in physical and chemical processes. In school-level experiments and Olympiads, calorimeters are commonly used to determine specific heat capacities, latent heats, or heat released/absorbed during reactions.
+    </p>
+    <p>
+      The principle behind calorimetry is the <strong>conservation of energy</strong>. If no heat is lost to the environment, the heat lost by hot objects is equal to the heat gained by cold ones.
+    </p>
+    <p style="text-align:center; font-weight:bold;">
+      \( Q_{\text{lost}} = Q_{\text{gained}} \)
+    </p>
+    
+  
+    <button class="collapsible">Example 1: Mixing Hot and Cold Water</button>
+    <div class="content">
+      <p>
+        A 200 g sample of hot water at \( 80^\circ \text{C} \) is poured into 300 g of cold water at \( 20^\circ \text{C} \) in an ideal calorimeter. What is the final temperature?
+      </p>
+      <p><strong>Solution:</strong></p>
+      <p>
+        Let final temperature be \( T \).  
+        Heat lost by hot water = Heat gained by cold water.
+      </p>
+      <p>
+        \( 200 \cdot 4.18 \cdot (80 - T) = 300 \cdot 4.18 \cdot (T - 20) \)
+      </p>
+      <p>
+        Simplifying:
+        <br>
+        \( 200(80 - T) = 300(T - 20) \)
+        <br>
+        \( 16000 - 200T = 300T - 6000 \)
+        <br>
+        \( 22000 = 500T \)
+        <br>
+        \( T = 44^\circ \text{C} \)
+      </p>
+    </div>
+  
+    <button class="collapsible">Example 2: Including Calorimeter Heat Capacity</button>
+    <div class="content">
+      <p>
+        In a calorimeter of heat capacity 150 J/°C, 100 g of water at \( 90^\circ \text{C} \) is added to 200 g of water at \( 20^\circ \text{C} \). Find the final temperature assuming no heat loss.
+      </p>
+      <p><strong>Solution:</strong></p>
+      <p>
+        Let final temperature be \( T \).  
+        Heat lost = heat gained + heat absorbed by calorimeter
+      </p>
+      <p>
+        \( 100 \cdot 4.18 \cdot (90 - T) = 200 \cdot 4.18 \cdot (T - 20) + 150(T - 20) \)
+      </p>
+      <p>
+        Simplify:
+        <br>
+        \( 418(90 - T) = 836(T - 20) + 150(T - 20) \)
+        <br>
+        \( 37620 - 418T = 986(T - 20) \)
+        <br>
+        \( 37620 - 418T = 986T - 19720 \)
+        <br>
+        \( 57340 = 1404T \)
+        <br>
+        \( T \approx 40.8^\circ \text{C} \)
+      </p>
+    </div>
+  
+    <button class="collapsible">Example 3: Metal in Water (Find Specific Heat)</button>
+    <div class="content">
+      <p>
+        A 150 g piece of metal at \( 100^\circ \text{C} \) is placed into 250 g of water at \( 20^\circ \text{C} \). The final temperature is \( 24^\circ \text{C} \). Assuming no heat loss and water’s specific heat is 4.18 J/g°C, find the specific heat of the metal.
+      </p>
+      <p><strong>Solution:</strong></p>
+      <p>
+        Heat lost by metal = Heat gained by water
+      </p>
+      <p>
+        Let specific heat of metal be \( c \).
+        <br>
+        \( 150c(100 - 24) = 250 \cdot 4.18 \cdot (24 - 20) \)
+        <br>
+        \( 150c \cdot 76 = 250 \cdot 4.18 \cdot 4 \)
+        <br>
+        \( 11400c = 4180 \)
+        <br>
+        \( c = \frac{4180}{11400} \approx 0.367 \, \text{J/g°C} \)
+      </p>
+    </div>
+  
+    <button class="collapsible">Example 4: Latent Heat in Calorimetry</button>
+    <div class="content">
+      <p>
+        A 50 g ice cube at \( 0^\circ \text{C} \) is added to 200 g of water at \( 30^\circ \text{C} \) in an ideal calorimeter. Find the final temperature. Assume latent heat of fusion for ice is \( 334 \, \text{J/g} \), and specific heat of water is \( 4.18 \, \text{J/g°C} \).
+      </p>
+      <p><strong>Solution:</strong></p>
+      <p>
+        Heat needed to melt ice:  
+        \( Q_{\text{melt}} = 50 \cdot 334 = 16700 \, \text{J} \)
+      </p>
+      <p>
+        Heat available from water cooling to \( 0^\circ \text{C} \):
+        <br>
+        \( Q_{\text{water}} = 200 \cdot 4.18 \cdot 30 = 25080 \, \text{J} \)
+      </p>
+      <p>
+        Since \( 25080 > 16700 \), all ice melts.
+        <br>
+        Remaining heat: \( 25080 - 16700 = 8380 \, \text{J} \)
+      </p>
+      <p>
+        Total water = 200 + 50 = 250 g  
+        <br>
+        Final rise in temperature:
+        \( \Delta T = \frac{8380}{250 \cdot 4.18} \approx 8.02^\circ \text{C} \)
+        <br>
+        Final temp ≈ \( 8.0^\circ \text{C} \)
+      </p>
+    </div>
+
+
+    <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+    Written by <strong>Thenura Dilruk</strong>
+</p>  
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+
+ <script src="../../../collapsibles.js"></script>
+</body>
+</html>
