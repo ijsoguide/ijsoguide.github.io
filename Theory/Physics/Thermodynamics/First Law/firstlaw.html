@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>First Law of Thermodynamics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../theoryPages.css">
+  <script src="/navigationimport.js" defer></script>
+</head>
+<body>
+
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>First Law of Thermodynamics</h2>
+    <a href="../Thermo.html" class="back-btn">← Back to Thermodynamics</a>
+  </div>
+
+  <!-- Main content -->
+  <div class="container">
+    <p>
+      The <strong>First Law of Thermodynamics</strong> is essentially a statement of the conservation of energy, applied to thermodynamic systems. It states that:
+    </p>
+    <p style="text-align:center; font-weight:bold;">
+      \( \Delta U = Q - W \)
+    </p>
+    <p>
+      where:
+      <ul>
+        <li>\( \Delta U \): Change in internal energy of the system</li>
+        <li>\( Q \): Heat added to the system</li>
+        <li>\( W \): Work done by the system on its surroundings</li>
+      </ul>
+    </p>
+    <p>
+      Be cautious with signs:
+      <ul>
+        <li>Heat <em>added to</em> the system is positive</li>
+        <li>Work <em>done by</em> the system is positive</li>
+      </ul>
+    </p>
+    <p>
+      The internal energy \( U \) of an ideal gas depends only on its temperature. For a monatomic ideal gas:
+      <br>
+      \( U = \frac{3}{2}nRT \)
+    </p>
+
+    <h2>Thermodynamic Processes</h2>
+<p>
+  Depending on how heat, work, and internal energy interact, we classify processes as follows:
+</p>
+<br>
+
+<h3>1. Isochoric Process (Constant Volume)</h3>
+<br>
+<ul>
+  <li>Volume does not change → \( \Delta V = 0 \), so \( W = 0 \)</li>
+  <li>First Law simplifies to \( \Delta U = Q \)</li>
+  <li>All the heat added changes internal energy (temperature)</li>
+</ul>
+
+<br>
+<h3>2. Isobaric Process (Constant Pressure)</h3>
+<br>
+<ul>
+  <li>Pressure is constant → work is done as volume changes</li>
+  <li>\( W = P \Delta V \)</li>
+  <li>First Law: \( Q = \Delta U + W \)</li>
+  <li>Heat changes both internal energy and does work</li>
+</ul>
+
+<br>
+<h3>3. Isothermal Process (Constant Temperature)</h3>
+<br>
+<ul>
+  <li>Temperature constant → \( \Delta U = 0 \)</li>
+  <li>First Law: \( Q = W \)</li>
+  <li>Heat added is entirely used to do work</li>
+</ul>
+
+<br>
+<h3>4. Adiabatic Process (No Heat Exchange)</h3>
+<br>
+<ul>
+  <li>\( Q = 0 \)</li>
+  <li>First Law: \( \Delta U = -W \)</li>
+  <li>If the system does work, it loses internal energy</li>
+</ul>
+  
+    <button class="collapsible">Example 1: Heating a Gas at Constant Volume</button>
+    <div class="content">
+      <p>
+        2 moles of an ideal monatomic gas are heated at constant volume from \( 300 \, \text{K} \) to \( 600 \, \text{K} \). Find:
+        <ul>
+          <li>(a) Heat added to the gas</li>
+          <li>(b) Work done</li>
+          <li>(c) Change in internal energy</li>
+        </ul>
+        <p>Take \( R = 8.31 \, \text{J/mol·K} \).</p>
+      </p>
+      <p><strong>Solution:</strong></p>
+      <p>
+        Since volume is constant, \( W = 0 \)
+        <br>
+        \( \Delta U = \frac{3}{2}nR\Delta T = \frac{3}{2} \cdot 2 \cdot 8.31 \cdot (600 - 300) \)
+        <br>
+        \( \Delta U = 3 \cdot 8.31 \cdot 300 = 7479 \, \text{J} \)
+      </p>
+      <p>
+        (a) \( Q = \Delta U = 7479 \, \text{J} \)
+        <br>
+        (b) \( W = 0 \)
+        <br>
+        (c) \( \Delta U = 7479 \, \text{J} \)
+      </p>
+    </div>
+  
+  
+    <button class="collapsible">Example 2: Compression with Heat Loss</button>
+    <div class="content">
+      <p>
+        A gas is compressed adiabatically, doing 500 J of work on it. During the compression, 200 J of heat is lost to the environment. What is the change in internal energy?
+      </p>
+      <p><strong>Solution:</strong></p>
+      <p>
+        Heat <em>lost</em> by system: \( Q = -200 \, \text{J} \)
+        <br>
+        Work <em>done on</em> the gas: \( W = -500 \, \text{J} \)
+        <br>
+        \( \Delta U = Q - W = -200 - (-500) = 300 \, \text{J} \)
+      </p>
+    </div>
+  
+    <button class="collapsible">Example 3: Isochoric Heating with Internal Energy Focus</button>
+    <div class="content">
+      <p>
+        An ideal gas is heated at constant volume with 1200 J of heat. What is the change in internal energy and the work done?
+      </p>
+      <p><strong>Solution:</strong></p>
+      <p>
+        Constant volume → \( W = 0 \)
+        <br>
+        So: \( \Delta U = Q = 1200 \, \text{J} \)
+      </p>
+      <p>
+        Work done: \( 0 \), Internal energy increase: \( 1200 \, \text{J} \)
+      </p>
+    </div>
+
+    <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+    Written by <strong>Thenura Dilruk</strong>
+</p>  
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+
+ <script src="../../../collapsibles.js"></script>
+</body>
+</html>
