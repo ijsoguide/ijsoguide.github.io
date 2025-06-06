@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Thermal Expansion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../../theoryPages.css">
+    <script src="/navigationimport.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Page header -->
+    <div class="page-header">
+        <h2>Thermal Expansion</h2>
+        <a href="../Thermo.html" class="back-btn">← Back to Thermodynamics</a>
+    </div>
+
+    <!-- Main content -->
+    <div class="container">
+        <p>
+          Thermal expansion refers to the increase in the dimensions of a material when it is heated. This occurs because particles in a substance move more energetically at higher temperatures, causing them to occupy more space. Thermal expansion can occur in length, area, or volume depending on the object's shape and constraints.
+        </p>
+      
+        <h2>Linear Expansion</h2>
+        <p>
+          Linear expansion is the increase in length of a solid object due to an increase in temperature. It is calculated by:
+          \[
+          \Delta L = \alpha L_0 \Delta T
+          \]
+          where:<br>
+          \( \Delta L \) = change in length<br>
+          \( \alpha \) = coefficient of linear expansion<br>
+          \( L_0 \) = original length<br>
+          \( \Delta T \) = temperature change
+        </p>
+      
+        <h2>Area Expansion</h2>
+        <p>
+          Area expansion is the increase in surface area of a material as it heats. It is approximately given by:
+          \[
+          \Delta A = 2\alpha A_0 \Delta T
+          \]
+          where:<br>
+          \( \Delta A \) = change in area<br>
+          \( \alpha \) = coefficient of linear expansion<br>
+          \( A_0 \) = original area<br>
+          \( \Delta T \) = temperature change
+        </p>
+        <p>
+          Note: The factor 2 comes from the fact that area is a two-dimensional quantity.
+        </p>
+      
+        <h2>Volume Expansion</h2>
+        <p>
+          Volume expansion applies to solids, liquids, and gases and describes the increase in volume with temperature. The formula is:
+          \[
+          \Delta V = \beta V_0 \Delta T
+          \]
+          where:<br>
+          \( \Delta V \) = change in volume<br>
+          \( \beta \) = coefficient of volume expansion (approximately \( 3\alpha \) for solids)<br>
+          \( V_0 \) = original volume<br>
+          \( \Delta T \) = temperature change
+        </p>
+      
+        <button class="collapsible">Example 1: Rod Expansion (Linear)</button>
+        <div class="content">
+          <p><strong>Problem:</strong><br>
+            A steel rod of length 1.5 m is heated from 20°C to 80°C. If the coefficient of linear expansion of steel is \( 1.2 \times 10^{-5} \, \text{°C}^{-1} \), find the increase in length.
+          </p>
+          <p><strong>Solution:</strong><br>
+            Using: \( \Delta L = \alpha L_0 \Delta T \)<br>
+            \( \alpha = 1.2 \times 10^{-5} \)<br>
+            \( L_0 = 1.5 \, \text{m} \)<br>
+            \( \Delta T = 80 - 20 = 60 \, \text{°C} \)<br>
+            \[
+            \Delta L = (1.2 \times 10^{-5}) \times 1.5 \times 60 = 0.00108 \, \text{m} = 1.08 \, \text{mm}
+            \]
+            So, the rod expands by 1.08 mm.
+          </p>
+        </div>
+      
+        <button class="collapsible">Example 2: Volume Expansion</button>
+        <div class="content">
+          <p><strong>Problem:</strong><br>
+            A metal cube has an initial volume of 0.02 m³ and is heated by 100°C. The coefficient of volume expansion is \( 3.6 \times 10^{-5} \, \text{°C}^{-1} \). Find the change in volume.
+          </p>
+          <p><strong>Solution:</strong><br>
+            Using: \( \Delta V = \beta V_0 \Delta T \)<br>
+            \( \beta = 3.6 \times 10^{-5} \)<br>
+            \( V_0 = 0.01 \, \text{m}^3 \)<br>
+            \( \Delta T = 100 \, \text{°C} \)<br>
+            \[
+            \Delta V = 3.6 \times 10^{-5} \times 0.02 \times 100 = 0.000072 \, \text{m}^3
+            \]
+            So, the volume increases by 7.2 × 10⁻⁵ m³.
+          </p>
+        </div>
+    <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+        Written by <strong>Thenura Dilruk</strong>
+    </p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2025 A Guide to the IJSO. All rights reserved.
+    </div>
+
+    <script src="../../../collapsibles.js"></script>
+
+</body>
+
+</html>
