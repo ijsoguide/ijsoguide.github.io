@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ideal Gas Law</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../theoryPages.css">
+  <script src="/navigationimport.js" defer></script>
+</head>
+<body>
+
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Ideal Gas Law</h2>
+    <a href="../Thermo.html" class="back-btn">← Back to Thermodynamics</a>
+  </div>
+
+  <!-- Main content -->
+  <div class="container">
+    <p>
+      The Ideal Gas Law is an equation of state for an ideal gas, combining Boyle’s, Charles’s, and Avogadro’s Laws into a single relationship:
+    </p>
+  
+    <p style="text-align: center; font-size: 1.2em;">
+      \( PV = nRT \)
+    </p>
+  
+    <ul>
+      <li>\( P \): Pressure (in pascals, Pa)</li>
+      <li>\( V \): Volume (in cubic meters, m³)</li>
+      <li>\( n \): Number of moles of gas</li>
+      <li>\( R \): Universal gas constant \( = 8.314 \, \text{J mol}^{-1} \text{K}^{-1} \)</li>
+      <li>\( T \): Temperature (in kelvins, K)</li>
+    </ul>
+  
+    <h2>Conditions for Ideal Gas Behavior</h2>
+    <ul>
+      <li>Low pressure</li>
+      <li>High temperature</li>
+      <li>Negligible volume of gas particles</li>
+      <li>No intermolecular forces between gas molecules</li>
+    </ul>
+  
+    <h2>Conversions to Use in the Ideal Gas Law</h2>
+    <ul>
+      <li>Temperature must be in kelvins: \( T = \text{°C} + 273.15 \)</li>
+      <li>Pressure often needs to be converted to pascals: \( 1 \, \text{atm} = 1.013 \times 10^5 \, \text{Pa} \)</li>
+      <li>Volume should be in cubic meters: \( 1 \, \text{cm}^3 = 1 \times 10^{-6} \, \text{m}^3 \), \( 1 \, \text{L} = 1 \times 10^{-3} \, \text{m}^3 \)</li>
+    </ul>
+  
+    <h2>Alternate Forms and Applications</h2>
+    <ul>
+      <li>\( \frac{PV}{T} = \text{constant} \) for a fixed amount of gas</li>
+      <li>Combining states: \( \frac{P_1 V_1}{T_1} = \frac{P_2 V_2}{T_2} \)</li>
+      <li>Useful in calculating molar mass from density: \( M = \frac{mRT}{PV} \)</li>
+    </ul>
+  
+    <h2>Kinetic Interpretation</h2>
+    <ul>
+      <li>Relates macroscopic behavior to microscopic motion of molecules</li>
+      <li>Average kinetic energy of a molecule: \( \frac{3}{2}kT \)</li>
+      <li>Total internal energy of an ideal monatomic gas: \( U = \frac{3}{2}nRT \)</li>
+      <li>Explains pressure as the result of molecular collisions with container walls</li>
+    </ul>
+  
+    <button class="collapsible">Example 1: Finding the Number of Moles</button>
+    <div class="content">
+      <p>
+        A 10 L container holds oxygen gas at a pressure of \( 2 \times 10^5 \, \text{Pa} \) and a temperature of \( 300 \, \text{K} \). Find the number of moles of gas in the container.
+      </p>
+      <p><strong>Solution:</strong></p>
+      <p>
+        Convert volume to m³: \( V = 10 \, \text{L} = 0.01 \, \text{m}^3 \)<br>
+        Use \( PV = nRT \)<br>
+        \[
+        n = \frac{PV}{RT} = \frac{(2 \times 10^5)(0.01)}{8.314 \times 300}
+        \approx 0.802 \, \text{mol}
+        \]
+      </p>
+    </div>
+  
+    <button class="collapsible">Example 2: Finding the Pressure</button>
+    <div class="content">
+      <p>
+        0.5 moles of an ideal gas is kept in a 5 L container at 400 K. Calculate the pressure of the gas.
+      </p>
+      <p><strong>Solution:</strong></p>
+      <p>
+        Convert volume to m³: \( V = 5 \, \text{L} = 0.005 \, \text{m}^3 \)<br>
+        Use \( PV = nRT \)<br>
+        \[
+        P = \frac{nRT}{V} = \frac{(0.5)(8.314)(400)}{0.005}
+        = 332560 \, \text{Pa} = 3.33 \times 10^5 \, \text{Pa}
+        \]
+      </p>
+    </div>
+  
+    <button class="collapsible">Example 3: Temperature Change with Constant Volume</button>
+    <div class="content">
+      <p>
+        An ideal gas is compressed from 1.0 L to 0.5 L at constant temperature of \( 273 \, \text{K} \). What will happen to the pressure?
+      </p>
+      <p><strong>Solution:</strong></p>
+      <p>
+        Since temperature and number of moles are constant, we can use Boyle's Law:<br>
+        \[
+        P_1 V_1 = P_2 V_2
+        \Rightarrow P_2 = \frac{P_1 V_1}{V_2} = \frac{P_1 \times 1.0}{0.5} = 2P_1
+        \]
+        So, pressure doubles.
+      </p>
+    </div>
+    <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+    Written by <strong>Thenura Dilruk</strong>
+</p>  
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+
+ <script src="../../../collapsibles.js"></script>
+</body>
+</html>
