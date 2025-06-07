@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spectrophotometry and the Beer-Lambert Law</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../theoryPages.css">
+  <script src="/navigationimport.js" defer></script>
+</head>
+<body>
+
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Spectrophotometry and the Beer-Lambert Law</h2>
+    <a href="../others.html" class="back-btn">← Back to Other Topics</a>
+  </div>
+ 
+<!-- Main Content -->
+<div class="container">   
+  <h2>What is color</h2>
+  <p>Very often, we see colored chemical compounds. But why are they colored? What is the difference between blue copper (ii) sulfate and orange iron (iii) chloride? What actually does being blue mean?</p>
+  <p>Light is an electromagnetic wave being characterized by the usual physical quantities characterizing waves. One of these quantities is the wavelength. Wavelengths of visible light range from violet 380 nanometers to red 700 nanometers.</p>
+  <p>The fact that copper (ii) sulfate is blue means that it emits only blue light. That is equivalent to saying it absorbs every other wavelength except for the blue one. However, this amount of absorption can be quantitatively used in a process known as spectrophotometry.</p>
+
+  <h2>Spectrophotometry</h2>
+  <p>A spectrophotometer is a machine consisting of the following important parts:</p>
+  <ul>
+    <li>A light source emitting light at a certain wavelength with a known intensity \(I_0\)</li>
+    <li>A transparent cuvette in which a sample is put</li>
+    <li>A light sensor measuring the intensity I of the light emerging from the sample</li>
+  </ul>
+
+  <p>he spectrophotometer shows a quantity know as absorbance and defined by \(A = \text{log} \frac{I_0}{I}\) </p>
+  <p>Different compounds absorb different amounts of light at different wavelengths, so the wavelength at which the spectrophotometry is conducted is very important.</p>
+
+<h2>The Beer-Lambert law</h2>
+<p>The absorbance depends on a number of factors:</p>
+<ul>
+    <li>The compound</li>
+    <li>The wavelength</li>
+    <li>The concentration of the compound</li>
+    <li>The optical path length (the distance traveled by the light through the solution – the width of the cuvette)</li>
+</ul>
+
+<p>Every compound absorbs differently at varying wavelengths so a formula for absorbance can’t explicitly reference wavelength. However, we know that absorbance grows linearly with concentration and with the path length so we can write the following formula known as the Beer-Lambert Law: \(A=εcl\) , where  is a coefficient known as molar absorptivity. For any given compound, at any given wavelength, we have a different empirically (experimentally) determined molar absorptivity.</p>
+<p>High values of  means high absorption. For example, blue copper (ii) sulfate will have a high absorptivity in red wavelengths, but a low one in blue wavelengths</p>
+<img src="image1.png">
+<p>The picture above depicts the absorbance spectrum of copper sulfate</p>
+<p>For copper (ii) sulfate you can see that it has the highest absorbance at high red wavelengths while the absorbance at low blue wavelengths is very low.</p>
+<p>Every color we see is a mixture of different wavelengths emitted in different amounts, every spectrum like the one above generating a unique color, a fingerprint of the chemical species.</p>
+
+     <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+    Written by <strong>Alex Jicu</strong>
+</div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+
+  <script src="../../../collapsibles.js"></script>
+</body>
+</html>
