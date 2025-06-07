@@ -22,9 +22,8 @@ nav {
   
   .logo-image {
     width: auto;
-    height: 85px;
-    margin-right: 15px;
-    margin-left: -15px;
+    height: 50px;
+    margin: 0 1rem;
   }
   
   .logo-text {
@@ -104,8 +103,7 @@ nav {
     }
 
     .logo-image{
-      margin-left: -35px;
-      margin-right: 0;
+      margin: 0 1rem 0 0;
     }
   
     #menuToggle{
