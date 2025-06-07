@@ -1,6 +1,6 @@
 :root {
   --bgdark: #100839;
-  --navblue: #1f1359;
+  --navblue: #131347;
   --txtorange: #ffa756;
 }
 body {
@@ -12,9 +12,6 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
-}
 
 
 
@@ -24,14 +21,14 @@ header {
 }
 
 .hero-box {
-  background-color: #1f1359;
+  background-color: #131347;
   padding: 3rem;
   max-width: 600px;
   margin: 3rem auto;
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(0,0,0,0.3);
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .hero-box h1 {
@@ -43,11 +40,12 @@ header {
   display: inline-block;
   margin: 1rem;
   padding: 0.75rem 1.5rem;
-  background-color: #469df6;
+  background-color: #255f99;
   color: white;
   border-radius: 6px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 550;
+  transition: all 0.3s ease-in-out;
 }
 .hero-box a:hover {
   background-color: #3d51ff;
@@ -61,7 +59,7 @@ section {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding-left: 10px;
   margin-bottom: 2rem;
 }
@@ -70,7 +68,7 @@ h2 {
   text-align: center;
   max-width: 800px;
   margin: auto;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   margin-bottom: 2rem;
 }
 
@@ -83,12 +81,12 @@ h2 {
 }
 
 .about-box {
-  background-color: #1f1359;
+  background-color: #131347;
   padding: 0.7rem;
   border-radius: 10px;
   border: 1px solid #233554;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 .features {
@@ -98,13 +96,13 @@ h2 {
 }
 
 .feature-box {
-  background-color: #1f1359;
+  background-color: #131347;
   padding: 0.5rem;
   border-radius: 10px;
   border: 1px solid #233554;
   cursor: pointer;
   transition: background-color 0.3s;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   text-align: center;
 }
 
@@ -149,13 +147,13 @@ h2 {
   padding: 0.8rem;
   border-radius: 6px;
   border: none;
-  font-size: 1.1rem;
-  background-color: #1f1359;
+  font-size: 1rem;
+  background-color: #131347;
   color: white
 }
 
 .contact button {
-  background-color: #1f1359;
+  background-color: #131347;
   color: white;
   padding: 0.8rem;
   border: none;
@@ -164,14 +162,19 @@ h2 {
   cursor: pointer;
 }
 
+.contact p{
+  font-size: 1.2rem; 
+  text-align: left; 
+  padding: 0.5rem;
+}
+
 .pre-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1f1359; 
+  background-color: #131347; 
   color: #f0e9d6; 
   padding: 20px;
-  font-family: 'Segoe UI', sans-serif;
   flex-wrap: wrap;
   border-top: 2px solid #233554; 
 }
@@ -179,39 +182,44 @@ h2 {
 .pre-footer-left {
   flex: 1;
   min-width: 250px;
+  padding: 0.5rem 2rem;
 }
 
 .pre-footer-right {
   flex: 1;
   min-width: 250px;
   text-align: right;
+  padding: 0.5rem 2rem;
 }
 
 .pre-footer-icons a {
   margin: 0 8px;
+  text-decoration: none;
+  color: white;
 }
 
-.pre-footer-icons img {
+.pre-footer-icons i {
   width: 30px;
   height: 30px;
   transition: transform 0.3s ease;
+  color: white;
 }
 
-.pre-footer-icons img:hover {
-  transform: scale(1.2);
+.pre-footer-icons i:hover {
+  transform: scale(1.05);
 }
 
 footer {
   text-align: center;
   padding: 1rem 1rem;
-  background-color: #1f1359;
+  background-color: #131347;
   border-top: 2px solid #233554;
 }
 
 
 
 .header-about-us{
-  font-size: 1.7rem;
+  font-size: 1.2rem;
 }
 
 .logo {
@@ -230,6 +238,29 @@ footer {
   font-size: 1.5rem;
   font-weight: bold;
   color: #fff;
+}
+
+@media (width < 768px){
+  .hero-box, .about-description, .about-box, #features, .feature-box p, .contact p{
+    font-size: 1rem;
+  }
+  .header-about-us, .feature-box h3{
+    font-size: 1.2rem;
+  }
+  .contact input, .contact textarea{
+    font-size: 1rem;
+  }
+  .pre-footer{
+    display: flex;
+    flex-direction: column;
+  }
+  .pre-footer-left, .pre-footer-right{
+    width: 100%;
+    margin: auto;
+  }
+  .pre-footer-right{
+    text-align: left;
+  }
 }
 
 
