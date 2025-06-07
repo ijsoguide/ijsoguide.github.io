@@ -39,6 +39,33 @@ if (!(document.head.innerHTML.includes("mobilenavigation.css"))){
     
     document.head.appendChild(link1);
 }
+
+/*Connecting the navbar font*/
+if (!(document.head.innerHTML.includes("https://fonts.googleapis.com"))){
+  const link3 = document.createElement('link');
+  link3.rel = 'preconnect';
+  link3.href = "https://fonts.googleapis.com";
+  
+  document.head.appendChild(link3);
+}
+if (!(document.head.innerHTML.includes("https://fonts.gstatic.com"))){
+  const link4 = document.createElement('link');
+  link4.rel = 'preconnect';
+  link4.href = "https://fonts.gstatic.com";
+  link4.crossOrigin = true;
+  
+  document.head.appendChild(link4);
+}
+if (!(document.head.innerHTML.includes("https://fonts.googleapis.com/css2?family=Montserrat&display=swap"))){
+  const link5 = document.createElement('link');
+  link5.rel = 'stylesheet';
+  link5.href = "https://fonts.googleapis.com/css2?family=Montserrat&display=swap";
+  
+  document.head.appendChild(link5);
+}
+
+
+//Connecting font awesome
 if (!(document.head.innerHTML.includes("https://kit.fontawesome.com/04bf603a0f.js"))){
   const link2 = document.createElement('script');
   link2.src = "https://kit.fontawesome.com/04bf603a0f.js";
