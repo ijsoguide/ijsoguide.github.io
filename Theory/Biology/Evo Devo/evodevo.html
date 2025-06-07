@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Evolutionary Development</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../sectionPages.css">
+  <script src="/navigationimport.js" defer></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Evolutionary Development</h1>
+    <p>How developmental processes have evolved and contributed to the diversity of life forms.</p>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>Evolutionary Development</h2>
+    <a class="back-btn" href="../Biology.html">← Back to Biology</a>
+  </div>
+
+  <!-- Cards -->
+  <div class="container">
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Natural Selection<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Explore how variation, competition, and survival shape populations over time.</p>
+        <br>
+        <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Patterns of Selection<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Directional, stabilizing, and disruptive selection and their effects on populations over time.</p>
+        <br>
+        <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Selection Pressure<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Environmental forces that influence reproductive success and drive natural selection.</p>
+        <br>
+        <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Evolution<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Learn the mechanisms and evidence behind the gradual change of species across generations.</p>
+        <br>
+        <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+      </div>
+    </div>
+ 
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Evolutionary Patterns above Species Level<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Large-scale evolutionary changes including speciation, adaptive radiation, and extinction.</p>
+        <br>
+        <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+      </div>
+    </div>
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Cladistics<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Study evolutionary relationships using shared characteristics and cladograms.</p>
+        <br>
+        <a class="learn-btn" href="Cladistics/cladistics.html">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Introduction to Classification<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Learn how organisms are grouped based on similarities and evolutionary history.</p>
+        <br>
+        <a class="learn-btn" href="Intro to Classification/intro.html">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Biological Diversity<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Understand the five or six biological kingdoms and their roles in Earth’s diversity of life.</p>
+        <br>
+        <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+      </div>
+      </div>
+
+      <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Biodiversity of Microbes<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Diversity, roles, and classification of bacteria, viruses, fungi, and protists in ecosystems.</p>
+        <br>
+        <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+      </div>
+      </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Animal Classification<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Explore the major animal phyla and their distinguishing features.</p>
+        <br>
+        <a class="learn-btn" href="Animal Classification/animal.html">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Plant Classification<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Learn the major plant groups and how they are classified based on reproductive and structural traits.</p>
+        <br>
+        <a class="learn-btn" href="Plant Classification/plant.html">Learn More →</a>
+      </div>
+    </div>
+
+    
+
+
+  </div>
+
+  <!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">🎯</div>
+  <div class="practice-section-content">
+    <h4>Ready to take IJSO-style evolutionary development practice questions?</h4>
+    <p>Apply your knowledge with our collection of IJSO-style evolutionary development problems.</p>
+    <a href="../../../Practice Questions/Biology/Evo Devo/evodevo.html">View Evolutionary Development Practice Questions</a>
+  </div>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </footer>
+
+  <script>
+    function toggleCard(card) {
+      const content = card.querySelector('.card-content');
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach(c => {
+        if (c !== card) c.querySelector('.card-content').style.display = 'none';
+      });
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>

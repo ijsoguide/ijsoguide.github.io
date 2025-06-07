@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Evolutionary Development Problems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../sectionPages.css">
+  <script src="/navigationimport.js" defer></script>
+</head>
+<body>
+
+  
+
+  <!-- Header -->
+  <header>
+    <h1>Evolutionary Development Problems</h1>
+    <p>Interpret examples of conserved genes and structures in evolutionary biology.</p>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>Evolutionary Development Problems</h2>
+    <a class="back-btn" href="../Biology.html">← Back to Biology Problems</a>
+  </div>
+
+  <!-- Cards -->
+  <div class="container">
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Natural Selection<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Apply Darwin’s principles to examples and predict evolutionary outcomes.</p>
+        <br>
+        <a class="learn-btn" href="/mainlaunch.html">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Patterns of Selection<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Identify types of selection from graphs and trait distribution data.</p>
+        <br>
+        <a class="learn-btn" href="/mainlaunch.html">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Selection Pressure<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Predict evolutionary outcomes under different selection pressures.</p>
+        <br>
+        <a class="learn-btn" href="/mainlaunch.html">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Evolution<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Solve questions involving speciation, fossil records, and comparative anatomy.</p>
+        <br>
+        <a class="learn-btn" href="/mainlaunch.html">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Evolutionary Patterns above Species Level<span class="arrow">→</span></div>
+      <div class="card-content">
+        <p>Interpret phylogenetic trees and analyze macroevolutionary trends.</p>
+        <br>
+        <a class="learn-btn" href="/mainlaunch.html">Practice Now →</a>
+      </div>
+    </div>
+
+     <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Cladistics<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Interpret cladograms and identify common ancestors and traits.</p>
+        <br>
+        <a class="learn-btn" href="/mainlaunch.html">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Introduction to Classification<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Categorize organisms and apply binomial nomenclature.</p>
+        <br>
+        <a class="learn-btn" href="/mainlaunch.html">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Biological Diversity<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Compare kingdom characteristics and apply to unfamiliar organisms.</p>
+        <br>
+        <a class="learn-btn" href="/mainlaunch.html">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Biodiversity of Microbes<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Compare microbial groups and their contributions to health, disease, and the environment.</p>
+        <br>
+        <a class="learn-btn" href="/mainlaunch.html">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Animal Classification<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Identify phyla and match characteristics to groups like arthropods or mollusks.</p>
+        <br>
+        <a class="learn-btn" href="/mainlaunch.html">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Plant Classification<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Solve classification questions involving ferns, mosses, gymnosperms, and angiosperms.</p>
+        <br>
+        <a class="learn-btn" href="/mainlaunch.html">Practice Now →</a>
+      </div>
+    </div>
+
+    
+
+
+  </div>
+
+ <!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">📘</div>
+  <div class="practice-section-content">
+    <h4>Ready to dive into evolutionary development theory?</h4>
+    <p>Explore our collection of theory content in evolutionary development, designed to enhance your understanding and knowledge of key concepts.</p>
+    <a href="../../../Theory/Biology/Evo Devo/evodevo.html">View Evolutionary Development Theory Content</a>
+  </div>
+</div>
+
+</div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </footer>
+
+  <script>
+    function toggleCard(card) {
+      const content = card.querySelector('.card-content');
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach(c => {
+        if (c !== card) c.querySelector('.card-content').style.display = 'none';
+      });
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
