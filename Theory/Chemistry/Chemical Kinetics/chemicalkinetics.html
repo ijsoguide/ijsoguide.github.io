@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chemical Kinetics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../sectionPages.css">
+  <script src="/navigationimport.js" defer></script>
+</head>
+<body>
+
+
+  <!-- Header Section -->
+  <header>
+    <h1>Chemical Kinetics</h1>
+    <p>Explore how fast chemical reactions occur and what affects the rate at which reactants turn into products.</p>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>Chemical Kinetics</h2>
+    <a class="back-btn" href="../Chemistry.html">← Back to Chemistry</a>
+  </div>
+
+  <!-- Cards -->
+  <div class="container">
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Rate of Reaction<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Learn how to express the speed of a chemical reaction in terms of concentration change over time.</p>
+        <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        Rate Laws<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Understand how reaction rate depends on reactant concentrations and how to determine the rate law.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        Integrated Rate Laws<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Explore mathematical models that describe how reactant concentrations change over time for different reaction orders.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        Activation Energy and Arrhenius Law<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Learn about the energy barrier that must be overcome for a reaction to occur and how it depends on temperature.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        Factors affecting Reaction Rates<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Study how concentration, temperature, surface area, and catalysts influence how fast a reaction proceeds.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+        </div>
+      </div>
+
+    </div>
+    
+
+  <!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">🎯</div>
+  <div class="practice-section-content">
+    <h4>Ready to take IJSO-style chemical kinetics practice questions?</h4>
+    <p>Apply your knowledge with our collection of IJSO-style chemical kinetics problems.</p>
+    <a href="../../../Practice Questions/Chemistry/Chemical Kinetics/chemicalkinetics.html">View Chemical Kinetics Practice Questions</a>
+  </div>
+</div>
+
+<!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">📝</div>
+  <div class="practice-section-content">
+    <h4>Ready to take IJSO-style thermochemistry and chemical kinetics mock tests?</h4>
+    <p>Challenge yourself with our collection of IJSO-style mock tests in thermochemistry and chemical kinetics, designed to test your problem-solving skills and understanding.</p>
+    <a href="../../../Mock Tests/Chemistry/Thermochemistry/thermochemistry.html">View Thermochemistry and Chemical Kinetics Mock Tests</a>
+  </div>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 A Guide to the IJSO. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleCard(card) {
+      const content = card.querySelector('.card-content');
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach(c => {
+        if (c !== card) c.querySelector('.card-content').style.display = 'none';
+      });
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>

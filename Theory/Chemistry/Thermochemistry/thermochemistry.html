@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Thermochemistry</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../sectionPages.css">
+  <script src="/navigationimport.js" defer></script>
+</head>
+<body>
+
+
+  <!-- Header Section -->
+  <header>
+    <h1>Thermochemistry</h1>
+    <p>Study the flow of heat during chemical reactions and physical changes, and how energy determines reaction behavior.</p>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>Thermochemistry</h2>
+    <a class="back-btn" href="../Chemistry.html">← Back to Chemistry</a>
+  </div>
+
+  <!-- Cards -->
+  <div class="container">
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        States of Matter<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Understand the properties of solids, liquids, and gases — and how particle arrangement defines each state.</p>
+        <a class="learn-btn" href="States of Matter/StatesofMatter.html">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        The Gas Phase<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Explore how gases behave under changing pressure, temperature, and volume using gas laws.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+        </div>
+      </div>
+
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        Phase Changes<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Learn how matter transitions between states and how energy is involved in melting, boiling, and condensing.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        Reaction and Formation Enthalpies<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Study how the enthalpy change of a reaction relates to bond breaking and formation.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        Bond Enthalpy<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Learn how much energy is needed to break chemical bonds and how this affects reaction energetics.</p>
+          <a class="learn-btn" href="Bond Enthalpy/bondenthalpy.html">Learn More →</a>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        Thermochemistry of Common Processes<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Explore heat changes in everyday processes like combustion, neutralization, and dissolution.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        Gibbs Free Energy<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Learn how to predict whether a reaction will occur spontaneously using energy and entropy changes.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+        </div>
+    </div>
+
+    </div>
+    
+
+  <!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">🎯</div>
+  <div class="practice-section-content">
+    <h4>Ready to take IJSO-style thermochemistry practice questions?</h4>
+    <p>Apply your knowledge with our collection of IJSO-style thermochemistry problems.</p>
+    <a href="../../../Practice Questions/Chemistry/Thermochemistry/thermochemistry.html">View Thermochemistry Practice Questions</a>
+  </div>
+</div>
+
+<!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">📝</div>
+  <div class="practice-section-content">
+    <h4>Ready to take IJSO-style thermochemistry and chemical kinetics mock tests?</h4>
+    <p>Challenge yourself with our collection of IJSO-style mock tests in thermochemistry and chemical kinetics, designed to test your problem-solving skills and understanding.</p>
+    <a href="../../../Mock Tests/Chemistry/Thermochemistry/thermochemistry.html">View Thermochemistry and Chemical Kinetics Mock Tests</a>
+  </div>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 A Guide to the IJSO. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleCard(card) {
+      const content = card.querySelector('.card-content');
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach(c => {
+        if (c !== card) c.querySelector('.card-content').style.display = 'none';
+      });
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>

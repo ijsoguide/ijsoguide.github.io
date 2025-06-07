@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Other Topics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../sectionPages.css">
+  <script src="/navigationimport.js" defer></script>
+</head>
+<body>
+
+
+  <!-- Header Section -->
+  <header>
+    <h1>Other Topics</h1>
+    <p>Study the flow of heat during chemical reactions and physical changes, and how energy determines reaction behavior.</p>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>Other Topics</h2>
+    <a class="back-btn" href="../Chemistry.html">← Back to Chemistry</a>
+  </div>
+
+  <!-- Cards -->
+  <div class="container">
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Spectrophotometry and the Beer-Lambert Law<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Learn how light absorption by a solution relates to concentration, using spectrophotometry and the Beer–Lambert Law.</p>
+        <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        Radioactive Decay<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Explore how unstable atomic nuclei emit particles or energy, transforming into more stable forms over time.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        Basic Organic Compounds<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Understand the structure and classification of fundamental organic molecules like alkanes, alkenes, and alcohols.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        Combustion of Organic Compounds<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Learn how organic compounds react with oxygen to release energy, producing carbon dioxide and water.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+        </div>
+      </div>
+
+    </div>
+    
+
+  <!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">🎯</div>
+  <div class="practice-section-content">
+    <h4>Ready to take IJSO-style other topics practice questions?</h4>
+    <p>Apply your knowledge with our collection of IJSO-style other topics problems.</p>
+    <a href="../../../Practice Questions/Chemistry/Others/others.html">View Other Topics Practice Questions</a>
+  </div>
+</div>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 A Guide to the IJSO. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleCard(card) {
+      const content = card.querySelector('.card-content');
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach(c => {
+        if (c !== card) c.querySelector('.card-content').style.display = 'none';
+      });
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>

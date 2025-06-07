@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Stoichiometry</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../sectionPages.css">
+  <script src="/navigationimport.js" defer></script>
+</head>
+<body>
+
+
+  <!-- Header Section -->
+  <header>
+    <h1>Stoichiometry</h1>
+    <p>Understand the quantitative relationships between substances in chemical reactions using balanced equations.</p>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>Stoichiometry</h2>
+    <a class="back-btn" href="../Chemistry.html">← Back to Chemistry</a>
+  </div>
+
+  <!-- Cards -->
+  <div class="container">
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Mole of a Compound<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Learn how to use molar mass to relate the amount of a compound to its mass or number of particles.</p>
+        <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        Concentration<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Study how to express and calculate the amount of solute in a given volume of solution.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        Purity<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Study how to express and calculate the amount of solute in a given volume of solution.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        Molecular and Empirical formula<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Learn how to determine the simplest and actual formula of a compound using atomic ratios.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        Mass Composition of a Chemical Compound<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Explore how the mass of each element contributes to a compound’s overall composition.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        Reaction Stoichiometry<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Use balanced chemical equations to predict the amounts of products and reactants involved in reactions.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        Limiting Reactant<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Identify the reactant that limits the amount of product formed in a chemical reaction.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        Reaction Yield<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Learn how to compare actual and theoretical yields to evaluate the efficiency of a reaction.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+        </div>
+    </div>
+    </div>
+    
+
+  <!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">🎯</div>
+  <div class="practice-section-content">
+    <h4>Ready to take IJSO-style stoichiometry practice questions?</h4>
+    <p>Apply your knowledge with our collection of IJSO-style stoichiometry problems.</p>
+    <a href="../../../Practice Questions/Chemistry/Stoichiometry/stoichiometry.html">View Stoichiometry Practice Questions</a>
+  </div>
+</div>
+
+<!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">📝</div>
+  <div class="practice-section-content">
+    <h4>Ready to take IJSO-style stoichiometry and chemical reactions mock tests?</h4>
+    <p>Challenge yourself with our collection of IJSO-style mock tests in stoichiometry and chemical reactions, designed to test your problem-solving skills and understanding.</p>
+    <a href="../../../Mock Tests/Chemistry/Chemical Reactions/chemicalreactions.html">View Stoichiometry and Chemical Reactions Mock Tests</a>
+  </div>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 A Guide to the IJSO. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleCard(card) {
+      const content = card.querySelector('.card-content');
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach(c => {
+        if (c !== card) c.querySelector('.card-content').style.display = 'none';
+      });
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>

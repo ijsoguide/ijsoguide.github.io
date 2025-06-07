@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Electrochemistry Problems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../sectionPages.css">
+  <script src="/navigationimport.js" defer></script>
+</head>
+<body>
+
+
+  <!-- Header Section -->
+  <header>
+    <h1>Electrochemistry Problems</h1>
+    <p>Analyze electrochemical processes and solve problems involving voltage, current, and charge.</p>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>Electrochemistry Problems</h2>
+    <a class="back-btn" href="../Chemistry.html">← Back to Chemistry</a>
+  </div>
+
+  <!-- Cards -->
+  <div class="container">
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        Redox Reactions<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Identify oxidizing and reducing agents, and balance redox reactions in acidic and basic media.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        Electrochemical Cells<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Label components of cells, track electron flow, and calculate cell potentials.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        Electrochemical Potentials and Nernst Equation<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Calculate E-cell under non-standard conditions and analyze concentration effects.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        Activity Series of Metals<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Use the activity series to predict if redox reactions will occur spontaneously.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        Electrolysis<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Determine products of electrolysis and calculate charge, mass, and current relationships.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        Faraday's Law of Electrolysis<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Apply Faraday’s laws to calculate quantities like moles, grams, or charge passed during electrolysis.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+        </div>
+      </div>
+      </div>
+
+    <div class="practice-section">
+      <div class="practice-section-icon">📘</div>
+      <div class="practice-section-content">
+        <h4>Ready to dive into electrochemistry theory?</h4>
+        <p>Explore our collection of theory content in electrochemistry, designed to enhance your understanding and knowledge of key concepts.</p>
+        <a href="../../../Theory/Chemistry/Electrochemistry/electrochemistry.html">View Electrochemistry Theory Content</a>
+      </div>
+    </div>
+    
+
+<!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+    <div class="practice-section-icon">📝</div>
+    <div class="practice-section-content">
+      <h4>Ready to take IJSO-style chemical equilibrium and electrochemistry mock tests?</h4>
+      <p>Challenge yourself with our collection of IJSO-style mock tests in chemical equilibrium and electrochemistry, designed to test your problem-solving skills and understanding.</p>
+      <a href="../../../Mock Tests/Chemistry/Equilibrium/equilibrium.html">View Chemical Equilibrium and Electrochemistry Mock Tests</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 A Guide to the IJSO. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleCard(card) {
+      const content = card.querySelector('.card-content');
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach(c => {
+        if (c !== card) c.querySelector('.card-content').style.display = 'none';
+      });
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>

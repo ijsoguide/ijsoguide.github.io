@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chemical Structures Problems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../sectionPages.css">
+  <script src="/navigationimport.js" defer></script>
+</head>
+<body>
+
+
+  <!-- Header Section -->
+  <header>
+    <h1>Chemical Structures Problems</h1>
+    <p>Identify chemical structures and predict molecular arrangements based on bonding.</p>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>Chemical Structures Problems</h2>
+    <a class="back-btn" href="../Chemistry.html">← Back to Chemistry</a>
+  </div>
+
+  <!-- Cards -->
+  <div class="container">
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Atomic Structure<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Identify chemical structures and predict molecular arrangements based on bonding.</p>
+        <a class="learn-btn" href="/mainlaunch.html">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Electron Configurations<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Write electron configurations and predict chemical reactivity based on shell structure.</p>
+        <a class="learn-btn" href="/mainlaunch.html">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Elements and Isotopes<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Classify elements, interpret isotope notation, and solve problems involving atomic mass and nuclear composition.</p>
+        <a class="learn-btn" href="/mainlaunch.html">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Types of Chemical Bonds<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Classify bonds and predict bond type from electronegativity and element type.</p>
+        <a class="learn-btn" href="/mainlaunch.html">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Lewis Dot Structures<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Draw dot structures and identify lone pairs and bond pairs.</p>
+        <a class="learn-btn" href="/mainlaunch.html">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        The Periodic Table<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Navigate the table to find element properties and group classifications.</p>
+        <a class="learn-btn" href="/mainlaunch.html">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Trends in the Periodic Table<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Predict element behavior using periodic trends and relative positions.</p>
+        <a class="learn-btn" href="/mainlaunch.html">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Polarity of Bonds<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Determine bond polarity and predict molecular dipoles.</p>
+        <a class="learn-btn" href="/mainlaunch.html">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Intermolecular Forces<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Rank intermolecular forces and apply them to physical property comparisons.</p>
+        <a class="learn-btn" href="/mainlaunch.html">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Basic VSEPR and molecular geometries<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Determine molecular geometries and bond angles from structural formulas.</p>
+        <a class="learn-btn" href="/mainlaunch.html">Practice Now →</a>
+      </div>
+    </div>
+
+
+    <div class="practice-section">
+      <div class="practice-section-icon">📘</div>
+      <div class="practice-section-content">
+        <h4>Ready to dive into chemical structures theory?</h4>
+        <p>Explore our collection of theory content in chemical structures, designed to enhance your understanding and knowledge of key concepts.</p>
+        <a href="../../../Theory/Chemistry/Chemical Strucutres/chemicalstructures.html">View Chemical Structures Theory Content</a>
+      </div>
+    </div>
+
+<!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">📝</div>
+  <div class="practice-section-content">
+    <h4>Ready to take IJSO-style atomic structure and chemical bonding mock tests?</h4>
+    <p>Challenge yourself with our collection of IJSO-style mock tests in atomic structure and chemical bonding, designed to test your problem-solving skills and understanding.</p>
+    <a href="../../../Mock Tests/Chemistry/Chemical Structures/Chemical Structures.html">View Chemical Structures Mock Tests</a>
+  </div>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 A Guide to the IJSO. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleCard(card) {
+      const content = card.querySelector('.card-content');
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach(c => {
+        if (c !== card) c.querySelector('.card-content').style.display = 'none';
+      });
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>

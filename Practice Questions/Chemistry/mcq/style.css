@@ -1,195 +1,195 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #100839;
-  color: #f0f0f0;
-  margin: 0;
-}
-
-.landing-page {
-  background: url("") center/cover no-repeat;
-  height: 100vh;
-  width: 100%;
-  position: relative;
-}
-
-.overlay {
-  background: #100839;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.landing-content {
-  text-align: center;
-  color: #f0f0f0;
-  position: relative;
-}
-
-.landing-content h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.landing-content p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
-
-.landing-content button {
-  padding: 0.75rem 1.5rem;
-  background: #b561ff;
-  border: none;
-  border-radius: 6px;
-  font-size: 1rem;
-  color: #333;
-  cursor: pointer;
-}
-
-.top-bar {
-  max-width: 1100px;
-  margin: 2rem auto 1rem;
-  padding: 0 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #b561ff;
-}
-
-.top-bar h2 {
-  font-size: 1.8rem;
-  margin: 0;
-}
-
-.back-btn {
-  background-color: #b561ff;
-  border: 1px solid #ccc;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  color: #333;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.toggle-bar {
-  max-width: 900px;
-  margin: 0 auto 1rem;
-  padding: 0 1rem;
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-}
-
-.toggle-button {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background-color: #1f1359;
-  border: none;
-  position: relative;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.toggle-button span {
-  position: relative;
-  z-index: 2;
-  color: #f0f0f0;
-}
-
-.toggle-button.green { background-color: #4caf50; }
-.toggle-button.red { background-color: #f44336; }
-
-.toggle-button.green.hint::after,
-.toggle-button.green.wrong::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 50%;
-  left: 0;
-  bottom: 0;
-  background-color: #aaa; /* grey for hint */
-  z-index: 1;
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-}
-
-.toggle-button.green.wrong::after {
-  background-color: #f44336;
-}
-
-.toggle-button.green.hint::after,
-.toggle-button.green.wrong::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 50%;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-}
-
-.toggle-button.green.hint::after { background: #aaa; }
-.toggle-button.green.wrong::after { background: #f44336; }
-
-.container {
-  max-width: 800px;
-  margin: auto;
-  background: #1f1359;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-form label {
-  display: block;
-  margin: 8px 0;
-}
-
-input[type="radio"] {
-  margin-right: 8px;
-}
-
-.buttons {
-  margin-top: 1rem;
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.buttons button {
-  padding: 0.5rem 1rem;
-  background-color: #b561ff;
-  color: #333;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.feedback, .hint {
-  margin-top: 0.5rem;
-  font-weight: bold;
-}
-
-.non-active{
-  display: none;
-}
-
-.footer {
-  background: #1f1359;
-  color: #f0f0f0;
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9em;
-  margin-top: 3rem;
-}
+    font-family: 'Segoe UI', sans-serif;
+    background: #100839;
+    color: #f0f0f0;
+    margin: 0;
+  }
+  
+  .landing-page {
+    background: url("") center/cover no-repeat;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+  }
+  
+  .overlay {
+    background: #100839;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .landing-content {
+    text-align: center;
+    color: #f0f0f0;
+    position: relative;
+  }
+  
+  .landing-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .landing-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .landing-content button {
+    padding: 0.75rem 1.5rem;
+    background: #b561ff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .top-bar {
+    max-width: 1100px;
+    margin: 2rem auto 1rem;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #b561ff;
+  }
+  
+  .top-bar h2 {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+  
+  .back-btn {
+    background-color: #b561ff;
+    border: 1px solid #ccc;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .toggle-bar {
+    max-width: 900px;
+    margin: 0 auto 1rem;
+    padding: 0 1rem;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .toggle-button {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #1f1359;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .toggle-button span {
+    position: relative;
+    z-index: 2;
+    color: #f0f0f0;
+  }
+  
+  .toggle-button.green { background-color: #4caf50; }
+  .toggle-button.red { background-color: #f44336; }
+  
+  .toggle-button.green.hint::after,
+  .toggle-button.green.wrong::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    left: 0;
+    bottom: 0;
+    background-color: #aaa; /* grey for hint */
+    z-index: 1;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+  
+  .toggle-button.green.wrong::after {
+    background-color: #f44336;
+  }
+  
+  .toggle-button.green.hint::after,
+  .toggle-button.green.wrong::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+  
+  .toggle-button.green.hint::after { background: #aaa; }
+  .toggle-button.green.wrong::after { background: #f44336; }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    background: #1f1359;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  form label {
+    display: block;
+    margin: 8px 0;
+  }
+  
+  input[type="radio"] {
+    margin-right: 8px;
+  }
+  
+  .buttons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .buttons button {
+    padding: 0.5rem 1rem;
+    background-color: #b561ff;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .feedback, .hint {
+    margin-top: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .non-active{
+    display: none;
+  }
+  
+  .footer {
+    background: #1f1359;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    margin-top: 3rem;
+  }

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chemical Kinetics Problems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../sectionPages.css">
+  <script src="/navigationimport.js" defer></script>
+</head>
+<body>
+
+
+  <!-- Header Section -->
+  <header>
+    <h1>Chemical Kinetics Problems</h1>
+    <p>Analyze rate data, reaction mechanisms, and the influence of concentration, temperature, and catalysts.</p>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>Chemical Kinetics Problems</h2>
+    <a class="back-btn" href="../Chemistry.html">← Back to Chemistry</a>
+  </div>
+
+   <!-- Cards -->
+   <div class="container">
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+          Rate of Reaction<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Calculate average and instantaneous rates from concentration-time data.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Practice Now →</a>
+        </div>
+      </div>
+  
+      <div class="card" onclick="toggleCard(this)">
+          <div class="card-header">
+          Rate Laws<span class="arrow">→</span>
+          </div>
+          <div class="card-content">
+            <p>Determine the order of reaction and write rate laws from experimental data.</p>
+            <a class="learn-btn" href="/mainlaunch.html">Practice Now →</a>
+          </div>
+        </div>
+  
+        <div class="card" onclick="toggleCard(this)">
+          <div class="card-header">
+          Integrated Rate Laws<span class="arrow">→</span>
+          </div>
+          <div class="card-content">
+            <p>Use integrated rate laws and graphs to find rate constants and reaction half-lives.</p>
+            <a class="learn-btn" href="/mainlaunch.html">Practice Now →</a>
+          </div>
+        </div>
+  
+        <div class="card" onclick="toggleCard(this)">
+          <div class="card-header">
+          Activation Energy and Arrhenius Law<span class="arrow">→</span>
+          </div>
+          <div class="card-content">
+            <p>Apply the Arrhenius equation to calculate activation energy and analyze temperature effects.</p>
+            <a class="learn-btn" href="/mainlaunch.html">Practice Now →</a>
+          </div>
+        </div>
+  
+        <div class="card" onclick="toggleCard(this)">
+          <div class="card-header">
+          Factors affecting Reaction Rates<span class="arrow">→</span>
+          </div>
+          <div class="card-content">
+            <p>Predict how changing conditions affects the rate and outcome of chemical reactions.</p>
+            <a class="learn-btn" href="/mainlaunch.html">Practice Now →</a>
+          </div>
+        </div>
+      
+    </div>
+
+
+  <!-- Practice Section (NOT collapsible) -->
+  <div class="practice-section">
+    <div class="practice-section-icon">📘</div>
+    <div class="practice-section-content">
+      <h4>Ready to dive into chemical kinetics theory?</h4>
+      <p>Explore our collection of theory content in chemical kinetics, designed to enhance your understanding and knowledge of key concepts.</p>
+      <a href="../../../Theory/Chemistry/Chemical Kinetics/chemicalkinetics.html">View Chemical Kinetics Theory Content</a>
+    </div>
+  </div>
+
+<!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">📝</div>
+  <div class="practice-section-content">
+    <h4>Ready to take IJSO-style thermochemistry and chemical kinetics mock tests?</h4>
+    <p>Challenge yourself with our collection of IJSO-style mock tests in thermochemistry and chemical kinetics, designed to test your problem-solving skills and understanding.</p>
+    <a href="../../../Mock Tests/Chemistry/Thermochemistry/thermochemistry.html">View Thermochemistry and Chemical Kinetics Mock Tests</a>
+  </div>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 A Guide to the IJSO. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleCard(card) {
+      const content = card.querySelector('.card-content');
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach(c => {
+        if (c !== card) c.querySelector('.card-content').style.display = 'none';
+      });
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>

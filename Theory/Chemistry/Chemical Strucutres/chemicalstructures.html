@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chemical Structures</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../sectionPages.css">
+  <script src="/navigationimport.js" defer></script>
+</head>
+<body>
+
+
+  <!-- Header Section -->
+  <header>
+    <h1>Chemical Structures</h1>
+    <p>Understand how atoms and bonds form the basic structure of molecules and compounds.</p>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>Chemical Structures</h2>
+    <a class="back-btn" href="../Chemistry.html">← Back to Chemistry</a>
+  </div>
+
+  <!-- Cards -->
+  <div class="container">
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Atomic Structure<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Learn about protons, neutrons, and electrons — the subatomic particles that make up atoms.</p>
+        <a class="learn-btn" href="Atomic Structure/atomicstructure.html">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Electron Configurations<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Discover how electrons are arranged in atoms and how this influences chemical behavior.</p>
+        <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Elements and Isotopes<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Explore the fundamental substances of chemistry and how they can exist as isotopes with varying numbers of neutrons.</p>
+        <a class="learn-btn" href="Elements/elements.html">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Types of Chemical Bonds<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Explore how atoms combine through ionic, covalent, and metallic bonds.</p>
+        <a class="learn-btn" href="TypesofBonding/typesofbonding.html">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Lewis Dot Structures<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Use Lewis symbols to represent valence electrons and visualize bonding in molecules.</p>
+        <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        The Periodic Table<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Understand the layout, history, and logic behind the periodic arrangement of elements.</p>
+        <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Trends in the Periodic Table<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Explore trends such as electronegativity, ionization energy, atomic radius, and reactivity.</p>
+        <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Polarity of Bonds<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Learn how electronegativity differences cause bonds to be polar or nonpolar.</p>
+        <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Intermolecular Forces<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Study the forces between molecules — like hydrogen bonding and van der Waals interactions.</p>
+        <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Basic VSEPR and molecular geometries<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Use VSEPR theory to predict the 3D shapes of molecules based on electron pair repulsion.</p>
+        <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+      </div>
+    </div>
+    </div>
+
+  <!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">🎯</div>
+  <div class="practice-section-content">
+    <h4>Ready to take IJSO-style chemical structures practice questions?</h4>
+    <p>Apply your knowledge with our collection of IJSO-style chemical structures problems.</p>
+    <a href="../../../Practice Questions/Chemistry/Chemical Strucutres/chemicalstructures.html">View Chemical Structures Practice Questions</a>
+  </div>
+</div>
+
+<!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">📝</div>
+  <div class="practice-section-content">
+    <h4>Ready to take IJSO-style chemical structures mock tests?</h4>
+    <p>Challenge yourself with our collection of IJSO-style mock tests in chemical structures, designed to test your problem-solving skills and understanding.</p>
+    <a href="../../../Mock Tests/Chemistry/Chemical Structures/Chemical Structures.html">View Chemical Structures Mock Tests</a>
+  </div>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 A Guide to the IJSO. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleCard(card) {
+      const content = card.querySelector('.card-content');
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach(c => {
+        if (c !== card) c.querySelector('.card-content').style.display = 'none';
+      });
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>

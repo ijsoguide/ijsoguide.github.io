@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chemical Reactions Problems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../sectionPages.css">
+  <script src="/navigationimport.js" defer></script>
+</head>
+<body>
+
+
+  <!-- Header Section -->
+  <header>
+    <h1>Chemical Reactions Problems</h1>
+    <p>Identify reaction types and predict products using balanced chemical equations.</p>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>Chemical Reactions Problems</h2>
+    <a class="back-btn" href="../Chemistry.html">← Back to Chemistry</a>
+  </div>
+
+   <!-- Cards -->
+   <div class="container">
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        The Combination Reaction<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Write and balance synthesis reactions and recognize common examples.</p>
+        <a class="learn-btn" href="/mainlaunch.html">Practice Now →</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        The Decomposition Reaction<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Predict decomposition products and balance corresponding equations.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        The Single Displacement Reaction<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Use the activity series to determine if a single displacement reaction will occur.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        The Double Displacement reaction<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Identify precipitation, gas formation, or neutralization outcomes in double replacement reactions.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        Chemical Properties of Common Elements<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Match elements with their expected reactions and categorize behavior based on group trends.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+        </div>
+      </div>
+    </div>
+
+
+  <!-- Practice Section (NOT collapsible) -->
+  <div class="practice-section">
+    <div class="practice-section-icon">📘</div>
+    <div class="practice-section-content">
+      <h4>Ready to dive into chemical reactions theory?</h4>
+      <p>Explore our collection of theory content in chemical reactions, designed to enhance your understanding and knowledge of key concepts.</p>
+      <a href="../../../Theory/Chemistry/Chemical Reactions/chemicalreactions.html">View Chemical Reactions Theory Content</a>
+    </div>
+  </div>
+
+<!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">📝</div>
+  <div class="practice-section-content">
+    <h4>Ready to take IJSO-style stoichiometry and chemical reactions mock tests?</h4>
+    <p>Challenge yourself with our collection of IJSO-style mock tests in stoichiometry and chemical reactions, designed to test your problem-solving skills and understanding.</p>
+    <a href="../../../Mock Tests/Chemistry/Chemical Reactions/chemicalreactions.html">View Stoichiometry and Chemical Reactions Mock Tests</a>
+  </div>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 A Guide to the IJSO. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleCard(card) {
+      const content = card.querySelector('.card-content');
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach(c => {
+        if (c !== card) c.querySelector('.card-content').style.display = 'none';
+      });
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>

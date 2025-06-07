@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Other Topics Problems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../sectionPages.css">
+  <script src="/navigationimport.js" defer></script>
+</head>
+<body>
+
+
+  <!-- Header Section -->
+  <header>
+    <h1>Other Topics Problems</h1>
+    <p>Calculate heat changes, enthalpy, and energy transfer in various chemical processes.</p>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>Other Topics Problems</h2>
+    <a class="back-btn" href="../Chemistry.html">← Back to Chemistry</a>
+  </div>
+
+   <!-- Cards -->
+   <div class="container">
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+          Spectrophotometry and the Beer-Lambert Law<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Calculate absorbance, concentration, or path length from experimental data.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+        </div>
+      </div>
+  
+      <div class="card" onclick="toggleCard(this)">
+          <div class="card-header">
+          Radioactive Decay<span class="arrow">→</span>
+          </div>
+          <div class="card-content">
+            <p>Use decay equations and half-life to calculate remaining quantity of a radioactive substance.</p>
+            <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+          </div>
+        </div>
+  
+        <div class="card" onclick="toggleCard(this)">
+          <div class="card-header">
+          Basic Organic Compounds<span class="arrow">→</span>
+          </div>
+          <div class="card-content">
+            <p>Identify organic functional groups and predict basic properties or reactions.</p>
+            <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+          </div>
+        </div>
+  
+        <div class="card" onclick="toggleCard(this)">
+          <div class="card-header">
+          Combustion of Organic Compounds<span class="arrow">→</span>
+          </div>
+          <div class="card-content">
+            <p>Balance combustion equations and calculate heat or mass of products formed.</p>
+            <a class="learn-btn" href="/mainlaunch.html">Learn More →</a>
+          </div>
+        </div>
+  
+    </div>
+
+
+  <!-- Practice Section (NOT collapsible) -->
+  <div class="practice-section">
+    <div class="practice-section-icon">📘</div>
+    <div class="practice-section-content">
+      <h4>Ready to dive into other topics theory?</h4>
+      <p>Explore our collection of theory content in other topics, designed to enhance your understanding and knowledge of key concepts.</p>
+      <a href="../../../Theory/Chemistry/Others/others.html">View Other Topics Theory Content</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 A Guide to the IJSO. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleCard(card) {
+      const content = card.querySelector('.card-content');
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach(c => {
+        if (c !== card) c.querySelector('.card-content').style.display = 'none';
+      });
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>

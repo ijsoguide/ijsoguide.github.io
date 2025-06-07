@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chemical Equilibrium Problems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../sectionPages.css">
+  <script src="/navigationimport.js" defer></script>
+</head>
+<body>
+
+
+  <!-- Header Section -->
+  <header>
+    <h1>Chemical Equilibrium Problems</h1>
+    <p>Analyze equilibrium conditions and calculate changes in concentration over time.</p>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>Chemical Equilibrium Problems</h2>
+    <a class="back-btn" href="../Chemistry.html">← Back to Chemistry</a>
+  </div>
+
+  <!-- Cards -->
+  <div class="container">
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        Equilibrium Constants<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Calculate and interpret equilibrium constants from reaction data.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Practice Now →</a>
+        </div>
+      </div>
+
+      <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        Conversions Between Equilibrium Constants<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Predict equilibrium shifts and apply principles to chemical systems.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Practice Now →</a>
+        </div>
+      </div>
+
+      <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        Factors affecting Equilibrium Position<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Apply the relationships between Kc and Kp, reverse reactions, and modified stoichiometry to convert and manipulate equilibrium expressions.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Practice Now →</a>
+        </div>
+      </div>
+
+      <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        Varying Definitions of Acids & Bases <span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Classify substances under different acid-base theories and identify conjugate pairs.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Practice Now →</a>
+        </div>
+      </div>
+
+      <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        Acidity and Basicity Constants and the pH Scale<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Solve problems involving pH, pOH, Ka, Kb, and ion concentrations.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Practice Now →</a>
+        </div>
+      </div>
+
+      <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        Buffer Solutions and the Henderson-Hasselbach Equation<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Use the Henderson–Hasselbalch equation to calculate pH and buffer capacity.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Practice Now →</a>
+        </div>
+      </div>
+
+      <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        pH indicators<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Match indicators to pH ranges and predict color changes in titrations.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Practice Now →</a>
+        </div>
+      </div>
+
+      <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        Titrations<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Analyze titration curves and calculate molarity from titration data.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Practice Now →</a>
+        </div>
+      </div>
+
+      <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+        Solubility Equilibra<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Use Ksp to calculate solubility, predict precipitation, and analyze ion product conditions.</p>
+          <a class="learn-btn" href="/mainlaunch.html">Practice Now →</a>
+        </div>
+      </div>
+      </div>
+
+    <div class="practice-section">
+      <div class="practice-section-icon">📘</div>
+      <div class="practice-section-content">
+        <h4>Ready to dive into chemical equilibrium theory?</h4>
+        <p>Explore our collection of theory content in chemical equilibrium, designed to enhance your understanding and knowledge of key concepts.</p>
+        <a href="../../../Theory/Chemistry/Equilibrium/equilibrium.html">View Chemical Equilibrium Theory Content</a>
+      </div>
+    </div>
+    
+
+<!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+    <div class="practice-section-icon">📝</div>
+    <div class="practice-section-content">
+      <h4>Ready to take IJSO-style chemical equilibrium and electrochemistry mock tests?</h4>
+      <p>Challenge yourself with our collection of IJSO-style mock tests in chemical equilibrium and electrochemistry, designed to test your problem-solving skills and understanding.</p>
+      <a href="../../../Mock Tests/Chemistry/Equilibrium/equilibrium.html">View Chemical Equilibrium and Electrochemistry Mock Tests</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 A Guide to the IJSO. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleCard(card) {
+      const content = card.querySelector('.card-content');
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach(c => {
+        if (c !== card) c.querySelector('.card-content').style.display = 'none';
+      });
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>
