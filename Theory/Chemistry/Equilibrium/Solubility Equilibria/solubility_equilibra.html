@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Solubility Equilibra</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../theoryPages.css">
+  <script src="/navigationimport.js" defer></script>
+</head>
+<body>
+
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Solubility Equilibra</h2>
+    <a href="../equilibrium.html" class="back-btn">← Back to Chemical Equilibrium</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h2>Dissolution of ionic compounds</h2>
+    <p>When ionic compounds dissolve in a solvent (tipically water), the ionic bonds between the component ions break, generating free ions, usually solvated by solvent molecules (hydrogen bonding and ion-dipole bonding).</p>
+    <p>This is a reversible chemical reaction. As ionic bonds break and the compound dissolves, ions in the solution collide, creating new ionic bonds and basically forming a solid precipitate (that can instantaneously redisolve). This is a dynamic equilibrium just like any other equilbirum.</p>
+    <p>If the equilibrium of the dissolution process is shifted to the right (to the products side), the compound is highly soluble, and if it's shifted to the left the compound has a low solubility.</p>
+
+    <h2>The solubility constant</h2>
+    <p>Consider the ionic compound \(M_{m}N_{n}\)</p>
+    <p>The dissolution equilibrium equation can be written as:</p>
+    <p style="text-align: center;">\(M_{m}N_{n (s)}\rightarrow mM^{n+}_{ (aq)} + nN^{m+}_{ (aq)}\)</p>
+    <p>The equilibrium constant for this reaction is \(K = \frac{[M^{n+}]^m[N^{m+}]^n}{[M_{m}N_{n}]}\)</p>
+    <p>However, in chemical equilibra, the activity of solid substances is considered to be equal to 1. So, we can write \(K=[M^{n+}]^m[N^{m+}]^n\)</p>
+    <p>We denote this equilbirum constant by \(K_{s}\) or \(K_{sp}\) and we call it the substance's solubility product.</p>
+    <p>As for other equilibrium constants, we also define the solubility product \(pK_{sp}=-log(K_{sp})\)</p>
+    <p>The condition for a precipiatte to not form is \([M^{n+}]^m[N^{m+}]^n\leq K_{sp}\)     (1)</p>
+
+    <h2>Calculating the solubility of a compound</h2>
+    <p>We call the maximum molar concentration of a substance in a certain solvent (the concentration of a saturated solution) the solubility of the substance and we denote it by S.</p>
+    <p>If the compound completely dissolves, the concentrations of the two ions are \([M^{n+}]=mS\) and \([N^{m+}] = nS\)</p>
+    <p>Writing the limit case of equation (1) (for a saturated solution) we get \([M^{n+}]^m[N^{m+}]^n = K_{sp}\)</p>
+    <p>Substituting the two concentrations, \((mS)^m\cdot (nS)^n=K_{sp}\)</p>
+    <p>This is equivalent to \(m^m\cdot n^n \cdot S^{m+n}=K_{sp}\)</p>
+    <p>For the solubility, we get the final expression:</p>
+    <p style="text-align: center;">\(S = \sqrt[m+n]{\frac{K_{sp}}{m^m\cdot n^n}}\)</p>
+
+    <h2>Factors affecting solubility</h2>
+    <p>Because solvated species are stabilised by intermolecular interactions with the solvent, the most important factor in determing the solubility is the solvent.</p>
+    <p>As a general rule, highly polarized sollutes (ionic or polar substances) dissolve in highly polarized solvents (usually polar), while weakly polarized sollutes (non-polar substances) dissolve in weakly polarized solvents (non-polar substances).</p>
+    <p>Examples of polar solvents are water, ethanol or methanol, while example of non-polar solvents are hydrocarbons (n-hexane, benzene) or carbon tetrachloride.</p>
+    <p>This also explain why NaCl is way more soluble in water than AgCl. Na has a strong electropositive character, making the Na-Cl bond higly polarized (strong ionic character), while Ag is not that electropositive and doesn't have to polarize the Ag-Cl bond that much. That results in a partial covalent character of AgCl resulting in a relatively low solubility in polar water.</p>
+    <p>Another factor influencing solubility is temperature. In general, the solubility of solids and liquids increases with temperature, while that of gases decreases.</p>
+    <p>The solubility of gases only is also affected by pressure. Higher pressures result in higher solubilities. This is described quantitatively by Henry's law:</p>
+    <p style="text-align: center;">\(S=K_{H}\cdot p\)</p>
+    <p>where S is the solubility of the gas, p is its partial pressure and \(K_{H}\) is called Henry's constant and its value changes for each substance and temperature.</p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+
+</body>
+</html>
