@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Heating and Cooling Curves</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../theoryPages.css">
+  <script src="/navigationimport.js" defer></script>
+</head>
+<body>
+
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Heating and Cooling Curves</h2>
+    <a href="../Thermo.html" class="back-btn">← Back to Thermodynamics</a>
+  </div>
+
+  <!-- Main content -->
+  <div class="container">
+    <p>
+      Heating and cooling curves show how the temperature of a substance changes over time as heat is added or removed. These graphs help visualize phase changes (melting, boiling, freezing, condensing) and the energy involved in these processes.
+    </p>
+  
+    <br>
+    <h2>Key Regions of a Heating Curve</h2>
+    <img src="image1.png" alt="Heating Curve">
+    <ul>
+      <li><strong>Region A–B (Solid heating):</strong> Temperature increases as solid absorbs heat, increasing kinetic energy.</li>
+      <li><strong>Region B–C (Melting):</strong> Phase change from solid to liquid; temperature remains constant while potential energy increases.</li>
+      <li><strong>Region C–D (Liquid heating):</strong> Temperature increases as liquid absorbs heat, increasing kinetic energy.</li>
+      <li><strong>Region D–E (Boiling):</strong> Phase change from liquid to gas; temperature remains constant while potential energy increases.</li>
+      <li><strong>Region E–F (Gas heating):</strong> Temperature increases as gas absorbs heat.</li>
+    </ul>
+  
+    <br>
+    <p><strong>Cooling curves</strong> are simply the reverse of heating curves. They show energy being released instead of absorbed, with phase changes occurring at the same temperatures but in reverse order.</p>
+  
+    <br>
+    <h2>Key Equations Used</h2>
+    <ul>
+      <li>During temperature change (no phase change):<br>
+        \[
+        Q = mc\Delta T
+        \]</li>
+      <li>During phase change (no temperature change):<br>
+        \[
+        Q = mL
+        \]
+        where \( L \) is the specific latent heat (fusion or vaporization)
+      </li>
+    </ul>
+  
+    <br>
+    <h2>Important Notes</h2>
+    <ul>
+      <li>Temperature does not change during a phase change.</li>
+      <li>More heat is needed for vaporization than melting (latent heat of vaporization &gt; latent heat of fusion).</li>
+      <li>Slope of each section depends on the specific heat capacity of that phase.</li>
+    </ul>
+  
+    <br>
+  
+    <button class="collapsible">Example 1: Heating Ice to Steam</button>
+    <div class="content">
+      <p>
+        Calculate the total energy needed to convert 100 g of ice at 0°C to steam at 100°C.<br>
+        Given:
+        <ul>
+          <li>Specific heat of water: \( c = 4.18 \, \text{J/g°C} \)</li>
+          <li>Latent heat of fusion: \( L_f = 334 \, \text{J/g} \)</li>
+          <li>Latent heat of vaporization: \( L_v = 2260 \, \text{J/g} \)</li>
+        </ul>
+      </p>
+  
+      <p><strong>Solution:</strong></p>
+      <ul>
+        <li>Step 1: Melt the ice (0°C) → \( Q_1 = mL_f = 100 \times 334 = 33,400 \, \text{J} \)</li>
+        <li>Step 2: Heat the water from 0°C to 100°C → \( Q_2 = mc\Delta T = 100 \times 4.18 \times 100 = 41,800 \, \text{J} \)</li>
+        <li>Step 3: Vaporize the water → \( Q_3 = mL_v = 100 \times 2260 = 226,000 \, \text{J} \)</li>
+      </ul>
+      <p>
+        <strong>Total heat energy:</strong><br>
+        \[
+        Q_{\text{total}} = Q_1 + Q_2 + Q_3 = 33,400 + 41,800 + 226,000 = 301,200 \, \text{J}
+        \]
+      </p>
+    </div>
+  
+    <button class="collapsible">Example 2: Cooling Steam to Ice</button>
+    <div class="content">
+      <p>
+        How much energy is released when 50 g of steam at 100°C is cooled and frozen into ice at 0°C?<br>
+        Use the same values as Example 1.
+      </p>
+  
+      <p><strong>Solution:</strong></p>
+      <ul>
+        <li>Step 1: Condense the steam → \( Q_1 = mL_v = 50 \times 2260 = 113,000 \, \text{J} \)</li>
+        <li>Step 2: Cool water from 100°C to 0°C → \( Q_2 = mc\Delta T = 50 \times 4.18 \times 100 = 20,900 \, \text{J} \)</li>
+        <li>Step 3: Freeze the water → \( Q_3 = mL_f = 50 \times 334 = 16,700 \, \text{J} \)</li>
+      </ul>
+      <p>
+        <strong>Total energy released:</strong><br>
+        \[
+        Q_{\text{total}} = Q_1 + Q_2 + Q_3 = 113,000 + 20,900 + 16,700 = 150,600 \, \text{J}
+        \]
+      </p>
+    </div>
+   
+
+    <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+    Written by <strong>Thenura Dilruk</strong>
+</p>  
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+
+ <script src="../../../collapsibles.js"></script>
+</body>
+</html>
