@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Molecular and Empirical Formula</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+ <link rel="stylesheet" href="../../theoryPages.css">
+ <script src="/navigationimport.js" defer></script>
+</head>
+<body>
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Molecular and Empirical formula</h2>
+    <a href="../stoichiometry.html" class="back-btn">← Back to Stoichiometry</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+<h2>Introduction</h2>
+<p>Given some molecule, how should you represent it? Two ways of doing it are through the empirical formula and the molecular formula, the first one represents the relative number of atoms of each element per molecule, while the latter represents the actual number of atoms per molecule, for example the molecular formula of glucose is \(\ce{C6H12O6}\), because there are 6 carbon, 12 hydrogen and 6 oxygen atoms for one glucose molecule. Its empirical formula would be \(\ce{CH2O}\), because there are 2 hydrogen and 1 oxygen atoms for every carbon atom.</p>
+
+<h2>Determining Empirical Formula from Mass Percentage</h2>
+<p>Starting with an example, how can we determine the empirical formula of water from the mass percentage of its elements?</p>
+<p>H: 11.21%</p>
+<p>O: 88.79%</p>
+<p>One way of seeing this problem is that for every 100g of water, there are 11.21g of Hydrogen and 88.79g of oxygen, those values can be converted to moles dividing them by their molar masses. Therefore, there will be 11.21 moles of hydrogen and 5.549 moles of oxygen, dividing everything by 5.549 will yield 2 moles of hydrogen and 1 mol of oxygen, so the empirical formula of water is \(\ce{H2O}\).</p>
+<p>Essentially, the step-by-step consists of:</p>
+<ul>
+    <li>Divide the percentages by the molar mass.</li>
+    <li>Divide all the numbers by the smallest one, since what matters is the ratio between the number of elements.</li>
+    <li>If needed, you must multiply everything by an additional factor to make all the numbers whole. If one of the numbers is 2.5, you should multiply it by 2 to get 5.</li>
+</ul>
+
+<h2>Determining Molecular Formula</h2>
+<p>In order to determine the molecular formula, there is another piece of information needed, the molar mass, using water as an example, its molar mass is 18g/mol, its empirical formula is \(\ce{H2O}\), the molar mass of the empirical formula is \(2 \times 1 + 16 = 18 \: \text{g/mol}\), which is the same value, meaning the molecular and empirical formulas for water are the same, but that is not always the case. Take glucose, its molar mass is 180g/mol its empirical formula is \(\ce{CH2O}\), the molar mass of the empirical formula is \(12+2\times1+16= 30\: \text{g/mol}\), dividing \(\frac{180}{30} = 6\), meaning the mass of glucose is 6 times bigger than what its mass would be if its molecular formula were the same as the empirical, therefore, the molecular formula of glucose is \(\ce{C6H12O6}\)</p>
+<p>The step-by-step method is:</p>
+<ul>
+    <li>Determine the molar mass of the empirical formula</li>
+    <li>Divide the molar mass by the molar mass of the empirical formula</li>
+    <li>Multiply the empirical formula by the ratio obtained from step 2</li>
+</ul>
+
+<button class="collapsible">Example 1: Mass Percentage of Elements</button>
+<div class="content">
+    <p>Determine the mass percentage of each element on the following compounds.</p>
+    <ul>
+        <li>\(\ce{CO2}\)</li>
+        <li>\(\ce{XeF6}\)</li>
+        <li>\(\ce{PCl5}\)</li>
+        <li>\(\ce{KCl}\)</li>
+    </ul>
+    <br>
+    <p>Solution:</p>
+    <ul>
+        <li> 
+            <p>\(\text{MM} = 12.01 \times 1 + 16.00 \times 2 = 44.01 \:\text{g/mol}\)</p>
+            <p>\(\text{M}_\text{C} = 12.01 \times 1 = 12.01 \: \text{g/mol}\)</p>
+            <p>\(\text{M}_\text{O} = 16.00 \times 2 = 32.00 \: \text{g/mol}\)</p>
+            <p>\(\% \, \text{C} = \frac{\text{M}_\text{C}}{\text{MM}} = \) <b>\(27.29\: \% \)</b> </p>
+            <p>\(\% \, \text{O} = \frac{\text{M}_\text{O}}{\text{MM}} = \) <b>\(72.71\: \% \)</b></p>
+        </li>
+        <br>
+        <li>
+            <p>\(\text{MM} = 131.29 \times 1 + 18.998 \times 6 = 245.28 \: \text{g/mol}\)</p>
+            <p>\(\text{M}_\text{xe} = 131.29 \times 1 = 131.29 \: \text{g/mol}\)</p>
+            <p>\(\text{M}_\text{F} = 18.998 \times 6 = 113.988 \: \text{g/mol}\)</p>
+            <p>\(\% \: \text{Xe} = \frac{\text{M}_\text{Xe}}{\text{MM}} = 53.53\: \%\)</p>
+            <p>\(\% \: \text{F} = \frac{\text{M}_\text{F}}{\text{MM}} = 46.47\: \% \)</p>
+        </li>
+        <br>
+        <li>
+            <p>\(\text{MM} = 30.97 \times 1 + 35.45 \times 5 = 208.22 \: \text{g/mol}\)</p>
+            <p>\(\text{M}_\text{P} = 30.97 \times 1 = 30.97 \: \text{g/mol}\)</p>
+            <p>\(\text{M}_\text{Cl} = 35.45 \times 5 = 177.25 \: \text{g/mol}\)</p>
+            <p>\(\% \: \text{P} = \frac{\text{M}_\text{P}}/\text{MM} = 14.87 \: \% \)</p>
+            <p>\(\% \: \text{Cl} = \frac{\text{M}_\text{Cl}}{\text{MM}} = 85.13 \: \%\)</p>
+        </li>
+        <br>
+        <li>
+            <p>\(\text{MM} = 39.10 \times 1 + 35.45 \times 1 = 74.55 \: \text{g/mol}\)</p>
+            <p>\(\text{M}_\text{K} = 39.10 \times 1 = 39.10 \: \text{g/mol}\)</p>
+            <p>\(\text{M}_\text{Cl} = 35.45 \times 1 = 35.45 \: \text{g/mol}\) </p>
+            <p>\(\% \: \text{K} = \frac{\text{M}_\text{K}}{\text{MM}} = 52.45 \: \% \)</p>
+            <p>\(\% \: \text{Cl} = \frac{\text{M}_\text{Cl}}{\text{MM}} = 47.55 \: \% \)</p>
+        </li>
+    </ul>
+</div>
+<button class="collapsible">Example 2: Empirical Formula from Mass Percentage</button>
+<div class="content">
+    <p>Given the mass percentage of each element, determine the empirical formula</p>
+    <ul>
+        <li>
+            <p>C: 52.14%</p>
+            <p>H: 13.13%</p>
+            <p>O: 34.73%</p>
+        </li>
+        <br>
+        <li>
+            <p>C: 80.49%</p>
+            <p>H: 10.13%</p>
+            <p>N: 9.39%</p>
+        </li>
+        <br>
+        <li>
+            <p>H: 5.93%</p>
+            <p>O: 94.07%</p>
+        </li>
+        <br>
+        <li>
+            <p>C: 40.00%</p>
+            <p>H: 6.71%</p>
+            <p>O: 53.29%</p>
+        </li>
+    </ul>
+    <br>
+    <p>Solution:</p>
+    <ul>
+        <li>
+            <p>\(\frac{52.14}{12.01} = 4.508\)</p>
+            <p>\(\frac{13.13}{1.008} = 13.03\)</p>
+            <p>\(\frac{34.73}{16.00} = 2.171\)</p>
+            <p>\(4.508 : 13.03 : 2.171 => 2 : 6 : 1 => \ce{C2H6O}\)</p>
+        </li>
+        <br>
+        <li>
+            <p>\(\frac{80.49}{12.01} = 6.702\)</p>
+            <p>\(\frac{10.13}{1.008} = 10.05\)</p>
+            <p>\(\frac{9.39}{14.01} = 0.6702\)</p>
+            <p>\(6.702 : 10.05 : 0.6702 => \ce{C10H15N}\)</p>
+        </li>
+        <br>
+        <li>
+            <p>\(\frac{5.93}{1.008} = 5.88\)</p>
+            <p>\(\frac{94.07}{16.00} = 5.88\)</p>
+            <p>\(5.88 : 5.88 => 1:1 => \ce{HO}\)</p>
+        </li>
+        <br>
+        <li>
+            <p>\(\frac{40.00}{12.01} = 3.33\)</p>
+            <p>\(\frac{6.73}{1.008} = 6.66\)</p>
+            <p>\(\frac{53.29}{16.00} = 3.33\)</p>
+            <p>\(3.33 : 6.66 : 3.33 => 1 : 2 : 1 => \ce{CH2O}\)</p>
+        </li>
+    </ul>
+</div>
+
+<button class="collapsible">Example 3: Molecular Formula from Empirical Formula</button>
+<div class="content">
+    <p>Given the molar mass of the compounds from question 2, determine their molecular formula</p>
+    <ul>
+        <li>46.068 g/mol</li>
+        <li>149.23 g/mol</li>
+        <li>34.016 g/mol</li>
+        <li>60.052 g/mol</li>
+    </ul>
+    <br>
+    <p>Solution:</p>
+    <ul>
+        <li>
+            <p>\(\text{MM}_\text{E} \) = Molar mass of empirical formula</p>
+            <p>\(\text{MM}_\text{E} = 2 \times 12.01 + 6 \times 1.008 + 1 \times 16.00 = 46.068 \: \text{g/mol}\)</p>
+            <p>\(\frac{\text{MM}}{\text{MM}_\text{E}} = 1 => \ce{C2H6O}\)</p>
+        </li>
+        <br>
+        <li>
+            <p>\(\text{MM}_\text{E} = 10 \times 12.01 + 15 \times 1.008 + 1 \times 14.01 = 149.23 \: \text{g/mol}\)</p>
+            <p>\(\frac{\text{MM}}{\text{MM}_\text{E}} = 1 => \ce{C10H15N}\)</p>
+        </li>
+        <br>
+        <li>
+            <p>\(\text{MM}_\text{E} = 1.008 \times 1 + 16.00 \times 1 = 17.008 \: \text{g/mol}\)</p>
+            <p>\(\frac{\text{MM}}{\text{MM}_\text{E}} = 2 => \ce{H2O2}\)</p>
+        </li>
+        <br>
+        <li>
+            <p>\(\text{MM}_\text{E} = 12.01 \times 1 + 1.008 \times 2 + 16.00 \times 1 = 30.026 \: \text{g/mol}\)</p>
+            <p>\(\frac{\text{MM}}{\text{MM}_\text{E}} = 2 => \ce{C2H4O2}\)</p>
+        </li>
+    </ul>
+</div>
+
+<button class="collapsible">Example 4: Determining Empirical and Molecular Formula</button>
+<div class="content">
+    <p>The mass percentage of carbon in benzene 92.26%, determine its molecular formula.</p>
+    <p>Useful information:</p>
+    <ul>
+        <li>Benzene is a hydrocarbon, meaning its composed exclusively by carbon and hydrogen.</li>
+        <li>Molar mass: 78.11 g/mol</li>
+    </ul><br>
+    <p>Solution:</p>
+    <p>\(\frac{92.26}{12.01} = 7.682\)</p>
+    <p>\(\frac{100-92.26}{1.008} = 7.678\)</p>
+    <p>\(7.682 : 7.678 => 1 : 1 => \ce{CH}\)</p>
+    <p>\(\text{MM}_\text{E} = 12.01 + 1.008 = 13.02 \: \text{g/mol}\)</p>
+    <p>\(\frac{\text{MM}}{\text{MM}_\text{E}} = 6 => \ce{C6H6}\)</p>
+</div>
+
+<button class="collapsible">Example 5: Determining the Compound</button>
+<div class="content">
+    <p>Scientists are trying to determine the compound contained in a sample, the data gathered are</p>
+    <p>- Mass percentage (C: 40.00%, H: 6.71%, 53.29%)</p>
+    <p>- Molar mass (180.16 g/mol)</p>
+    <ul>
+        <li>Determine the molecular formula of the compound</li>
+        <li>Is this data enough to determine the compound? If not, why?</li>
+    </ul>
+    <br>
+    <p>Solution:</p>
+    <ul>
+        <li>
+            <p>\(\frac{40.00}{12.01} = 3.33\)</p>
+            <p>\(\frac{6.73}{1.008} = 6.66\)</p>
+            <p>\(\frac{53.29}{16.00} = 3.33\)</p>
+            <p>Empirical formula => \(\ce{CH2O}\)</p>
+            <p>\(\text{MM}_\text{E} = 12.01 + 1.008 \times 2 + 16.00 = 30.026 \: \text{g/mol}\)</p>
+            <p>\(\frac{\text{MM}}{\text{MM}_\text{E}} = 6 => \ce{C6H12O6}\)</p>
+        </li>
+        <li>No, because there can be different chemical compounds with the same molecular formula, for example, glucose and fructose share the same molecular formula (\(\ce{C6H12O6}\)), but have different structures, those compounds are called isomers.</li>
+    </ul>
+</div>
+
+    <br>
+    <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+    Written by <strong>Jailson Godeiro</strong>
+</p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+<script src="../../../collapsibles.js"></script>
+</body>
+</html>
