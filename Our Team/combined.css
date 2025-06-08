@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', 'Segoe UI', sans-serif;
+    background-color: #100839;
+    color: white;
+  }
+
+  h2.section-title {
+    text-align: center;
+    color: white;
+    margin: 2rem 0 1rem;
+    font-size: 2rem;
+  }
+
+  .tabs {
+display: flex;
+justify-content: center;
+gap: 1rem;
+margin: 2rem 0 1rem;
+}
+
+.tab {
+background-color: #1f1359;
+border: none;
+color: white;
+padding: 0.8rem 1.5rem;
+font-weight: 600;
+border-radius: 6px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.tab.active,
+.tab:hover {
+background-color: #2979ff;
+color: white;
+}
+
+  /* ===================== OUR TEAM SECTION ===================== */
+  .team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 2rem 2rem;
+  }
+
+  .team-grid .member-card {
+    background: #1f1359;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .team-grid .member-photo-container {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  .team-grid .member-photo-container img.main-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .team-grid .member-photo-container img.flag-icon {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: auto;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .team-grid .member-card h3 {
+    margin: 0.8rem 0 0.4rem;
+    color: white;
+  }
+
+  .view-btn-container {
+    text-align: center;
+  }
+
+  .view-all-btn {
+    display: inline-block;
+    margin: 2rem auto 4rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    color: #2979ff;
+    background: none;
+    border: 2px solid #2979ff;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+  }
+
+  .view-all-btn:hover {
+    background-color: #2979ff10;
+  }
+
+  /* ===================== ARCHIVES SECTION ===================== */
+  .archives-section {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  .archives-section .member-box {
+    max-width: 1000px;
+    width: 100%;
+    box-sizing: border-box;  /* Make padding included in width */
+    margin: 1rem auto;
+    display: flex;
+    align-items: flex-start;
+    background-color: #1f1359;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    flex-shrink: 0;
+  }
+
+  .archives-section .member-box img {
+  flex-shrink: 0;
+  width: 120px !important;
+  height: 120px !important;
+  border-radius: 50%;
+  object-fit: cover !important;
+  margin-right: 1.5rem;
+  display: block;
+}
+
+  .archives-section .member-details h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #ffcb58;
+    font-weight: bold;
+  }
+
+  .archives-section .member-details h4 {
+    margin: 0.3rem 0;
+    font-size: 1.05rem;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .archives-section .member-details p {
+    margin: 0.5rem 0 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: justify;
+    color: #FFF;
+  }
+
+  @media (max-width: 768px) {
+  .archives-section .member-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .archives-section .member-box img {
+    width: auto;
+    max-width: 120px; 
+    height: auto;    
+    margin: 0 0 1rem 0;
+  }
+}
+
+.archives-section .member-details {
+  flex-grow: 1;
+  min-width: 0; 
+}
+
+ 
+  footer {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    background-color: #1f1359;
+    color: white;
+    font-size: 0.9rem;
+  }
