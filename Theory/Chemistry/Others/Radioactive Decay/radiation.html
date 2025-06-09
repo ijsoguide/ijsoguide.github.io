@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Radioactive Decay</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../theoryPages.css">
+  <script src="/navigationimport.js" defer></script>
+</head>
+<body>
+
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Radioactive Decay</h2>
+    <a href="../others.html" class="back-btn">← Back to Other Topics</a>
+  </div>
+ 
+<!-- Main Content -->
+<div class="container">   
+    <div class="container">
+        <h2>What is Radioactivity?</h2>
+        <p>Radioactivity is the spontaneous emission of particles or energy from an unstable atomic nucleus. This occurs in an attempt to become more stable. The nucleus loses energy by emitting radiation in the form of alpha, beta, or gamma rays.</p>
+      
+        <h2>Types of Radiation</h2>
+        <ul>
+          <li><strong>Alpha (α) radiation:</strong> Consists of 2 protons and 2 neutrons (a helium nucleus). It has a +2 charge and low penetration ability (stopped by paper).</li>
+          <li><strong>Beta (β) radiation:</strong> High-energy electrons (β⁻) or positrons (β⁺). Moderate penetration (stopped by aluminum).</li>
+          <li><strong>Gamma (γ) radiation:</strong> Electromagnetic waves with very high energy and no mass or charge. Highly penetrating (requires thick lead or concrete to stop).</li>
+        </ul>
+      
+        <h2>Types of Radioactive Decay</h2>
+        <ul>
+          <li><p>
+            In alpha decay, the nucleus emits an <strong>alpha particle</strong>, which consists of 2 protons and 2 neutrons. This reduces the atomic number by 2 and the mass number by 4.
+          </p>
+          <p><strong>Example:</strong>  
+              \(\ce{^{238}_{92}U -> ^{234}_{90}Th + ^{4}_{2}He}\)
+          </p></li>
+          <img src="image1.png">
+          <li><p>
+            In beta-minus decay, a neutron in the nucleus converts into a proton and emits a <strong>beta-minus particle</strong> (an electron) and an antineutrino. The atomic number increases by 1.
+          </p>
+          <p><strong>Example:</strong>  
+            \(\ce{^{14}_{6}C -> ^{14}_{7}N + \beta^- + \bar{\nu}_e}\)
+          </p></li>
+          <li><p>
+            In beta-plus decay, a proton transforms into a neutron, emitting a <strong>positron</strong> (β⁺) and a neutrino. The atomic number decreases by 1.
+          </p>
+          <p><strong>Example:</strong>  
+            \(\ce{^{11}_{6}C -> ^{11}_{5}B + \beta^+ + \nu_e}\)
+          </p></li>
+          <img src="image2.png">
+          <li><p>
+            Gamma decay often follows beta minus decay when the resulting nucleus is left in an excited state, leading to the emission of a <strong>gamma ray</strong> (high-energy photon). Gamma emission does not change the atomic number or mass number, whereas beta minus decay does. The example below will help you understand this more clearly.
+          </p>
+          <p><strong>Example:</strong>  
+            \(\ce{^{60}_{27}Co -> ^{60}_{28}Ni + \beta^- + \gamma}\)
+          </p></li>
+          <img src="image4.png">
+          <li><p>
+            In electron capture, an inner orbital electron is captured by the nucleus and combines with a proton to form a neutron. This process emits a neutrino and decreases the atomic number by 1.
+          </p>
+          <p><strong>Example:</strong>  
+            \(\ce{^{7}_{4}Be + e^- -> ^{7}_{3}Li + \nu_e}\)
+          </p></li>
+          <img src="image3.png">
+        </ul>
+      
+        <h2>Properties of Radiation</h2>
+        <ul>
+          <li>Radiation can ionize atoms (remove electrons from them).</li>
+          <li>Alpha particles are heavy and move slowly; they cause significant ionization but are easily blocked.</li>
+          <li>Beta particles are lighter and faster, with moderate ionizing power.</li>
+          <li>Gamma rays are very penetrating but have low ionizing ability.</li>
+          <li>Radiation can affect living tissue and is used in medicine, industry, and scientific research.</li>
+        </ul>
+      
+        <h2>Radioactive Decay</h2>
+        <p>Radioactive decay is a random process. It is not influenced by temperature, pressure, or chemical bonding. Each radioactive isotope has a fixed probability of decaying over time.</p>
+      
+        <p>The activity (A) of a sample is the number of disintegrations per second and is measured in becquerels (Bq).</p>
+      
+        <h2>Decay Law</h2>
+        <p>The number of undecayed nuclei <strong>N</strong> at a time <strong>t</strong> follows an exponential decay law:</p>
+      
+        <p>\(\text{N} = \text{N}_0\:e^{-\lambda \text{t}}\)</p>
+      
+        <ul>
+          <li>\(\text{N}_0\): initial number of nuclei</li>
+          <li>\(\lambda\): decay constant (probability of decay per unit time)</li>
+          <li>\(\text{t}\): time elapsed</li>
+        </ul>
+      
+        <p>The activity also decreases exponentially: \(\text{A} = \text{A}_0 \:e^{-\lambda \text{t}}\)</p>
+      
+        <h2>Half-Life</h2>
+        <p>The half-life (\(\text{T}_{1/2}\)) is the time required for half of the radioactive nuclei in a sample to decay.</p>
+      
+        <p>\(\text{T}_{1/2} = \frac{ln(2)}{\lambda} \approx \frac{0.693}{λ}\)</p>
+      
+        <p>After each half-life, the number of undecayed atoms reduces by 50%. The half-life is constant for a given isotope.</p>
+
+        <br>
+        <p>For more information about the topics, view the topics: <a href="/Theory/Physics/Modern Physics/Radioactive Decay/radioactivedecay.html" style="color: #9081dd;">Types of Radioactive Decay</a>, <a href="/Theory/Physics/Modern Physics/Properties of Radiation/radiationproperties.html" style="color: #9081dd;">Properties of Radiation</a> and <a href="/Theory/Physics/Modern Physics/Decay Law/decay_law.html" style="color: #9081dd;">Half-life and Radioactive Decay Law</a></p>
+        <br>
+        <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+    Written by <strong>Thenura Dilruk</strong>
+</div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+
+  <script src="../../../collapsibles.js"></script>
+</body>
+</html>
