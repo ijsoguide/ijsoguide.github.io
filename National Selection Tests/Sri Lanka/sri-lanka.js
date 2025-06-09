@@ -4,43 +4,43 @@ document.addEventListener("DOMContentLoaded", () => {
       year: 2024,
       difficulty: 3,
       paperLink: "Papers/2024SriLanka.pdf",
-      solutionLink: "https://example.com/sri-lanka/2024-solutions.pdf"
+      solutionLink: ""
     },
     {
       year: 2023,
       difficulty: 3,
       paperLink: "Papers/2023SriLanka.pdf",
-      solutionLink: "https://example.com/sri-lanka/2023-solutions.pdf"
+      solutionLink: ""
     },
     {
       year: 2022,
       difficulty: 4,
       paperLink: "Papers/2022SriLanka.pdf",
-      solutionLink: "https://example.com/sri-lanka/2022-solutions.pdf"
+      solutionLink: ""
     },
     {
       year: 2019,
       difficulty: 2,
       paperLink: "Papers/2019SriLanka.pdf",
-      solutionLink: "https://example.com/sri-lanka/2019-solutions.pdf"
+      solutionLink: ""
     },
     {
       year: 2018,
       difficulty: 1,
       paperLink: "Papers/2018SriLanka.pdf",
-      solutionLink: "https://example.com/sri-lanka/2018-solutions.pdf"
+      solutionLink: ""
     },
     {
       year: 2017,
       difficulty: 3,
       paperLink: "Papers/2017SriLanka.pdf",
-      solutionLink: "Solutions/Final2017SriLanka.pdf"
+      solutionLink: ""
     },
     {
       year: 2016,
       difficulty: 2,
       paperLink: "Papers/2016SriLanka.pdf",
-      solutionLink: "Solutions/Final2016SriLanka.pdf"
+      solutionLink: ""
     }
   ];
 
