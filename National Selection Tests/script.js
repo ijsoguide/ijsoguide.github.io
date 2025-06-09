@@ -1,20 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const countries = [
     {
-      name: "Australia",
-      difficulty: 3,
-      flag: "https://flagcdn.com/au.svg",
-      link: "Australia/australia.html"
-    },
-    
-    {
-      name: "Romania",
-      difficulty: 1,
-      flag: "https://flagcdn.com/ro.svg",
-      link: "Romania/romania.html"
-    },
-    
-    {
       //difficulty only integer for now
       name: "Sri Lanka",
       difficulty: 2,
