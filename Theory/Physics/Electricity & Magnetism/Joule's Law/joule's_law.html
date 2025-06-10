@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Joule’s Law</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- MathJax for LaTeX rendering -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+  <link rel="stylesheet" href="../../theoryPages.css">
+  <script src="/navigationimport.js" defer></script>
+</head>
+<body>
+
+
+  <!-- Page Header with Back Button -->
+  <div class="top-bar">
+    <h2>Joule’s Law</h2>
+    <a class="back-btn" href="../electricity.html">← Back to Electricity and Magnetism</a>
+   </div>
+
+  <!-- Content -->
+  <div class="container">
+    <p>Joule’s law explains the correlation between the heat produced in a resistor and relevant parameters. First, let’s explain when and why heat is produced in a resistor.</p>
+
+    <h2>When and why do resistors produce heat?</h2>
+    <p>Resistors reduce the current by arranging the moving electrons in a certain way, to make them collide with atoms and each other more frequently, making the flow of electrons less efficient.</p>
+    <p>Since electrons can’t collide without losing some of their energy, every time they collide, some of their energy is converted into heat, which is then transferred to the resistor.</p>
+    <p>Resistors produce heat by increasing the collision frequency between electrons and the resistor’s walls, while they also convert their lost energy into heat and transfer it to the resistor.</p>
+
+    <h2>Which parameters are relevant for calculating the heat in the resistor?</h2>
+    <p>Since heat is produced by electron collisions, the more electrons that pass through the resistor, the more collisions will occur, hence more heat will be produced. Produced heat is directly proportional to the square of the current passing through the resistor.</p>
+    <p>The resistance of the resistor determines how often the electron collisions occur, hence how much heat is produced. Produced heat is directly proportional to the resistor’s resistance.</p>
+    <p>Since electrons constantly pass through the resistor, the more time we let the electrons flow, the more collisions will occur, hence more heat will be produced. Produced heat is directly proportional to the time for which the current flows.</p>
+    <p>Formula:</p>
+    <p>\[Q = I^2R\Delta t\]</p>
+    <p>Where:</p>
+    <ul>
+        <li>\(Q\) - heat produced in the resistor</li>
+        <li>\(I\) - current passing through the resistor</li>
+        <li>\(R\) - resistor’s resistance</li>
+        <li>\(\Delta t\) - time for which the current flows</li>
+    </ul>
+    <h2>Resistor’s power</h2>
+    <p>Since the heat produced in the resistor is the difference in electrons’ energies, it is equal to the work of the resistor. We can represent the power as the work done over a period of time, so:</p>
+    <p>\[P = I^2R\]</p>
+    <button class="collapsible">Example 1: Calculating power and the produced heat</button>
+    <div class="content">
+        <p>Through a resistor of resistance \(R = 2\:\text{k} \Omega\) flows a constant current \(I=50\:\text{mA}\). Calculate the power of the resistor and how much heat has been produced after 10s of the current flowing.</p>
+        <br>
+        <p>Solution:</p>
+        <p>Convert units:</p>
+        <p>\(R = 2 \:\text{k}\Omega = 2 \times 10^3 \Omega\) and \(I = 50 \: \text{mA} = 5 \times 10^{-2}\)</p>
+        <p>\(P = I^2R= {(5 \times 10^{-2})}^2 \times 2 \times 10^3 = 5\: \text{W} \)</p>
+        <p>\(W = P \times \Delta t=5 \:\text{W} \times 10\: \text{s} = 50\: \text{J}\)</p>
+    </div>
+    <br>
+     <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+    Written by <strong>Nemanja Maslak</strong>
+</p>
+  </div>
+
+  <!-- Footer -->
+ <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+<script src="../../../collapsibles.js"></script>
+</body>
+</html>
