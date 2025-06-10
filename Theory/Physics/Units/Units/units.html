@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Units</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../theoryPages.css">
+  <script src="/navigationimport.js" defer></script>
+</head>
+<body>
+
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Units</h2>
+    <a href="../Units.html" class="back-btn">← Back to Units</a>
+  </div>
+
+  <!-- Main content -->
+  <div class="container">
+    <p>Units are standards for measurement of physical quantities that need clear definitions to be useful. Without them, measurements would not make sense.</p>
+    <p>For example, “the object weighs 170” is meaningless. Perhaps it is a paper box that weighs 170 grams. But it could also be metal cube that weighs 170 kilograms. A predetermined unit needs to be placed after the number to make the measurement meaningful.</p>
+
+    <h2>Fundamental units</h2>
+    <p>There are many possible systems of measurement that have been developed. In science, we use the International System of units (SI).</p>
+    <p>The fundamental or base units in SI are presented in the table below:</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Quantity</th>
+                <th>SI unit</th>
+                <th>SI symbol</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mass</td>
+                <td>Kilogram</td>
+                <td>kg</td>
+            </tr>
+            <tr>
+                <td>Length</td>
+                <td>Metre</td>
+                <td>m</td>
+            </tr>
+            <tr>
+                <td>Time</td>
+                <td>Second</td>
+                <td>s</td>
+            </tr>
+            <tr>
+                <td>Electric current</td>
+                <td>Ampere</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Amount of substance</td>
+                <td>Mole</td>
+                <td>mol</td>
+            </tr>
+            <tr>
+                <td>Temperature</td>
+                <td>Kelvin</td>
+                <td>K</td>
+            </tr>
+            <tr>
+                <td>Luminous intensity</td>
+                <td>Candela</td>
+                <td>cd</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>It is not needed to know the exact scientific definitions of these units to use them properly.</p>
+
+    <h2>Derived units</h2>
+    <p>With the seven fixed fundamental units, all other measurements can be expressed as different combinations of them. In other words, all other units are derived units.</p>
+    <p>Example:</p>
+    <p>A unit for the measurement of speed is not included on the list of fundamental units. However, it can be derived from the definition of speed. Since speed = distance/time → units of speed = units of distance/units of time. Therefore, the unit of speed is \(\text{m/s}\) or \(\text{m s}^{-1}\).</p>
+    <p>Sometimes, when a particular combination of fundamental units is very common, it is given a new derived name. Some common SI derived units are listed below:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>SI derived unit</th>
+                <th>SI base unit</th>
+                <th>Alternative SI unit</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Newton (N)</td>
+                <td>\(\text{kg m s}^{-2}\)</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Pascal (Pa)</td>
+                <td>\(\text{kg m}^{-1} \text{ s}^{-1}\)</td>
+                <td>\(\text{N m}^{-2}\)</td>
+            </tr>
+            <tr>
+                <td>Watt (W)</td>
+                <td>\(\text{kg m}^2\text{ s}^{-3}\)</td>
+                <td>\(\text{J s}^{-1}\)</td>
+            </tr>
+            <tr>
+                <td>Ohm (Ω)</td>
+                <td>\(\text{kg m}^2\text{ s}^{-3}\text{ A}^{-2}\)</td>
+                <td>\(\text{V A}^{-1}\)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Prefixes</h2>
+    <p>To avoid the repeated use of scientific notation or extremely large/small numbers, prefixes can be used. However, the frequent use of them is not advised, as it can lead to errors in calculations. Some examples of the SI prefixes:</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Symbol (example)</th>
+                <th>Name</th>
+                <th>Factor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>G (gigahertz)</td>
+                <td>giga</td>
+                <td>\(10^9\)</td>
+            </tr>
+            <tr>
+                <td>M (megawatt)</td>
+                <td>mega</td>
+                <td>\(10^6\)</td>
+            </tr>
+            <tr>
+                <td>k (kilometre)</td>
+                <td>kilo</td>
+                <td>\(10^3\)</td>
+            </tr>
+            <tr>
+                <td>m (milliliter)</td>
+                <td>milli</td>
+                <td>\(10^{-3}\)</td>
+            </tr>
+            <tr>
+                <td>μ (microgram)</td>
+                <td>micro</td>
+                <td>\(10^{-6}\)</td>
+            </tr>
+            <tr>
+                <td>n (nanometre)</td>
+                <td>nano</td>
+                <td>\(10^{-9}\)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Unit conversions</h2>
+    <p>Unit conversions are necessary when measurements are given in units different from those needed in calculations or expected in the final answer. This can also occur when problems involve multiple scientific fields that use different units.</p>
+    <ol type="1">
+        <li>Within the same system
+            <br>
+            Conversions often occur within the same system (most commonly the SI system) using prefixes. When dealing with dimensional conversions, conversion factors must be applied multiple times to achieve the correct derived units - squared or cubed.
+            <br>
+            Example:
+            <br>
+            Calculate the volume and surface area of a cube with a side length of 1m. Express the results in \(\text{m}^3\) and \(\text{cm}^3\).
+            <br>
+            \(a = 1 m = 100 cm\)<br>
+            \(A = 6 a^2 = 6(100 cm)^2 = 60000 cm^2\)<br>
+            \(V = a^3 = (1 m)^3 = 1 m^3 = (100 cm)^3 = 1000000 cm^3\)            
+        </li>
+        <li>Between different units/systems
+            <br>
+            Sometimes conversions between SI and non-SI units are needed. In such cases, conversion factors must be known. Some examples are listed below:
+            <br>
+            \(1 m^3 = 1000 L\)<br>
+            \(1 dm^3 = 1 L\)<br>
+            \(1 cm^3 = 1 mL\)<br>
+            \(1 AU \approx 1.5 \times 10^8 km\)<br>
+            \(1ly \approx 9.5 \times 10^{12} km\)<br>
+            \(1 pc \approx 3.1 \times 10^{13} km\)<br>
+            <i>AU = astronomical unit, ly = light year, pc = parsec</i>
+        </li>
+        <li>Tips and tricks
+            <ul>
+                <li>Including units throughout calculations can help you be more certain about the final result.</li>
+                <li>Conversion factors can be treated as ratios (e.g. 1km/1000m).</li>
+                <li>Some calculators are capable of performing unit conversions.</li>
+            </ul>
+            <i>However, make sure that your model is allowed before using it. Restrictions may vary by country.</i>
+        </li>
+    </ol>
+    <br>
+
+    <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+    Written by <strong>Thenura Dilruk</strong>
+</p>  
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+
+ <script src="../../../collapsibles.js"></script>
+</body>
+</html>
