@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Orbital Motion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- MathJax for LaTeX rendering -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+ <link rel="stylesheet" href="../../theoryPages.css">
+<script src="/navigationimport.js" defer></script>
+ 
+</head>
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <h2>Orbital Motion</h2>
+    <a class="back-btn" href="../Mechanics.html">← Back to Mechanics</a>
+  </div>
+
+  <!-- Original Content -->
+  <div class="container">
+    <p>
+        Orbital motion describes how objects move in paths (usually elliptical or circular) under the influence of gravity. For satellites and planets, the gravitational force provides the necessary centripetal force to keep them in orbit.
+      </p>
+    
+      <h2>Key Concepts</h2>
+      <ul>
+        <li>For circular orbits, gravity provides the centripetal force:</li>
+      </ul>
+      <p>\[
+      \frac{G M m}{r^2} = \frac{m v^2}{r}
+      \Rightarrow v = \sqrt{\frac{G M}{r}}
+      \]</p>
+      <ul>
+        <li>\( v \): Orbital speed</li>
+        <li>\( r \): Radius of orbit (from center of planet/star)</li>
+        <li>\( M \): Mass of central object (e.g., Earth)</li>
+        <li>\( G \): Universal gravitational constant</li>
+      </ul>
+    
+      <p>
+        The orbital period \( T \) is the time it takes for one full orbit:
+      </p>
+      <p>\[
+      T = \frac{2\pi r}{v} = 2\pi \sqrt{\frac{r^3}{G M}}
+      \]</p>
+      <p>This matches Kepler’s Third Law for circular orbits.</p>
+    
+      <h2>Notes</h2>
+      <ul>
+        <li>Mass of the satellite cancels out in orbital speed and period formulas.</li>
+        <li>Lower orbits → higher speeds and shorter periods.</li>
+        <li>Only gravity acts → motion is uniform circular motion in ideal cases.</li>
+      </ul>
+    
+      <br>
+      <button class="collapsible">Example 1: Orbital Speed of a Satellite</button>
+      <div class="content">
+        <p>
+          A satellite is orbiting Earth at an altitude of 300 km. What is its orbital speed? (Earth’s radius = \( 6.37 \times 10^6 \, \text{m} \), \( M = 5.97 \times 10^{24} \, \text{kg} \))
+        </p>
+        <p><strong>Solution:</strong></p>
+        <p>
+          First, find total orbital radius:
+          \[
+          r = 6.37 \times 10^6 + 3.00 \times 10^5 = 6.67 \times 10^6 \, \text{m}
+          \]
+          Then use the orbital speed formula:
+          \[
+          v = \sqrt{\frac{G M}{r}} = \sqrt{\frac{6.674 \times 10^{-11} \times 5.97 \times 10^{24}}{6.67 \times 10^6}}
+          \approx 7.73 \times 10^3 \, \text{m/s}
+          \]
+        </p>
+        <p>
+          So the satellite’s orbital speed is approximately \( 7730 \, \text{m/s} \).
+        </p>
+      </div>
+    
+      <button class="collapsible">Example 2: Orbital Period of a Satellite</button>
+      <div class="content">
+        <p>
+          What is the period of the same satellite in the previous example?
+        </p>
+        <p><strong>Solution:</strong></p>
+        <p>
+          Use:
+          \[
+          T = 2\pi \sqrt{\frac{r^3}{G M}}
+          = 2\pi \sqrt{\frac{(6.67 \times 10^6)^3}{6.674 \times 10^{-11} \times 5.97 \times 10^{24}}}
+          \]
+          \[
+          T \approx 2\pi \sqrt{\frac{2.97 \times 10^{20}}{3.986 \times 10^{14}}}
+          \approx 2\pi \sqrt{745900}
+          \approx 2\pi \times 864
+          \approx 5428 \, \text{seconds} \approx 1.51 \, \text{hours}
+          \]
+        </p>
+        <p>
+          So the satellite completes one orbit in about 1.5 hours.
+        </p>
+      </div>
+    <br>
+     <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+    Written by <strong>Thenura Dilruk</strong>
+</p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+<script src="../../../collapsibles.js"></script>
+</body>
+</html>
