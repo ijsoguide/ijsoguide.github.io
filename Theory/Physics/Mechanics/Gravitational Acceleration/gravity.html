@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Acceleration due to Gravity</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- MathJax for LaTeX rendering -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+ <link rel="stylesheet" href="../../theoryPages.css">
+<script src="/navigationimport.js" defer></script>
+ 
+</head>
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <h2>Acceleration due to Gravity</h2>
+    <a class="back-btn" href="../Mechanics.html">← Back to Mechanics</a>
+  </div>
+
+  <!-- Original Content -->
+  <div class="container">
+    <div class="container">
+        <div class="container">
+          
+            <p>
+              The acceleration due to gravity, commonly denoted by \( g \), is the rate at which an object accelerates when falling freely under the influence of gravity. On Earth, this value is approximately:
+              \[
+              g \approx 9.8 \, \text{m/s}^2
+              \]
+              This means any object in free fall near Earth's surface (ignoring air resistance) will increase its velocity by \( 9.8 \, \text{m/s} \) every second.
+            </p>
+          
+            <h2>Free Fall and Equations of Motion</h2>
+            <p>
+              When an object is falling freely:
+              <ul>
+                <li>The only force acting on it is gravity.</li>
+                <li>It experiences a uniform acceleration \( g \).</li>
+              </ul>
+              <p>The motion can be analyzed using kinematic equations:
+              \[
+              v = u + gt
+              \]
+              \[
+              s = ut + \frac{1}{2}gt^2
+              \]
+              \[
+              v^2 = u^2 + 2gs
+              \]
+              where:</p>
+              <ul>
+                <li>\( u \): initial velocity (m/s)</li>
+                <li>\( v \): final velocity (m/s)</li>
+                <li>\( t \): time (s)</li>
+                <li>\( s \): displacement (m)</li>
+              </ul>
+            </p>
+          
+            <h2>Variation of \( g \)</h2>
+            <p>
+              The value of \( g \) is not constant everywhere. It varies slightly with:
+              <ul>
+                <li><strong>Altitude:</strong> \( g \) decreases as you go higher above sea level.</li>
+                <li><strong>Latitude:</strong> Due to Earth's rotation and shape (bulging at the equator), \( g \) is slightly lower at the equator than at the poles.</li>
+                <li><strong>Depth:</strong> \( g \) decreases as you go deeper underground.</li>
+              </ul>
+            </p>
+          
+            <h2>Relation Between \( g \) and Gravitational Force</h2>
+            <p>
+              The acceleration due to gravity is derived from Newton’s Law of Universal Gravitation:
+              \[
+              g = \frac{GM}{r^2}
+              \]
+              where:
+              <ul>
+                <li>\( G \): gravitational constant</li>
+                <li>\( M \): mass of the Earth</li>
+                <li>\( r \): distance from the center of the Earth</li>
+              </ul>
+            </p>
+          
+            <br>
+          
+            <button class="collapsible">Example 1: Finding Final Velocity in Free Fall</button>
+            <div class="content">
+              <p>
+                A stone is dropped from rest from a height of 20 m. What is its velocity just before hitting the ground? (Assume \( g = 9.8 \, \text{m/s}^2 \))
+              </p>
+              <p><strong>Solution:</strong></p>
+              <ul>
+                <li>Given: \( u = 0 \), \( s = 20 \, \text{m} \)</li>
+                <li>Using: \( v^2 = u^2 + 2gs \)</li>
+                <li>
+                  \[
+                  v^2 = 0 + 2 \times 9.8 \times 20 = 392 \Rightarrow v = \sqrt{392} \approx 19.8 \, \text{m/s}
+                  \]
+                </li>
+              </ul>
+              <p>
+                The stone hits the ground with a speed of approximately \( 19.8 \, \text{m/s} \).
+              </p>
+            </div>
+          
+            <button class="collapsible">Example 2: Time to Reach Ground</button>
+            <div class="content">
+              <p>
+                An object is dropped from a height of 45 m. How long does it take to reach the ground?
+              </p>
+              <p><strong>Solution:</strong></p>
+              <ul>
+                <li>Given: \( u = 0 \), \( s = 45 \, \text{m} \), \( g = 9.8 \, \text{m/s}^2 \)</li>
+                <li>Using: \( s = ut + \frac{1}{2}gt^2 \)</li>
+                <li>
+                  \[
+                  45 = 0 + \frac{1}{2} \times 9.8 \times t^2 \Rightarrow t^2 = \frac{90}{9.8} \approx 9.18 \Rightarrow t \approx 3.03 \, \text{seconds}
+                  \]
+                </li>
+              </ul>
+              <p>
+                The object reaches the ground in about 3.03 seconds.
+              </p>
+            </div>
+          </div>
+      </div>
+     <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+    Written by <strong>Thenura Dilruk</strong>
+</p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+<script src="../../../collapsibles.js"></script>
+</body>
+</html>
