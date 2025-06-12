@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Acceleration due to Gravity</title>
+  <title>Law of Universal Gravitation</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- MathJax for LaTeX rendering -->
@@ -18,112 +18,91 @@
 <body>
   <!-- Top Bar -->
   <div class="top-bar">
-    <h2>Acceleration due to Gravity</h2>
+    <h2>Law of Universal Gravitation</h2>
     <a class="back-btn" href="../Mechanics.html">← Back to Mechanics</a>
   </div>
 
   <!-- Original Content -->
   <div class="container">
-          
-            <p>
-              The acceleration due to gravity, commonly denoted by \( g \), is the rate at which an object accelerates when falling freely under the influence of gravity. On Earth, this value is approximately:
-              \[
-              g \approx 9.8 \, \text{m/s}^2
-              \]
-              This means any object in free fall near Earth's surface (ignoring air resistance) will increase its velocity by \( 9.8 \, \text{m/s} \) every second.
-            </p>
-          
-            <h2>Free Fall and Equations of Motion</h2>
-            <p>
-              When an object is falling freely:
-              <ul>
-                <li>The only force acting on it is gravity.</li>
-                <li>It experiences a uniform acceleration \( g \).</li>
-              </ul>
-              <p>The motion can be analyzed using kinematic equations:
-              \[
-              v = u + gt
-              \]
-              \[
-              s = ut + \frac{1}{2}gt^2
-              \]
-              \[
-              v^2 = u^2 + 2gs
-              \]
-              where:</p>
-              <ul>
-                <li>\( u \): initial velocity (m/s)</li>
-                <li>\( v \): final velocity (m/s)</li>
-                <li>\( t \): time (s)</li>
-                <li>\( s \): displacement (m)</li>
-              </ul>
-            </p>
-          
-            <h2>Variation of \( g \)</h2>
-            <p>
-              The value of \( g \) is not constant everywhere. It varies slightly with:
-              <ul>
-                <li><strong>Altitude:</strong> \( g \) decreases as you go higher above sea level.</li>
-                <li><strong>Latitude:</strong> Due to Earth's rotation and shape (bulging at the equator), \( g \) is slightly lower at the equator than at the poles.</li>
-                <li><strong>Depth:</strong> \( g \) decreases as you go deeper underground.</li>
-              </ul>
-            </p>
-          
-            <h2>Relation Between \( g \) and Gravitational Force</h2>
-            <p>
-              The acceleration due to gravity is derived from Newton’s Law of Universal Gravitation:
-              \[
-              g = \frac{GM}{r^2}
-              \]
-              where:
-              <ul>
-                <li>\( G \): gravitational constant</li>
-                <li>\( M \): mass of the Earth</li>
-                <li>\( r \): distance from the center of the Earth</li>
-              </ul>
-            </p>
-          
-            <br>
-          
-            <button class="collapsible">Example 1: Finding Final Velocity in Free Fall</button>
-            <div class="content">
-              <p>
-                A stone is dropped from rest from a height of 20 m. What is its velocity just before hitting the ground? (Assume \( g = 9.8 \, \text{m/s}^2 \))
-              </p>
-              <p><strong>Solution:</strong></p>
-              <ul>
-                <li>Given: \( u = 0 \), \( s = 20 \, \text{m} \)</li>
-                <li>Using: \( v^2 = u^2 + 2gs \)</li>
-                <li>
-                  \[
-                  v^2 = 0 + 2 \times 9.8 \times 20 = 392 \Rightarrow v = \sqrt{392} \approx 19.8 \, \text{m/s}
-                  \]
-                </li>
-              </ul>
-              <p>
-                The stone hits the ground with a speed of approximately \( 19.8 \, \text{m/s} \).
-              </p>
-            </div>
-          
-            <button class="collapsible">Example 2: Time to Reach Ground</button>
-            <div class="content">
-              <p>
-                An object is dropped from a height of 45 m. How long does it take to reach the ground?
-              </p>
-              <p><strong>Solution:</strong></p>
-              <ul>
-                <li>Given: \( u = 0 \), \( s = 45 \, \text{m} \), \( g = 9.8 \, \text{m/s}^2 \)</li>
-                <li>Using: \( s = ut + \frac{1}{2}gt^2 \)</li>
-                <li>
-                  \[
-                  45 = 0 + \frac{1}{2} \times 9.8 \times t^2 \Rightarrow t^2 = \frac{90}{9.8} \approx 9.18 \Rightarrow t \approx 3.03 \, \text{seconds}
-                  \]
-                </li>
-              </ul>
-              <p>
-                The object reaches the ground in about 3.03 seconds.
-              </p>
-            </div>
+ <div class="container">
+
+  <p>
+    Sir Isaac Newton proposed that every mass in the universe attracts every other mass with a force. This gravitational force is described by the Law of Universal Gravitation:
+    \[
+    F = G \frac{m_1 m_2}{r^2}
+    \]
+    where:
+    <ul>
+      <li>\( F \): gravitational force (in newtons)</li>
+      <li>\( G \): gravitational constant, \( 6.674 \times 10^{-11} \, \text{Nm}^2/\text{kg}^2 \)</li>
+      <li>\( m_1 \) and \( m_2 \): masses of the two objects (in kilograms)</li>
+      <li>\( r \): distance between the centers of the two masses (in meters)</li>
+    </ul>
+  </p>
+
+  <br>
+  <h2>Characteristics of Gravitational Force</h2>
+  <ul>
+    <li>It is always attractive, never repulsive.</li>
+    <li>It acts along the line joining the centers of the two masses.</li>
+    <li>It is a mutual force: both objects exert equal and opposite forces on each other.</li>
+    <li>The force decreases rapidly with distance (inversely proportional to the square of the distance).</li>
+  </ul>
+
+  <br>
+  <h2>Mass vs. Weight</h2>
+  <p>
+    - <strong>Mass</strong> is a measure of how much matter is in an object. It does not change with location.<br>
+    - <strong>Weight</strong> is the gravitational force acting on a mass. It is given by:
+    \[
+    W = mg
+    \]
+    where \( g \) is the local acceleration due to gravity.
+  </p>
+
+  <br>
+  <button class="collapsible">Example 1: Gravitational Force Between Two Masses</button>
+  <div class="content">
+    <p>
+      Calculate the gravitational force between two objects of mass \( 10 \, \text{kg} \) and \( 20 \, \text{kg} \) separated by \( 2 \, \text{m} \).
+    </p>
+    <p><strong>Solution:</strong></p>
+    <ul>
+      <li>\( G = 6.674 \times 10^{-11} \, \text{Nm}^2/\text{kg}^2 \)</li>
+      <li>
+        \[
+        F = \frac{6.674 \times 10^{-11} \times 10 \times 20}{2^2}
+        = \frac{1.3348 \times 10^{-8}}{4}
+        = 3.337 \times 10^{-9} \, \text{N}
+        \]
+      </li>
+    </ul>
+    <p>
+      The gravitational force is very small: \( 3.337 \times 10^{-9} \, \text{N} \).
+    </p>
+  </div>
+
+  <button class="collapsible">Example 2: Finding Mass Using Gravitational Force</button>
+  <div class="content">
+    <p>
+      Two masses are \( 0.5 \, \text{m} \) apart and attract each other with a force of \( 2 \times 10^{-6} \, \text{N} \). If one mass is \( 4 \, \text{kg} \), find the other mass.
+    </p>
+    <p><strong>Solution:</strong></p>
+    <ul>
+      <li>Use: \( F = G \frac{m_1 m_2}{r^2} \)</li>
+      <li>
+        \[
+        2 \times 10^{-6} = \frac{6.674 \times 10^{-11} \times 4 \times m_2}{0.5^2}
+        \Rightarrow m_2 = \frac{2 \times 10^{-6} \times 0.25}{6.674 \times 10^{-11} \times 4}
+        \approx 1.874 \times 10^3 \, \text{kg}
+        \]
+      </li>
+    </ul>
+    <p>
+      The second mass is approximately \( 1874 \, \text{kg} \).
+    </p>
+  </div>
+</div>
             
         <br>
      <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
