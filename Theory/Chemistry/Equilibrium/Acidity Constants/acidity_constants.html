@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Acidity and basicity constants</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../theoryPages.css">
+  <script src="/navigationimport.js" defer></script>
+</head>
+<body>
+
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Acidity and basicity constants and the pH scale</h2>
+    <a href="../equilibrium.html" class="back-btn">← Back to Chemical Equilibrium</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h2>Acid Ionization Equilibria</h2>
+    <p>For a strong acid, which ionizes completely in solution, the concentrations of ions are determined by the stoichiometry of the reaction from the initial concentration of acid. However, for a weak acid such as acetic acid, the concentrations of ions in solution are determined from the acid-ionization constant (also called the acid-dissociation constant), which is the equilibrium constant for the ionization of a weak acid.</p>
+    <p>\[HA_{(aq)} + H_{2}O_{(l)} ⇌ H_{3}O^{+}_{(aq)} + A^{-}_{(aq)}\]</p>
+    <p>\(K_{a}\), the acid-ionization constant, equals the constant [\(\ce{H2O}\)] times \(K_{c}\)</p>
+    <p>\[K_{a}=\frac{[H_{3}O^{+}][A^{-}]}{[HA]}\]</p>
+    <h2>Polyprotic acids</h2>
+    <p>In the preceding section, we dealt only with acids releasing one \(H_{3}O^{+}\) ion or proton. Some acids, however, have two or more such protons; these acids are called polyprotic acids. For a weak diprotic acid like carbonic acid, \(H_{2}CO_{3}\), there are two simultaneous equilibria to consider.</p>
+    <p>\[H_{2}CO_{3 (aq)} + H_{2}O_{(l)} ⇌ H_{3}O^{+}_{(aq)} + HCO^{-}_{3 (aq)}\]</p>
+    <p>\[HCO^{-}_{3 (aq)} + H_{2}O_{(l)} ⇌ H_{3}O^{+}_{(aq)} + CO^{2-}_{3 (aq)}\]</p>
+    <p>In general, the second ionization constant, \(K_{a2}\), of a polyprotic acid is much smaller than the first ionization constant, \(K_{a1}\). In the case of a triprotic acid, the third ionization constant, \(K_{a3}\), is much smaller than the second one, \(K_{a2}\).</p>
+    <h2>Base Ionization Equilibria</h2>
+    <p>Equilibria involving weak bases are treated similarly to those for weak acids. Ammonia, for example, ionizes in water as follows:</p>
+    <p>\[NH_{3 (aq)} + H_{2}O_{(l)} ⇌ NH^{+}_{4 (aq)} + OH^{-}_{(aq)}\]</p>
+    <p>And thus, the base ionization constant \(K_{b}\) is equal to:</p>
+    <p>\[K_{b} = \frac{[OH^{-}][HB^{+}]}{[B]}\]</p>
+    <h2>The pH scale</h2>
+    <p>You see that whether an aqueous solution is acidic, neutral, or basic depends on the hydronium-ion concentration. You can quantitatively describe the acidity by giving the hydronium-ion concentration. But because these concentration values may be very small, it is often more convenient to give the acidity in terms of pH, which is defined as the negative of the logarithm of the molar hydronium-ion concentration: </p>
+    <p style = "text-align: center;">\(pH = -log[H_{3}O^{+}]\) or \(pH = -log[H^{+}]\)</p>
+    <img src="image1.png">
+    <p>You can find the pH of a solution of known hydroxide-ion concentration by first solving for the hydronium-ion concentration, as shown in Example 15.4 b. However, you can also find the pH simply from the pOH, a measure of hydroxide-ion concentration similar to the pH:</p>
+    <p>\[pOH = -log[OH^{-}]\]</p>
+    <p>And so pH + pOH = 14</p>
+    <br>
+    
+    <h2>Calculations using \(K_a\) and \(K_b\)</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Strong acid-base</th>
+          <th>Weak acid-base</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <p style="text-align: center;">We use the stoichiometry of the reaction</p>
+            <p>\[\ce{H2SO4 → 2H^+ + SO4^{2-}}\]</p>
+            <p style="text-align: center;">So let’s say that we have a solution of H2SO4 2M and we need to find the pH. </p><br>
+            <p style="text-align: center;">Using stoichiometry</p>
+            <p style="text-align: center;">2M of \(\ce{H2SO4}\) corresponds to 4M \(H^+\)</p><br>
+            <p style="text-align: center;">So \(\text{pH} = - log [H^+] \rightarrow \text{pH} = - log (4)\)</p><br>
+            <p style="text-align: center;">The same happens in bases however we are referring to \(\text{OH}^-\) and thus the pOH</p>
+          </td>
+          <td>
+            <p style="text-align: center;">Lets say that we need to find the pH of an \(\ce{NH3}\) solution 2M</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>M</th>
+                  <th>\(\ce{NH3} \rightleftharpoons\)</th>
+                  <th>\(\ce{NH4^+} \rightleftharpoons\)</th>
+                  <th>\(\text{OH}^-\)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Start</td>
+                  <td>2</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>Change</td>
+                  <td>-x</td>
+                  <td>+x</td>
+                  <td>+x</td>
+                </tr>
+                <tr>
+                  <td>Equilibrium</td>
+                  <td>2-x</td>
+                  <td>x</td>
+                  <td>x</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>\[K_b = \frac{[\ce{OH}^-][\ce{NH4}^+]}{[\ce{NH3}]} => K_b = \frac{x^2}{[\ce{NH3}]}\]</p>
+            <p>\[[OH^-] = \sqrt{K_b \cdot C_{\beta}}\]</p>
+            <p style="text-align: center;">The same is for weak acids</p>
+            <p>\[[H^+] = \sqrt{K_a \cdot C_{\alpha}}\]</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+       <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+    Written by <strong>Fillios Memtsoudis</strong>
+</p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+
+</body>
+</html>
