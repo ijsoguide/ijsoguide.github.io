@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gravitational Potential Energy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- MathJax for LaTeX rendering -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+ <link rel="stylesheet" href="../../theoryPages.css">
+<script src="/navigationimport.js" defer></script>
+ 
+</head>
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <h2>Gravitational Potential Energy</h2>
+    <a class="back-btn" href="../Mechanics.html">← Back to Mechanics</a>
+  </div>
+
+  <!-- Original Content -->
+  <div class="container">
+        <p>
+          Gravitational Potential Energy (GPE) is the energy stored in an object due to its position in a gravitational field. It depends on the object's mass, the gravitational field strength, and its height above a reference point.
+        </p>
+      
+        <p>
+          Near the Earth's surface, GPE is given by:
+          \[
+          U = mgh
+          \]
+          where:
+          <ul>
+            <li>\( U \): gravitational potential energy (in joules)</li>
+            <li>\( m \): mass of the object (in kilograms)</li>
+            <li>\( g \): gravitational field strength \( \approx 9.8 \, \text{m/s}^2 \)</li>
+            <li>\( h \): height above the reference level (in meters)</li>
+          </ul>
+        </p>
+      
+        <br>
+        <h2>Key Notes</h2>
+        <ul>
+          <li>The reference level (where \( h = 0 \)) is arbitrary — it could be the ground, a table, or any chosen zero point.</li>
+          <li>Only changes in GPE matter in energy conservation.</li>
+          <li>GPE is a form of mechanical energy and can be converted to kinetic energy or other forms.</li>
+        </ul>
+      
+        <br>
+        <h2>Gravitational Potential Energy in Universal Gravitation</h2>
+        <p>
+          When considering objects far from Earth (e.g., satellites, planets), we use the more general form:
+          \[
+          U = -G \frac{m_1 m_2}{r}
+          \]
+          The negative sign indicates that the gravitational force is attractive, and the potential energy is zero at infinite separation.
+        </p>
+      
+        <br>
+        <button class="collapsible">Example 1: GPE Near the Earth's Surface</button>
+        <div class="content">
+          <p>
+            A 5 kg object is lifted to a height of 10 m. What is its gravitational potential energy relative to the ground?
+          </p>
+          <p><strong>Solution:</strong></p>
+         <p> \[
+          U = mgh = 5 \times 9.8 \times 10 = 490 \, \text{J}
+          \]</p>
+          <p>
+            The object has 490 J of gravitational potential energy relative to the ground.
+          </p>
+        </div>
+      
+        <button class="collapsible">Example 2: GPE Between Earth and Satellite</button>
+        <div class="content">
+          <p>
+            A \( 1000 \, \text{kg} \) satellite is located \( 7.0 \times 10^6 \, \text{m} \) from Earth's center. What is its gravitational potential energy? Take Earth's mass as \( 5.97 \times 10^{24} \, \text{kg} \).
+          </p>
+          <p><strong>Solution:</strong></p>
+         <p> \[
+          U = -G \frac{m_1 m_2}{r}
+          = -\frac{6.674 \times 10^{-11} \times 5.97 \times 10^{24} \times 1000}{7.0 \times 10^6}
+          \approx -5.69 \times 10^{10} \, \text{J}
+          \]</p>
+          <p>
+            The satellite has approximately \( -5.69 \times 10^{10} \, \text{J} \) of gravitational potential energy.
+          </p>
+        </div>
+    <br>
+     <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+    Written by <strong>Thenura Dilruk</strong>
+</p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+<script src="../../../collapsibles.js"></script>
+</body>
+</html>
