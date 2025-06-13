@@ -1,6 +1,6 @@
 console.log(window.location.search)
 function getQueryParam(param) {
-  const queryString = window.location.search.substring(1); // remove "?"
+  const queryString = window.location.search.substring(1);
   const pairs = queryString.split("&");
   for (let pair of pairs) {
     const [key, value] = pair.split("=");
@@ -27,16 +27,14 @@ if(subjectName == "physics"){
 
 const referrer = document.referrer;
 if (referrer) {
-    document.querySelectorAll('.back-btn:not(#stats)').forEach(link => {
-        link.href = referrer;
-    });
+  document.querySelectorAll('.back-btn:not(#stats)').forEach(link => {
+    link.href = referrer;
+  });
 } else {
-  // fallback if there's no referrer (e.g. user opened the page directly)
   document.querySelectorAll('.back-btn:not(#stats)').forEach(link => {
     link.href = "";
   });
 }
-
 
 (async (unitName) => {
   try {
@@ -77,24 +75,21 @@ function main(module){
 
   let checkSolutionButton = document.getElementById('checkSolutionButton');
   let hintButton = document.getElementById('hintButton');
-  let dynamicSkipButton = document.getElementById('skipButton')
+  let dynamicSkipButton = document.getElementById('skipButton');
 
-  document.getElementById('result').classList.add('non-active')
+  document.getElementById('result').classList.add('non-active');
 
   checkSolutionButton.addEventListener('click', 
     ()=>checkMCQ(currentProblemID, problems[currentProblemID].correct)
   );
   hintButton.addEventListener('click',
     ()=>showHint(currentProblemID)
-  )
+  );
   dynamicSkipButton.addEventListener('click', 
     ()=>nextProblem(currentProblemID+1)
-  )
+  );
 
-
-
-  // Toggle bar dynamic construction
-  let bar = document.getElementById('dynamicToggleBar')
+  let bar = document.getElementById('dynamicToggleBar');
   for (let i = 0; i < totalProblems; i++){
     let toggleBarButton = document.createElement('button');
     toggleBarButton.id = "toggle-" + (i);
@@ -106,14 +101,11 @@ function main(module){
     bar.appendChild(toggleBarButton);
   }
 
-
   document.getElementById('startPracticeButton').addEventListener('click', startPractice)
   function startPractice() {
     document.getElementById("landing").classList.add('non-active')
     document.getElementById("main-content").classList.remove('non-active')
     document.getElementById('result').classList.add('non-active')
-    MathJax.typeset();
-    console.log('start')
     nextProblem(0);
   }
 
@@ -141,7 +133,6 @@ function main(module){
       checkSolutionButton.classList.add('non-active');
       dynamicSkipButton.textContent = "Next";
       if (id == totalProblems - 1) {
-        console.log("completed")
         dynamicSkipButton.textContent = "Finish";
         dynamicSkipButton.addEventListener('click', showResults);
       }
@@ -153,7 +144,7 @@ function main(module){
         toggleBtn.className = "toggle-button green hint";
       } else {
         toggleBtn.className = "toggle-button green";
-        status[id] = "correct"; // Only if first correct attempt
+        status[id] = "correct";
       }
 
     } else {
@@ -163,6 +154,8 @@ function main(module){
       toggleBtn.className = "toggle-button red";
       status[id] = "wrong";
     }
+
+    MathJax.typeset(); // re-render LaTeX
   }
 
   function showHint(id) {
@@ -170,10 +163,10 @@ function main(module){
     dynamicHint.innerHTML = problems[id].hint;
     hintButton.classList.add('non-active');
     if (!status[id]) status[id] = "hint";
+    MathJax.typeset(); // render hint LaTeX
   }
 
   function nextProblem(id){
-    console.log(countCompleted)
     if (id >= totalProblems){
       if (countCompleted == totalProblems){
         showResults();
@@ -181,8 +174,6 @@ function main(module){
       }
       id = 0;
     }
-    console.log("next " + id)
-    console.log(status)
     currentProblemID = id;
     let problem = problems[id];
     dynamicProblemHeader.innerHTML = "Problem " + (id + 1);
@@ -213,28 +204,25 @@ function main(module){
     document.getElementById('inputD').checked = false;
 
     dynamicExplanation.innerHTML = problem.detailed;
-  }
 
+    MathJax.typeset(); // render question, options, and explanation LaTeX
+  }
 
   function goToProblem(id) {
     nextProblem(id);
   }
 
   function showResults() {
-    document.getElementById("main-content").classList.add('non-active');;
-    document.getElementById("result").classList.remove('non-active');;
+    document.getElementById("main-content").classList.add('non-active');
+    document.getElementById("result").classList.remove('non-active');
 
     let correctCount = 0;
     for (let i = 0; i < totalProblems; i++) {
       if (status[i] === "correct") correctCount++;
     }
 
-    
-
     const percent = Math.round((correctCount / totalProblems) * 100);
     document.getElementById("score-display").textContent = `You got ${percent}% correct.`;
-
-    
 
     const tryAgainBtn = document.getElementById("try-again-btn");
     tryAgainBtn.style.display = percent === 100 ? "none" : "inline-block";
@@ -247,7 +235,6 @@ function main(module){
         subject: subjectName
       }
     });
-    console.log('dispatchingevent')
     window.dispatchEvent(event);
   }
 
@@ -256,4 +243,3 @@ function main(module){
     location.reload();
   }
 }
-
