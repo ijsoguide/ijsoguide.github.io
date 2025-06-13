@@ -23,7 +23,7 @@ export let problems = [
         ],
         correct: "B",
         hint: "This gas is a key component in processes like photosynthesis and respiration.",
-        detailed: "Carbon dioxide \(CO_2\) is the primary gaseous form of carbon present in the atmosphere and plays a crucial role in the planet's climate and biological processes."
+        detailed: "Carbon dioxide \\(CO_2\\) is the primary gaseous form of carbon present in the atmosphere and plays a crucial role in the planet's climate and biological processes."
     },
     {
         question: "Carbon is essential for life primarily because it:",
@@ -59,7 +59,7 @@ export let problems = [
         ],
         correct: "C",
         hint: "This vast body of water plays a significant role in absorbing and releasing atmospheric carbon.",
-        detailed: "Explanation: The oceans act as a massive carbon reservoir, holding significant amounts of carbon primarily as dissolved \(CO_2\), bicarbonate (\(\ce{HCO3^−}\)​), and carbonate (\(\ce{CO3^{2−}}\)​) ions, and through exchange with the atmosphere."
+        detailed: "Explanation: The oceans act as a massive carbon reservoir, holding significant amounts of carbon primarily as dissolved \\(CO_2\\), bicarbonate (\\(\ce{HCO3^−}\\)​), and carbonate (\\(\ce{CO3^{2−}}\\)​) ions, and through exchange with the atmosphere."
     },
     {
         question: "How do animals primarily obtain the carbon they need for their bodies?",
@@ -89,7 +89,7 @@ export let problems = [
         question: "Which of the following describes a way oceans absorb and release carbon?",
         options: [
             "Oceans only release carbon through volcanic activity on the seafloor.",
-            "Oceans absorb \(CO_2\) from the atmosphere and release \(CO_2\)back to the atmosphere, and marine organisms use carbon for shells.",
+            "Oceans absorb \\(CO_2\\) from the atmosphere and release \\(CO_2\\)back to the atmosphere, and marine organisms use carbon for shells.",
             "Oceans primarily absorb carbon through the formation of fossil fuels within deep sea trenches.",
             "Oceans convert atmospheric carbon directly into limestone through chemical precipitation only."
         ],
@@ -107,25 +107,25 @@ export let problems = [
         ],
         correct: "B",
         hint: "Fossil fuels represent carbon that has been stored for millions of years.",
-        detailed: "Fossil fuels are ancient deposits of carbon. Burning them releases this long-stored carbon into the atmosphere in the form of carbon dioxide (\(\ce{CO2}\)​) much more rapidly than natural processes, leading to an increase in atmospheric \(\ce{CO2}\)​ concentrations."
+        detailed: "Fossil fuels are ancient deposits of carbon. Burning them releases this long-stored carbon into the atmosphere in the form of carbon dioxide (\\(\ce{CO2}\\)​) much more rapidly than natural processes, leading to an increase in atmospheric \\(\ce{CO2}\\)​ concentrations."
     },
     {
         question: "Deforestation contributes to an increase in atmospheric carbon dioxide primarily because:",
         options: [
-            "It leads to increased volcanic activity, releasing more \(CO_2\).",
-            "It reduces the amount of \(CO_2\) absorbed from the atmosphere by plants through photosynthesis.",
-            "Trees release large amounts of stored \(CO_2\) when they are simply cut down, even before decomposition.",
-            "It increases the rate at which oceans absorb \(CO_2\), leading to an imbalance."
+            "It leads to increased volcanic activity, releasing more \\(CO_2\\).",
+            "It reduces the amount of \\(CO_2\\) absorbed from the atmosphere by plants through photosynthesis.",
+            "Trees release large amounts of stored \\(CO_2\\) when they are simply cut down, even before decomposition.",
+            "It increases the rate at which oceans absorb \\(CO_2\\), leading to an imbalance."
         ],
         correct: "B",
         hint: "Consider the primary role of trees in the carbon cycle.",
-        detailed: "Forests are significant carbon sinks because trees absorb large quantities of carbon dioxide from the atmosphere for photosynthesis. Deforestation reduces the number of trees available to perform this function, thus decreasing the overall removal of \(CO_2\)​ from the atmosphere."
+        detailed: "Forests are significant carbon sinks because trees absorb large quantities of carbon dioxide from the atmosphere for photosynthesis. Deforestation reduces the number of trees available to perform this function, thus decreasing the overall removal of \\(CO_2\\)​ from the atmosphere."
     },
     {
         question: "Which statement accurately contrasts a natural process of carbon release from the lithosphere with a human-accelerated one?",
         options: [
-            "Natural weathering of rocks releases \(CO_2\)rapidly, while burning fossil fuels releases it slowly.",
-            "Volcanic eruptions release \(CO_2\) from the Earth's interior slowly and predictably, while deforestation causes rapid geological carbon release.",
+            "Natural weathering of rocks releases \\(CO_2\\)rapidly, while burning fossil fuels releases it slowly.",
+            "Volcanic eruptions release \\(CO_2\\) from the Earth's interior slowly and predictably, while deforestation causes rapid geological carbon release.",
             "Weathering of rocks releases carbon slowly over geological timescales, while the burning of fossil fuels releases large amounts of stored carbon rapidly.",
             "Formation of sedimentary rocks releases carbon rapidly, while human industrial processes sequester it slowly."
         ],
@@ -136,7 +136,7 @@ export let problems = [
     {
         question: "The enhanced greenhouse effect, linked to human impact on the carbon cycle, occurs because:",
         options: [
-            "Increased atmospheric \(CO_2) and other greenhouse gases trap more of the Earth's outgoing infrared radiation, leading to warming.",
+            "Increased atmospheric \\(CO_2\\) and other greenhouse gases trap more of the Earth's outgoing infrared radiation, leading to warming.",
             "Deforestation directly heats the atmosphere by releasing thermal energy stored in trees.",
             "Burning fossil fuels consumes atmospheric oxygen, which thins the ozone layer and lets in more solar radiation.",
             "Increased carbon in the oceans causes them to expand, raising global temperatures."
@@ -148,8 +148,8 @@ export let problems = [
     {
         question: "Long-term storage of carbon in the lithosphere occurs significantly through processes like:",
         options: [
-            "The rapid respiration of soil microbes releasing \(\CO_2\)",
-            "The absorption of \(CO_2\) by oceans which quickly release it back to the atmosphere.",
+            "The rapid respiration of soil microbes releasing \\(\CO_2\\)",
+            "The absorption of \\(CO_2\\) by oceans which quickly release it back to the atmosphere.",
             "The formation of limestone from the shells and skeletons of marine organisms, and the accumulation of organic matter forming fossil fuels.",
             "The annual growth and decay of leaves in a deciduous forest."
         ],
