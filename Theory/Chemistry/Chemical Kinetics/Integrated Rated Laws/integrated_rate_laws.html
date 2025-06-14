@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Integrated Rate Laws</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../theoryPages.css">
+  <script src="/navigationimport.js" defer></script>
+</head>
+<body>
+
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Integrated Rate Laws</h2>
+    <a href="../chemicalkinetics.html" class="back-btn">← Back to Chemical Kinetics</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h2>What are integrated rate laws</h2>
+    <p>We now have an idea of how the rate of a chemical reaction can be defined as a function of the concentration of the reactants in the reaction mixture. The only problem with using this to calculate the rate at a given point in time is that the concentration of the reactants is constantly changing, as the reactants are constantly reacting to form products, decreasing their concentration in the reaction mixture. To find the concentration of a given reactant at a certain point in time, we would need to sum al the little changes in concentration that happen over time to be able to determine the desired concentration. To those who have some previous ecnounters with calculus, this sounds an awful lot like an integral, and it is! In this section, we will esentially be integrating some of the rate laws found in the previous sections to find out how we can write the concentration of a reactant as a function of time, and using these formulas to determine the 'half-life' of a chemical reaction.</p>
+    <h2>Some particular solutions</h2>
+    <ul>
+      <li>Zeroth order reaction - in this case, the solution is pretty straight-forward: \[[A] = [A]_{0} - kt\]</li>
+      <li>First order reaction - in this case, the dependence is an exponential one: \[[A] = [A]_{0}\times e^{-kt}\]</li>
+      <li>Second order reaction - in this case, we can write the dependence as: \[\frac{1}{[A]} = \frac{1}{[A]_{0}} + kt\]</li>
+    </ul>
+    <h2>Half-life</h2>
+    <p>Using the integrated rate law, we can calculate the 'half-life' of a reaction, which is the time it takes for half the reactants to have reacted into product, therefore decreasing the concentration of A so that \([A] = \frac{1}{2}[A]_0\).</p>
+    <p>For a zeroth order reaction, \(\frac{1}{2}[A]_0 = [A]_0 - kt \Leftrightarrow kt = \frac{1}{2}[A]_0 \Leftrightarrow t = \frac{[A]_0}{2k}\)</p>
+    <p>For a first order reaction, taking the natural logarithm of the integrated rate law, \(kt = ln(\frac{[A]_0}{[A]})\). Substituting \([A] = \frac{1}{2}[A]_0\), we get \(kt = ln(2) \Leftrightarrow t = \frac{ln(2)}{k}\)</p>
+    <p>For a second order reaction, \(\frac{1}{[A]} = \frac{1}{[A]_0} + kt \Leftrightarrow \frac{2}{[A]_0} = \frac{1}{[A]_0} + kt \Leftrightarrow \frac{1}{[A]_0} = kt \Leftrightarrow t = \frac{1}{[A]_0\times k}\)</p>
+    <h2>Bonus for calculus enthusiasts - derivation of integrated rate laws</h2>
+    <br>
+    <h3>Zeroth order</h3>
+    <br>
+    <p>\(\frac{d[A]}{dt} = -k \Leftrightarrow d[A] = -k\cdot dt\)</p>
+    <p>We can integrate this:</p>
+    <p>\(\int_{[A]_0}^{[A]} d[A] = \int_{0}^{t} -kdt \Leftrightarrow [A] - [A]_0 = -kt\)</p>
+    <p>And we get the final formula:</p>
+    <p>\([A] = [A]_0 - kt\)</p>
+    <br>
+    <h3>First order</h3>
+    <br>
+    <p>\(\frac{d[A]}{dt} = -k[A] \Leftrightarrow \frac{d[A]}{[A]} = -kdt \Leftrightarrow\)</p>
+    <p>Integrating:</p>
+    <p>\(\int_{[A]_0}^{[A]} \frac{d[A]}{[A]} = \int_{0}^{t} -kdt \Leftrightarrow ln(\frac{[A]}{[A]_0}) = -kt \Leftrightarrow \frac{[A]}{[A]_0} = e^{-kt}\)</p>
+    <p>And we get the final integrated rate law:</p>
+    <p>\([A] = [A]_0 \times e^{-kt}\)</p>
+    <br>
+    <h3>Second order</h3>
+    <br>
+    <p>\(-\frac{d[A]}{dt} = k[A]^2 \Leftrightarrow \frac{1}{[A]^2}d[A] = -kdt\)</p>
+    <p>After integration:</p>
+    <p>\(\int_{[A]_0}^{[A]} \frac{1}{[A]^2}d[A] = -k\int_{0}^{t} dt \Leftrightarrow -\frac{1}{[A]_0} + \frac{1}{[A]} = -kt\)</p>
+    <p>The final integrated rate law:</p>
+    <p>\(\frac{1}{[A]} = \frac{1}{[A]_0} + kt \Leftrightarrow [A] = \frac{1}{kt + \frac{1}{[A]_0}}\)</p>
+    <br>
+       <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+    Written by <strong>Imre Bekkering</strong>
+</p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+
+</body>
+</html>
