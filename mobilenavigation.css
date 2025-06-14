@@ -80,7 +80,7 @@ nav {
   
   .dropdown-content a {
     display: block;
-    padding: 0.5rem 1rem;
+    padding: 0.8rem 1.5rem;
     color: var(--txtorange)
   }
   
