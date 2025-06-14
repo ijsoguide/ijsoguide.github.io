@@ -31,9 +31,15 @@
     </ul>
     <h2>Half-life</h2>
     <p>Using the integrated rate law, we can calculate the 'half-life' of a reaction, which is the time it takes for half the reactants to have reacted into product, therefore decreasing the concentration of A so that \([A] = \frac{1}{2}[A]_0\).</p>
-    <p>For a zeroth order reaction, \(\frac{1}{2}[A]_0 = [A]_0 - kt \Leftrightarrow kt = \frac{1}{2}[A]_0 \Leftrightarrow t = \frac{[A]_0}{2k}\)</p>
-    <p>For a first order reaction, taking the natural logarithm of the integrated rate law, \(kt = ln(\frac{[A]_0}{[A]})\). Substituting \([A] = \frac{1}{2}[A]_0\), we get \(kt = ln(2) \Leftrightarrow t = \frac{ln(2)}{k}\)</p>
-    <p>For a second order reaction, \(\frac{1}{[A]} = \frac{1}{[A]_0} + kt \Leftrightarrow \frac{2}{[A]_0} = \frac{1}{[A]_0} + kt \Leftrightarrow \frac{1}{[A]_0} = kt \Leftrightarrow t = \frac{1}{[A]_0\times k}\)</p>
+    <p>For a zeroth order reaction:</p>
+    <p>\(\frac{1}{2}[A]_0 = [A]_0 - kt \Leftrightarrow kt = \frac{1}{2}[A]_0\)</p>
+    <p>So the half time is \(t = \frac{[A]_0}{2k}\)</p>
+    <p>For a first order reaction, taking the natural logarithm of the integrated rate law:</p>
+    <p>\(kt = ln(\frac{[A]_0}{[A]})\Leftrightarrow kt = ln(2)\)</p>
+    <p>So the half time is \(t = \frac{ln(2)}{k}\)</p>
+    <p>For a second order reaction:</p>
+    <p>\(\frac{1}{[A]} = \frac{1}{[A]_0} + kt \Leftrightarrow \frac{2}{[A]_0} = \frac{1}{[A]_0} + kt \Leftrightarrow \frac{1}{[A]_0} = kt\)</p>
+    <p>So the half time is \(t = \frac{1}{[A]_0\times k}\)</p>
     <h2>Bonus for calculus enthusiasts - derivation of integrated rate laws</h2>
     <br>
     <h3>Zeroth order</h3>
@@ -48,7 +54,7 @@
     <br>
     <p>\(\frac{d[A]}{dt} = -k[A] \Leftrightarrow \frac{d[A]}{[A]} = -kdt \Leftrightarrow\)</p>
     <p>Integrating:</p>
-    <p>\(\int_{[A]_0}^{[A]} \frac{d[A]}{[A]} = \int_{0}^{t} -kdt \Leftrightarrow ln(\frac{[A]}{[A]_0}) = -kt \Leftrightarrow \frac{[A]}{[A]_0} = e^{-kt}\)</p>
+    <p>\(\int_{[A]_0}^{[A]} \frac{d[A]}{[A]} = \int_{0}^{t} -kdt \Leftrightarrow ln(\frac{[A]}{[A]_0}) = -kt\)</p>
     <p>And we get the final integrated rate law:</p>
     <p>\([A] = [A]_0 \times e^{-kt}\)</p>
     <br>
