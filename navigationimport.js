@@ -1,16 +1,43 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+import { getAuth, createUserWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+import { getFirestore,  doc, setDoc , getDoc , getDocs, collection, query, deleteDoc} from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js"
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyDnD5jNRG11OTwOvLdvY1uygp3y-FvMlGE",
+  authDomain: "ijso-guide.firebaseapp.com",
+  projectId: "ijso-guide",
+  storageBucket: "ijso-guide.firebasestorage.app",
+  messagingSenderId: "595459458285",
+  appId: "1:595459458285:web:c13433c81acb943acf38e4"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const db = getFirestore(app);
+
+let uid;
+
+/* Account system initialization */
+
+
 fetch('/navigation.html')
-    .then(response => response.text())
-    .then(data => {
-        if(!document.body.innerHTML.includes("<nav>")){
-            let n = document.createElement('nav')
-            //document.querySelector('nav').innerHTML = data;
-            n.innerHTML = data;
-            document.body.insertBefore(n, document.body.firstChild)
-        }
-        
+  .then(response => response.text())
+  .then(data => {
+      if(!document.body.innerHTML.includes("<nav>")){
+          let n = document.createElement('nav')
+          //document.querySelector('nav').innerHTML = data;
+          n.innerHTML = data;
+          document.body.insertBefore(n, document.body.firstChild)
+      }
+      
 
 
-      let menuToggle = document.getElementById('menuToggle')
+    let menuToggle = document.getElementById('menuToggle')
     menuToggle.addEventListener('click', ()=>{
       document.getElementById('menu').classList.toggle('active')
       if (menuToggle.classList.contains('fa-bars')){
@@ -20,7 +47,7 @@ fetch('/navigation.html')
         menuToggle.classList.add('fa-bars');
         menuToggle.classList.remove('fa-xmark')
       }
-    })
+    }) 
 
     const menuItems = document.querySelectorAll('#menu li');
 
@@ -30,7 +57,32 @@ fetch('/navigation.html')
         menuToggle.click();
       })
     });
-});
+  })
+  .then(() => {
+    onAuthStateChanged(auth, (user) => {
+        if (user) {
+          // User is signed in, see docs for a list of available properties
+          // https://firebase.google.com/docs/reference/js/auth.user
+          uid = user.uid;
+          console.log(uid)
+          let userName;
+          getDoc(doc(db, "users", uid))
+          .then((data)=> {
+              if(data.exists()){
+                userName = data.data().name;
+                //document.getElementById('alreadyLoggedInMessage').innerHTML = "It seems like you are already signed in as " + userName + ". You can see your account settings " + "<a href=" + "./settings.html" + ">here</a>";
+                document.getElementById('navigationAccountSystemLink').innerHTML = "Account";
+                document.getElementById('navigationAccountSystemLink').href = "/Register/settings.html";
+              }
+          })
+          .catch(error => {
+              console.log("Error getting document:", error);
+          });
+        } else {
+          console.log('signed out')
+        }
+      });
+  });
 
 if (!(document.head.innerHTML.includes("mobilenavigation.css"))){
     const link1 = document.createElement('link');
@@ -73,3 +125,13 @@ if (!(document.head.innerHTML.includes("https://kit.fontawesome.com/04bf603a0f.j
   
   document.head.appendChild(link2);
 }
+
+
+//Connecting account system script
+/*if (!(document.head.innerHTML.includes("accountSystem.js"))){
+  const link6 = document.createElement('script');
+  link6.src = "/accountSystem.js";
+  link6.type = "module";
+  
+  document.head.appendChild(link6);
+}*/
