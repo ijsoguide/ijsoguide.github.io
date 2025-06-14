@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>A Guide to the IJSO</title>
@@ -10,134 +11,241 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-  <link rel="icon" href="./favicon.png" type="image/x-ico"/>
+  <link rel="icon" href="./favicon.png" type="image/x-ico" />
   <script src="https://kit.fontawesome.com/04bf603a0f.js" crossorigin="anonymous"></script>
   <script src="/navigationimport.js" defer></script>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #0b0c2a;
+      color: white;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    .glowing-spots {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .glowing-spots span {
+      position: absolute;
+      display: block;
+      width: 30px;
+      height: 30px;
+      background: radial-gradient(circle, #806aed, transparent 70%);
+      border-radius: 50%;
+      animation: moveGlow 20s linear infinite;
+      opacity: 0.5;
+      filter: blur(8px);
+    }
+
+    @keyframes moveGlow {
+      0% {
+        transform: translateY(100vh) translateX(0) scale(0.5);
+        opacity: 0.2;
+      }
+
+      50% {
+        opacity: 0.8;
+      }
+
+      100% {
+        transform: translateY(-100vh) translateX(50vw) scale(1);
+        opacity: 0;
+      }
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #806aed;
+    }
+
+    input,
+    textarea {
+      color: white;
+      background-color: transparent;
+      border: 1px solid #806aed;
+      padding: 8px;
+      border-radius: 4px;
+    }
+
+    button[type="submit"] {
+      background-color: #806aed;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #654dd8;
+    }
+  </style>
 </head>
+
 <body>
 
-    <!--Contact info placeholder text styling-->
-<style>
-  input::placeholder,
-  textarea::placeholder {
-    color: #806aed;
-  }
+  <div class="glowing-spots" id="glowingSpots"></div>
 
-  
-  input,
-  textarea {
-    color: white;
-    background-color: transparent; 
-    border: 1px solid #806aed
+
+
+
+
+
+  <div class="hero-box" style="position: relative; z-index: 2;">
+  <h1><span class="gradient-text">Your Ultimate Guide to IJSO Preparation</span></h1>
+  <p class="hero-description">Comprehensive resources, theory, practice questions, mock tests, national selection tests with solutions, lab and mindset guides, and more – all in one place!</p>
+  <div class="hero-cta">
+    <a href="Start Learning/startlearning.html" class="cta-button primary">Start Preparing Now</a>
+    <a href="Register/index.html" class="cta-button secondary">Join the Community</a>
+  </div>
+</div>
+
+<style>
+  .gradient-text {
+    background: linear-gradient(45deg, #3b82f6, #8b5cf6, #ec4899);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline;
   }
+  
+ 
 </style>
 
-  
 
 
-  <div class="hero-box">
-    <h1>Your Ultimate Guide <br> to IJSO Preparation</h1>
-    <p>Comprehensive resources, theory, practice questions, mock tests, national selection tests with solutions, lab and mindset guides, and more – all in one place!</p>
-    <a href="Start Learning/startlearning.html">Start Preparing Now</a>
-    <a href="Register/index.html">Join the Community</a>
-  </div>
 
-  <section id="about">
+  <div class="cursor"></div>
+
+
+  <section id="about" style="position: relative; z-index: 2;">
     <h2 style="border-left: 5px solid #469df6;">About the IJSO Guide</h2>
     <p class="about-description">
       Created by talented students and former IJSO medalists, this guide aims to provide accessible, high-quality resources for students preparing for the International Junior Science Olympiad. Our mission is to level the playing field and help students worldwide excel in science competitions.
     </p>
   </section>
 
-  <section id="features">
-    <h2 style= "border-left: 5px solid #b561ff;">Features</h2>
+
+
+
+
+  <section id="features" style="position: relative; z-index: 2;">
+    <h2 style="border-left: 5px solid #b561ff;">Features</h2>
     <div class="features">
       <div class="feature-box" onclick="window.location.href='Theory/theory.html'">
-        <h3 class="header-about-us" style="color: #56a9ff;">Theory Content</h3>
-        <br>
+        <h3 style="color: #56a9ff;">Theory Content</h3>
         <p>Comprehensive coverage of physics, chemistry, and biology topics in the IJSO syllabus.</p>
       </div>
       <div class="feature-box" onclick="window.location.href='Practice Questions/practicequestions.html'">
-        <h3 class="header-about-us" style="color: #b561ff;">Practice Questions</h3>
-        <br>
+        <h3 style="color: #b561ff;">Practice Questions</h3>
         <p>Targeted, topic-wise questions across all IJSO subjects—complete with hints and solutions.</p>
       </div>
       <div class="feature-box" onclick="window.location.href='Mock Tests/mocktests.html'">
         <h3 style="color: #40cb7a;">Mock Tests & Quizzes</h3>
-        <br>
         <p>Practice with full-length, realistic mock exams with answers.</p>
       </div>
       <div class="feature-box" onclick="window.location.href='National Selection Tests/selections.html'">
         <h3 style="color: #ffcb58;">National Junior Science Olympiad Papers</h3>
-        <p>Massive collection of national junior science olympiad papers of diffrent countries.</p>
+        <p>Massive collection of national junior science olympiad papers of different countries.</p>
       </div>
       <div class="feature-box" onclick="window.location.href='/mainlaunch.html'">
         <h3 style="color: #56a9ff;">Tips & Tricks</h3>
-        <br>
         <p>Avoid frequent pitfalls and exam traps with this helpful guide.</p>
       </div>
       <div class="feature-box" onclick="window.location.href='Study Materials/studymaterials.html'">
         <h3 style="color: #b561ff;">Study Materials</h3>
-        <br>
         <p>Top books, notes, and links for mastering all IJSO topics.</p>
       </div>
       <div class="feature-box" onclick="window.location.href='/mainlaunch.html'">
         <h3 style="color: #40cb7a;">Mindset & Motivation</h3>
-        <br>
         <p>Learn from gold medalists how to think, work, and win.</p>
       </div>
       <div class="feature-box" onclick="window.location.href='/mainlaunch.html'">
         <h3 style="color: #ffcb58;">Lab Apparatus Guide</h3>
-        <br>
         <p>Understand and recognize all key experimental tools in physics, chem, and bio.</p>
       </div>
       <div class="feature-box" onclick="window.location.href='/mainlaunch.html'">
         <h3 style="color: #56a9ff;">Success Stories</h3>
-        <br>
         <p>Read inspiring journeys of students who triumphed at the IJSO and beyond.</p>
       </div>
     </div>
   </section>
 
-  
 
-  <section class="contact" id="contact">
-    <h2  style= "border-left: 5px solid #ffcb58;">Contact Us</h2>
-    <p>If you wish to contact us, feel free to fill out this short form or email us at ijsoguide@gmail.com. We will be happy to hear from you!</p>
-    <form action="https://formsubmit.co/ijsoguide@gmail.com" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="Message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+
+  <section class="contact-section">
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <form class="contact-form" action="mailto:action=ijsoguide@gmail.com" method="post">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
   </section>
 
- <!-- Pre-Footer Section -->
-<div class="pre-footer">
-  <div class="pre-footer-left">
-    <h3>A Guide to the IJSO</h3>
-    <p>Your ultimate resource for International Junior Science Olympiad preparation.</p>
-  </div>
-  <div class="pre-footer-right">
-    <h4>Connect With Us</h4>
-    <div class="pre-footer-icons">
-      <a href="https://www.instagram.com/ijsoguide/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-      <a href="https://www.tiktok.com/@ijsoacademy?_t=ZS-8vw61nUVDmv&_r=1" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
-        <i class="fa-brands fa-tiktok"></i>
-      </a>
-      <a href="https://discord.gg/PGuFm8wXWK" target="_blank" rel="noopener noreferrer" aria-label="Discord">
-        <i class="fa-brands fa-discord"></i>
-      </a>
+
+
+  <div class="pre-footer" style="position: relative; z-index: 2;">
+    <div class="pre-footer-left">
+      <h3>A Guide to the IJSO</h3>
+      <p>Your ultimate resource for International Junior Science Olympiad preparation.</p>
+    </div>
+    <div class="pre-footer-right">
+      <h4>Connect With Us</h4>
+      <div class="pre-footer-icons">
+        <a href="https://www.instagram.com/ijsoguide/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@ijsoacademy?_t=ZS-8vw61nUVDmv&_r=1" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+        <a href="https://discord.gg/PGuFm8wXWK" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+          <i class="fa-brands fa-discord"></i>
+        </a>
+      </div>
     </div>
   </div>
-</div>
-  
-  <footer>
+
+  <footer style="position: relative; z-index: 2;">
     <p>&copy; 2025 A Guide to the IJSO. All rights reserved.</p>
   </footer>
 
+  <script>
+    const container = document.getElementById('glowingSpots');
+    for (let i = 0; i < 30; i++) {
+      const span = document.createElement('span');
+      span.style.left = Math.random() * 100 + 'vw';
+      span.style.top = Math.random() * 100 + 'vh';
+      span.style.animationDelay = Math.random() * 20 + 's';
+      span.style.animationDuration = 10 + Math.random() * 20 + 's';
+      span.style.width = 10 + Math.random() * 30 + 'px';
+      span.style.height = span.style.width;
+      container.appendChild(span);
+    }
+    const cursor = document.querySelector('.cursor');
+
+window.addEventListener('mousemove', (e) => {
+  cursor.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`;
+});
+
+  </script>
+  
 
 </body>
+
 </html>
