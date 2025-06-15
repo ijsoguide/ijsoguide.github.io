@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Capacitors and Capacitance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- MathJax for LaTeX rendering -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+  <link rel="stylesheet" href="../../theoryPages.css">
+  <script src="/navigationimport.js" defer></script>
+</head>
+<body>
+
+  <!-- Page Header with Back Button -->
+  <div class="top-bar">
+    <h2>Capacitors and Capacitance</h2>
+    <a class="back-btn" href="../electricity.html">← Back to Electricity and Magnetism</a>
+   </div>
+
+  <!-- Content -->
+  <div class="container">
+    <p>Capacitors are devices used in electrical engineering for storing electrical energy in an electric field. Capacitors consist of two closely spaced conductive plates containing a dielectric between them. Capacitors store charges on their plates, making an electric field in the dielectric in between them. </p>
+
+    <h2>Electric fields in capacitors</h2>
+    <p>Capacitors consist of two parallel surfaces that can be charged. When we charge a capacitor, equal and opposite charges q and –q which are evenly distributed on the plates, creating a homogeneous electric field in between the two surfaces, whose lines are perpendicular to the surfaces. The surfaces have different potentials and voltage. Since potential is directly proportional to the electric field and distance, we can represent the voltage between the 2 surfaces of conductors using the next formula:</p>
+    <p>\(V=Ed\)</p>
+    <p>Where:</p>
+    <ul>
+        <li>V - voltage between the surfaces</li>
+        <li>E - electric field between the surfaces</li>
+        <li>d - distance between the surfaces</li>
+    </ul>
+
+    <h2>Capacitance</h2>
+    <p>Capacitors are also described using capacitance, which represents the capacitor’s ability to store charges. The bigger the surfaces are, it will be easier to store charges on them, since there would be fewer forces acting on the charged particles on the surfaces. The conductor's capacitance is directly proportional to the area of the conductor’s surfaces.</p>
+    <p>If we charge one plate with a charge q, it will induce the charge –q on the other surface by pulling opposite charges closer to the surface and repelling like charges away because of Coulomb’s law. Since the force it acts with is inversely proportional to the square of the distance, the farther away the surfaces are, the force will be weaker and capacitance lower. Because of this, capacitance is inversely proportional to the distance between the surfaces.</p>
+    <p>Since capacitors work with electric fields, as the fields, the capacitance will also depend on the surrounding environment. Capacitance is directly proportional to the vacuum permittivity and relative permittivity. If the capacitors are in a vacuum, the relative permittivity constant is equal to 1 and can be left out of the formula because it doesn’t change its value:</p>
+    <p>In a vacuum:</p>
+    <p>\(C=\epsilon_0\frac{A}{d}\)</p>
+    <p>In a non-vacuum environment:</p>
+    <p>\(C=\epsilon_0\epsilon_r\frac{A}{d}\)</p>
+    <p>Where:</p>
+    <ul>
+        <li>C - capacitance</li>
+        <li>\(\epsilon_0\) - vacuum permativity</li>
+        <li>\(\epsilon_r\) - relative permittivity</li>
+        <li>A - area of the surfaces</li>
+        <li>d - distance between the surfaces</li>
+    </ul>
+    <p>As described, capacitance represents the capacitor’s ability to store charges, so it can also be calculated in correlation to the charges stored on the surfaces and the voltage between the plates, or the difference of electrical potentials of the surfaces:</p>
+    <p>\(C=\frac{q}{V}\)</p>
+    <p>Where:</p>
+    <ul>
+        <li>C - capacitance</li>
+        <li>q - charge on one of the surfaces</li>
+        <li>V - voltage between the surfaces</li>
+    </ul>
+
+    <h2>Work done by a capacitor while moving a charge</h2>
+    <p>Since capacitors make electric fields, they can do work by moving charges through the field, the work done by moving a charge q in an electric field equal to the force moving it multiplied by the distance travelled.</p>
+    <p>\(W=qEd\)</p>
+    <p>Where:</p>
+    <ul>
+        <li>W - work done</li>
+        <li>q - charge moved</li>
+        <li>E - intensity of the electric field</li>
+        <li>d - distance the charge has travelled</li>
+    </ul>
+
+    <h2>Capacitors in electric circuits</h2>
+    <p>One way we can charge capacitors is by putting them in circuits, while the capacitor is completely empty, the first moment it is put into a circuit, the initial current flows as if the capacitor was a wire, as the capacitor charges, the current decreases. When a capacitor is fully charged, current can not flow through it.</p>
+    <p>It’s important to consider series and parallel circuits with capacitors.</p>
+    <p>For 2 capacitors in a series, the charges on them must be equal:</p>
+    <p>\(q_1=q_2\)</p>
+    <p>This applies for as many capacitors in series:</p>
+    <p>\(q_1 = q_2 = q_3 = … = q_n\)</p>
+    <p>For two capacitors in series, we can substitute them with one capacitor of a specific capacitance defined using the next formula:</p>
+    <p>\(\frac{1}{C_eq}=\frac{1}{C_1}+\frac{1}{C_2}\)</p>
+    <p>Which can be generalized for n capacitors in series:</p>
+    <p>\(\frac{1}{C_s}=\sum\limits^n_{i=1}{\frac{1}{C_i}}\)</p>
+    <p>If capacitors are in parallel, the voltages on all of them are equal, just like with resistors:</p>
+    <p>\(U_1 = U_2 = U_3 = … = U_n\)</p>
+    <p>For two capacitors in parallel, we can substitute them with one capacitor of a specific capacitance defined using the next formula:</p>
+    <p>\(C_p = C_1 + C_2\)</p>
+    <p>Which can be generalized for n capacitors in parallel:</p>
+    <p>\(C_p= \sum\limits^n_{i=1}{C_i}\)</p>
+
+    <button class="collapsible">Example 1: Calculate Work Done</button>
+    <div class="content">
+        <p>Calculate the work done by a capacitor while moving a charge q=2mC whose voltage is U=5V from one surface to the other.</p>
+        <br>
+        <p>Solution:</p>
+        <p>We find the work done by using the next formula, since the charge is moving the full distance d from one surface to the other:</p>
+        <p>\(W=qEd\)</p>
+        <p>Since</p>
+        <p>\(U=Ed\)</p>
+        <p>We find the work by substituting the U:</p>
+        <p>\(W=qU=2 \times 10^{-3}\:C \times 5\:V=1 \times 10^{-2}\:J=0.01\:J\)</p>
+    </div>
+
+    <button class="collapsible">Example 2: Finding the Capacitance</button>
+    <div class="content">
+        <p>Find the capacitance in terms of C of the one capacitor that can substitute these 3:</p>
+        <img src="image1.png">
+        <br>
+        <p>Solution:</p>
+        <p>First, we see that C and 2C are in parallel, so we can substitute them with a capacitor of capacity:</p>
+        <p>\(C_p=C+2C=3C\)</p>
+        <p>This substituted capacitor is in series with the capacitor \(\frac{4}{3}C\), so we can find the final capacitance:</p>
+        <p>\(\frac{1}{C_{final}}=\frac{1}{3C}+\frac{1}{\frac{4C}{3}}\)</p>
+        <p>\(\frac{1}{C_{final}}=\frac{1}{3C}+\frac{3}{4C}\)</p>
+        <p>\(\frac{1}{C_{final}}=\frac{4}{12C}+\frac{9}{12C}\)</p>
+        <p>\(\frac{1}{C_{final}}=\frac{13}{12C}\)</p>
+        <p>\(C_{final}=\frac{12}{13}C\)</p>
+    </div>
+    <br>
+     <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+    Written by <strong>Nemanja Maslak</strong>
+</p>
+  </div>
+
+  <!-- Footer -->
+ <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+<script src="../../../collapsibles.js"></script>
+</body>
+</html>
