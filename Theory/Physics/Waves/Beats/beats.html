@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Beats and Harmonics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../theoryPages.css">
+  <script src="/navigationimport.js" type="module"></script>
+</head>
+<body>
+
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Beats and Harmonics</h2>
+    <a href="../Waves.html" class="back-btn">← Back to Waves</a>
+  </div>
+
+  <!-- Main content -->
+  <div class="container">
+    <h2>Beats</h2>
+    <p>Beats are a phenomenon that occurs when two sound waves of slightly different frequencies interfere with each other. The result is a fluctuating volume (alternating loud and soft sounds) known as beats.</p>
+  
+    <p>The beat frequency is the number of volume fluctuations heard per second and is given by:</p>
+    <p>\[
+    f_{\text{beat}} = |f_1 - f_2|
+    \]</p>
+    <ul>
+      <li>\( f_1 \), \( f_2 \): Frequencies of the two sound waves</li>
+      <li>\( f_{\text{beat}} \): Beat frequency</li>
+    </ul>
+  
+    <p>Beats are commonly used to tune musical instruments by matching the frequencies until the beats disappear (indicating that both frequencies are equal).</p>
+  
+    <button class="collapsible">Example 1: Calculating Beat Frequency</button>
+    <div class="content">
+      <p>Two tuning forks produce sounds with frequencies of \( 256 \ \text{Hz} \) and \( 260 \ \text{Hz} \). What is the beat frequency?</p>
+      <p>\[
+      f_{\text{beat}} = |260 - 256| = 4 \ \text{Hz}
+      \]</p>
+      <p><strong>Answer:</strong> 4 beats per second are heard.</p>
+    </div>
+  
+    <h2>Harmonics</h2>
+    <p>Harmonics are the natural frequencies at which an object (like a string or pipe) tends to vibrate. The fundamental frequency is the lowest harmonic and determines the pitch of the sound. Higher harmonics are whole-number multiples of the fundamental frequency.</p>
+  <br>
+    <h3>Harmonics in Strings</h3>
+    <br>
+    <ul>
+      <li><strong>Fundamental (1st harmonic):</strong> \(\lambda = 2L\)</li>
+      <li><strong>2nd harmonic:</strong> \(\lambda = L\)</li>
+      <li><strong>3rd harmonic:</strong> \(\lambda = \frac{2L}{3}\)</li>
+      <li>And so on...</li>
+    </ul>
+  <br>
+    <h3>Harmonics in Pipes</h3>
+    <br>
+    <p>For an open pipe (open at both ends):</p>
+    <ul>
+      <li>All harmonics present: \( f_n = n \cdot f_1 \), where \( n = 1, 2, 3, \dots \)</li>
+    </ul>
+  
+    <p>For a closed pipe (closed at one end):</p>
+    <ul>
+      <li>Only odd harmonics present: \( f_n = n \cdot f_1 \), where \( n = 1, 3, 5, \dots \)</li>
+    </ul>
+  
+    <p>The frequency of each harmonic is given by:</p>
+    <p>\[
+    f_n = n \cdot f_1
+    \]</p>
+  
+    <button class="collapsible">Example 2: Harmonics in a String</button>
+    <div class="content">
+      <p>A string of length \( L = 1.2 \ \text{m} \) is fixed at both ends. The speed of the wave on the string is \( 240 \ \text{m/s} \). What is the frequency of the fundamental and the second harmonic?</p>
+  
+      <p><strong>Step 1: Find Fundamental Frequency (1st harmonic)</strong></p>
+      <p>\[
+      f_1 = \frac{v}{2L} = \frac{240}{2 \times 1.2} = 100 \ \text{Hz}
+      \]</p>
+  
+      <p><strong>Step 2: 2nd Harmonic</strong></p>
+      <p>\[
+      f_2 = 2 \cdot f_1 = 2 \cdot 100 = 200 \ \text{Hz}
+      \]</p>
+  
+      <p><strong>Answer:</strong> \( f_1 = 100 \ \text{Hz} \), \( f_2 = 200 \ \text{Hz} \)</p>
+    </div>
+    <br>
+
+    <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+    Written by <strong>Thenura Dilruk</strong>
+</p>  
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+
+ <script src="../../../collapsibles.js"></script>
+</body>
+</html>

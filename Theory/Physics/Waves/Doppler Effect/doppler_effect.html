@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Doppler Effect</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../theoryPages.css">
+  <script src="/navigationimport.js" type="module"></script>
+</head>
+<body>
+
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Doppler Effect</h2>
+    <a href="../Waves.html" class="back-btn">← Back to Waves</a>
+  </div>
+
+  <!-- Main content -->
+  <div class="container">
+    <p>The Doppler Effect is the change in frequency or wavelength of a wave in relation to an observer who is moving relative to the source of the wave. It occurs with all types of waves, including sound and electromagnetic waves (like light).</p>
+  
+    <h2>Key Concept</h2>
+    <p>When the source and observer are moving closer together, the observed frequency increases (higher pitch). When they are moving apart, the observed frequency decreases (lower pitch).</p>
+  
+    <h3>For Sound Waves</h3>
+    <p>The general Doppler Effect formula (for sound in air) is:</p>
+    <p>\[
+    f' = f \cdot \frac{v \pm v_o}{v \mp v_s}
+    \]</p>
+    <ul>
+      <li>\( f' \): Observed frequency</li>
+      <li>\( f \): Actual frequency of the source</li>
+      <li>\( v \): Speed of sound in the medium (e.g., air)</li>
+      <li>\( v_o \): Speed of the observer (positive if moving toward the source)</li>
+      <li>\( v_s \): Speed of the source (positive if moving toward the observer)</li>
+    </ul>
+  
+    <p><strong>Important:</strong> Use the upper sign when the object is moving <em>toward</em> and the lower sign when moving <em>away</em>. Be consistent with signs!</p>
+  
+    <h2>Applications of the Doppler Effect</h2>
+    <ul>
+      <li>Radar and speed guns (used by police to detect vehicle speed)</li>
+      <li>Medical imaging (Doppler ultrasound for blood flow)</li>
+      <li>Astronomy (redshift and blueshift of stars and galaxies)</li>
+      <li>Weather forecasting (Doppler radar for storm tracking)</li>
+      <li>Siren pitch change as an ambulance passes by</li>
+    </ul>
+  
+    <h2>Electromagnetic Doppler Effect (Extra Knowledge)</h2>
+    <p>In the case of light, a similar effect occurs, but the formulas differ due to the constancy of the speed of light and relativistic effects.</p>
+    <ul>
+      <li><strong>Blueshift:</strong> Light from objects moving toward us appears shifted to shorter wavelengths.</li>
+      <li><strong>Redshift:</strong> Light from objects moving away appears shifted to longer wavelengths.</li>
+    </ul>
+  
+    <p>The Doppler Effect is a powerful tool in both classical physics and modern astrophysics, providing insight into the motion of distant objects and systems.</p>
+  
+    <button class="collapsible">Example 1: Moving Observer</button>
+    <div class="content">
+      <p>A person is running toward a stationary sound source emitting a frequency of \( 500 \ \text{Hz} \). The speed of sound in air is \( 340 \ \text{m/s} \), and the observer runs at \( 10 \ \text{m/s} \). What is the frequency heard by the observer?</p>
+      <p>\[
+      f' = f \cdot \frac{v + v_o}{v} = 500 \cdot \frac{340 + 10}{340} = 500 \cdot \frac{350}{340} \approx 514.7 \ \text{Hz}
+      \]</p>
+      <p><strong>Answer:</strong> The observer hears a frequency of approximately \( 514.7 \ \text{Hz} \).</p>
+    </div>
+  
+    <button class="collapsible">Example 2: Moving Source</button>
+    <div class="content">
+      <p>An ambulance moves toward a stationary listener at \( 20 \ \text{m/s} \), emitting a siren sound of frequency \( 600 \ \text{Hz} \). Find the frequency heard by the listener. Use the speed of sound as \( 340 \ \text{m/s} \).</p>
+      <p>\[
+      f' = f \cdot \frac{v}{v - v_s} = 600 \cdot \frac{340}{340 - 20} = 600 \cdot \frac{340}{320} = 600 \cdot 1.0625 = 637.5 \ \text{Hz}
+      \]</p>
+      <p><strong>Answer:</strong> The listener hears a frequency of \( 637.5 \ \text{Hz} \).</p>
+    </div>
+    <br>
+    <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+    Written by <strong>Thenura Dilruk</strong>
+</p>  
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+
+ <script src="../../../collapsibles.js"></script>
+</body>
+</html>
