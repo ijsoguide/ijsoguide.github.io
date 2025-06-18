@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Buffer Solutions and the Henderson-Hasselbach Equation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../theoryPages.css">
+  <script src="/navigationimport.js" type="module"></script>
+</head>
+<body>
+
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Buffer Solutions and the Henderson-Hasselbach Equation</h2>
+    <a href="../equilibrium.html" class="back-btn">← Back to Chemical Equilibrium</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h2>What is a buffer solution</h2>
+    <p>Buffer solutions are solutions of a weak acid and its conjugate base with a common ion, e.g., \(CH_3COOH\) / \(CH_3COONa\), or a weak base and its conjugate acid, e.g., \(NH_3\) / \(NH_4Cl\), which have the ability to maintain a constant pH, when a small amount of strong acid or strong base is added to them.</p>
+    <p>It is an application of the common ion effect.</p>
+    <h2>Explanation of the phenomenon</h2>
+    <p>In a system of a weak acid and its conjugate base, e.g., \(CH_3COOH\) / \(CH_3COONa\), the following hold:</p>
+    <p>Dissociation reactions:</p>
+    <ul>
+      <li>\(CH_3COOH ⇌ CH_3COO^- + H^+\)</li>
+      <li>\(CH_3COONa \rightarrow CH_3COO^- + Na^+\)</li>
+    </ul>
+    <p>(a) <strong>If acid is added:</strong> [\(H^+\)] increases. At that moment, the chemical equilibrium shifts to the left, more \(CH_3COOH\) is formed, [\(H^+\)] slightly decreases and overall [\(H^+\)] remains almost constant, so the pH remains almost unchanged.</p>
+    <p>(b) <strong>If base is added:</strong> We have an increase in [\(OH^-\)], which will bind \(H^+\). [\(H^+\)] decreases and the chemical equilibrium shifts to the right, more \(CH_3COOH\) dissociates, [\(H^+\)] increases back again, so the pH remains almost unchanged.</p>
+    <p>(c) <strong>If water is added:</strong> With the addition of water, the concentrations of acid and salt are altered, but their ratio remains constant, as long as the amounts of acid and salt do not change. Hence, the pH remains constant.</p>
+    <p>An important characteristic of a buffer are its pH and its buffer capacity, which is the amount of acid or base the buffer can react with before giving a significant pH change. Buffer capacity depends on the amount of acid and conjugate base in the solution.</p>
+    <img src = 'image1.png'>
+    <h2>Henderson-Hasselbach Equation</h2>
+    <p>This is an equation relating the pH of a buffer for different concentrations of conjugate acid and base; it is known as the Henderson-Hasselbalch equation.</p>
+    <p>\[pH = pk_a + log\frac{[base]}{[acid]}\]</p>
+    <h3>Proof of the equation</h3>
+    <p>Writing the formula for \(K_a\):</p>
+    <p>\[K_a = \frac{[H^+][base]}{[acid]}\]</p>
+    <p>Solving for \([H^+]\), we get:</p>
+    <p>\[[H^+] = \frac{K_a[acid]}{[base]}\]</p>
+    <p>Taking the negative log of this equation and using log properties, we get the Henderson-Hasselbach equation.</p>
+    <h2>Using the Henderson-Hasselbach equation in buffer solutions</h2>
+    <p>We need to find the pH of a solution of \(C_a\; CH_3COOH\) and \(C_b\; CH_3COONa\)</p>
+    <p>We notice that this solutions is a buffer because it consists of the weak acid \(CH_3COOH\) and its conjugate base. For the dissociation reactions:</p>
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>\[CH_3COONa\]</th>
+          <th>\[CH_3COO^-\]</th>
+          <th>\[Na^+\]</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Start</th>
+          <th>\[C_b\]</th>
+          <th>\[0\]</th>
+          <th>\[0\]</th>
+        </tr>
+        <tr>
+          <th>Change</th>
+          <th>\[-C_b\]</th>
+          <th>\[+C_b\]</th>
+          <th>\[+C_b\]</th>
+        </tr>
+        <tr>
+          <th>Final</th>
+          <th>0</th>
+          <th>\[C_b\]</th>
+          <th>\[C_b\]</th>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>\[CH_3COOH\]</th>
+          <th>\[CH_3COO^-\]</th>
+          <th>\[H^+\]</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Start</th>
+          <th>\(C_a\)</th>
+          <th>0</th>
+          <th>0</th>
+        </tr>
+        <tr>
+          <th>Change</th>
+          <th>\[-x\]</th>
+          <th>\[+x\]</th>
+          <th>\[+x\]</th>
+        </tr>
+        <tr>
+          <th>Final</th>
+          <th>\[C_a - x\]</th>
+          <th>\[x\]</th>
+          <th>\[x\]</th>
+        </tr>
+      </tbody>
+    </table>
+    <p>The final concentrations are \([CH_3COO^-] = C_b + x\) and \([CH_3COOH] = C_a - x\)</p>
+    <p>Because we talk about a weak acid and a weak conjugate base, \(x\ll C_a\) and \(x\ll C_b\)</p>
+    <p>Thus, we can approximate \([CH_3COOH]\approx C_a\) and \([CH_3COO^-]\approx C_b\)</p>
+    <p>From the Henderson-Hasselbach equation we easily have:</p>
+    <p>\[pH = pK_a + log\frac{C_b}{C_a}\]</p>
+    <br>
+       <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+    Written by <strong>Fillios Memtsoudis</strong>
+</p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+
+</body>
+</html>
