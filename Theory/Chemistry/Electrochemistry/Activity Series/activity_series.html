@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Activity Series of Metals</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../theoryPages.css">
+  <script src="/navigationimport.js" type="module"></script>
+</head>
+<body>
+
+
+    <div class="page-header">
+    <h2>Activity Series of Metals</h2>
+    <a href="../electrochemistry.html" class="back-btn">← Back to Electrochemistry</a>
+    </div>
+    <div class="container"> 
+        <p>The <strong>activity series of metals</strong> ranks metals by their tendency to lose electrons and undergo oxidation. This tendency is directly related to their <strong>standard electrode potentials (E°)</strong>. Metals higher in the series are more reactive, more easily oxidized, and thus have more negative standard reduction potentials.</p>
+
+        <h2>Relation to Electrode Potentials</h2>
+        <p>In the electrochemical series (a list of half-reactions with their standard electrode potentials), metals that are strong reducing agents appear at the top of the activity series with large negative \(E^\circ\) values. Conversely, metals with high (positive) \(E^\circ\) values are less reactive and found lower in the activity series.</p>
+      
+        <p>Example segment from the electrochemical series:</p>
+        <ul>
+          <li>\( \text{K}^+ + e^- \rightarrow \text{K (s)} \qquad E^\circ = -2.93 \, \text{V} \)</li>
+          <li>\( \text{Zn}^{2+} + 2e^- \rightarrow \text{Zn (s)} \qquad E^\circ = -0.76 \, \text{V} \)</li>
+          <li>\( \text{Cu}^{2+} + 2e^- \rightarrow \text{Cu (s)} \qquad E^\circ = +0.34 \, \text{V} \)</li>
+          <li>\( \text{Ag}^+ + e^- \rightarrow \text{Ag (s)} \qquad E^\circ = +0.80 \, \text{V} \)</li>
+        </ul>
+      
+        <p>From this, we observe that potassium is a much stronger reducing agent than silver, which is why it appears higher in the activity series.</p>
+      
+        <h2>Applications</h2>
+        <ul>
+          <li><strong>Displacement reactions:</strong> A metal will displace another from its salt solution if its standard electrode potential is more negative.</li>
+          <li><strong>Redox spontaneity:</strong> Comparing two half-cell potentials tells us whether a redox reaction is spontaneous under standard conditions.</li>
+          <li><strong>Predicting cell reactions:</strong> Activity series and electrode potentials allow you to predict the direction of electron flow in galvanic cells.</li>
+        </ul>
+      
+        <button class="collapsible">Example 1: Can Zinc Displace Silver?</button>
+        <div class="content">
+          <p>Consider the reaction:</p>
+          <p>\[
+          \text{Zn (s)} + 2\text{Ag}^+ (aq) \rightarrow \text{Zn}^{2+} (aq) + 2\text{Ag (s)}
+          \]</p>
+          <p><strong>Solution:</strong></p>
+          <ul>
+            <li>\( E^\circ_{\text{Zn}^{2+}/\text{Zn}} = -0.76 \, \text{V} \)</li>
+            <li>\( E^\circ_{\text{Ag}^+/\text{Ag}} = +0.80 \, \text{V} \)</li>
+            <li>\( E^\circ_{\text{cell}} = 0.80 - (-0.76) = +1.56 \, \text{V} \)</li>
+            <li>The positive cell potential confirms the reaction is spontaneous. Zinc displaces silver.</li>
+          </ul>
+        </div>
+      
+        <button class="collapsible">Example 2: Why Doesn't Copper Displace Zinc?</button>
+        <div class="content">
+          <p>\[
+          \text{Cu (s)} + \text{Zn}^{2+} (aq) \rightarrow \text{Cu}^{2+} (aq) + \text{Zn (s)} \; ?
+          \]</p>
+          <p><strong>Solution:</strong></p>
+          <ul>
+            <li>\( E^\circ_{\text{Cu}^{2+}/\text{Cu}} = +0.34 \, \text{V} \)</li>
+            <li>\( E^\circ_{\text{Zn}^{2+}/\text{Zn}} = -0.76 \, \text{V} \)</li>
+            <li>\( E^\circ_{\text{cell}} = -0.76 - 0.34 = -1.10 \, \text{V} \)</li>
+            <li>The negative potential shows the reaction is not spontaneous. Copper cannot displace zinc.</li>
+          </ul>
+        </div>
+      
+        <p>Thus, the activity series and electrochemical series are two sides of the same coin — one qualitative, the other quantitative — both essential for mastering redox chemistry and electrochemistry.</p>
+      
+        <br>
+        <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+          Written by <strong>Thenura Dilruk</strong>
+        </p>
+      </div>
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+<script src="../../../collapsibles.js"></script>
+</body>
+</html>
