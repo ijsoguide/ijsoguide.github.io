@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Faraday's Law of Electrolysis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../theoryPages.css">
+  <script src="/navigationimport.js" type="module"></script>
+</head>
+<body>
+
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Faraday's Law of Electrolysis</h2>
+    <a href="../electrochemistry.html" class="back-btn">← Back to Electrochemistry</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">  
+    <p>Faraday’s laws of electrolysis describe the relationship between the quantity of electricity passed through an electrolyte and the amount of substance deposited or liberated at the electrodes. There are two fundamental laws:</p>
+  
+    <h2>First Law of Electrolysis</h2>
+    <p><strong>“The mass (m) of a substance deposited or liberated at an electrode is directly proportional to the quantity of electric charge (Q) passed through the electrolyte.”</strong></p>
+    <p>\[
+    m \propto Q \quad \text{or} \quad m = ZQ
+    \]</p>
+    <ul>
+      <li>\( m \): Mass of substance deposited (in grams)</li>
+      <li>\( Q \): Charge passed (in coulombs)</li>
+      <li>\( Z \): Electrochemical equivalent (g/C), a constant for each substance</li>
+    </ul>
+    <p>Since \( Q = It \), we can also write:
+    \[
+    m = ZIt
+    \]</p>
+    <p>The electrochemical equivalent \( Z \) is given by:</p>
+  <p>\[
+  Z = \frac{M}{nF}
+  \]</p>
+  <ul>
+    <li>\( M \): Molar mass of the substance (g/mol)</li>
+    <li>\( n \): Number of electrons transferred per ion</li>
+    <li>\( F \): Faraday’s constant (\( 96500 \, \text{C/mol} \))</li>
+  </ul>
+
+  <p>Substituting into the main equation gives:</p>
+  <p>\[
+  m = \frac{M}{nF} \cdot Q
+  \]</p>
+
+  <p>Or, since \( Q = It \):</p>
+  <p>\[
+  m = \frac{M}{nF} \cdot It
+  \]</p>
+
+  <p>This equation allows you to calculate how much substance is deposited for a given current and time, using fundamental constants. The equation can also be deduced from the stoichiometry of the reduction/oxidation half reaction using the fact that one mole of electrons has a charge equal to F</p>
+  
+    <h2>Second Law of Electrolysis</h2>
+    <p><strong>“When the same quantity of electricity is passed through different electrolytes, the masses of substances deposited or liberated are proportional to their equivalent weights.”</strong></p>
+    <p>\[
+    \frac{m_1}{m_2} = \frac{E_1}{E_2}
+    \]</p>
+    <ul>
+      <li>\( m_1, m_2 \): Masses of substances deposited</li>
+      <li>\( E_1, E_2 \): Equivalent weights of the substances</li>
+    </ul>
+  
+    <h2>Important Concepts</h2>
+    <ul>
+      <li>1 Faraday (F) = 96,500 C of charge is required to deposit 1 gram-equivalent of a substance.</li>
+      <li>Equivalent weight = Molar mass / n, where \( n \) is the number of electrons transferred per ion.</li>
+    </ul>
+  
+    <button class="collapsible">Example 1: Calculating mass deposited</button>
+    <div class="content">
+      <p>A current of 2 A is passed through a solution of copper(II) sulfate for 30 minutes. Calculate the mass of copper deposited on the cathode. (\(\ce{Cu^{2+} + 2e^- → Cu}\), Molar mass of Cu = 63.5 g/mol)</p>
+      <p><strong>Solution:</strong></p>
+      <ul>
+        <li>Time \( t = 30 \times 60 = 1800 \, \text{s} \)</li>
+        <li>Charge \( Q = It = 2 \times 1800 = 3600 \, \text{C} \)</li>
+        <li>1 mole of Cu (63.5 g) requires 2 Faradays = \( 2 \times 96500 \, \text{C} \)</li>
+        <li>Mass deposited = \( \frac{63.5}{2 \times 96500} \times 3600 \approx 1.18 \, \text{g} \)</li>
+      </ul>
+    </div>
+  
+    <button class="collapsible">Example 2: Comparing deposits with different metals</button>
+    <div class="content">
+      <p>The same charge is passed through silver nitrate and copper(II) sulfate solutions. If 5.4 g of copper is deposited, how much silver will be deposited? (\(\ce{Ag^+ + e^- → Ag; Cu^{2+} + 2e^- → Cu}\); Molar mass of Ag = 108 g/mol, Cu = 63.5 g/mol)</p>
+      <p><strong>Solution:</strong></p>
+      <ul>
+        <li>Equivalent weight of Cu = \( \frac{63.5}{2} = 31.75 \)</li>
+        <li>Equivalent weight of Ag = \( \frac{108}{1} = 108 \)</li>
+        <li>By second law: \( \frac{m_\text{Ag}}{5.4} = \frac{108}{31.75} \Rightarrow m_\text{Ag} \approx 18.36 \, \text{g} \)</li>
+      </ul>
+    </div>
+  
+    <p>Faraday's laws form the backbone of quantitative electrochemistry and are essential in industries like electroplating, electrorefining, and battery production.</p>
+    
+
+<br>
+       <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+    Written by <strong>Thenura Dilruk</strong>
+</p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+<script src="../../../collapsibles.js"></script>
+</body>
+</html>
