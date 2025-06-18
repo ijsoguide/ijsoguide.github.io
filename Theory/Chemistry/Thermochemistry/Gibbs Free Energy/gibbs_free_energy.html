@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gibbs Free Energy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- MathJax for LaTeX -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async 
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+  <link rel="stylesheet" href="../../theoryPages.css">
+  <script src="/navigationimport.js" type="module"></script>
+</head>
+<body>
+
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Gibbs Free Energy</h2>
+    <a href="../thermochemistry.html" class="back-btn">← Back to Thermochemistry</a>
+  </div>
+
+  <!-- Main content -->
+  <div class="container">
+    <p><strong>Gibbs free energy</strong>, denoted by \( \Delta G \), is a thermodynamic quantity that determines whether a process is spontaneous at constant temperature and pressure.</p>
+    
+    <p>The formula is:</p>
+    <p>\[
+    \Delta G = \Delta H - T\Delta S
+    \]</p>
+    
+    <ul>
+      <li>\( \Delta G \): Gibbs free energy change (J)</li>
+      <li>\( \Delta H \): Enthalpy change (J)</li>
+      <li>\( T \): Temperature in Kelvin (K)</li>
+      <li>\( \Delta S \): Entropy change (J/K)</li>
+    </ul>
+    
+    <p><strong>Spontaneity Criteria:</strong></p>
+    <ul>
+      <li>\( \Delta G < 0 \): Reaction is <strong>spontaneous</strong></li>
+      <li>\( \Delta G = 0 \): Reaction is at <strong>equilibrium</strong></li>
+      <li>\( \Delta G > 0 \): Reaction is <strong>non-spontaneous</strong></li>
+    </ul>
+    
+    <p>This equation shows how both enthalpy and entropy influence the spontaneity of a process.</p>
+<br>
+    <p>Gibbs free energy can also be written as</p>
+    <ul>
+        <li>\(G = - RTlnK\)</li>
+        <li>\(G = -nFE\)</li>
+    </ul>
+    <p>Where:</p>
+    <ul>
+        <li>R = Universal Gas Constant</li>
+        <li>T = Temperature</li>
+        <li>K = <a href="/mainlaunch.html" style="color:#9081dd">Equilibrium Constant</a></li>
+        <li>n = Number of Moles</li>
+        <li>F = <a href="../../Electrochemistry/Faraday's Law/faraday_law.html" style="color:#9081dd">Faraday's Constant</a></li>
+        <li>E = <a href="../../Electrochemistry/Nernst Equation/nernst_equation.html" style="color:#9081dd">Electrochemical Potential</a></li>
+    </ul>
+    
+    <button class="collapsible">Example 1: Melting of Ice at Room Temperature</button>
+    <div class="content">
+      <p>At room temperature (298 K), ice melts spontaneously. Let's consider the thermodynamic values:</p>
+      <ul>
+        <li>\( \Delta H = +6.01 \, \text{kJ/mol} \)</li>
+        <li>\( \Delta S = +22.0 \, \text{J/mol·K} \)</li>
+      </ul>
+      <p>Convert \( \Delta S \) to kJ: \( 22.0 \, \text{J/mol·K} = 0.022 \, \text{kJ/mol·K} \)</p>
+      <p>\[
+      \Delta G = 6.01 - (298 \times 0.022) = 6.01 - 6.556 = -0.546 \, \text{kJ/mol}
+      \]</p>
+      <p><strong>Conclusion:</strong> Since \( \Delta G < 0 \), melting is spontaneous at 298 K.</p>
+    </div>
+    
+    <button class="collapsible">Example 2: Decomposition of Calcium Carbonate</button>
+    <div class="content">
+      <p>The thermal decomposition of calcium carbonate:</p>
+      <p>\[
+      \text{CaCO}_3 (s) \rightarrow \text{CaO} (s) + \text{CO}_2 (g)
+      \]</p>
+      <ul>
+        <li>\( \Delta H = +178 \, \text{kJ/mol} \)</li>
+        <li>\( \Delta S = +160 \, \text{J/mol·K} = 0.160 \, \text{kJ/mol·K} \)</li>
+      </ul>
+      <p>At 298 K:</p>
+      <p>\[
+      \Delta G = 178 - (298 \times 0.160) = 178 - 47.68 = 130.32 \, \text{kJ/mol}
+      \]</p>
+      <p><strong>Conclusion:</strong> Since \( \Delta G > 0 \), this reaction is non-spontaneous at room temperature.</p>
+    </div>
+
+<br>
+     <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+    Written by <strong>Thenura Dilruk</strong>
+</p>
+</div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+<script src="../../../collapsibles.js"></script>
+</body>
+</html>
