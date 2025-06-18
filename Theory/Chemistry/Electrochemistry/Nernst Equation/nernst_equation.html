@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Electrochemical Potentials and Nernst Equation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../theoryPages.css">
+  <script src="/navigationimport.js" type="module"></script>
+</head>
+<body>
+
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Electrochemical Potentials and Nernst Equation</h2>
+    <a href="../electrochemistry.html" class="back-btn">← Back to Electrochemistry</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container"> 
+    <h2>Half-Cell Potential and the Standard Hydrogen Electrode (SHE)</h2>
+<p>The <strong>half-cell potential</strong> (or electrode potential) is the voltage developed by a half-cell when connected to the <strong>Standard Hydrogen Electrode (SHE)</strong>, which is assigned a potential of exactly 0.00 V by convention.</p>
+
+<p>The SHE consists of:</p>
+<ul>
+  <li>A platinum electrode coated with platinum black</li>
+  <li>Immersed in 1.0 M H⁺ ions (usually as HCl)</li>
+  <li>With hydrogen gas at 1 atm bubbling over it at 25°C (298 K)</li>
+</ul>
+
+<p>The measured potential of any half-cell, relative to the SHE, is called its <strong>standard electrode potential (E°)</strong>. This value indicates the tendency of a species to gain or lose electrons:</p>
+<ul>
+  <li>\( E^\circ > 0 \): Species is more likely to be <strong>reduced</strong> (gain electrons)</li>
+  <li>\( E^\circ < 0 \): Species is more likely to be <strong>oxidized</strong> (lose electrons)</li>
+</ul>
+    <h2>Cell Potential (\( E^\circ_{\text{cell}} \))</h2>
+    <p>The standard cell potential is calculated using:</p>
+    <p>\[
+    E^\circ_{\text{cell}} = E^\circ_{\text{cathode}} - E^\circ_{\text{anode}} (1)
+    \]</p>
+    <p>with \(E^\circ_{\text{cathode}}\) being the reduction potential of the reaction taking place at the cathode and \(E^\circ_{\text{anode}}\) being the reduction potential of the reaction taking place at the anode.</p>
+    <p>You may wonder what is the reduction reaction taking place at the anode - after all we know that the anode is the place where oxidation takes place. The reduction potential is simply the opposite of the oxidation potential:</p>
+    <p>If the potential of \(A^{n-}\rightarrow A + ne^-\) is \(E_{ox}\), then the potential of \(A + ne^- \rightarrow A^{n-}\) is \(E_{red} = -E_{ox}\)</p>
+    <p>We give formula (1) in terms of reduction potentials because those are the one usually tabulated in tables with potential values. However, when solving problems, you should pay attention to see if the given potential is the reduction one or the oxidation one.</p>
+    <p>\(E^\circ_{\text{cell}}\) represents the maximum potential difference between two electrodes when no current is flowing (standard conditions).</p>
+  
+    <h2>Standard Electrode Potential (\( E^\circ \))</h2>
+<p>The <strong>standard electrode potential</strong> of a half-cell, denoted by \( E^\circ \), is the voltage measured when the half-cell is connected to the Standard Hydrogen Electrode (SHE) under standard conditions:</p>
+<ul>
+  <li>Temperature: 25°C (298 K)</li>
+  <li>Pressure: 1 atm for any gases involved</li>
+  <li>Concentration: 1.0 M for all aqueous species</li>
+</ul>
+<p>It reflects the tendency of a species to gain or lose electrons:</p>
+<p>Standard electrode potentials are determined experimentally and are listed in standard electrochemical series tables.</p>
+
+    <h2>Nernst Equation</h2>
+    <p>The Nernst equation allows calculation of the electrode potential under non-standard conditions by accounting for concentration changes.</p>
+    <p>\[
+    E = E^\circ - \frac{RT}{nF} \log \left( \frac{[\text{products}]}{[\text{reactants}]} \right)
+    \]</p>
+    <ul>
+      <li>\( E \): Electrode potential under non-standard conditions (V)</li>
+      <li>\( E^\circ \): Standard electrode potential (V)</li>
+      <li>\( n \): Number of moles of electrons transferred</li>
+      <li>Concentration in mol/L for aqueous species</li>
+      <li>\(R\): The universal gas constant is SI units</li>
+      <li>\(T\): The absolute temperature</li>
+      <li>\(F\): Farady's constant</li>
+    </ul>
+    <p>For \(T=298K\), we have \(\frac{RT}{F} = 0.0591\)</p>
+    <p>This equation is used for both half-cells and full electrochemical cells. For full cells, you calculate \( E_{\text{cell}} \) by subtracting the anode and cathode potentials (as adjusted by Nernst).</p>
+  
+    <button class="collapsible">Example 1: Concentration Cell</button>
+    <div class="content">
+      <p>Consider a zinc concentration cell with the half-reactions:</p>
+      <p>\[
+      \text{Zn}^{2+} + 2e^- \leftrightarrow \text{Zn (s)}
+      \]</p>
+      <p>If the two half-cells have \( [\text{Zn}^{2+}] \) = 1 M and 0.01 M respectively, find the cell potential.</p>
+      <p><strong>Solution:</strong></p>
+      <ul>
+        <li>\( E^\circ_{\text{cell}} = 0 \), since both electrodes are Zn</li>
+        <li>\( E_{\text{cell}} = \frac{0.0591}{2} \log \left( \frac{[0.01]}{[1]} \right) = \frac{0.0591}{2} \cdot (-2) = -0.0591 \, \text{V} \)</li>
+        <li>Since electron flow is from dilute to concentrated, actual \( E_{\text{cell}} = +0.0591 \, \text{V} \)</li>
+      </ul>
+    </div>
+  
+    <p>The Nernst equation is essential for predicting real-world cell voltages, especially when conditions deviate from the standard.</p>
+  
+
+<br>
+       <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+    Written by <strong>Thenura Dilruk</strong>
+</p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+<script src="../../../collapsibles.js"></script>
+</body>
+</html>
