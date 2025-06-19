@@ -8,6 +8,8 @@
   <script src="/navigationimport.js" type="module"></script>
 </head>
 <body>
+    <div class="glowing-spots" id="glowingSpots"></div>
+  <div class="cursor"></div>
     <div class="tabs">
         <button class="tab active" onclick="switchTab(event, 'team-grid')">Teams</button>
         <button class="tab" onclick="switchTab(event, 'archives-section')">Members</button>
@@ -1063,22 +1065,19 @@ Now, I’m super excited to be a coordinator for this IJSO preparation platform.
 
   <script>
     function switchTab(evt, tabId) {
-  // Hide all tab-content containers
   document.querySelectorAll('.tab-content').forEach(content => {
     content.style.display = 'none';
   });
 
-  // Remove active class from all buttons
   document.querySelectorAll('.tab').forEach(tab => {
     tab.classList.remove('active');
   });
 
-  // Show selected tab-content div
   document.getElementById(tabId).style.display = 'block';
 
-  // Add active class to clicked button
   evt.currentTarget.classList.add('active');
 }
   </script>
+    <script src="/glowingspots.js"></script>
 </body>
 </html>
