@@ -68,7 +68,7 @@ h2 {
 }
 
 .about-box {
-  background-color: #112240;
+  background-color: #1f1359;
   padding: 1.5rem;
   border-radius: 10px;
   border: 1px solid #233554;
@@ -82,11 +82,13 @@ h2 {
 
 
 footer {
+  background-color: #1f1359;
+  color: #f0f0f0;
   text-align: center;
-  padding: 2rem 1rem;
-  background-color: #1c0972;
-  border-top: 2px solid #233554;
+  padding: 1rem;
+  margin-top: 3rem;
 }
+
 .section-button {
   background: #1b1b4a;
   border: 2px solid #806aed;
