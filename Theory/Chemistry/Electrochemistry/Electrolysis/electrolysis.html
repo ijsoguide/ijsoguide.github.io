@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Electrolysis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../theoryPages.css">
+  <script src="/navigationimport.js" type="module"></script>
+</head>
+<body>
+
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Electrolysis</h2>
+    <a href="../electrochemistry.html" class="back-btn">← Back to Electrochemistry</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container"> 
+    <p><strong>Electrolysis</strong> is the process of using electrical energy to drive a non-spontaneous chemical reaction. It typically occurs in electrolytic cells, where an external power source forces electrons through an electrochemical system.</p>
+    <img src="image1.png">
+    <p>During electrolysis:</p>
+    <ul>
+      <li>Reduction occurs at the <strong>cathode</strong> (electrons are gained).</li>
+      <li>Oxidation occurs at the <strong>anode</strong> (electrons are lost).</li>
+    </ul>
+    <br>
+    <p>The ions in the electrolyte move toward the electrodes:
+    <ul>
+      <li><strong>Cations</strong> (positive ions) migrate to the <strong>cathode</strong>.</li>
+      <li><strong>Anions</strong> (negative ions) migrate to the <strong>anode</strong>.</li>
+    </ul>
+    <h2>Applications</h2>
+    <p>Electrolysis is widely used in:
+    <ul>
+      <li>Electroplating</li>
+      <li>Extraction of metals (e.g. aluminum from bauxite)</li>
+      <li>Production of gases (e.g. H<sub>2</sub> and O<sub>2</sub> from water)</li>
+    </ul>
+    
+    <button class="collapsible">Example 1: Electrolysis of Aqueous \(NaCl\)</button>
+    <div class="content">
+        <p>When <strong>aqueous sodium chloride (brine)</strong> is electrolyzed:</p>
+        <ul>
+          <li><strong>Cathode (Reduction):</strong> \( 2\text{H}_2\text{O} + 2e^- \rightarrow \text{H}_2 + 2\text{OH}^- \)</li>
+          <p>At the cathode, although sodium ions (\( \text{Na}^+ \)) are present, water is more easily reduced than sodium. That is because the reduction potential of water is higher than that of sodium, making water reaction more themordinamically favourable. This is a rule that always holds and should always be used when determining the species being reduced/oxidized. Water molecules gain electrons to form hydrogen gas and hydroxide ions. Thus, <strong>hydrogen gas is released at the cathode</strong>.</p>
+        
+          <li><strong>Anode (Oxidation):</strong> \( 2\text{Cl}^- \rightarrow \text{Cl}_2 + 2e^- \)</li>
+          <p>At the anode, chloride ions are preferentially oxidized over water. The oxidation potential of chlorine is higher than that of water (the reduction potential is lower). Chloride ions lose electrons to form chlorine gas. Thus, <strong>chlorine gas is released at the anode</strong>.</p>
+        </ul>
+        
+        <p><strong>Products:</strong> Hydrogen gas at the cathode, chlorine gas at the anode, and sodium hydroxide (\( \text{NaOH} \)) remains in solution.</p> 
+    </div>
+    
+    <button class="collapsible">Example 2: Electrolysis of Moten \(\ce{CuSO4}\)</button>
+    <div class="content">
+      <p>In molten copper(II) sulfate using copper electrodes:</p>
+      <p>In the electrolysis of aqueous copper(II) sulfate using copper electrodes, the reactions at each electrode are as follows:</p>
+<ul>
+  <li><strong>Cathode (Reduction):</strong> \( \text{Cu}^{2+} + 2e^- \rightarrow \text{Cu (s)} \)</li>
+  <p>At the cathode, positively charged copper ions (\( \text{Cu}^{2+} \)) in the solution are attracted to the negatively charged electrode. Since reduction (gain of electrons) occurs at the cathode, these ions gain electrons from the external circuit and are deposited as solid copper on the electrode.</p>
+
+  <li><strong>Anode (Oxidation):</strong> \( \text{Cu (s)} \rightarrow \text{Cu}^{2+} + 2e^- \)</li>
+  <p>At the anode, solid copper from the electrode loses electrons (is oxidized) and goes into the solution as \( \text{Cu}^{2+} \) ions. This maintains the concentration of copper ions in the solution and allows the process to continue without depletion of ions.</p>
+</ul>
+<p>This setup is commonly used for purifying copper, as impure copper anodes dissolve and pure copper plates onto the cathode.</p></div>
+
+<br>
+       <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+    Written by <strong>Thenura Dilruk</strong>
+</p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+<script src="../../../collapsibles.js"></script>
+</body>
+</html>
