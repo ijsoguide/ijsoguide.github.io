@@ -1,0 +1,56 @@
+<section class="hero-box">
+  <h1>Mindset Guide</h1>
+  <p>This guide is your companion for confidence, focus, and resilience throughout your IJSO journey.</p>
+  
+  <!-- Section Selector -->
+  <div style="margin-top: 2rem;">
+    <button class="section-button" onclick="showSection('confidence')">Confidence</button>
+    <button class="section-button" onclick="showSection('tips')">Tips</button>
+    <button class="section-button" onclick="showSection('stories')">Stories</button>
+  </div>
+</section>
+
+<!-- Confidence Section -->
+<section id="section-confidence" class="section section-content">
+  <div class="about-description">
+    <h2>📘 Confidence Guide</h2>
+    <p>Our comprehensive confidence guide walks you through self-doubt, mindset blocks, and practical ways to build confidence before and during competitions.</p>
+    <a href="https://confidence-guide-link.com" target="_blank">Read the Confidence Guide</a>
+  </div>
+</section>
+
+<!-- Tips Section -->
+<section id="section-tips" class="section section-content" style="display:none;">
+  <div class="about-description">
+    <h2>⚡ Quick Tips & Tricks</h2>
+    <div style="margin-bottom: 1rem;">
+      <label for="tip-category"><strong>Filter by Category:</strong></label>
+      <select id="tip-category" class="styled-select" onchange="renderTips(this.value)">
+        <option value="all">All</option>
+        <option value="focus">Focus</option>
+        <option value="motivation">Motivation</option>
+        <option value="rest">Rest</option>
+      </select>
+    </div>
+    <div class="about-boxes" id="tips-container"></div>
+  </div>
+</section>
+
+<!-- Stories Section -->
+<section id="section-stories" class="section section-content" style="display:none;">
+  <div class="about-description">
+    <h2>🌟 Competitor Stories</h2>
+    <div style="margin-bottom: 1rem;">
+      <label for="story-filter"><strong>Filter by Tag:</strong></label>
+      <select id="story-filter" class="styled-select" onchange="renderStories(this.value)">
+        <option value="all">All</option>
+        <option value="motivation">Motivation</option>
+        <option value="stress">Stress</option>
+        <option value="failure">Failure</option>
+      </select>
+    </div>
+    <div class="about-boxes" id="stories-container"></div>
+  </div>
+</section>
+
+<script src="mindset.js"></script>
