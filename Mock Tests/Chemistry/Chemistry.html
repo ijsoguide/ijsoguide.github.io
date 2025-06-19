@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Chemistry Mock Tests| IJSO Guide</title>
+  <title>Chemistry Mock Tests</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <script src="https://kit.fontawesome.com/04bf603a0f.js" crossorigin="anonymous"></script>
   <script src="../theory.js" defer></script>
@@ -10,15 +10,15 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #100839;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #0b0c2a;
       color: #000;
     }
 
     header {
       text-align: center;
       padding: 3rem 1rem 2rem;
-      background-color: #100839;
+      background-color: #0b0c2a;
       color: #f0f0f0;
     }
 
@@ -175,11 +175,67 @@
         background-color: #0d47a1;
       }
     }
+        .glowing-spots {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 0;
+      pointer-events: none;
+    }
+  
+    .glowing-spots span {
+      position: absolute;
+      display: block;
+      width: 30px;
+      height: 30px;
+      background: radial-gradient(circle, #806aed, transparent 70%);
+      border-radius: 50%;
+      animation: moveGlow 20s linear infinite;
+      opacity: 0.5;
+      filter: blur(8px);
+    }
+  
+    @keyframes moveGlow {
+      0% {
+        transform: translateY(100vh) translateX(0) scale(0.5);
+        opacity: 0.2;
+      }
+  
+      50% {
+        opacity: 0.8;
+      }
+  
+      100% {
+        transform: translateY(-100vh) translateX(50vw) scale(1);
+        opacity: 0;
+      }
+    }
+    .cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px; /* half width */
+    margin-top: -20px;  /* half height */
+    border-radius: 50%;
+    pointer-events: none;
+    background: rgba(134, 110, 237, 0.6);
+    box-shadow: 0 0 8px 4px rgba(134, 110, 237, 0.7);
+    transition: transform 0.1s ease-out;
+    mix-blend-mode: screen;
+    z-index: 9999;
+    transform: translate3d(0, 0, 0);
+  }
   </style>
   <script src="/navigationimport.js" type="module"></script>
 </head>
 <body>
-
+  <div class="glowing-spots" id="glowingSpots"></div>
+  <div class="cursor"></div>
   <!-- Header -->
   <header>
     <h1>Chemistry Mock Tests</h1>
@@ -256,6 +312,6 @@
   <footer>
     &copy; 2025 A Guide to the IJSO. All rights reserved.
   </footer>
-
+  <script src="/glowingspots.js"></script>
 </body>
 </html>
