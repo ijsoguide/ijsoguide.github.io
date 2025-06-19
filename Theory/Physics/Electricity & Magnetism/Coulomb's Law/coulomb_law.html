@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Coulomb's Law</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- MathJax for LaTeX rendering -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+  <link rel="stylesheet" href="../../theoryPages.css">
+  <script src="/navigationimport.js" type="module"></script>
+</head>
+<body>
+
+  <!-- Page Header with Back Button -->
+  <div class="top-bar">
+    <h2>Coulomb's Law</h2>
+    <a class="back-btn" href="../electricity.html">← Back to Electricity and Magnetism</a>
+   </div>
+
+  <!-- Content -->
+  <div class="container">
+<p>Just as Isaac Newton discovered in 1687, (with the universal law of gravitation) that all corps with mass are attracted, in 1785, Charles-Augustin de Coulomb discovered that all particles with charge are either attracted or repelled from each other. This made him state Coulomb’s Law, which describes the electrostatic force between two point charges.</p>
+
+<p>Electrostatic Force also known as Coulomb’s force, is the force exerted between electrically charged objects.</p>
+<br>
+<h2>Properties</h2>
+<ul>
+    <li>It’s a non-contact force, which means that it acts without directly touching each other or having physical contact.</li>
+    <li>It’s a conservative force; the work done by the electrostatic force in moving a charge around a closed path is zero.</li>
+    <li>It’s directly proportional to each charge and indirectly proportional to the distance squared between the charges.</li>
+    <li>If both charges are the same sign, both positive or both negative, they experiment a repulsive force. But, if the charges are the opposite sign, they experiment an attractive force.</li>
+    <img src="image1.png">
+</ul>
+
+<h2>Formula</h2>
+<p>\[F = k \frac{q_1q_2}{r^2}\]</p>
+<p>Where:</p>
+<ul>
+  <li>F = Coulomb attraction force</li>
+  <li>k = Coulomb's constant</li>
+  <li>\(q_1\) and \(q_2\) = Charges of the two particle</li>
+  <li>r = Distance between the two charges</li>
+</ul>
+
+<h2>Coulomb’s constant</h2>
+<p>\[k = \frac{1}{4\pi \epsilon_0} = 8.99 \times 10^9 \frac{N \cdot m^2}{C^2}\]</p>
+<p>\(\epsilon_0\): vacuum permittivity or electric constant. Even though, we’re only supposed to use this value in the vacuum (we should use \(\epsilon_0 \cdot \epsilon_r\) in other mediums), as air≃ 1, we normally use it that way.</p>
+
+<button class="collapsible">Example 1: Finding the radius of orbit</button>
+<div class="content">
+  <p>In a hydrogen atom, an electron moves around a proton with an angular velocity of \(1 \times 10^16\) rad/s. Find the radius of the orbit. (\(e = 1.6 \cdot 10^{-19}, m_e = 9.11 \times 10^{−31}\: \text{kg}\))</p>
+  <img src="image2.png">
+  <p>Solution:-</p>
+  <p>\(v = \omega r\) </p>
+  <p>\(F_c = \frac{m_ev^2}{r}= k \frac{e^2}{r^2}\)</p>
+  <p>\(m_e \omega^2 r = k \frac{e^2}{r^2}\)</p>
+  <p>\(r = \sqrt[3]{k \frac{e^2}{m \cdot \omega^2}}\)</p>
+  <p>\(r = 1.36 \times 10^{-10} \: \text{m}\)</p>
+</div>
+
+<button class="collapsible">Example 2: Angle Between Two Strings</button>
+<div class="content">
+  <p>Two identical charges of +5 μC, each with a mass of 20 g, are suspended from a common point by two separate strings, as shown in the figure. Due to their mutual repulsion, the strings spread apart and form an angle \(\varphi\) between them. As they are in equilibrium, find the value of this angle.</p>
+  <img src="image3.png">
+  <p>\(mg=T \sin(\frac{\varphi}{2})\)</p>
+  <p>\(k \: \frac{q^2}{(2\: \sin (\frac{\varphi}{2}))^2} = T\: \cos (\frac{\varphi}{2})\)</p>
+  <p>\(k \: \frac{q^2}{(2 \: \sin (\frac{\varphi}{2}))^2 \: \cos(\frac{\varphi}{2})}= \frac{mg}{ \sin (\frac{\varphi}{2})}\)</p>
+  <p>\(\sin(\frac{\varphi}{2}) \: \cos(\frac{\varphi}{2})= \frac{kq^2}{mg}\)</p>
+  <p>Substituting the double angle formula:</p>
+  <p>\(\sin(\varphi)= \frac{kq^2}{2mg}\)</p>
+  <p>\(\varphi = 35^{\circ}\)</p>
+
+</div>
+
+    <br>
+     <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+    Written by <strong>Sofia Osorio</strong>
+</p>
+  </div>
+
+  <!-- Footer -->
+ <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+<script src="../../../collapsibles.js"></script>
+</body>
+</html>
