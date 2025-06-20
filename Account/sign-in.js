@@ -1,22 +1,8 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import {app} from '/centralAuthenticationSystem.js';
+import {auth} from '/centralAuthenticationSystem.js';
+import {db} from '/centralAuthenticationSystem.js';
 import { getAuth, createUserWithEmailAndPassword, onAuthStateChanged , signInWithEmailAndPassword ,signOut} from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
 
-// Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyDnD5jNRG11OTwOvLdvY1uygp3y-FvMlGE",
-  authDomain: "ijso-guide.firebaseapp.com",
-  projectId: "ijso-guide",
-  storageBucket: "ijso-guide.firebasestorage.app",
-  messagingSenderId: "595459458285",
-  appId: "1:595459458285:web:c13433c81acb943acf38e4"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
 
 let passwordField = document.getElementById('password');
 let emailField = document.getElementById('email');
