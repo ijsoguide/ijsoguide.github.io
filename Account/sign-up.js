@@ -71,7 +71,14 @@ document.getElementById('signupButton').addEventListener('click', (e)=>{
               setDoc(doc(db, "userData", uid), {
                 tests: 0
               }).then(()=>{
-                window.location.href = "settings.html"
+                let redirect = window.location.href.split('redirect=')[1];
+                console.log(redirect)
+                if (redirect != null){
+                  window.location.href = redirect;
+                } else{
+                  window.location.href = "settings.html"
+                }
+                
               })
             })
             

@@ -7,6 +7,8 @@ import { getAuth, createUserWithEmailAndPassword, onAuthStateChanged , signInWit
 let passwordField = document.getElementById('password');
 let emailField = document.getElementById('email');
 
+if (window.location.href.split('redirect=')[1]) document.getElementById('signUpRedirectionLink').href = "/Account/sign-up.html?redirect=" + window.location.href.split('redirect=')[1];
+
 onAuthStateChanged(auth, (user) => {
     if (user) {
       // User is signed in, see docs for a list of available properties
