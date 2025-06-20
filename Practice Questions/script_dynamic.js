@@ -10,6 +10,7 @@ function getQueryParam(param) {
 }
 const unitName = getQueryParam("unit");
 const subjectName = getQueryParam("subject");
+if (unitName == null || subjectName == null) window.history.back();
 
 function loadStylesheet(href) {
   const link = document.createElement('link');
