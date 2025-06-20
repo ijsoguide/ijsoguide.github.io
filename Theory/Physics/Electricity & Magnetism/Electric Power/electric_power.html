@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Electric Power and Energy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- MathJax for LaTeX rendering -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+  <link rel="stylesheet" href="../../theoryPages.css">
+  <script src="/navigationimport.js" type="module"></script>
+</head>
+<body>
+
+
+  <!-- Page Header with Back Button -->
+  <div class="top-bar">
+    <h2>Electric Power and Energy</h2>
+    <a class="back-btn" href="../electricity.html">← Back to Electricity and Magnetism</a>
+   </div>
+
+  <!-- Content -->
+  <div class="container">
+ <h2>Finding the formula for electric energy and power</h2>
+ <p>In an electrical circuit, the potential difference (voltage) – denoted by \(\text{U}, \text{V}\) or \(\Delta \text{V}\) is defined as the work done per unit charge:</p>
+ <p>\[\Delta \text{V} = Wq\]</p>
+ <p>The intensity of the electrical current is defined by the charge traveling through a conductor section in a unit time:</p>
+ <p>\[I = \frac{q}{t}\]</p>
+ <p>Electrical power is the amount of electrical energy generated per unit time. That electrical energy is the work done on the electrons (by the generator). So, we have the following formulas:</p>
+ <p>\[P = Wt = \frac{Uq}{q/I} = UI\]</p>
+ <p>From Ohm’s law, \(P = UI = RI^2 = \frac{U^2}{R}\)</p>
+ <br><p>Electrical energy (W) is \(W = P \Delta t = UI \Delta t = RI^2 \Delta t = \frac{U^2}{R} \Delta t\) and (obviously) it depends on the time the circuit has produced energy for.</p>
+
+ <h2>Conversion of electrical energy by the consumers</h2>
+ <p>Consumers in the circuit convert the electrical energy we have calculated above into other forms of energy. Light bulbs into light energy, resistors usually into heat and motors into mechanical energy.</p>
+ <br><p>This process doesn’t usually have a 100% efficiency, as some of the energy is lost (lost doesn’t actually mean the energy disappears, it means it is converted into an undesired energy form).</p>
+ <br><p>We define the efficiency of a consumer as the ratio between the useful energy produced by it and the electrical energy the circuit “loses” in the consumer:</p>
+ <p>\[\eta = \frac{E}{W}\]</p>
+
+ <h2>Simple DC circuit</h2>
+ <p>Consider a source of e.m.f. E, internal resistance r and a resistor of resistance R connected to it. By Ohm’s law, the current in the circuit is \(I = \frac{E}{R+r}\)</p>
+ <br><p>The electrical power in the resistor, using the formula above is </p>
+ <p>\[P= RI^2= R(\frac{E}{R+r})^2\]</p>
+ <p>Similarly, the power lost in the source is \(p=r(\frac{E}{R+r})^2\)</p>
+ <br><p>The total power is \(P_{tot} = P + p = \frac{E^2}{R+r}\)</p>
+ <br><p>We define the efficiency of the circuit as \(\eta = \frac{P}{P_{tot}}\)</p>
+ <br><p>We can show \(\eta = \frac{R}{R+r}\)</p>
+ <br><p>For the special case R=0, the efficiency is 0, and for the special case R→\(\infty\), the efficiency is 1. For any other value of R, the efficiency will be somewhere between 0 and 1.</p>
+
+ <h2>Maximum Power Delivered to a Resistor by a Given Source</h2>
+    <p>
+      Suppose we have a source with EMF \( E \) and internal resistance \( r \), and we can choose the external resistance \( R \) to maximize the power delivered to it.
+    </p>
+    <p>
+      The power delivered to the resistor is given by:
+      \[
+      P = \frac{R E^2}{(R + r)^2}
+      \]
+      Since \( E \) is constant, we aim to maximize the expression:
+      \[
+      \frac{R}{(R + r)^2}
+      \]
+    </p>
+    <p>
+      Let’s use <strong>completing the square</strong> to find the maximum of this expression. Let’s set:
+      \[
+      f(R) = \frac{R}{(R + r)^2}
+      \]
+      Let’s define \( x = R \). Then,
+      \[
+      f(x) = \frac{x}{(x + r)^2}
+      \]
+      Now write the denominator as a perfect square:
+      \[
+      f(x) = \frac{x}{x^2 + 2xr + r^2}
+      \]
+      To maximize this, we consider the function:
+      \[
+      f(x) = \frac{x}{x^2 + 2xr + r^2}
+      \]
+      and use calculus to find the maximum.
+    </p>
+    <p>
+      Take the derivative:
+      \[
+      f'(x) = \frac{(x^2 + 2xr + r^2)(1) - x(2x + 2r)}{(x^2 + 2xr + r^2)^2}
+      \]
+      Simplify the numerator:
+      \[
+      f'(x) = \frac{x^2 + 2xr + r^2 - 2x^2 - 2xr}{(x^2 + 2xr + r^2)^2} = \frac{-x^2 + r^2}{(x^2 + 2xr + r^2)^2}
+      \]
+      Set \( f'(x) = 0 \), so:
+      \[
+      -x^2 + r^2 = 0 \Rightarrow x = r
+      \]
+      Therefore, the power is maximized when \( R = r \).
+    </p>
+    <p>
+      Substituting back:
+      \[
+      P_{\text{max}} = \frac{r \cdot E^2}{(r + r)^2} = \frac{r E^2}{4r^2} = \frac{E^2}{4r}
+      \]
+    </p>
+    <p>
+      At this point, the efficiency of the circuit is:
+      \[
+      \eta = \frac{P_{\text{external}}}{P_{\text{total}}} = \frac{1}{2}
+      \]
+      So even though this is not the most efficient setup, it is the one where the external resistor receives the <strong>maximum power</strong>.
+    </p>
+
+<button class="collapsible">Example 1: Finding the efficiency</button>
+<div class="content">
+    <p>Consider a battery with \(E=12 \: V\) and \(r= 5 \: \Omega\). To this battery, we connect a motor with resistance \(R = 50 \: \Omega\), using wires with total resistance \(R_0= 10 \: \Omega\).</p>
+    <ul>
+        <li>Find the mechanical energy produced by the perfectly efficient motor in t=1min</li>
+        <li>Find the efficiency of this circuit.</li>
+    </ul>
+    <p>Solution:</p>
+    <ul>
+        <li>
+            <p>The current in the circuit is \(I = \frac{E}{(R+r+R_0)}= 0.185 \:A\)</p>
+            <p>The power of the perfectly efficient motor is equal to the electric power \(P = RI^2 = 1.711 \: W\)</p>
+            <p>The energy produced is \(E = P \cdot t = 102.68 \:J\)</p>
+        </li>
+        <li>
+            <p>The efficiency of the circuit is the power of the motor (the useful power) divided by the total power:</p>
+            <p>\(\eta = \frac{(RI^2)}{(rI^2 + R_0 I^2 + RI^2 )}= \frac{R}{(r+R+R_0)} = 76.92 \%\)</p>
+        </li>
+    </ul>
+</div>
+
+<button class="collapsible">Example 2: EMF and the internal resistance of a souce</button>
+<div class="content">
+    <p>The power delivered by a DC source to the external circuit can be no more than 6.75W. When short-circuited, the source produces a current equal to 3A. What are the electromotive force and the internal resistance for the source?</p>
+    <p>Solution:</p>
+    <p>\(P_{max} = \frac{E^2}{4r} ⇔ r=\frac{E^2}{(4P_{max})} \)</p>
+    <p>The intensity of the short-circuit current is \(I_{sc} = \frac{E}{r}=\frac{E}{\frac{E^2}{(4P_{max})}} = \frac{(4P_{max})}{E}\)</p>
+    <p>From this we get \(E= \frac{(4P_{max})}{I_{sc}} = 9 \:V\)</p>
+    <p>\(r = \frac{E^2}{(4P_{max})} = \frac{(4P_{max})}{(I_{sc}^2)} = 3 \: \Omega\)</p>
+</div>
+
+<button class="collapsible">Example 3: Finding the internal resistance</button>
+<div class="content">
+    <p>When connected to the same source, two different resistors produce equal amounts of heat in equal amounts of time. If the two resistors are connected in series and then this series group is connected to an ohmmeter. The reading of the ohmmeter is 30\(\Omega\). One of the resistor's resistance is 9 times higher than the others. Find the internal resistance of the source. </p>
+    <p>\(R_1+R_2=30 \: \Omega\) and \(R_1=9R_2\)</p>
+    <p>Solving these equations, we get \(R_1=27 \: \Omega\) and \(R_2=3 \: \Omega\)</p>
+    <p>Using the formula deduced before, \(r=\sqrt{(R_1 R_2)}=9 \: \Omega\)</p>
+</div>
+    <br>
+     <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+    Written by <strong>Alex Jicu</strong>
+</p>
+  </div>
+
+  <!-- Footer -->
+ <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+<script src="../../../collapsibles.js"></script>
+</body>
+</html>
