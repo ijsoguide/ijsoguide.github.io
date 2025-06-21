@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Electric Field</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- MathJax for LaTeX rendering -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+  <link rel="stylesheet" href="../../theoryPages.css">
+  <script src="/navigationimport.js" type="module"></script>
+</head>
+<body>
+
+  <!-- Page Header with Back Button -->
+  <div class="top-bar">
+    <h2>Electric Field</h2>
+    <a class="back-btn" href="../electricity.html">← Back to Electricity and Magnetism</a>
+   </div>
+
+  <!-- Content -->
+  <div class="container">
+    <h2>Definition</h2>
+    <p>Property of each point in space when a charge is present. It’s a vector field, therefore it has both magnitude and direction. We call it E, and we define it as the force experienced by a test charge that has a value of + 1. </p>
+    <p>If we draw the continuation of the vectors, we find that the force or field lines go from positive charges to negative charges, as shown in the figure below.</p>
+    <img src="image1.png">
+
+    <h2>Formula</h2>
+    <p>\[\vec{E}=  \frac{\Sigma \vec{F}}{q}  = \Sigma k \frac{Q_i}{r_i^2}\]</p>
+    <div style="position: relative; width: 100%; padding-bottom: 75%; height: 0; overflow: hidden; max-width: 100%;">
+        <iframe 
+          src="https://phet.colorado.edu/sims/html/charges-and-fields/latest/charges-and-fields_en.html"
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    <button class="collapsible">Example 1: Finding the acceleration</button>
+    <div class="content">
+        <p>Find the acceleration of a sphere of 2kg with a charge of 5 μC in an electric field of 10N/C.</p>
+        <br>
+        <p>Solution:</p>
+        <p>\(F=qE= 5 \cdot 10^{-6} \times 10 = 5 \times 10^{-5} \: N\)</p>
+        <p>\(a=\frac{F}{m}=2.5 \times 10^{-5} \: ms^{-2}\)</p>
+    </div>
+    <br>
+     <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+    Written by <strong>Sofia Osorio</strong>
+</p>
+  </div>
+
+  <!-- Footer -->
+ <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+<script src="../../../collapsibles.js"></script>
+</body>
+</html>
