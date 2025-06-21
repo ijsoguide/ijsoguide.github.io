@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Acid-base Titrations</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<link rel="stylesheet" href="../../theoryPages.css">
+<script src="/navigationimport.js" type="module"></script>
+</head>
+<body>
+
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Acid-base Titrations</h2>
+    <a href="../equilibrium.html" class="back-btn">← Back to Chemical Equilibrium</a>
+  </div>
+
+<!-- Main content -->
+<div class="container">
+    <p><b>Qualitative analysis</b> is the process through which the quality of a substance is determined, e.g., detecting the presence of carbon, hydrogen, oxygen…</p>
+    <p><b>Quantitative analysis</b> is the process through which we determine the percentage composition of the elements in a substance or the concentration of a solution, e.g., hematological analyses, measurements of sugars/proteins in food, etc.</p>
+    <p><b>Titration:</b> It is a method of quantitative analysis. Using this method, the unknown concentration of a substance is determined by adding a solution of known concentration with which it reacts stoichiometrically.</p>
+
+    <h2>Εxperimental procedure</h2>
+    <p>Glassware:</p>
+    <ul>
+        <li>Beaker</li>
+        <li>Funnel</li>
+        <li>Conical Flask</li>
+        <li>Burette</li>
+        <li>Volumetric Cylinder</li>
+        <li>Magnetic Stirrer</li>
+    </ul>
+    <p>For more information about the glassware, check out our <a href="/mainlaunch.html" style="color:#9081dd">laboratory guide</a></p>
+    <img src="image1.png">
+
+    <h2>Terminologies</h2>
+    <ul>
+        <li>If you wish to find the concentration of an acid solution, you will titrate the acid solution with a solution of a base (alkali) of known concentration—alkalimetry.</li>
+        <li>You titrate a base of unknown concentration with an acid of known concentration—<b>acidimetry</b></li>
+        <li>Titrant: a solution of a known concentration, which is added to another solution whose concentration must be determined.</li>
+        <li>Titrand or analyte: the solution whose concentration must be determined.</li>
+        <li>Equivalence point: point in titration at which the amount of titrant added is just enough to completely neutralize the analyte solution. At the equivalence point in an acid-base titration, moles of base = moles of acid, and the solution only contains salt and water.</li>
+    </ul>
+    
+    <h2>Types of titrations</h2>
+    <h3>Titration of a strong acid with a strong base</h3>
+    <img src="image2.png">
+    <p>Point 1: No NaOH added yet, so the pH of the analyte is low (it predominantly contains H3O+ from dissociation of HCl).</p>
+    <p>Point 2: This is the pH recorded at a time point just before complete neutralization takes place. </p>
+    <p>Point 3: This is the equivalence point (halfway up the steep curve). At this point, moles of NaOH added = moles of HCl in the analyte. At this point, \(\ce{H3O^+}\) is completely neutralized by \(OH^-\). The solution only has salt (NaCl) and water, and therefore the pH is neutral, i.e., pH = 7.</p>
+    <p>Point 4: Addition of NaOH continues, and pH starts becoming basic because HCl has been completely neutralized and now an excess of OH⁻ is present in the solution (from dissociation of NaOH).</p>
+    
+    <h2>Monoprotic acids and Bases</h2>
+    <p>For monoprotic acids and bases, it is true that</p>
+    <p>\(C_a \cdot V_a = C_k \cdot V_k => C_a = \frac{C_k \cdot V_k}{V_a}\)</p>
+    <p>Where a is the unkown solution and k is the known solution.</p>
+    <p>\(C_k\) and \(V_k\) are constants, and so the errors are caused by \(V_a\)</p>
+    <p>If \(C_a\) in the experiment is</p>
+    <ul>
+        <li>greater than the actual value => positive error</li>
+        <li>lower than the actual value => negative error</li>
+    </ul>
+
+    <h2>Weak Acid with Strong Base</h2>
+    <img src="image3.png">
+    <p>There are four parts to the titration curve of a weak acid (analyte) with a strong base (titrant).</p>
+    <ol type="1">
+        <li>Initial pH (pH of a weak acid)</li>
+        <li>Buffer Equation (Henderson-Hasselbalch Eq.)</li>
+        <li>Equivalence Point (salt of weak acid)</li>
+        <li>Excess Base (pH based on concentration of excess titrant)</li>
+    </ol>
+
+    <p><b>Pure Acid</b></p>
+    <p>Treat as a weak acid.</p>
+    <p>\[pH= -log \sqrt{(K_a \cdot C_a)}\]</p>
+
+    <p><b>Buffer Region</b></p>
+    <p>One way to make a buffer is to partially neutralize an acid, and so in the buffer region we can use the Henderson-Hasselbalch equation.</p>
+    <p>\[pH = pK_a + log \frac{[base]}{[acid]}\]</p>
+
+    <p><b>Half equivalence</b></p>
+    <p>In a titration this is known as half equivalence or half titer, which is the volume required to titrate off half of the titratable protons (of a monoprotic acid or the first proton of a polyprotic acid). That is, at half equivalence, \(V_b = \frac{V_{eq}}{2}\)</p>
+    <p>\(pH_{at half titer} = pK_a + log \frac{V_b}{V_{eq} - V_b}\)</p>
+    <p> \(= pK_a + log \frac{\frac{V_{eq}}{2}}{V_{eq} - \frac{V_{eq}}{2}}\)</p><br>
+    <p> \(= pK_a + log \frac{\frac{V_{eq}}{2}}{\frac{V_{eq}}{2}}\)</p>
+    <p> \(= pK_a + log 1\)</p>
+    <p> \(= pK_a\)</p>
+    <p>The method used for weak base + strong acid is very similar to that presented before.</p>
+    <p>Weak acid + weak base titrations involve some more complicated (but not too complicated) acid-base equilibria calculations.</p>
+
+    <h2>Polyprotic Titration Curves</h2>
+    <p>Each proton had its own ionization constant, with</p>
+    <p>\(K_{a_1} > K_{a_2} > K_{a_3}\)</p>
+    <p>This results in a titration curve like that of the figure. If each subsequent \(K_a\) is at least 1000 times smaller than the previous, then the protons are taking off stepwise, and there would be a unique equivalence point for each step. In a monoprotic titration, the base after the equivalence point is in excess, and the solution quickly becomes basic. But if there is a leveling off, that could indicate another titratable proton.</p>
+    <img src="image4.png">
+    <br>
+     <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+    Written by <strong>Fillios Memtsoudis</strong>
+</p>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+
+  <script src="../../../collapsibles.js"></script>
+</body>
+</html>
