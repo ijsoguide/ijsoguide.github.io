@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Account data and settings | IJSO Guide</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="settings.css">
   <script type="module" src="./settings.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,23 +13,26 @@
   <script src="/navigationimport.js" type="module"></script>
 </head>
 <body>
-  
-  <div class="container">
-    <h2>Account settings</h2>
-    <p id="data"></p>
+
+  <!-- Account Section -->
+  <div class="section-card">
+    <h2>Account Settings</h2>
     <p id="name"></p>
     <p id="country"></p>
     <p id="grade"></p>
     <p id="email"></p>
     <p id="password"></p>
-
-    <button id="signoutButton">Sign out</button>
+    <p>*Account data changing is temporarily disabled.</p>
+    <a href="./progress.html"><button class="btn">Progress</button></a>
+    <button class="btn signout" id="signoutButton">Sign Out</button>
+  </div>
 
   <script>
     function toggleMenu() {
       const menu = document.querySelector("nav ul");
       menu.classList.toggle("show");
     }
+    
   </script>
 
 </body>

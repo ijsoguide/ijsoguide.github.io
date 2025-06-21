@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Progress | IJSO Guide</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="progress.css">
   <script type="module" src="./progress.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,11 +15,83 @@
 <body>
   
   <div class="container">
-    <div id="testHistory">
+    <!---<div id="testHistory">
       <h3>Test history</h3>
+    </div>--->
+
+    
+    <!-- Learning Progress Section -->
+    <div class="section-card">
+      <h2>Overall Progress</h2>
+      <div class="progress-container">
+        <div class="progress-bar" style="width: 20%;" id="overallProgressBar"></div>
+        <span class="progress-text" id="overallProgressText"></span>
+      </div>
+      <button class="btn">Continue Practice</button>
     </div>
 
-    <button id="signoutButton">Sign out</button>
+    <!-- Test History Section -->
+    <h1>Test History Dashboard</h1>
+
+    <div class="section-card">
+      <h2>Physics</h2>
+      <ul id="testHistoryListPhysics">
+        <!---<li>
+          <span class="topic-title">Vectors</span>
+          <div class="progress-container">
+            <div class="progress-bar" style="width: 100%;"></div>
+            <span class="progress-text">100%</span>
+          </div>
+        </li>--->
+      </ul>
+      <a href="../Practice Questions/Physics/physics.html"><button class="practice-btn">Continue Practice</button></a>
+    </div>
+
+
+    <div class="section-card">
+      <h2>Chemistry</h2>
+      <ul id="testHistoryListChemistry">
+      </ul>
+      <a href="../Practice Questions/Chemistry/Chemistry.html"><button class="practice-btn">Continue Practice</button></a>
+    </div>
+
+    <div class="section-card">
+      <h2>Biology</h2>
+      <ul id="testHistoryListBiology">
+
+      </ul>
+      <a href="../Practice Questions/Biology/Biology.html"><button class="practice-btn">Continue Practice</button></a>
+    </div>
+
+    <button id="signoutButton" class="btn signout">Sign out</button>
+  </div>
+
+  <footer>
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </footer>
+
+  <script>
+    /*New*/
+    /*document.addEventListener("DOMContentLoaded", () => {
+      const bars = document.querySelectorAll(".progress-bar");
+      bars.forEach(bar => {
+        const target = parseInt(bar.dataset.progress || bar.style.width || "0");
+        if (bar.dataset.progress) {
+          let value = 0;
+          const animate = () => {
+            if (value <= target) {
+              bar.style.width = value + "%";
+              bar.textContent = value + "%";
+              value++;
+              requestAnimationFrame(animate);
+            }
+          };
+          animate();
+        }
+      });
+    });*/
+  </script>
+    
 
   <script>
     function toggleMenu() {

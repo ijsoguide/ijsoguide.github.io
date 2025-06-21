@@ -22,7 +22,21 @@ onAuthStateChanged(auth, (user) => {
                 document.getElementById('country').innerHTML = "<b>Country: </b>" + d.country;
                 document.getElementById('grade').innerHTML = "<b>Grade: </b>" + d.grade;
                 document.getElementById('email').innerHTML = "<b>Email: </b>" + d.email;
-                document.getElementById('password').innerHTML = "<b>Password: </b>" + d.password;
+
+                let passwordFill = "";
+                let realPw = d.password;
+                for (let i = 0; i < realPw.length; i++) passwordFill += "•";
+                document.getElementById('password').innerHTML = "<b>Password: </b>" + "<span class=\"password-field\" id=\"password-field\">" + passwordFill + "</span>";
+                // Password
+                let pw = document.getElementById("password-field");
+                let shown = false;
+
+                pw.addEventListener("click", () => {
+                    shown = !shown;
+                    pw.textContent = shown ? realPw : passwordFill;
+                    if(pw.style.letterSpacing == "normal") pw.style.letterSpacing = "1.5px";
+                    else pw.style.letterSpacing = "normal";
+                });
             }
         })
         .catch(error => {

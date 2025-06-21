@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #100839;
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  .section-card {
+    background-color: rgba(12, 15, 40, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 20px rgba(111, 66, 193, 0.3);
+    transition: transform 0.3s;
+    width: 60%;
+    margin: 2rem auto 2rem auto;
+  }
+  
+  .section-card h2 {
+    font-size: 1.8rem;
+    background: linear-gradient(to right, #00f0ff, #a600ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+  
+    margin-bottom: 1rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #0f1471;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    margin: 0.5rem 0.3rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: #060948;
+  }
+  
+  .btn.signout {
+    margin: 1rem;
+    background-color: #711616;
+  }
+  
+  .btn.signout:hover {
+    background-color: #060948;
+  }
+  
+  .password-field {
+    cursor: pointer;
+    color: #00d1ff;
+    user-select: none;
+  }
+  
+  .progress-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 24px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    margin: 1rem 0;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #f00, #f90, #ff0, #0f0);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 12px;
+    transition: width 1s ease-in-out;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #faf9f7;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #f1c606;
+  }
+  
+  .topic-title {
+    font-weight: bold;
+    color: #ff69b4;
+  }
+  
+  .progress-text {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    color: white;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  
+  .practice-btn {
+    margin-top: 8px;
+    padding: 6px 14px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .practice-btn:hover {
+    background: linear-gradient(to right, #00f2ff, #0051ff);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #0a102a;
+    color: #999;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  details {
+    margin: 1rem 0;
+    background-color: #141f3a;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+  }
+  
+  summary {
+    font-weight: 600;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #00ccff;
+    outline: none;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 20px;
+  }
+
+  #password-field{
+    letter-spacing: 1.5px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 1rem;
+    }
+  }
