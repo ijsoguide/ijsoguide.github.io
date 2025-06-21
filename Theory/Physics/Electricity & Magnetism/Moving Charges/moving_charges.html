@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Magnetic Force on Moving Charges</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- MathJax for LaTeX rendering -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+  <link rel="stylesheet" href="../../theoryPages.css">
+  <script src="/navigationimport.js" type="module"></script>
+</head>
+<body>
+
+
+  <!-- Page Header with Back Button -->
+  <div class="top-bar">
+    <h2>Magnetic Force on Moving Charges</h2>
+    <a class="back-btn" href="../electricity.html">← Back to Electricity and Magnetism</a>
+   </div>
+
+  <!-- Content -->
+  <div class="container">
+  <p>When a charged particle enters a magnetic field with a velocity vector perpendicular to the magnetic field lines, it experiences a magnetic force perpendicular to both the magnetic field lines and the velocity vector (i.e., if the magnetic field lines run on the x-axis and the particle moves along the y-axis, then the force will be on the z-axis). This force can be quantified by the formula:</p>
+  <p>\[F = qv \times B\]</p>
+  <p>Where:</p>
+  <ul>
+    <li>F = The magnetic force acting on the particle.</li>
+    <li>q = the charge of the particle.</li>
+    <li>v = The particle's velocity.</li>
+    <li>B = The magnetic field.</li>
+    <li>X = The cross product (basically means that the velocity and magnetic field should be perpendicular.)</li>
+  </ul>
+
+  <h2>Movement of the particle</h2>
+  <p>If the particle enters perfectly perpendicular to the magnetic field, it follows a perfectly circular path.</p>
+  <p>If the particle enters the magnetic field at an angle 0 < θ < 90, the particle will move in a helical path (a path resembling the curly hair strand).</p>
+  <p>If the particle enters parallel to the magnetic field, it experiences no force and continues moving straight.</p>
+  <p>To find the radius of the circle in the case it enters perfectly perpendicular, the following formula can be used:</p>
+  <p>\[r = \frac{mv}{qB}\]</p>
+  <p>Where:</p>
+  <ul>
+    <li>r = The radius of the circle.</li>
+    <li>m = The mass of the particle.</li>
+    <li>v = The speed of the particle</li>
+    <li>q = The charge of the particle</li>
+    <li>B = The magnetic field </li>
+  </ul>
+
+  <button class="collapsible">Example 1: Finding the Magnetic Field</button>
+  <div class="content">
+    <p>A proton of mass \(1.67 \times 10^{-27}\) kg, and charge \(1.6 \times 10^{-19}\) C is moving at a speed of \(2.0 \times 10^6\) m/s perpendicular to a uniform magnetic field of strength 0.50T. What is the magnitude of the magnetic force acting on the proton? What is the shape of the path of the particle?</p>
+    <br>
+    <p>Solution:</p>
+    <p>\(F = qv \times B\)</p>
+    <p>\(F = (1.6 \times 10^{-19})(2 \times 10^6)(0.5)\)</p>
+    <p>\(F = 1.6 \times 10 ^{-13} \: N\), since the particle enters the magnetic field perfectly perpendicular, the shape of the path is a circle.</p>
+  </div>
+
+  <button class="collapsible">Example 2: Finding the period of rotation</button>
+  <div class="content">
+    <p>An electron enters a uniform magnetic field with a velocity perpendicular to said magnetic field. Derive a formula for the period of the rotation of said particle in terms of q, B, m and any constants needed.</p>
+    <br>
+    <p>Solution:</p>
+    <p>\(T = \frac{\text{Circumference}}{\text{velcoity}}\)</p>
+    <p>\(T = \frac{2πr}{v}\)</p>
+    <p>\(T = (\frac{2π}{v})(\frac{mv}{qB})\)</p>
+    <p>\(T = \frac{2πm}{qB}\)</p>
+  </div>
+    <br>
+     <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+    Written by <strong>Mubarak Aouda</strong>
+</p>
+  </div>
+
+  <!-- Footer -->
+ <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+<script src="../../../collapsibles.js"></script>
+</body>
+</html>
