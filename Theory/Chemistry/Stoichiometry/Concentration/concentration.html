@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Concentration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+ <link rel="stylesheet" href="../../theoryPages.css">
+ <script src="/navigationimport.js" type="module"></script>
+ <script src="/Theory/theoryContentPage.js" type="module"></script>
+</head>
+<body>
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Concentration</h2>
+    <a href="../stoichiometry.html" class="back-btn">← Back to Stoichiometry</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h2>Concept of solution</h2>
+    <p>In chemistry, the concept of concentration is used to characterize solutions. A solution is a homogeneous mixture of chemical compounds, the most well known example is salt (\(\ce{NaCl}\)) and water (\(\ce{H2O}\)). A solution must consist of a solvent (The one who dissolves), and a solute (The one who is dissolved). In the example above, water would be the solute and salt the solvent. We use concentration to know and predict the amount of solvent and solute in a given solution.</p>
+
+    <h2>Molarity</h2>
+    <p>This will probably be the most common way you will see a the concentration of a solution being represented, some important information about it is:</p>
+    <br><p><i>Definition: Moles of solute per liter of solution.</i></p>
+    <br><p><i>Unit of measurement: Mol/L (Also known as a Molar, represented by the letter M).</i></p>
+    <br><p><i>Formula: c = \(\frac{n}{V}\)</i></p>
+    <p>Where:</p>
+    <ul>
+        <li>c is the concentration in Mol/L.</li>
+        <li>n is the number of moles of solute.</li>
+        <li>V is the total volume of solution in L.</li>
+    </ul>
+    <br><p>Observation: since the volume of a solution comes mainly from the solvent, dividing the number of moles of solute by volume of solvent is usually also a valid way of calculating molarity.</p>
+
+    
+
+    <p>You might also be asked to determine the mass of solute in a solution given its concentration (c), its volume (V), and the molar mass of the solute (MM). A general approach to this would be:</p>
+    <p>\(c = \frac{n}{V} => n = \frac{m}{MM} \)\(=> c = \frac{m}{MM \times V} => m = c \times MM \times V\)</p>
+
+    
+
+    <p>There can also be problems that ask you to determine the molarity of a solution after a dilution (A dilution consists of adding more solvent to a solution, reducing its concentration). The main idea that can be used to solve these problems is that the amount of solute should not be affected by the process of dilution, therefore, the amount of moles (n) should be conserved, since \(c = \frac{n}{v} => n = c \times v\). The product between the concentration and volume remains unchanged, leading to the expression:</p>
+    <p>\(c_1 V_1=c_2 V_2\)</p>
+
+    
+
+    <h2>Mass concentration</h2>
+    <p><i>Definition: Mass of solute per volume of solution.</i></p>
+    <br>
+    <p><i>Unit of measurement: g/L or mg/ml</i></p>
+    <br>
+    <p>Expression: \(\rho = \frac{m}{V}\)</p>
+    <p>Where:</p>
+    <ul>
+        <li>m is the mass of the solute.</li>
+        <li>V is the volume of solution.</li>
+    </ul>
+
+    <button class="collapsible">Example 1: Molarity of a Solution</button>
+    <div class="content">
+        <p>What is the molarity of a 2L solution containing 15g of KCl?</p>
+        <br>
+        <p>Solution:</p>
+        <p> In order to calculate the molarity, you will need to know the amount of moles of solvent (KCl), so you will need to convert its mass to the number of moles using molar mass. The molar mass of KCl is 74.5 g/mol, therefore, the number of moles is \(\frac{15g}{74.5 \: g/mol} = 0.2 \: mol\), and its concentration is \(\frac{0.2 \: moles}{2 \: Liters} = 0.1 \: Mol/L = 0.1 \: M\).</p>
+    </div>
+
+    <button class="collapsible">Example 2: Mass of Solute</button>
+    <div class="content">
+        <p>What is the mass of NaCl in a solution of 0.02M and 5 L?</p>
+        <br><p>Solution:</p>
+        <p>Using the expression shown above:</p>
+        <p>\(m = 0.02 \: \frac{moles}{Liter} \times 5 \: Liters \times 58.44 \: \frac{g}{mol} = 5.844 \: g\) of NaCl.</p>
+    </div>
+
+    <button class="collapsible">Example 3: Concentration of Solution</button>
+    <div class="content">
+        <p>Consider a 0.1 M, 100 ml solution. What is the concentration of this solution after adding 500 ml of solvent?</p>
+        <p>\(c_1 V_1 = c_2 V_2 \)\(=> c_2 = \frac{c_1 V_1}{V_2} = \frac{0.1 (Mol / L) \times 0.1 (L)}{(0.1 + 0.5) (L)}= 0.0167 \: M\)</p>
+    </div>
+
+    <button class="collapsible">Example 4: Calculate the Mass Concentration</button>
+    <div class="content">
+        <p>15g were dissolved in 500 ml of water, calculate the mass concentration.</p>
+        <br>
+        <p>Solution:</p>
+        <p>\(\rho= \frac{m}{v} => \rho = \frac{15 \: g}{0.5 \: L} = 30 \: g/L\)</p>
+    </div>
+
+       <br>
+       <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+    Written by <strong>Jailson Godeiro</strong>
+</p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+<script src="../../../collapsibles.js"></script>
+</body>
+</html>
