@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Gas Phase</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- MathJax for LaTeX -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async 
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+  <link rel="stylesheet" href="../../theoryPages.css">
+  <script src="/navigationimport.js" type="module"></script>
+ <script src="/Theory/theoryContentPage.js" type="module"></script>
+</head>
+<body>
+
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>The Gas Phase</h2>
+    <a href="../thermochemistry.html" class="back-btn">← Back to Thermochemistry</a>
+  </div>
+
+  <!-- Main content -->
+  <div class="container">
+    <p>To study the gas phase, we use a simplified model called the ideal gas (perfect gas). You can study more about it in our lesson <a href="/Theory/Physics/Thermodynamics/Ideal Gas Law/" style="color:#9081dd">Ideal Gas Law</a></p>
+    <br><p>Using this equation, we can calculate, for example, the density of a gas, knowing its molar mass, temperature, and pressure:</p>
+    <p>\[\rho = \frac{M}{\frac{RT}{p}}= \frac{Mp}{RT}\]</p>
+    <p>Keep in mind that you need to use <a href="/Theory/Physics/Units/Units/units.html" style="color:#9081dd">SI units</a> and the <a href="/Theory/Physics/Thermodynamics/Temperature Scales/temperature_scales.html" style="color:#9081dd">Kelvin scale</a>.</p>
+    <br><p>The <b>relative density</b> of a gas with another in the same conditions of temperature and pressure is the ratio between their densities:</p>
+    <p>\[\frac{\rho_1}{\rho_2} = \frac{\frac{M_1}{Vm}}{\frac{M_2}{Vm}} = \frac{M_1}{M_2}\]</p>
+    <p>The composition of a mixture of substances can be expressed using <b>molar fractions</b>. The molar fraction (\(X_i\)) of a component (\(N_i\)) of a mixture \(N_1, N_2, N_3, ... ,N_i, ...\) is defined by the ratio of the number of moles of \(N_i\) (\(n_i\)) and the total number of moles of the mixture (\(n_1 + n_2 + n_3 + ...\)):</p>
+    <p>\(X_i = \frac{n_i}{n}\)</p>
+    <br><p>We can also calculate it using \(X_i = \frac{pr}{100}\), where pr is the molar percent of the component. For a mixture, the sum of molar fractions is 1.</p>
+    <br><p>For a mixture, we could also calculate the mean molar mass:</p>
+    <p>\(M = X_1 \times M_1 + X_2 \times M_2 + …\)</p>
+    <br><p>The <b>partial pressure</b> of a gas from a mixture is, basically, the pressure it would have if it occupied that volume by itself. We calculate it using the relation \(p_i = X_i \times P\) where \(X_i\) is the molar fraction and P is the total pressure of the mixture.</p>
+
+    <p><b>John Dalton's rule:</b> the pressure of a mixture of gases is the sum of their partial pressures.</p>
+    <p>\[p_{tot}= p_1 + p_2 + p_3 + ...\]</p>
+
+    <button class="collapsible">Example 1: Partial Pressure and Mean Molar Mass</button>
+    <div class="content">
+        <p>In a vessel with the volume 80 dm³, there is a mixture of \(\ce{CO2}\), \(\ce{O2}\), and \(\ce{N2}\). The mixture has a temperature of 52.2°C and a pressure of 2 atm. Knowing that in the vessel are \(18.066 \times 10^{23}\) molecules of \(\ce{CO2}\), 64 g of \(\ce{O2}\), and the rest is \(\ce{N2}\), calculate:</p>
+        <ol type="a">
+            <li>the quantity of \(\ce{N2}\) in the vessel</li>
+            <li>the partial pressures of the gases</li>
+            <li>the mean molar mass of the mixture</li>
+        </ol>
+        <br>
+        <p>Solution:</p>
+        <ol type="a">
+            <li>
+                <p>First of all, we transform the temperature from Celsius to Kelvin: \(T = 52.2+273=325.2 \: K\)</p>
+                <p>We use the ideal gas law to find the number of moles of the mixture:</p>
+                <p>\(pV = nRT => 2 \times 80 = n \times 0.082 \times 325.2\)\(=> n = \frac{160}{26.67} => n = 6 \:mol\)</p>
+                <p>We have 64 g of \(\ce{O2}\) which we transform into mol: \(n \ce{O2} = \frac{64}{32} = 2 \: mol\).</p>
+                <p>We also transform the \(\ce{CO2}\) molecules into mol: \(n \ce{N2} = \frac{18.066 \times 10^{23}}{N_A} = 3 \: mol\).</p>
+                <p>That means that we have \(6-2-3=1 \: mol\) of \(\ce{N2}\).</p>
+            </li>
+            <li>
+                <p>\(X \ce{O2} = \frac{2}{6} = 0.33\)</p>
+                <p>\(X \ce{CO2} = \frac{3}{6} = 0.5\)</p>
+                <p>\(X \ce{N2} = \frac{1}{6} = 0.167\)</p>
+                <p>\(p \ce{O2} = X \ce{O2} \times p = 0.33 \times 2 = 0.66 \: \text{atm}\)</p>
+                <p>\(p \ce{N2} = X \ce{N2} \times p = 0.5 \times 2 = 1 \: \text{atm}\)</p>
+                <p>\(p \ce{CO2} = X \ce{CO2} \times p = 0.167 \times 2 = 0.33 \: \text{atm}\)</p>
+            </li>
+            <li>
+                <p>\(M = X \ce{O2} \times M \ce{O2} + X \ce{N2} \times M \ce{N2} + X \ce{CO2} \times M \ce{CO2} \)\(= 0.33 \times 32 + 0.167 \times 28 + 0.5 \times 44 = 37.236 \: \text{g/mol}\)</p>
+            </li>
+        </ol>
+    </div>
+
+
+<br>
+     <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+    Written by <strong>Butu "Jujen" Alexia</strong>
+</p>
+</div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+<script src="../../../collapsibles.js"></script>
+</body>
+</html>
