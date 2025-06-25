@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reaction Stoichiometry</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+ <link rel="stylesheet" href="../../theoryPages.css">
+ <script src="/navigationimport.js" type="module"></script>
+ <script src="/Theory/theoryContentPage.js" type="module"></script>
+</head>
+<body>
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Reaction Stoichiometry</h2>
+    <a href="../stoichiometry.html" class="back-btn">← Back to Stoichiometry</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h2>Introduction</h2>
+    <p>Every chemical reaction consists of reactants that transform into products. The purpose of reaction stoichiometry is to predict the amount of products formed by some amount of reactants, or to know how much of the reactants you need to form some amount of product.</p>
+
+    <h2>Balancing chemical equations</h2>
+    <p>A chemical reaction is balanced when the amount of atoms of a certain element in the reactants is the same as the amount of atoms in the products. A chemical reaction should always be balanced because its consists of rearranging the atoms, creating different molecules, a reaction will neither create nor destroy matter, for example, here is the reaction of formation of water (product) from oxygen and hydrogen gases (reactants):</p>
+    <p>\(\ce{H2 + O2 \rightarrow H2O}\)</p>
+    <p>This reaction is not balanced, because a water molecule only has one oxygen atom, but oxygen gas has two oxygen atoms so it seems like an oxygen atom was destroyed during the process. The balanced reaction would be</p>
+    <p>\(\ce{2H2 + O2 \rightarrow 2H2O}\)</p>
+    <p>Here, the number of hydrogen atoms and oxygen atoms are the same both in the reactants and the products (4 and 2), conserving the total mass!</p>
+    <br><p>In order to balance a chemical reaction, you should do it by balancing out each element individually in the above example, the hydrogen is already balanced, so you only need to balance the oxygen, and for that to happen, you can multiply the \(\ce{O2}\) by \(\frac{1}{2}\), so there will be one oxygen on each side of the equation. But sometimes it is not good to have fractions as your stoichiometric coefficients, so you should multiply everything by 2, yielding \(\ce{2 H2}\) molecules, \(\ce{1 O2}\) molecule, and \(\ce{2 H2O}\) molecules. It is fine to do that because the ratio between the coefficients does not change if you multiply all of them by the same numerical factor.</p>
+    <br><p>Tip: You should start by balancing out elements that only appear once, or that appear the least in the products or the reactants. That’s why common elements such as Hydrogen and Oxygen are usually balanced out last on bigger reactions, and metals such as Sodium and Aluminum are balanced first, because they are usually present on just one compound.</p>
+
+    <button class="collapsible">Example 1: Balancing compounds</button>
+    <div class="content">
+        <p>Balance the following chemical equations</p>
+        <ol type="1">
+            <li>\(\ce{N2 + H2 -> NH3}\)</li>
+            <li>\(\ce{Na + H2O -> NaOH + H2}\)</li>
+            <li>\(\ce{CaCO3 -> CaO + CO2}\)</li>
+            <li>\(\ce{H2SO4 + NaOH -> Na2SO4 + H2O}\)</li>
+        </ol>
+        <br>
+        <p>Solutions:</p>
+        <ol type="1">
+            <li>
+                <p>Here, it does not matter which element you choose to balance first, since this is a very simple reaction. In order to balance Hydrogen, you can multiply the \(\ce{NH3}\) by 2 and the \(\ce{H2}\)  by 3 to have the same number of hydrogen atoms (6), on each side of the reaction. And the nitrogen is already balanced as well, because the NH3 was already multiplied by 2, so you already have 2 nitrogen atoms in the products, so you only need 1 \(\ce{N2}\) molecule in the reactants.</p>
+                <p><b>Balanced reaction: \(\ce{N2 + 3H2 -> 2NH3}\)</b></p>
+            </li>
+            <li>
+                <p>Here, the amount of Sodium and Oxygen happen to already be the same on both sides of the reaction, and they only appear once on the products and once on the reactants. So the coefficients on \(\ce{Na}\), \(\ce{H2O}\) and \(\ce{NaOH}\) must be the same, assuming it to be 1, we now only need to balance the Hydrogen. There are 2 Hydrogen atoms on the reactants, so there must be 2 on the products, for that to happen the coefficient on \(\ce{H2}\) must be \(\frac{1}{2}\), multiplying everything by 2 to make the numbers whole, the balanced reaction is</p>
+                <p><b>Balanced reaction: \(\ce{2Na + 2H2O -> 2NaOH + H2O}\)</b></p>
+            </li>
+            <li>
+                <p>As you can see, the reaction is already balanced (1 Calcium, 1 Carbon and 3 Oxygen atoms on each side). So you don’t actually have to do anything.</p>
+                <p><b>Balanced reaction: \(\ce{CaCO3 -> CaO + CO2}\)</b></p>
+            </li>
+            <li>
+                <p>Balancing the sodium, the coefficient on \(\ce{NaOH}\) must be twice the coefficient on \(\ce{Na2SO4}\), so let’s assume them to be 2 and 1. The coefficient on \(\ce{H2SO4}\) must be the same as the one on \(\ce{Na2SO4}\) because of the sulfur. The number of Hydrogen atoms on the reactants is already defined to be 4, so the \(\ce{H2}\) must be multiplied by 2. There is not anything else we can do to balance the oxygen, but you can verify that it happens to be balanced as well.</p>
+                <p><b>Balanced reaction: \(\ce{H2SO4 + 2NaOH -> Na2SO4 + 2H2O}\)</b></p>
+            </li>
+        </ol>
+        </div>
+
+        <h2>Stoichiometry</h2>
+        <p>Balancing chemical reactions is important in stoichiometry because it essentially says how   many moles of a reactant are formed if you have some moles of product, and knowing the  number of moles, you can find out other values such as the mass or the number of molecules by doing some basic conversions. For example, take the balanced reaction from the first practice example</p>
+        <br><p>\(\ce{N2 + 3H2 -> 2NH3}\)</p>
+        <br><p>It tells us that for every \(\ce{N2}\) molecule, 2 \(\ce{NH3}\) molecules are formed, so if you have 1 mole of \(\ce{N2}\), 2 moles of \(\ce{NH3}\) will be formed. So the ratio of the stoichiometric coefficients will essentially be the ratios between the amount of moles (molar ratio).</p>
+        <br>
+        <h3>Mole / Mass / Number of molecules Stoichiometry</h3>
+        <br><p>Suppose you have 10g of \(\ce{N2}\), and that the amount of \(\ce{H2}\) you have is enough to react with all this \(\ce{N2}\), what mass of \(\ce{NH3}\) will be formed?</p>
+        <br><p>One way to proceed is to convert the mass of \(\ce{N2}\) to moles, use the mole ratio to discover the amount of \(\ce{NH3}\) moles, and then convert back to mass of \(\ce{NH3}\). Remember that in order to do mole-mass conversions you need to know the molar mass.</p>
+        <br><p>\(n_{\ce{N2}} = \frac{10 \: g}{28 \: \text{g/mol}} = 0.357 \: moles\)</p>
+        <br><p>The mole ratio of \(\ce{NH3}\) to \(\ce{N2}\) is to 2:1, therefore</p>
+        <br><p>\(n_{\ce{NH3}} = 2 \times n_{\ce{N2}} = 0.714 \: moles\)</p>
+        <p>\(m_{\ce{NH3}} = 0.714 \: moles \times 17 \: \frac{g}{mol} = 12.14 \: g\)</p>
+        <br><p>Suppose now that you want to know the mass of \(\ce{H2}\) that was consumed, from the conservation of mass law, it immediately follows that the mass is \(12.14 - 10 = 2.14 \: g\), but you can also determine the amount of moles consumed through the molar ratio and convert to mass.</p>
+        <br><p>\(n_{\ce{H2}} = 3 n_{\ce{N2}} = 1.071 \: moles\)</p>
+        <p>\(m_{\ce{H2}} = 1.017 \: moles \times 2 \: \frac{g}{mol} = 2.14 g\)</p>
+        <p>Giving the expected result.</p>
+        <br><p>And if you want to know the number of molecules, you should multiply the number of moles by Avogadro’s number (\(6.022 \times 10^{23}\))</p>
+        <br><p>For example, we already know 0.714 moles of \(\ce{NH3}\) were produced, so the number of \(\ce{NH3}\) molecules is</p>
+        <br><p>\(N_{\ce{NH3}} = 0.714 \times 6.022 \times 10^{23} = 4.30 \times 10^{23} \: molecules\)</p>
+
+        <br><h3>Volume Stoichiometry</h3>
+        <br><p>For the determination of the volume of a gas, you can use the ideal gas law \(PV = nRT\), this means that the volume occupied by one mole of a gas will depend on temperature and pressure conditions. If the pressure is 1 atm and the temperature is 0°C, the molar volume will be:</p>
+        <p>\(\frac{V}{n} = \frac{RT}{P} = \frac{0.082 \: (atm \times L/K) \times 273 \: K}{1 \: atm}= 22.4 \: \frac{L}{mol}\)</p>
+
+        <br><p>Those temperature and pressure conditions are also known as standard pressure and temperature (STP).</p>
+        <br><p>So, if you want to determine the volume of \(\ce{H2}\) consumed on that same reaction, on STP conditions, you should multiply the number of moles by the molar volume. Since we already discovered the 1.071 moles were consumed, therefore, the volume is:</p>
+
+        <br><p>\(V = 1.071 \: moles \times 22.4 \: \frac{L}{mol} = 24 \: L.\)</p>
+
+        <button class="collapsible">Example 2: Mass and volume of \(\ce{CO2}\) produced</button>
+        <div class="content">
+            <p>Here is the unbalanced reaction for the combustion of Methane</p>
+            <br><p>\(\ce{CH4 + O2 -> CO2 + H2O}\)</p>
+            <br><p>What is the mass, and volume of \(\ce{CO2}\) produced when 48 g of methane combust completely if the temperature is 10ºC and the pressure is 0.90 atm</p>
+            <p>Gas constant: \(0.082 \: \frac{atm}{L \times mol \times K}\)</p>
+            <p>Use: Molar mass of carbon = \(12 \: \frac{g}{mol}\) and Molar mass of hydrogen = \(1 \: \frac{g}{mol}\)</p>
+            <br><p>Solution:</p>
+            <p>Balancing the reaction, it is possible to see that the coefficients on \(\ce{CH4}\) and \(\ce{CO2}\) have to be the same in order to balance the amount of carbon. Since the problem only asks information about \(\ce{CO2}\) produced, you don’t actually have to balance the rest of the equation, because you already know \(\ce{CH4}\) and \(\ce{CO2}\) react on a 1:1 mole ratio.</p>
+            <br><p>The molar mass of methane is (\(12 + 4 = 16 \: g/mol\)), so 48 g is 3 moles of \(\ce{CH4}\), which form 3 moles of \(\ce{CO2}\), the molar mass of \(\ce{CO2}\) is (\(12 + 32 = 44 \: g/mol\)), so the total mass of \(\ce{CO2}\) formed is \(3 \times 44 = \)<b> 132 g</b>. Using the ideal gas law to calculate the molar volume</p>
+            <p>\(V = \frac{RT}{P} = \frac{0.082 \times 283}{0.9} = 25.8 \: \frac{L}{mol}\)</p>
+            <br><p>So the total volume of \(\ce{CO2}\) is \(3 \times 25.8 = \)<b> 77.4 L</b></p>
+        </div>
+
+        <button class="collapsible">Example 3: Continuation of example 2</button>
+        <div class="content">
+            <p>On the same reaction as problem 2, determine the mass and the amount of oxygen molecules consumed if 32 g of methane combust.</p>
+            <p>Use: Molar mass of \(\ce{O2} = 32 \: \frac{g}{mol}\)</p>
+            <br><p>Solution:</p>
+            <p>Now, we need to finish balancing the reaction, assuming the coefficients on \(\ce{CH4}\) and \(\ce{CO2}\) to be 1. The number of hydrogen atoms on the reactants side will be 4, so 2 water molecules will be needed to balance that. Now, we already know that there are 4 oxygen atoms on the products side, therefore, 2 \(\ce{O2}\) molecules will be needed to balance the amount of oxygen.</p>
+            <br><p><b>Balanced reaction: \(\ce{CH4 + 2O2 -> CO2 + 2H2O}\)</b></p>
+            <br><p>32 g of \(\ce{CH4}\) is 2 moles, for every mole of \(\ce{CH4}\) combusted, 2 moles of \(\ce{O2}\) will be consumed, so 4 moles of \(\ce{O2}\) are going to be consumed in total. Converting it to mass and amount of molecules gives:</p>
+            <br><p>\(m = 4 \: moles \times 32 \: \frac{g}{mol} = 128 \: g\)</p>
+            <p>\(N = 4 \: moles \times 6.022 \times 10^{23} mol^{-1} = 2.41 \times 10^{24} \: molecules\)</p>
+        </div>
+    <br>
+    <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+    Written by <strong>Jailson Godeiro</strong>
+</p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+<script src="../../../collapsibles.js"></script>
+</body>
+</html>
